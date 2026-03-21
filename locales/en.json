@@ -131,6 +131,9 @@
     "internationalGdpr": "For users in the European Economic Area (EEA), these rights are guaranteed under the General Data Protection Regulation (GDPR). For users in Brazil, these rights are provided under the Lei Geral de Proteção de Dados (LGPD). Since Klosyt collects no personal data, no data processing agreement or legal basis for processing is required.",
     "internationalDpo": "For any privacy-related inquiries, contact us at <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>.",
 
+    "websiteAnalyticsTitle": "Website Analytics",
+    "websiteAnalyticsText": "This website (klosyt.com) uses Google Analytics to collect anonymous usage data such as page views, referral sources, and general geographic region. This data helps us understand how visitors find and use our website. Google Analytics may use cookies and collects information in accordance with <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google's Privacy Policy</a>. This tracking applies only to the website — the Klosyt app itself contains no analytics or tracking of any kind.",
+
     "changesTitle": "Changes to This Policy",
     "changesText": "We may update this Privacy Policy from time to time. Changes will be reflected by updating the \"Last Updated\" date above. Continued use of the App after changes constitutes acceptance of the updated policy.",
 

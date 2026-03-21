@@ -74,6 +74,10 @@ For users in the European Economic Area (EEA), these rights are guaranteed under
 
 For any privacy-related inquiries, contact us at [support@Klosyt.com](mailto:support@Klosyt.com).
 
+## Website Analytics
+
+This website (klosyt.com) uses Google Analytics to collect anonymous usage data such as page views, referral sources, and general geographic region. This data helps us understand how visitors find and use our website. Google Analytics may use cookies and collects information in accordance with [Google's Privacy Policy](https://policies.google.com/privacy). This tracking applies only to the website — the Klosyt app itself contains no analytics or tracking of any kind.
+
 ## Changes to This Policy
 
 We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last Updated" date above. Continued use of the App after changes constitutes acceptance of the updated policy.
