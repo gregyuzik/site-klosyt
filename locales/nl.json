@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "Functies",
-    "klosytPlus": "👑 Klosyt+",
+    "klosytPlus": "Klosyt+",
     "support": "Ondersteuning",
     "privacy": "Privacy"
   },
@@ -81,7 +81,7 @@
     "tableHeaderType": "Gegevenstype",
     "tableHeaderCollected": "Verzameld?",
     "tableHeaderDetails": "Details",
-    "tableNo": "❌ Nee",
+    "tableNo": "Nee",
     "tablePhotos": "Foto's & afbeeldingen",
     "tablePhotosDetail": "Alleen opgeslagen op je apparaat en je persoonlijke iCloud-account. Wij ontvangen of openen ze nooit.",
     "tableLocation": "Locatie",

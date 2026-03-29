@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "Özellikler",
-    "klosytPlus": "👑 Klosyt+",
+    "klosytPlus": "Klosyt+",
     "support": "Destek",
     "privacy": "Gizlilik"
   },
@@ -81,7 +81,7 @@
     "tableHeaderType": "Veri Türü",
     "tableHeaderCollected": "Toplanıyor mu?",
     "tableHeaderDetails": "Detaylar",
-    "tableNo": "❌ Hayır",
+    "tableNo": "Hayır",
     "tablePhotos": "Fotoğraflar & Görseller",
     "tablePhotosDetail": "Sadece cihazınızda ve kişisel iCloud hesabınızda saklanır. Asla almaz veya erişmeyiz.",
     "tableLocation": "Konum",
