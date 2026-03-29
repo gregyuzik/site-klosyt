@@ -1,14 +1,14 @@
 // Theme definitions — match the app exactly
 var themes = [
-    { asset: 'wallpaper_blue.jpg', name: 'Blue Velvet', emoji: '🔵', icon: 'AppIcon-blue.png', hue: '220' },
-    { asset: 'wallpaper_red.jpg', name: 'Red Leather', emoji: '🔴', icon: 'AppIcon-red.png', hue: '0' },
-    { asset: 'wallpaper_orange.jpg', name: 'Orange Leopard', emoji: '🟠', icon: 'AppIcon-orange.png', hue: '30' },
-    { asset: 'wallpaper_yellow.jpg', name: 'Yellow Plaid', emoji: '🟡', icon: 'AppIcon-yellow.png', hue: '48' },
-    { asset: 'wallpaper_green.jpg', name: 'Green Canvas', emoji: '🟢', icon: 'AppIcon-green.png', hue: '140' },
-    { asset: 'wallpaper_purple.jpg', name: 'Purple Cashmere', emoji: '🟣', icon: 'AppIcon-purple.png', hue: '270' },
-    { asset: 'wallpaper_pink.jpg', name: 'Pink Mohair', emoji: '💗', icon: 'AppIcon-pink.png', hue: '330' },
-    { asset: 'wallpaper_white.jpg', name: 'White Knit', emoji: '⚪', icon: 'AppIcon-white.png', hue: '0' },
-    { asset: 'wallpaper_gray.jpg', name: 'Gray Houndstooth', emoji: '🩶', icon: 'AppIcon-gray.png', hue: '0' }
+    { asset: 'wallpaper_blue.jpg', name: 'Blue Velvet', icon: 'AppIcon-blue.png', hue: '220' },
+    { asset: 'wallpaper_red.jpg', name: 'Red Leather', icon: 'AppIcon-red.png', hue: '0' },
+    { asset: 'wallpaper_orange.jpg', name: 'Orange Leopard', icon: 'AppIcon-orange.png', hue: '30' },
+    { asset: 'wallpaper_yellow.jpg', name: 'Yellow Plaid', icon: 'AppIcon-yellow.png', hue: '48' },
+    { asset: 'wallpaper_green.jpg', name: 'Green Canvas', icon: 'AppIcon-green.png', hue: '140' },
+    { asset: 'wallpaper_purple.jpg', name: 'Purple Cashmere', icon: 'AppIcon-purple.png', hue: '270' },
+    { asset: 'wallpaper_pink.jpg', name: 'Pink Mohair', icon: 'AppIcon-pink.png', hue: '330' },
+    { asset: 'wallpaper_white.jpg', name: 'White Knit', icon: 'AppIcon-white.png', hue: '0' },
+    { asset: 'wallpaper_gray.jpg', name: 'Gray Houndstooth', icon: 'AppIcon-gray.png', hue: '0' }
 ];
 
 function getTheme(asset) {
