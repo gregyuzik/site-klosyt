@@ -1,6 +1,6 @@
 // Theme definitions — match the app exactly
 var themes = [
-    { asset: 'wallpaper_redvelvet.jpg', name: 'Red Velvet', icon: 'AppIcon-redvelvet.png', color: '#6E0003', hue: '359' },
+    { asset: 'wallpaper_redvelvet.jpg', name: 'Red Velvet', icon: 'AppIcon-blue.png', color: '#6E0003', hue: '359' },
     { asset: 'wallpaper_blue.jpg', name: 'Blue Velvet', icon: 'AppIcon-blue.png', color: '#081A4A', hue: '220' },
     { asset: 'wallpaper_red.jpg', name: 'Red Leather', icon: 'AppIcon-red.png', color: '#4D171F', hue: '348' },
     { asset: 'wallpaper_orange.jpg', name: 'Orange Leopard', icon: 'AppIcon-orange.png', color: '#A3540F', hue: '28' },
