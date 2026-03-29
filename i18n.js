@@ -146,7 +146,7 @@
         btn.href = 'javascript:void(0)';
         btn.className = 'lang-btn';
         btn.title = 'Change language';
-        btn.innerHTML = `<span class="lang-icon">🌐</span><span id="lang-label" class="lang-label-text"></span>`;
+        btn.innerHTML = '<span class="lang-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><defs><linearGradient id="iglobe" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#007aff"/><stop offset="100%" stop-color="#5ac8fa"/></linearGradient></defs><path fill="url(#iglobe)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span><span id="lang-label" class="lang-label-text"></span>';
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
             wrapper.classList.toggle('open');
