@@ -48,9 +48,10 @@
     }
 
     function replaceEmoji() {
-        // Replace emoji in card-ico and pl-ico elements
+        // Replace emoji in card-ico and pl-ico elements (skip if already has SVG)
         var targets = document.querySelectorAll('.card-ico, .pl-ico');
         targets.forEach(function (el) {
+            if (el.querySelector('svg')) return;
             var text = el.textContent.trim();
             if (icons[text]) {
                 var size = el.classList.contains('pl-ico') ? 16 : 22;
@@ -58,36 +59,46 @@
             }
         });
 
-        // Replace crown in nav links
+        // Replace crown in nav links (skip if already has SVG)
         document.querySelectorAll('[data-i18n="nav.klosytPlus"]').forEach(function (el) {
-            var text = el.textContent || '';
-            if (text.indexOf('👑') >= 0 || text.indexOf('Klosyt+') >= 0) {
-                el.innerHTML = makeSvg(icons['👑'], 14) + ' Klosyt+';
-            }
+            if (el.querySelector('svg')) return;
+            el.innerHTML = makeSvg(icons['👑'], 14) + ' Klosyt+';
         });
 
-        // Replace ❌ in privacy table
+        // Replace ❌ in privacy table (skip if already has SVG)
         document.querySelectorAll('[data-i18n="privacy.tableNo"]').forEach(function (el) {
-            if (el.textContent.indexOf('❌') >= 0) {
-                el.innerHTML = makeSvg(icons['❌'], 14) + ' No';
-            }
+            if (el.querySelector('svg')) return;
+            el.innerHTML = makeSvg(icons['❌'], 14) + ' No';
         });
     }
 
-    // Run after DOM ready, and re-run after i18n applies translations
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', replaceEmoji);
-    } else {
+    var running = false;
+    function safeReplace() {
+        if (running) return;
+        running = true;
         replaceEmoji();
+        running = false;
     }
 
-    // Re-run after i18n translations are applied (uses MutationObserver)
-    var observer = new MutationObserver(function () {
-        replaceEmoji();
-    });
-    observer.observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+    // Run after DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', safeReplace);
+    } else {
+        safeReplace();
+    }
 
-    // Stop observing after 3 seconds to avoid performance hit
+    // Re-run after i18n applies translations (short delay to batch mutations)
+    var pending = null;
+    var observer = new MutationObserver(function () {
+        if (pending) return;
+        pending = setTimeout(function () {
+            pending = null;
+            safeReplace();
+        }, 100);
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+
+    // Stop observing after 3 seconds
     setTimeout(function () { observer.disconnect(); }, 3000);
 
     // Expose for manual re-run
