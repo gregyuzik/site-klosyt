@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "기능",
-    "klosytPlus": "👑 Klosyt+",
+    "klosytPlus": "Klosyt+",
     "support": "지원",
     "privacy": "개인정보"
   },
@@ -81,7 +81,7 @@
     "tableHeaderType": "데이터 유형",
     "tableHeaderCollected": "수집 여부",
     "tableHeaderDetails": "세부사항",
-    "tableNo": "❌ 아니오",
+    "tableNo": "아니오",
     "tablePhotos": "사진 & 이미지",
     "tablePhotosDetail": "기기와 개인 iCloud 계정에만 저장됩니다. 우리가 수신하거나 접근하지 않습니다.",
     "tableLocation": "위치",

@@ -63,7 +63,7 @@ function setTheme(asset) {
     updateMeshColors(theme);
 
     var pill = document.getElementById('theme-pill');
-    if (pill) pill.innerHTML = theme.emoji + ' <span class="theme-name-text">' + theme.name + '</span>';
+    if (pill) pill.innerHTML = '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:hsl(' + theme.hue + ',60%,50%);vertical-align:middle;margin-right:4px"></span><span class="theme-name-text">' + theme.name + '</span>';
 }
 
 function buildThemeDropdown() {
@@ -78,7 +78,7 @@ function buildThemeDropdown() {
         var opt = document.createElement('button');
         opt.className = 'theme-option';
         if (t.asset === current) opt.classList.add('active');
-        opt.textContent = t.emoji + ' ' + t.name;
+        opt.innerHTML = '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:hsl(' + t.hue + ',60%,50%);vertical-align:middle;margin-right:6px"></span>' + t.name;
         opt.addEventListener('click', function(e) {
             e.stopPropagation();
             setTheme(t.asset);
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateMeshColors(theme);
 
     var pill = document.getElementById('theme-pill');
-    if (pill) pill.innerHTML = theme.emoji + ' <span class="theme-name-text">' + theme.name + '</span>';
+    if (pill) pill.innerHTML = '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:hsl(' + theme.hue + ',60%,50%);vertical-align:middle;margin-right:4px"></span><span class="theme-name-text">' + theme.name + '</span>';
 
     buildThemeDropdown();
 });

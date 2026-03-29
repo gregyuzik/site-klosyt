@@ -301,6 +301,8 @@ body{
     background:var(--bg);color:var(--c);
 }
 
+.card-ico svg,.pl-ico svg{display:block}
+
 .card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em}
 .card p{font-size:.88rem;color:var(--text-2);line-height:1.55}
 
