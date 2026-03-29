@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "功能",
-    "klosytPlus": "👑 Klosyt+",
+    "klosytPlus": "Klosyt+",
     "support": "支持",
     "privacy": "隐私"
   },
@@ -81,7 +81,7 @@
     "tableHeaderType": "数据类型",
     "tableHeaderCollected": "是否收集？",
     "tableHeaderDetails": "详情",
-    "tableNo": "❌ 否",
+    "tableNo": "否",
     "tablePhotos": "照片和图片",
     "tablePhotosDetail": "仅存储在你的设备和你的个人iCloud账户中。我们永远不会接收或访问它们。",
     "tableLocation": "位置",

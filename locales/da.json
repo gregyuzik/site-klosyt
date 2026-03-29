@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "Funktioner",
-    "klosytPlus": "👑 Klosyt+",
+    "klosytPlus": "Klosyt+",
     "support": "Support",
     "privacy": "Privatliv"
   },
@@ -81,7 +81,7 @@
     "tableHeaderType": "Datatype",
     "tableHeaderCollected": "Indsamlet?",
     "tableHeaderDetails": "Detaljer",
-    "tableNo": "❌ Nej",
+    "tableNo": "Nej",
     "tablePhotos": "Fotos & billeder",
     "tablePhotosDetail": "Opbevares kun på din enhed og din personlige iCloud-konto. Vi modtager eller tilgår dem aldrig.",
     "tableLocation": "Placering",

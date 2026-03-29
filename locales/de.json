@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "Funktionen",
-    "klosytPlus": "👑 Klosyt+",
+    "klosytPlus": "Klosyt+",
     "support": "Support",
     "privacy": "Datenschutz"
   },
@@ -81,7 +81,7 @@
     "tableHeaderType": "Datentyp",
     "tableHeaderCollected": "Gesammelt?",
     "tableHeaderDetails": "Details",
-    "tableNo": "❌ Nein",
+    "tableNo": "Nein",
     "tablePhotos": "Fotos & Bilder",
     "tablePhotosDetail": "Ausschließlich auf deinem Gerät und in deinem persönlichen iCloud-Konto gespeichert. Wir empfangen oder greifen niemals darauf zu.",
     "tableLocation": "Standort",
