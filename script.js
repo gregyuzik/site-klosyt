@@ -64,7 +64,7 @@ function setTheme(asset) {
     updateMeshColors(theme);
 
     var pill = document.getElementById('theme-pill');
-    if (pill) pill.innerHTML = '<span style="display:inline-block;width:18px;height:18px;border-radius:50%;background:' + theme.color + '"></span><span class="theme-name-text">' + theme.name + '</span>';
+    if (pill) pill.innerHTML = '<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:' + theme.color + '"></span><span class="theme-name-text">' + theme.name + '</span>';
 }
 
 function buildThemeDropdown() {
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateMeshColors(theme);
 
     var pill = document.getElementById('theme-pill');
-    if (pill) pill.innerHTML = '<span style="display:inline-block;width:18px;height:18px;border-radius:50%;background:' + theme.color + '"></span><span class="theme-name-text">' + theme.name + '</span>';
+    if (pill) pill.innerHTML = '<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:' + theme.color + '"></span><span class="theme-name-text">' + theme.name + '</span>';
 
     buildThemeDropdown();
 });
