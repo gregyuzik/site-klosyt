@@ -68,10 +68,14 @@
     "supportsDev": "Apoie o desenvolvimento",
     "supportsDevDesc": "Desenvolvimento contínuo do app"
   },
+  "cta": {
+    "appStoreAlt": "Baixar na App Store"
+  },
   "footer": {
     "home": "Início",
     "support": "Suporte",
     "privacy": "Privacidade",
+    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. Todos os direitos reservados."
   },
   "privacy": {

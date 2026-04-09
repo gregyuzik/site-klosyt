@@ -68,10 +68,14 @@
     "supportsDev": "支持开发",
     "supportsDevDesc": "持续的应用开发"
   },
+  "cta": {
+    "appStoreAlt": "从 App Store 下载"
+  },
   "footer": {
     "home": "首页",
     "support": "支持",
     "privacy": "隐私",
+    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. 保留所有权利。"
   },
   "privacy": {
