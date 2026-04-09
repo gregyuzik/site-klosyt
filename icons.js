@@ -10,7 +10,7 @@
     'use strict';
 
     // Phosphor SVG inner content (after bounding rect) + gradient colors
-    var icons = {
+    const icons = {
         '✨': {
             svg: '<path d="M84.27,171.73l-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3a7.92,7.92,0,0,1,0,14.86l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="176" y1="16" x2="176" y2="64" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="224" y1="72" x2="224" y2="104" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="152" y1="40" x2="200" y2="40" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="208" y1="88" x2="240" y2="88" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
             g: ['#c073ff', '#af52de']
@@ -101,13 +101,14 @@
         }
     };
 
-    var idCounter = 0;
+    let idCounter = 0;
+    const MAX_MUTATIONS = 10;
 
     function makeSvg(icon, size) {
         size = size || 22;
-        var id = 'ig' + (++idCounter);
-        var ref = 'url(#' + id + ')';
-        var content = icon.svg.replace(/cC/g, ref);
+        const id = 'ig' + (++idCounter);
+        const ref = 'url(#' + id + ')';
+        const content = icon.svg.replace(/cC/g, ref);
         return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 256 256" fill="' + ref + '" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
             '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">' +
             '<stop offset="0%" stop-color="' + icon.g[0] + '"/>' +
@@ -119,12 +120,12 @@
 
     function replaceEmoji() {
         // Replace emoji in card-ico and pl-ico elements (skip if already has SVG)
-        var targets = document.querySelectorAll('.card-ico, .pl-ico');
+        const targets = document.querySelectorAll('.card-ico, .pl-ico');
         targets.forEach(function (el) {
             if (el.querySelector('svg')) return;
-            var text = el.textContent.trim();
+            const text = el.textContent.trim();
             if (icons[text]) {
-                var size = el.classList.contains('pl-ico') ? 16 : 22;
+                const size = el.classList.contains('pl-ico') ? 16 : 22;
                 el.innerHTML = makeSvg(icons[text], size);
             }
         });
@@ -142,7 +143,7 @@
         });
     }
 
-    var running = false;
+    let running = false;
     function safeReplace() {
         if (running) return;
         running = true;
@@ -158,18 +159,19 @@
     }
 
     // Re-run after i18n applies translations (short delay to batch mutations)
-    var pending = null;
-    var observer = new MutationObserver(function () {
+    let pending = null;
+    let mutationCount = 0;
+    const observer = new MutationObserver(function () {
         if (pending) return;
         pending = setTimeout(function () {
             pending = null;
             safeReplace();
+            if (++mutationCount >= MAX_MUTATIONS) {
+                observer.disconnect();
+            }
         }, 100);
     });
     observer.observe(document.documentElement, { childList: true, subtree: true });
-
-    // Stop observing after 3 seconds
-    setTimeout(function () { observer.disconnect(); }, 3000);
 
     // Expose for manual re-run
     window.klosytIcons = { replace: replaceEmoji, makeSvg: makeSvg, icons: icons };
