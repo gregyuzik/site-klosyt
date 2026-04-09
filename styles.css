@@ -81,45 +81,7 @@ body{
 @keyframes float-2{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-70px,-50px) scale(1.1)}}
 @keyframes float-3{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-40px,70px) scale(1.2)}}
 
-/* ── Language switcher (injected by i18n.js) ── */
-
-.lang-switcher{position:relative;display:flex;align-items:center}
-.lang-btn{
-    display:inline-flex;align-items:center;gap:4px;
-    padding:10px 0;border-radius:100px;border:none;
-    background:none;
-    text-decoration:none;color:var(--text-2);
-    font-size:.85rem;cursor:pointer;transition:opacity .2s;
-    white-space:nowrap;min-height:44px;
-}
-.lang-btn:hover{opacity:.7;color:var(--text-1)}
-.lang-icon{display:inline-flex;align-items:center}
-.lang-icon svg{width:22px;height:22px}
-.lang-label-text{display:none}
 .theme-name-text{display:none}
-
-.lang-dropdown{
-    display:none;position:absolute;top:calc(100% + 10px);right:0;
-    min-width:180px;max-height:400px;overflow-y:auto;
-    background:rgba(20,20,20,.92);
-    backdrop-filter:blur(40px) saturate(1.6);
-    -webkit-backdrop-filter:blur(40px) saturate(1.6);
-    border:1px solid var(--glass-border);
-    border-radius:16px;padding:6px;z-index:200;
-    box-shadow:0 16px 48px rgba(0,0,0,.6);
-}
-.lang-switcher.open .lang-dropdown{display:block}
-
-.lang-option{
-    display:block;width:100%;padding:10px 14px;min-height:44px;
-    border:none;background:none;color:var(--text-2);
-    font-size:.88rem;font-weight:500;text-align:left;
-    cursor:pointer;border-radius:10px;
-    font-family:inherit;transition:background .15s,color .15s;
-}
-.lang-option:hover{background:rgba(255,255,255,.08);color:var(--text-1)}
-.lang-option:focus-visible{outline:2px solid var(--accent-color);outline-offset:-2px}
-.lang-option.active{background:rgba(255,255,255,.1);color:var(--text-1);font-weight:600}
 
 
 /* ── Nav overflow fix ── */
@@ -574,15 +536,6 @@ body{
     .lang-row span:hover{background:rgba(255,255,255,.65);color:var(--text-1)}
     .lang-row span.active{background:rgba(0,0,0,.08);color:var(--text-1);font-weight:600}
 
-    .lang-btn{background:none;color:var(--text-2)}
-    .lang-btn:hover{opacity:.7;color:var(--text-1)}
-    .lang-dropdown{
-        background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.08);
-        box-shadow:0 16px 48px rgba(0,0,0,.1);
-    }
-    .lang-option{color:var(--text-2)}
-    .lang-option:hover{background:rgba(0,0,0,.05);color:var(--text-1)}
-    .lang-option.active{background:rgba(0,0,0,.07);color:var(--text-1)}
 }
 
 /* ═══════════════════════════════════════
