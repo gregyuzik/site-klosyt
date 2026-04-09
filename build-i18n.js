@@ -68,13 +68,38 @@ function stripHTML(str) {
 function applyTranslations(html, translations, fallback) {
     const regex = /(<(\w+)\s[^>]*?data-i18n="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/g;
 
-    return html.replace(regex, (match, openTag, tagName, key, _oldContent, closeTag) => {
+    html = html.replace(regex, (match, openTag, tagName, key, _oldContent, closeTag) => {
         const translated = getNestedValue(translations, key) || getNestedValue(fallback, key);
         if (translated !== null) {
             return openTag + translated + closeTag;
         }
         return match;
     });
+
+    // Translate data-i18n-alt attributes
+    html = html.replace(/data-i18n-alt="([^"]+)"/g, (match, key) => {
+        const translated = getNestedValue(translations, key) || getNestedValue(fallback, key);
+        if (translated !== null) {
+            const escAttr = s => s.replace(/"/g, '&quot;');
+            return match.replace(
+                /data-i18n-alt="[^"]+"/,
+                `data-i18n-alt="${key}"`
+            );
+        }
+        return match;
+    });
+
+    // Update alt attributes where data-i18n-alt is present
+    html = html.replace(/alt="[^"]*"(\s+data-i18n-alt="([^"]+)")/g, (match, suffix, key) => {
+        const translated = getNestedValue(translations, key) || getNestedValue(fallback, key);
+        if (translated !== null) {
+            const escAttr = s => s.replace(/"/g, '&quot;');
+            return `alt="${escAttr(translated)}"${suffix}`;
+        }
+        return match;
+    });
+
+    return html;
 }
 
 /**

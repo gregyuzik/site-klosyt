@@ -68,10 +68,14 @@
     "supportsDev": "Støtter udvikling",
     "supportsDevDesc": "Fortsat app-udvikling"
   },
+  "cta": {
+    "appStoreAlt": "Hent i App Store"
+  },
   "footer": {
     "home": "Hjem",
     "support": "Support",
     "privacy": "Privatliv",
+    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. Alle rettigheder forbeholdes."
   },
   "privacy": {

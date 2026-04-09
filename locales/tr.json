@@ -68,10 +68,14 @@
     "supportsDev": "Geliştirmeyi Destekle",
     "supportsDevDesc": "Sürekli uygulama geliştirme"
   },
+  "cta": {
+    "appStoreAlt": "App Store'dan indirin"
+  },
   "footer": {
     "home": "Ana Sayfa",
     "support": "Destek",
     "privacy": "Gizlilik",
+    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. Tüm hakları saklıdır."
   },
   "privacy": {

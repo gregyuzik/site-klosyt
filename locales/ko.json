@@ -68,10 +68,14 @@
     "supportsDev": "개발 지원",
     "supportsDevDesc": "지속적인 앱 개발"
   },
+  "cta": {
+    "appStoreAlt": "App Store에서 다운로드"
+  },
   "footer": {
     "home": "홈",
     "support": "지원",
     "privacy": "개인정보",
+    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. All rights reserved."
   },
   "privacy": {
