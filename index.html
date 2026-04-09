@@ -18,7 +18,7 @@
     <meta property="og:title" content="Klosyt — Your AI Closet">
     <meta property="og:description" content="Klosyt is the ultimate AI closet app. Organize, style, and track your clothing seamlessly.">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://klosyt.com/assets/AppIcon.png">
     <link rel="canonical" href="https://klosyt.com/">
     <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)">
@@ -26,6 +26,24 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/AppIcon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" hreflang="en" href="https://klosyt.com/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://klosyt.com/zh-Hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://klosyt.com/zh-Hant/">
+    <link rel="alternate" hreflang="da" href="https://klosyt.com/da/">
+    <link rel="alternate" hreflang="nl" href="https://klosyt.com/nl/">
+    <link rel="alternate" hreflang="fr" href="https://klosyt.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://klosyt.com/de/">
+    <link rel="alternate" hreflang="it" href="https://klosyt.com/it/">
+    <link rel="alternate" hreflang="ja" href="https://klosyt.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://klosyt.com/ko/">
+    <link rel="alternate" hreflang="nb" href="https://klosyt.com/nb/">
+    <link rel="alternate" hreflang="pt-BR" href="https://klosyt.com/pt-BR/">
+    <link rel="alternate" hreflang="es" href="https://klosyt.com/es/">
+    <link rel="alternate" hreflang="sv" href="https://klosyt.com/sv/">
+    <link rel="alternate" hreflang="tr" href="https://klosyt.com/tr/">
+    <link rel="alternate" hreflang="vi" href="https://klosyt.com/vi/">
+    <link rel="alternate" hreflang="x-default" href="https://klosyt.com/">
     <link rel="stylesheet" href="styles.css?v=7">
     <script type="application/ld+json">
     {
@@ -33,14 +51,37 @@
         "@type": "SoftwareApplication",
         "name": "Klosyt",
         "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "iOS, macOS, tvOS, visionOS",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+        "applicationSubCategory": "Fashion",
+        "operatingSystem": "iOS 26, macOS 26, tvOS 26, visionOS 26",
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Free tier with unlimited wardrobe storage"
+            },
+            {
+                "@type": "Offer",
+                "price": "0.99",
+                "priceCurrency": "USD",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "billingDuration": "P1M"
+                },
+                "description": "Klosyt+ with AI Stylist, Outfits, and Calendar"
+            }
+        ],
+        "description": "AI-powered digital closet and outfit planner. Organize your wardrobe, get weather-smart outfit suggestions, and track what you wear — all on-device and completely private.",
+        "url": "https://klosyt.com/",
+        "downloadUrl": "https://apps.apple.com/app/klosyt/id6758277603",
+        "image": "https://klosyt.com/assets/AppIcon.png",
+        "softwareVersion": "2.0",
+        "datePublished": "2025-03-13",
+        "author": {
+            "@type": "Person",
+            "name": "Gregory Yuzik"
         },
-        "description": "AI-powered digital closet app. Organize, style, and track your clothing seamlessly.",
-        "url": "https://klosyt.com/"
+        "inLanguage": ["en", "zh-Hans", "zh-Hant", "da", "nl", "fr", "de", "it", "ja", "ko", "nb", "pt-BR", "es", "sv", "tr", "vi"]
     }
     </script>
 </head>
@@ -131,34 +172,42 @@
             <div class="glass card">
                 <span class="card-ico" style="--c:#af52de;--bg:rgba(175,82,222,.12)">✨</span>
                 <h3 data-i18n="features.aiStylist">AI Stylist</h3>
-                <p data-i18n="features.aiStylistDesc">Weather-aware outfit suggestions built from your exact Klosyt. Powered by on-device AI.</p>
+                <p data-i18n="features.aiStylistDesc">Weather-aware outfit suggestions built from your exact Klosyt. Powered by on-device AI that uses color theory and seasonal awareness to help you look your best in any weather.</p>
             </div>
             <div class="glass card">
                 <span class="card-ico" style="--c:#007aff;--bg:rgba(0,122,255,.12)">👔</span>
                 <h3 data-i18n="features.outfitsTitle">Outfits</h3>
-                <p data-i18n="features.outfitsDesc">Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards.</p>
+                <p data-i18n="features.outfitsDesc">Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards. Build a personal lookbook of capsule wardrobe combinations you can revisit anytime.</p>
             </div>
             <div class="glass card">
                 <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)">📅</span>
                 <h3 data-i18n="features.calendarTitle">Calendar</h3>
-                <p data-i18n="features.calendarDesc">Log what you wear every day. See patterns emerge and never repeat an outfit by accident.</p>
+                <p data-i18n="features.calendarDesc">Log what you wear every day. See patterns emerge and never repeat an outfit by accident. Track your wardrobe history to make the most of every item you own.</p>
             </div>
             <div class="glass card">
                 <span class="card-ico" style="--c:#34c759;--bg:rgba(52,199,89,.12)">🔐</span>
                 <h3 data-i18n="features.privacyTitle">Private by Design</h3>
-                <p data-i18n="features.privacyDesc">Everything runs on-device. Your data syncs only to your iCloud&nbsp;&mdash; never shared with anyone.</p>
+                <p data-i18n="features.privacyDesc">Everything runs on-device. Your data syncs only to your iCloud&nbsp;&mdash; never shared with anyone. No analytics, no tracking, no ads&nbsp;&mdash; your virtual wardrobe stays completely private.</p>
             </div>
             <div class="glass card">
                 <span class="card-ico" style="--c:#5ac8fa;--bg:rgba(90,200,250,.12)">☁️</span>
                 <h3 data-i18n="features.syncTitle">Synced Everywhere</h3>
-                <p data-i18n="features.syncDesc">iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically.</p>
+                <p data-i18n="features.syncDesc">iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically. One wardrobe across iPhone, iPad, Mac, Apple&nbsp;TV, and Vision&nbsp;Pro.</p>
             </div>
             <div class="glass card">
                 <span class="card-ico" style="--c:#ff2d55;--bg:rgba(255,45,85,.12)">🔍</span>
                 <h3 data-i18n="features.filtersTitle">Smart Filters</h3>
-                <p data-i18n="features.filtersDesc">Find any item by season, color, category, material, or pattern in seconds.</p>
+                <p data-i18n="features.filtersDesc">Find any item by season, color, category, material, or pattern in seconds. Quickly narrow down your digital closet to find exactly what you need.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Why Klosyt -->
+<section class="section">
+    <div class="wrap tc fade-up">
+        <h2 class="sec-title" data-i18n="whyKlosyt.title">Your wardrobe,<br>reimagined</h2>
+        <p class="hero-sub" style="max-width:640px" data-i18n="whyKlosyt.desc">Klosyt is the AI-powered wardrobe organizer and outfit planner that helps you make the most of every item you own. Whether you're picking tomorrow's outfit or building the perfect capsule wardrobe, Klosyt's on-device intelligence turns your closet into a smart, sustainable style system&nbsp;&mdash; completely private, always in sync across all your Apple devices.</p>
     </div>
 </section>
 
