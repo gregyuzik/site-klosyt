@@ -123,11 +123,11 @@
     "internationalPortability": "<strong>데이터 이동권</strong> — 데이터는 귀하가 관리하는 개인 iCloud 계정에 저장됩니다.",
     "internationalObjection": "<strong>반대권</strong> — 데이터 처리를 하지 않으므로 반대할 것이 없습니다.",
     "internationalGdpr": "유럽 경제 지역(EEA) 사용자의 경우 이러한 권리는 일반 데이터 보호 규정(GDPR)에 의해 보장됩니다. 브라질 사용자의 경우 Lei Geral de Proteção de Dados(LGPD)에 의해 제공됩니다. Klosyt은 개인 데이터를 수집하지 않으므로 데이터 처리 계약이나 처리의 법적 근거가 필요하지 않습니다.",
-    "internationalDpo": "개인정보 관련 문의는 <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>으로 연락하세요.",
+    "internationalDpo": "개인정보 관련 문의는 <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>으로 연락하세요.",
     "changesTitle": "정책 변경",
     "changesText": "본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 위의 \"최종 업데이트\" 날짜 업데이트로 반영됩니다. 변경 후 앱을 계속 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다.",
     "contactTitle": "문의하기",
-    "contactText": "본 개인정보 처리방침에 대한 질문이나 우려 사항은 <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>으로 Klosyt에 문의하세요."
+    "contactText": "본 개인정보 처리방침에 대한 질문이나 우려 사항은 <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>으로 Klosyt에 문의하세요."
   },
   "terms": {
     "title": "이용약관 (EULA)",
@@ -192,7 +192,7 @@
     "sharingTitle": "공유 & 내보내기",
     "sharingDesc": "좋아하는 코디를 아름다운 팬톤 스타일 카드로 공유하세요. iOS 공유 확장을 사용하여 Safari, Instagram 또는 다른 앱에서 이미지나 URL을 바로 가져올 수 있습니다.",
     "filterTitle": "필터 & 정렬",
-    "filterDesc": "Klosyt의 GelCap 필터 시스템으로 옷장을 즉시 좁힐 수 있습니다. 카테고리, 시즌, 색상, 소재, 패턴으로 필터링하세요. 이름으로 검색하고 그리드와 워드로브 보기를 전환하세요.",
+    "filterDesc": "Klosyt의 GelCap 필터 시스템으로 옷장을 즉시 좁힐 수 있습니다. 카테고리, 시즌, 색상, 소재, 패턴으로 필터링하세요. 이름으로 검색하고 그리드와 옷장 보기를 전환하세요.",
     "themesTitle": "테마 & 배경화면",
     "themesDesc": "Klosyt을 나만의 것으로 만드세요! 멋진 배경화면과 테마를 선택하여 앱 외관을 커스터마이즈하세요 — 완전 무료, 구독 필요 없음. 선택한 테마는 모든 Apple 기기에서 동기화됩니다.",
     "objectCaptureTitle": "Object Capture (3D 스캔)",
@@ -241,7 +241,7 @@
     "ts8Answer": "아이템 탭 → 상세 보기 → 삭제 버튼. 삭제된 아이템은 30일간 휴지통에 보관되며 복구할 수 있습니다. 설정에서 휴지통에 접근하세요.",
     "contactTitle": "추가 도움이 필요하신가요?",
     "contactDesc": "도움이 필요하시면 연락주세요.",
-    "contactEmail": "support@Klosyt.com"
+    "contactEmail": "support@klosyt.com"
   },
   "index": {
     "languagesTitle": "16개 언어로 이용 가능"
