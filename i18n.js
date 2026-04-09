@@ -128,9 +128,12 @@
             langLabel.textContent = LOCALE_LABELS[langCode] || langCode;
         }
 
-        // Mark the active item in the dropdown
+        // Mark the active item in the dropdown and language row
         document.querySelectorAll('.lang-option').forEach(opt => {
             opt.classList.toggle('active', opt.dataset.lang === langCode);
+        });
+        document.querySelectorAll('.lang-row span[lang]').forEach(span => {
+            span.classList.toggle('active', span.getAttribute('lang') === langCode);
         });
 
         // Show/hide AI translation notice for non-English languages
@@ -221,6 +224,20 @@
 
         buildLanguageSwitcher();
         applyTranslations();
+
+        // Make language display row clickable
+        document.querySelectorAll('.lang-row span[lang]').forEach(span => {
+            const locale = span.getAttribute('lang');
+            if (SUPPORTED_LOCALES.includes(locale)) {
+                span.style.cursor = 'pointer';
+                span.setAttribute('role', 'button');
+                span.setAttribute('tabindex', '0');
+                span.addEventListener('click', () => setLanguage(locale));
+                span.addEventListener('keydown', e => {
+                    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLanguage(locale); }
+                });
+            }
+        });
     }
 
     // Expose globally
