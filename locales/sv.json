@@ -68,10 +68,14 @@
     "supportsDev": "Stödjer utveckling",
     "supportsDevDesc": "Kontinuerlig apputveckling"
   },
+  "cta": {
+    "appStoreAlt": "Hämta från App Store"
+  },
   "footer": {
     "home": "Hem",
     "support": "Support",
     "privacy": "Integritet",
+    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. Alla rättigheter förbehållna."
   },
   "privacy": {
