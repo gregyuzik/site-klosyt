@@ -1,15 +1,15 @@
 // Theme definitions — match the app exactly
 var themes = [
-    { asset: 'wallpaper_redvelvet.jpg', name: 'Red Velvet', icon: 'AppIcon-blue.png', color: '#6E0003', hue: '359' },
-    { asset: 'wallpaper_blue.jpg', name: 'Blue Velvet', icon: 'AppIcon-blue.png', color: '#081A4A', hue: '220' },
-    { asset: 'wallpaper_red.jpg', name: 'Red Leather', icon: 'AppIcon-red.png', color: '#4D171F', hue: '348' },
-    { asset: 'wallpaper_orange.jpg', name: 'Orange Leopard', icon: 'AppIcon-orange.png', color: '#A3540F', hue: '28' },
-    { asset: 'wallpaper_yellow.jpg', name: 'Yellow Plaid', icon: 'AppIcon-yellow.png', color: '#856624', hue: '42' },
-    { asset: 'wallpaper_green.jpg', name: 'Green Canvas', icon: 'AppIcon-green.png', color: '#5C543D', hue: '44' },
-    { asset: 'wallpaper_purple.jpg', name: 'Purple Cashmere', icon: 'AppIcon-purple.png', color: '#663354', hue: '276' },
-    { asset: 'wallpaper_pink.jpg', name: 'Pink Mohair', icon: 'AppIcon-pink.png', color: '#D42E73', hue: '338' },
-    { asset: 'wallpaper_white.jpg', name: 'White Knit', icon: 'AppIcon-white.png', color: '#DED9D1', hue: '37' },
-    { asset: 'wallpaper_gray.jpg', name: 'Gray Houndstooth', icon: 'AppIcon-gray.png', color: '#787878', hue: '0' }
+    { asset: 'wallpaper_redvelvet.webp', name: 'Red Velvet', icon: 'AppIcon-blue.png', color: '#6E0003', hue: '359' },
+    { asset: 'wallpaper_blue.webp', name: 'Blue Velvet', icon: 'AppIcon-blue.png', color: '#081A4A', hue: '220' },
+    { asset: 'wallpaper_red.webp', name: 'Red Leather', icon: 'AppIcon-red.png', color: '#4D171F', hue: '348' },
+    { asset: 'wallpaper_orange.webp', name: 'Orange Leopard', icon: 'AppIcon-orange.png', color: '#A3540F', hue: '28' },
+    { asset: 'wallpaper_yellow.webp', name: 'Yellow Plaid', icon: 'AppIcon-yellow.png', color: '#856624', hue: '42' },
+    { asset: 'wallpaper_green.webp', name: 'Green Canvas', icon: 'AppIcon-green.png', color: '#5C543D', hue: '44' },
+    { asset: 'wallpaper_purple.webp', name: 'Purple Cashmere', icon: 'AppIcon-purple.png', color: '#663354', hue: '276' },
+    { asset: 'wallpaper_pink.webp', name: 'Pink Mohair', icon: 'AppIcon-pink.png', color: '#D42E73', hue: '338' },
+    { asset: 'wallpaper_white.webp', name: 'White Knit', icon: 'AppIcon-white.png', color: '#DED9D1', hue: '37' },
+    { asset: 'wallpaper_gray.webp', name: 'Gray Houndstooth', icon: 'AppIcon-gray.png', color: '#787878', hue: '0' }
 ];
 
 function safeStorage(method, key, value) {
@@ -24,11 +24,11 @@ function getTheme(asset) {
 }
 
 function getCurrentWallpaper() {
-    return safeStorage('get', 'klosyt_wallpaper') || 'wallpaper_redvelvet.jpg';
+    return safeStorage('get', 'klosyt_wallpaper') || 'wallpaper_redvelvet.webp';
 }
 
 function updateIcons(iconFile) {
-    var path = 'assets/' + iconFile;
+    var path = '/assets/' + iconFile;
     document.querySelectorAll('.dynamic-app-icon').forEach(function(img) { img.src = path; });
     var fav = document.querySelector('link[rel="icon"]');
     if (fav) fav.href = path;
@@ -42,13 +42,13 @@ function updateMeshColors(theme) {
     var h = parseInt(theme.hue, 10);
 
     // Special cases for achromatic themes
-    if (theme.asset === 'wallpaper_white.jpg') {
+    if (theme.asset === 'wallpaper_white.webp') {
         orbs[0].style.background = 'radial-gradient(circle, rgba(180,180,200,.6) 0%, transparent 70%)';
         orbs[1].style.background = 'radial-gradient(circle, rgba(160,170,190,.5) 0%, transparent 70%)';
         orbs[2].style.background = 'radial-gradient(circle, rgba(170,180,200,.4) 0%, transparent 70%)';
         return;
     }
-    if (theme.asset === 'wallpaper_gray.jpg') {
+    if (theme.asset === 'wallpaper_gray.webp') {
         orbs[0].style.background = 'radial-gradient(circle, rgba(100,100,120,.6) 0%, transparent 70%)';
         orbs[1].style.background = 'radial-gradient(circle, rgba(80,80,100,.5) 0%, transparent 70%)';
         orbs[2].style.background = 'radial-gradient(circle, rgba(90,90,110,.4) 0%, transparent 70%)';
@@ -64,7 +64,7 @@ function setTheme(asset) {
     var theme = getTheme(asset);
     safeStorage('set', 'klosyt_wallpaper', asset);
     safeStorage('set', 'klosyt_wallpaper_manual', 'true');
-    var short = asset.replace('wallpaper_', '').replace('.jpg', '');
+    var short = asset.replace('wallpaper_', '').replace('.webp', '');
     safeStorage('set', 'klosyt_theme', short);
 
     updateIcons(theme.icon);
@@ -115,8 +115,8 @@ function buildThemeDropdown() {
 
 document.addEventListener('DOMContentLoaded', function() {
     var wp = safeStorage('get', 'klosyt_wallpaper_manual') === 'true'
-        ? (safeStorage('get', 'klosyt_wallpaper') || 'wallpaper_redvelvet.jpg')
-        : 'wallpaper_redvelvet.jpg';
+        ? (safeStorage('get', 'klosyt_wallpaper') || 'wallpaper_redvelvet.webp')
+        : 'wallpaper_redvelvet.webp';
 
     var theme = getTheme(wp);
     updateIcons(theme.icon);
