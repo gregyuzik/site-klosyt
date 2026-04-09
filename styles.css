@@ -46,8 +46,8 @@ body{
 
 .mesh-bg{
     position:fixed;inset:0;z-index:0;overflow:hidden;
-    background:#050508;
-    background-size:cover;background-position:center;
+    background-color:#050508;
+    background-size:cover;background-position:center;background-repeat:no-repeat;
 }
 
 .mesh-orb{
@@ -533,7 +533,7 @@ body{
 
     body{background:#f2f2f7;color:var(--text-1)}
 
-    .mesh-bg{background:#f2f2f7}
+    .mesh-bg{background-color:#f2f2f7}
     .mesh-orb{opacity:.3}
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
     .orb-2{background:radial-gradient(circle,#d4b8f0 0%,transparent 70%)}
