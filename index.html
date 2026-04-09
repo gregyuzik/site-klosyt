@@ -20,11 +20,33 @@
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="https://klosyt.com/assets/AppIcon.png">
+    <link rel="canonical" href="https://klosyt.com/">
+    <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/AppIcon.png">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=7">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Klosyt",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS, macOS, tvOS, visionOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "description": "AI-powered digital closet app. Organize, style, and track your clothing seamlessly.",
+        "url": "https://klosyt.com/"
+    }
+    </script>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Animated gradient mesh background -->
 <div class="mesh-bg">
@@ -54,7 +76,7 @@
 </header>
 
 <!-- Hero -->
-<section class="hero">
+<section id="main" class="hero">
     <div class="hero-inner fade-up">
         <div class="hero-glow">
             <img src="assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon dynamic-app-icon">
@@ -200,8 +222,8 @@ document.addEventListener('DOMContentLoaded',function(){
     document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
 });
 </script>
-<script src="script.js?v=5"></script>
-<script src="i18n.js"></script>
-<script src="icons.js"></script>
+<script src="script.js?v=6"></script>
+<script src="i18n.js?v=2"></script>
+<script src="icons.js?v=2"></script>
 </body>
 </html>

@@ -12,12 +12,19 @@ var themes = [
     { asset: 'wallpaper_gray.jpg', name: 'Gray Houndstooth', icon: 'AppIcon-gray.png', color: '#787878', hue: '0' }
 ];
 
+function safeStorage(method, key, value) {
+    try {
+        if (method === 'get') return localStorage.getItem(key);
+        if (method === 'set') localStorage.setItem(key, value);
+    } catch (e) { return null; }
+}
+
 function getTheme(asset) {
     return themes.find(function(t) { return t.asset === asset; }) || themes[0];
 }
 
 function getCurrentWallpaper() {
-    return localStorage.getItem('klosyt_wallpaper') || 'wallpaper_redvelvet.jpg';
+    return safeStorage('get', 'klosyt_wallpaper') || 'wallpaper_redvelvet.jpg';
 }
 
 function updateIcons(iconFile) {
@@ -55,10 +62,10 @@ function updateMeshColors(theme) {
 
 function setTheme(asset) {
     var theme = getTheme(asset);
-    localStorage.setItem('klosyt_wallpaper', asset);
-    localStorage.setItem('klosyt_wallpaper_manual', 'true');
+    safeStorage('set', 'klosyt_wallpaper', asset);
+    safeStorage('set', 'klosyt_wallpaper_manual', 'true');
     var short = asset.replace('wallpaper_', '').replace('.jpg', '');
-    localStorage.setItem('klosyt_theme', short);
+    safeStorage('set', 'klosyt_theme', short);
 
     updateIcons(theme.icon);
     updateMeshColors(theme);
@@ -74,6 +81,8 @@ function buildThemeDropdown() {
     if (!switcher || !btn || !dropdown) return;
 
     var current = getCurrentWallpaper();
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-haspopup', 'true');
 
     themes.forEach(function(t) {
         var opt = document.createElement('button');
@@ -86,6 +95,7 @@ function buildThemeDropdown() {
             dropdown.querySelectorAll('.theme-option').forEach(function(o) { o.classList.remove('active'); });
             opt.classList.add('active');
             switcher.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
         });
         dropdown.appendChild(opt);
     });
@@ -93,17 +103,19 @@ function buildThemeDropdown() {
     btn.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        switcher.classList.toggle('open');
+        var isOpen = switcher.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
     });
 
     document.addEventListener('click', function() {
         switcher.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
     });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var wp = localStorage.getItem('klosyt_wallpaper_manual') === 'true'
-        ? (localStorage.getItem('klosyt_wallpaper') || 'wallpaper_redvelvet.jpg')
+    var wp = safeStorage('get', 'klosyt_wallpaper_manual') === 'true'
+        ? (safeStorage('get', 'klosyt_wallpaper') || 'wallpaper_redvelvet.jpg')
         : 'wallpaper_redvelvet.jpg';
 
     var theme = getTheme(wp);
