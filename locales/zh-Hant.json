@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Chinese (Traditional)",
     "langNameNative": "繁體中文",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "切換語言"
   },
   "nav": {
     "features": "功能",
@@ -42,6 +43,10 @@
     "filtersTitle": "智慧篩選",
     "filtersDesc": "按季節、顏色、類別、面料或圖案，幾秒鐘找到任何物品。"
   },
+  "whyKlosyt": {
+    "title": "你的衣櫥，<br>重新想像",
+    "desc": "Klosyt是一款AI驅動的衣櫥整理和穿搭規劃應用程式，幫助你充分利用每一件衣物。無論你是在挑選明天的穿搭，還是打造完美的膠囊衣櫥，Klosyt的裝置端智能都能將你的衣櫥變成一個智慧、永續的時尚系統——完全私密，始終在所有Apple裝置間同步。"
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/月",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "隱私權政策",
-    "lastUpdated": "最後更新：2026年3月13日",
+    "lastUpdated": "最後更新：2026年4月9日",
     "promiseTitle": "我們的隱私承諾",
     "promiseOwner": "Klosyt由Gregory Yuzik（\"我們\"）擁有、營運和維護。",
     "promiseText": "你的隱私不僅僅是Klosyt的一項功能——它是基礎。<strong>我們不收集、儲存、傳輸或存取你的任何個人資料。就這樣。</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>反對權</strong>——由於我們不對你的資料進行任何處理，因此沒有什麼可以反對的。",
     "internationalGdpr": "對於歐洲經濟區（EEA）的使用者，這些權利受到《一般資料保護規範》（GDPR）的保障。對於巴西的使用者，這些權利由《一般資料保護法》（LGPD）提供。由於Klosyt不收集個人資料，因此不需要資料處理協議或處理的法律依據。",
     "internationalDpo": "如有任何隱私相關諮詢，請聯繫我們<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。",
+    "websiteAnalyticsTitle": "網站分析",
+    "websiteAnalyticsText": "本網站（klosyt.com）使用Google Analytics收集匿名使用資料，如頁面瀏覽量、來源和大致地理區域。這些資料幫助我們了解訪客如何發現和使用我們的網站。Google Analytics可能使用Cookie，並根據<a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google隱私權政策</a>收集資訊。此追蹤僅適用於網站——Klosyt應用程式本身不包含任何分析或追蹤。",
     "changesTitle": "政策變更",
     "changesText": "我們可能會不時更新本隱私權政策。變更將透過更新上方的「最後更新」日期來體現。在變更後繼續使用本應用程式即表示接受更新後的政策。",
     "contactTitle": "聯絡我們",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "使用條款（EULA）",
-    "lastUpdated": "最後更新：2026年3月13日",
+    "lastUpdated": "最後更新：2026年4月9日",
     "acceptanceTitle": "接受條款",
     "acceptanceText": "下載、安裝或使用Klosyt（「本應用程式」）即表示你同意受這些條款的約束。如果你不同意，請不要使用本應用程式。",
     "serviceTitle": "服務說明",
