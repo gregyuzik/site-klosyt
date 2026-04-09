@@ -30,17 +30,21 @@
   "features": {
     "sectionTitle": "Everything you need,<br>nothing you don't",
     "aiStylist": "AI Stylist",
-    "aiStylistDesc": "Weather-aware outfit suggestions built from your Klosyt. Powered by on-device AI.",
+    "aiStylistDesc": "Weather-aware outfit suggestions built from your Klosyt. Powered by on-device AI that uses color theory and seasonal awareness to help you look your best in any weather.",
     "outfitsTitle": "Outfits",
-    "outfitsDesc": "Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards.",
+    "outfitsDesc": "Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards. Build a personal lookbook of capsule wardrobe combinations you can revisit anytime.",
     "calendarTitle": "Calendar",
-    "calendarDesc": "Log what you wear every day. See patterns emerge and never repeat an outfit by accident.",
+    "calendarDesc": "Log what you wear every day. See patterns emerge and never repeat an outfit by accident. Track your wardrobe history to make the most of every item you own.",
     "privacyTitle": "Private by Design",
-    "privacyDesc": "Everything runs on-device. Your data syncs only to your iCloud — never shared with anyone.",
+    "privacyDesc": "Everything runs on-device. Your data syncs only to your iCloud — never shared with anyone. No analytics, no tracking, no ads — your virtual wardrobe stays completely private.",
     "syncTitle": "Synced Everywhere",
-    "syncDesc": "iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically.",
+    "syncDesc": "iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically. One wardrobe across iPhone, iPad, Mac, Apple TV, and Vision Pro.",
     "filtersTitle": "Smart Filters",
-    "filtersDesc": "Find any item by season, color, category, material, or pattern in seconds."
+    "filtersDesc": "Find any item by season, color, category, material, or pattern in seconds. Quickly narrow down your digital closet to find exactly what you need."
+  },
+  "whyKlosyt": {
+    "title": "Your wardrobe,<br>reimagined",
+    "desc": "Klosyt is the AI-powered wardrobe organizer and outfit planner that helps you make the most of every item you own. Whether you're picking tomorrow's outfit or building the perfect capsule wardrobe, Klosyt's on-device intelligence turns your closet into a smart, sustainable style system — completely private, always in sync across all your Apple devices."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",

@@ -70,13 +70,13 @@
 
     async function loadTranslations(locale) {
         try {
-            const resp = await fetch(`locales/${locale}.json`);
+            const resp = await fetch(`/locales/${locale}.json`);
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             return await resp.json();
         } catch (e) {
             console.warn(`[i18n] Failed to load ${locale}, falling back to en`, e);
             if (locale !== 'en') {
-                const resp = await fetch('locales/en.json');
+                const resp = await fetch('/locales/en.json');
                 return await resp.json();
             }
             return {};
