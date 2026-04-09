@@ -123,11 +123,11 @@
     "internationalPortability": "<strong>資料可攜權</strong>——你的資料儲存在你控制的個人iCloud帳號中。",
     "internationalObjection": "<strong>反對權</strong>——由於我們不對你的資料進行任何處理，因此沒有什麼可以反對的。",
     "internationalGdpr": "對於歐洲經濟區（EEA）的使用者，這些權利受到《一般資料保護規範》（GDPR）的保障。對於巴西的使用者，這些權利由《一般資料保護法》（LGPD）提供。由於Klosyt不收集個人資料，因此不需要資料處理協議或處理的法律依據。",
-    "internationalDpo": "如有任何隱私相關諮詢，請聯繫我們<a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>。",
+    "internationalDpo": "如有任何隱私相關諮詢，請聯繫我們<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。",
     "changesTitle": "政策變更",
     "changesText": "我們可能會不時更新本隱私權政策。變更將透過更新上方的「最後更新」日期來體現。在變更後繼續使用本應用程式即表示接受更新後的政策。",
     "contactTitle": "聯絡我們",
-    "contactText": "如果你對本隱私權政策有任何疑問或顧慮，請聯繫Klosyt <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>。"
+    "contactText": "如果你對本隱私權政策有任何疑問或顧慮，請聯繫Klosyt <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。"
   },
   "terms": {
     "title": "使用條款（EULA）",
@@ -241,7 +241,7 @@
     "ts8Answer": "點擊一個物品 → 詳情檢視 → 刪除按鈕。刪除的物品會在垃圾桶中保留30天，可以還原。從設定中存取垃圾桶。",
     "contactTitle": "還需要幫助嗎？",
     "contactDesc": "我們隨時為你提供幫助。聯繫我們：",
-    "contactEmail": "support@Klosyt.com"
+    "contactEmail": "support@klosyt.com"
   },
   "index": {
     "languagesTitle": "提供16種語言"
