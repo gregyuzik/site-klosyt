@@ -47,6 +47,7 @@ body{
 .mesh-bg{
     position:fixed;inset:0;z-index:0;overflow:hidden;
     background:#050508;
+    background-size:cover;background-position:center;
 }
 
 .mesh-orb{
