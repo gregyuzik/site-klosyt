@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Swedish",
     "langNameNative": "Svenska",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Byt språk"
   },
   "nav": {
     "features": "Funktioner",
@@ -42,6 +43,10 @@
     "filtersTitle": "Smarta filter",
     "filtersDesc": "Hitta alla plagg efter säsong, färg, kategori, material eller mönster på sekunder."
   },
+  "whyKlosyt": {
+    "title": "Din garderob,<br>nytänkt",
+    "desc": "Klosyt är den AI-drivna garderobsorganisatören och outfitplaneraren som hjälper dig att få ut det mesta av varje plagg du äger. Oavsett om du väljer morgondagens outfit eller bygger den perfekta kapselgarderoben, förvandlar Klosyts on-device-intelligens din garderob till ett smart, hållbart stilsystem — helt privat, alltid synkroniserat på alla dina Apple-enheter."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/månad",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Integritetspolicy",
-    "lastUpdated": "Senast uppdaterad: 13 mars 2026",
+    "lastUpdated": "Senast uppdaterad: 9 april 2026",
     "promiseTitle": "Vårt integritetsåfte",
     "promiseOwner": "Klosyt ägs, drivs och underhålls av Gregory Yuzik (\"vi\").",
     "promiseText": "Din integritet är inte bara en funktion i Klosyt — den är grunden. <strong>Vi samlar inte in, lagrar, överför eller har åtkomst till någon av dina personuppgifter. Punkt.</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>Rätt att invända</strong> — Eftersom vi inte utför någon bearbetning av dina data finns det inget att invända mot.",
     "internationalGdpr": "För användare inom Europeiska ekonomiska samarbetsområdet (EES) garanteras dessa rättigheter av dataskyddsförordningen (GDPR). För användare i Brasilien tillhandahålls dessa rättigheter av Lei Geral de Proteção de Dados (LGPD). Eftersom Klosyt inte samlar in personuppgifter behövs inget personuppgiftsbiträdesavtal eller rättslig grund för bearbetning.",
     "internationalDpo": "För integritetsrelaterade förfrågningar, kontakta oss på <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
+    "websiteAnalyticsTitle": "Webbplatsanalys",
+    "websiteAnalyticsText": "Denna webbplats (klosyt.com) använder Google Analytics för att samla in anonym användningsdata som sidvisningar, hänvisningskällor och allmän geografisk region. Dessa data hjälper oss att förstå hur besökare hittar och använder vår webbplats. Google Analytics kan använda cookies och samlar in information i enlighet med <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Googles integritetspolicy</a>. Denna spårning gäller bara för webbplatsen — själva Klosyt-appen innehåller ingen analys eller spårning av något slag.",
     "changesTitle": "Ändringar av denna policy",
     "changesText": "Vi kan uppdatera denna integritetspolicy från tid till annan. Ändringar kommer att återspeglas genom att uppdatera datumet \"Senast uppdaterad\" ovan. Fortsatt användning av appen efter ändringar utgör godkännande av den uppdaterade policyn.",
     "contactTitle": "Kontakta oss",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "Användarvillkor (EULA)",
-    "lastUpdated": "Senast uppdaterad: 13 mars 2026",
+    "lastUpdated": "Senast uppdaterad: 9 april 2026",
     "acceptanceTitle": "Godkännande av villkor",
     "acceptanceText": "Genom att ladda ner, installera eller använda Klosyt (\"Appen\") godkänner du att du binds av dessa villkor. Om du inte godkänner, använd inte Appen.",
     "serviceTitle": "Tjänstebeskrivning",

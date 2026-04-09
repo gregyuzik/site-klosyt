@@ -57,7 +57,7 @@
                 if (lang.includes('TW') || lang.includes('HK') || lang.includes('Hant')) return 'zh-Hant';
                 return 'zh-Hans';
             }
-            if (lang.startsWith('pt') && lang.includes('BR')) return 'pt-BR';
+            if (lang.startsWith('pt')) return 'pt-BR';
             if (lang.startsWith('nb') || lang.startsWith('no')) return 'nb';
             // Base language match
             const base = lang.split('-')[0];
@@ -90,6 +90,12 @@
     }
 
     function applyTranslations() {
+        // Announce content change to screen readers
+        var mainContent = document.querySelector('main') || document.querySelector('#main');
+        if (mainContent && !mainContent.hasAttribute('aria-live')) {
+            mainContent.setAttribute('aria-live', 'polite');
+        }
+
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             const value = getNestedValue(currentTranslations, key)
@@ -151,10 +157,13 @@
 
         const btn = document.createElement('button');
         btn.className = 'lang-btn';
-        btn.title = 'Change language';
+        var changeLangLabel = getNestedValue(currentTranslations, 'meta.changeLanguage')
+            || getNestedValue(fallbackTranslations, 'meta.changeLanguage')
+            || 'Change language';
+        btn.title = changeLangLabel;
         btn.setAttribute('aria-expanded', 'false');
         btn.setAttribute('aria-haspopup', 'true');
-        btn.setAttribute('aria-label', 'Change language');
+        btn.setAttribute('aria-label', changeLangLabel);
         btn.innerHTML = '<span class="lang-icon"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" aria-hidden="true"><defs><linearGradient id="iglobe" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#007aff"/><stop offset="100%" stop-color="#5ac8fa"/></linearGradient></defs><circle cx="128" cy="128" r="96" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,128c0,64-40,96-40,96s-40-32-40-96,40-96,40-96S168,64,168,128Z" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="96" x2="218.54" y2="96" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="160" x2="218.54" y2="160" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span id="lang-label" class="lang-label-text"></span>';
         btn.addEventListener('click', (e) => {
             e.stopPropagation();

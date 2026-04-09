@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Turkish",
     "langNameNative": "Türkçe",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Dili değiştir"
   },
   "nav": {
     "features": "Özellikler",
@@ -42,6 +43,10 @@
     "filtersTitle": "Akıllı Filtreler",
     "filtersDesc": "Herhangi bir kıyafeti mevsim, renk, kategori, kumaş veya desene göre saniyeler içinde bul."
   },
+  "whyKlosyt": {
+    "title": "Gardırobun,<br>yeniden hayal edildi",
+    "desc": "Klosyt, sahip olduğun her parçadan en iyi şekilde yararlanmanı sağlayan yapay zeka destekli gardırop düzenleyici ve kombin planlayıcıdır. İster yarınki kıyafetini seçiyor ol, ister mükemmel kapsül gardırobu oluşturuyor ol — Klosyt'un cihaz üzerindeki zekası dolabını akıllı, sürdürülebilir bir stil sistemine dönüştürür — tamamen gizli, tüm Apple cihazlarında her zaman senkronize."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/ay",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Gizlilik Politikası",
-    "lastUpdated": "Son güncelleme: 13 Mart 2026",
+    "lastUpdated": "Son güncelleme: 9 Nisan 2026",
     "promiseTitle": "Gizlilik Sözümüz",
     "promiseOwner": "Klosyt, Gregory Yuzik (\"biz\") tarafından sahiplenilip, işletilip ve sürdürülmektedir.",
     "promiseText": "Gizliliğin Klosyt'un sadece bir özelliği değil — temelidir. <strong>Kişisel verilerinizi asla toplamaz, saklamaz, iletmez veya erişmeyiz. Nokta.</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>İtiraz Hakkı</strong> — Verileriniz üzerinde herhangi bir işlem yapmadığımız için itiraz edilecek bir şey yoktur.",
     "internationalGdpr": "Avrupa Ekonomik Alanı'ndaki (AEA) kullanıcılar için bu haklar Genel Veri Koruma Tüzüğü (GDPR) tarafından garanti edilir. Brezilya'daki kullanıcılar için bu haklar Lei Geral de Proteção de Dados (LGPD) tarafından sağlanır. Klosyt kişisel veri toplamadığı için veri işleme anlaşması veya işleme için yasal dayanak gerekmez.",
     "internationalDpo": "Gizlilikle ilgili sorularınız için <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a> adresinden bize ulaşın.",
+    "websiteAnalyticsTitle": "Web Sitesi Analitiği",
+    "websiteAnalyticsText": "Bu web sitesi (klosyt.com), sayfa görüntülemeleri, yönlendirme kaynakları ve genel coğrafi bölge gibi anonim kullanım verilerini toplamak için Google Analytics kullanmaktadır. Bu veriler, ziyaretçilerin web sitemizi nasıl bulduğunu ve kullandığını anlamamıza yardımcı olur. Google Analytics çerezler kullanabilir ve <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google'ın Gizlilik Politikası</a>'na uygun olarak bilgi toplar. Bu takip yalnızca web sitesi için geçerlidir — Klosyt uygulamasının kendisi hiçbir analitik veya takip içermemektedir.",
     "changesTitle": "Politika Değişiklikleri",
     "changesText": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler yukarıdaki \"Son güncelleme\" tarihinin güncellenmesiyle yansıtılacaktır. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz güncellenen politikanın kabulünü oluşturur.",
     "contactTitle": "Bize Ulaşın",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "Kullanım Koşulları (EULA)",
-    "lastUpdated": "Son güncelleme: 13 Mart 2026",
+    "lastUpdated": "Son güncelleme: 9 Nisan 2026",
     "acceptanceTitle": "Koşulların Kabulü",
     "acceptanceText": "Klosyt'u (\"Uygulama\") indirerek, kurarak veya kullanarak bu Koşullarla bağlı olmayı kabul edersiniz. Kabul etmiyorsanız, Uygulamayı kullanmayın.",
     "serviceTitle": "Hizmet Açıklaması",

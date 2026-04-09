@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Vietnamese",
     "langNameNative": "Tiếng Việt",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Đổi ngôn ngữ"
   },
   "nav": {
     "features": "Tính năng",
@@ -42,6 +43,10 @@
     "filtersTitle": "Bộ lọc thông minh",
     "filtersDesc": "Tìm bất kỳ món đồ nào theo mùa, màu sắc, danh mục, chất liệu hoặc họa tiết trong vài giây."
   },
+  "whyKlosyt": {
+    "title": "Tủ đồ của bạn,<br>được tái tưởng tượng",
+    "desc": "Klosyt là ứng dụng sắp xếp tủ đồ và lên kế hoạch trang phục được hỗ trợ bởi AI, giúp bạn tận dụng tối đa mọi món đồ. Dù bạn đang chọn trang phục cho ngày mai hay xây dựng tủ đồ viên nang hoàn hảo, trí tuệ trên thiết bị của Klosyt biến tủ đồ thành hệ thống phong cách thông minh, bền vững — hoàn toàn riêng tư, luôn đồng bộ trên mọi thiết bị Apple."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/tháng",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Chính sách quyền riêng tư",
-    "lastUpdated": "Cập nhật lần cuối: 13 tháng 3 năm 2026",
+    "lastUpdated": "Cập nhật lần cuối: 9 tháng 4, 2026",
     "promiseTitle": "Cam kết quyền riêng tư của chúng tôi",
     "promiseOwner": "Klosyt được sở hữu, vận hành và duy trì bởi Gregory Yuzik (\"chúng tôi\").",
     "promiseText": "Quyền riêng tư của bạn không chỉ là một tính năng của Klosyt — đó là nền tảng. <strong>Chúng tôi không thu thập, lưu trữ, truyền tải hoặc truy cập bất kỳ dữ liệu cá nhân nào của bạn. Chấm hết.</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>Quyền phản đối</strong> — Vì chúng tôi không thực hiện bất kỳ xử lý nào đối với dữ liệu của bạn, không có gì để phản đối.",
     "internationalGdpr": "Đối với người dùng trong Khu vực Kinh tế Châu Âu (EEA), các quyền này được đảm bảo bởi Quy định Bảo vệ Dữ liệu Chung (GDPR). Đối với người dùng tại Brazil, các quyền này được quy định bởi Lei Geral de Proteção de Dados (LGPD). Vì Klosyt không thu thập dữ liệu cá nhân, không cần thỏa thuận xử lý dữ liệu hoặc cơ sở pháp lý cho xử lý.",
     "internationalDpo": "Để hỏi về quyền riêng tư, liên hệ tại <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
+    "websiteAnalyticsTitle": "Phân tích trang web",
+    "websiteAnalyticsText": "Trang web này (klosyt.com) sử dụng Google Analytics để thu thập dữ liệu sử dụng ẩn danh như lượt xem trang, nguồn giới thiệu và khu vực địa lý chung. Dữ liệu này giúp chúng tôi hiểu cách khách truy cập tìm và sử dụng trang web. Google Analytics có thể sử dụng cookie và thu thập thông tin theo <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Chính sách quyền riêng tư của Google</a>. Việc theo dõi này chỉ áp dụng cho trang web — ứng dụng Klosyt không chứa bất kỳ phân tích hoặc theo dõi nào.",
     "changesTitle": "Thay đổi chính sách",
     "changesText": "Chúng tôi có thể cập nhật Chính sách quyền riêng tư này theo thời gian. Các thay đổi sẽ được phản ánh bằng cách cập nhật ngày \"Cập nhật lần cuối\" ở trên. Việc tiếp tục sử dụng ứng dụng sau các thay đổi đồng nghĩa với việc chấp nhận chính sách cập nhật.",
     "contactTitle": "Liên hệ với chúng tôi",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "Điều khoản sử dụng (EULA)",
-    "lastUpdated": "Cập nhật lần cuối: 13 tháng 3 năm 2026",
+    "lastUpdated": "Cập nhật lần cuối: 9 tháng 4, 2026",
     "acceptanceTitle": "Chấp nhận điều khoản",
     "acceptanceText": "Bằng việc tải xuống, cài đặt hoặc sử dụng Klosyt (\"Ứng dụng\"), bạn đồng ý bị ràng buộc bởi các Điều khoản này. Nếu không đồng ý, đừng sử dụng Ứng dụng.",
     "serviceTitle": "Mô tả dịch vụ",

@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Spanish",
     "langNameNative": "Español",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Cambiar idioma"
   },
   "nav": {
     "features": "Funciones",
@@ -42,6 +43,10 @@
     "filtersTitle": "Filtros inteligentes",
     "filtersDesc": "Encuentra cualquier prenda por temporada, color, categoría, material o patrón en segundos."
   },
+  "whyKlosyt": {
+    "title": "Tu armario,<br>reimaginado",
+    "desc": "Klosyt es el organizador de armario y planificador de outfits con IA que te ayuda a sacar el máximo provecho de cada prenda que tienes. Ya sea que estés eligiendo el outfit de mañana o construyendo el armario cápsula perfecto, la inteligencia en el dispositivo de Klosyt convierte tu clóset en un sistema de estilo inteligente y sostenible — completamente privado, siempre sincronizado en todos tus dispositivos Apple."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/mes",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Política de privacidad",
-    "lastUpdated": "Última actualización: 13 de marzo de 2026",
+    "lastUpdated": "Última actualización: 9 de abril de 2026",
     "promiseTitle": "Nuestra promesa de privacidad",
     "promiseOwner": "Klosyt es propiedad, está operado y es mantenido por Gregory Yuzik (\"nosotros\").",
     "promiseText": "Tu privacidad no es solo una función de Klosyt — es la base. <strong>No recopilamos, almacenamos, transmitimos ni accedemos a ninguno de tus datos personales. Punto.</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>Derecho de oposición</strong> — Como no realizamos ningún procesamiento de tus datos, no hay nada a lo que oponerse.",
     "internationalGdpr": "Para usuarios en el Espacio Económico Europeo (EEE), estos derechos están garantizados por el Reglamento General de Protección de Datos (RGPD). Para usuarios en Brasil, estos derechos están previstos por la Lei Geral de Proteção de Dados (LGPD). Dado que Klosyt no recopila datos personales, no se requiere acuerdo de procesamiento de datos ni base legal para el procesamiento.",
     "internationalDpo": "Para consultas relacionadas con la privacidad, contáctanos en <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
+    "websiteAnalyticsTitle": "Análisis del sitio web",
+    "websiteAnalyticsText": "Este sitio web (klosyt.com) utiliza Google Analytics para recopilar datos de uso anónimos como páginas vistas, fuentes de referencia y región geográfica general. Estos datos nos ayudan a entender cómo los visitantes encuentran y usan nuestro sitio web. Google Analytics puede usar cookies y recopila información de acuerdo con la <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Política de privacidad de Google</a>. Este seguimiento se aplica solo al sitio web — la app Klosyt en sí no contiene ningún tipo de análisis ni seguimiento.",
     "changesTitle": "Cambios a esta política",
     "changesText": "Podemos actualizar esta Política de Privacidad de vez en cuando. Los cambios se reflejarán actualizando la fecha de \"Última actualización\" arriba. El uso continuado de la app después de los cambios constituye la aceptación de la política actualizada.",
     "contactTitle": "Contáctanos",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "Términos de uso (EULA)",
-    "lastUpdated": "Última actualización: 13 de marzo de 2026",
+    "lastUpdated": "Última actualización: 9 de abril de 2026",
     "acceptanceTitle": "Aceptación de los términos",
     "acceptanceText": "Al descargar, instalar o usar Klosyt (\"la App\"), aceptas quedar vinculado por estos Términos. Si no estás de acuerdo, no uses la App.",
     "serviceTitle": "Descripción del servicio",

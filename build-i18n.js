@@ -147,6 +147,14 @@ function updateMeta(html, locale, page, translations, fallback) {
         /<meta property="og:description" content="[^"]*"/,
         `<meta property="og:description" content="${escAttr(descText)}"`
     );
+    html = html.replace(
+        /<meta name="twitter:title" content="[^"]*"/,
+        `<meta name="twitter:title" content="${escAttr(pageTitle)}"`
+    );
+    html = html.replace(
+        /<meta name="twitter:description" content="[^"]*"/,
+        `<meta name="twitter:description" content="${escAttr(descText)}"`
+    );
 
     return html;
 }
