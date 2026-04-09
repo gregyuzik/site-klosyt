@@ -33,11 +33,18 @@
     let currentTranslations = {};
     let fallbackTranslations = {};
 
+    function safeStorage(method, key, value) {
+        try {
+            if (method === 'get') return localStorage.getItem(key);
+            if (method === 'set') localStorage.setItem(key, value);
+        } catch (e) { return null; }
+    }
+
     /* ───── Language detection ───── */
 
     function detectLanguage() {
         // 1. User's explicit choice
-        const saved = localStorage.getItem(STORAGE_KEY);
+        const saved = safeStorage('get', STORAGE_KEY);
         if (saved && SUPPORTED_LOCALES.includes(saved)) return saved;
 
         // 2. Browser language
@@ -103,7 +110,7 @@
         });
 
         // Update <html lang="...">
-        const langCode = localStorage.getItem(STORAGE_KEY) || 'en';
+        const langCode = safeStorage('get', STORAGE_KEY) || 'en';
         document.documentElement.lang = langCode;
 
         // Update language switcher label
@@ -127,7 +134,7 @@
 
     async function setLanguage(locale) {
         if (!SUPPORTED_LOCALES.includes(locale)) locale = 'en';
-        localStorage.setItem(STORAGE_KEY, locale);
+        safeStorage('set', STORAGE_KEY, locale);
 
         currentTranslations = await loadTranslations(locale);
         applyTranslations();
@@ -142,28 +149,34 @@
         const wrapper = document.createElement('div');
         wrapper.className = 'lang-switcher';
 
-        const btn = document.createElement('a');
-        btn.href = 'javascript:void(0)';
+        const btn = document.createElement('button');
         btn.className = 'lang-btn';
         btn.title = 'Change language';
-        btn.innerHTML = '<span class="lang-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><defs><linearGradient id="iglobe" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#007aff"/><stop offset="100%" stop-color="#5ac8fa"/></linearGradient></defs><path fill="url(#iglobe)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span><span id="lang-label" class="lang-label-text"></span>';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-haspopup', 'true');
+        btn.setAttribute('aria-label', 'Change language');
+        btn.innerHTML = '<span class="lang-icon"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" aria-hidden="true"><defs><linearGradient id="iglobe" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#007aff"/><stop offset="100%" stop-color="#5ac8fa"/></linearGradient></defs><circle cx="128" cy="128" r="96" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,128c0,64-40,96-40,96s-40-32-40-96,40-96,40-96S168,64,168,128Z" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="96" x2="218.54" y2="96" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="160" x2="218.54" y2="160" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span id="lang-label" class="lang-label-text"></span>';
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
-            wrapper.classList.toggle('open');
+            var isOpen = wrapper.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
         });
 
         const dropdown = document.createElement('div');
         dropdown.className = 'lang-dropdown';
+        dropdown.setAttribute('role', 'menu');
 
         for (const locale of SUPPORTED_LOCALES) {
             const item = document.createElement('button');
             item.className = 'lang-option';
+            item.setAttribute('role', 'menuitem');
             item.dataset.lang = locale;
             item.textContent = LOCALE_LABELS[locale];
             item.addEventListener('click', (e) => {
                 e.stopPropagation();
                 setLanguage(locale);
                 wrapper.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
             });
             dropdown.appendChild(item);
         }
@@ -175,6 +188,7 @@
         // Close dropdown when clicking outside
         document.addEventListener('click', () => {
             wrapper.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
         });
     }
 
@@ -185,7 +199,7 @@
         fallbackTranslations = await loadTranslations('en');
 
         const lang = detectLanguage();
-        localStorage.setItem(STORAGE_KEY, lang);
+        safeStorage('set', STORAGE_KEY, lang);
 
         if (lang !== 'en') {
             currentTranslations = await loadTranslations(lang);
