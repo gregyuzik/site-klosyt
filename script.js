@@ -53,6 +53,11 @@ function updateThemePill(pill, theme) {
     pill.appendChild(nameSpan);
 }
 
+function updateWallpaper(asset) {
+    const bg = document.querySelector('.mesh-bg');
+    if (bg) bg.style.backgroundImage = "url('/assets/" + asset + "')";
+}
+
 function updateMeshColors(theme) {
     const orbs = document.querySelectorAll('.mesh-orb');
     if (orbs.length < 3) return;
@@ -77,6 +82,7 @@ function setTheme(asset) {
     const short = asset.replace('wallpaper_', '').replace('.webp', '');
     safeStorage('set', 'klosyt_theme', short);
 
+    updateWallpaper(theme.asset);
     updateIcons(theme.icon);
     updateMeshColors(theme);
 
@@ -132,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         : 'wallpaper_redvelvet.webp';
 
     const theme = getTheme(wp);
+    updateWallpaper(theme.asset);
     updateIcons(theme.icon);
     updateMeshColors(theme);
 
