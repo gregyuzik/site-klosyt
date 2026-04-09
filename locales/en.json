@@ -2,7 +2,8 @@
   "meta": {
     "langName": "English",
     "langNameNative": "English",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Change language"
   },
   "nav": {
     "features": "Features",

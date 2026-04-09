@@ -87,11 +87,11 @@ body{
     display:inline-flex;align-items:center;gap:4px;
     padding:0;border-radius:100px;border:none;
     background:none;
-    text-decoration:none!important;color:var(--text-2)!important;
+    text-decoration:none;color:var(--text-2);
     font-size:.85rem;cursor:pointer;transition:opacity .2s;
     white-space:nowrap;height:22px;
 }
-.lang-btn:hover{opacity:.7;color:var(--text-1)!important}
+.lang-btn:hover{opacity:.7;color:var(--text-1)}
 .lang-icon{display:inline-flex;align-items:center}
 .lang-icon svg{width:22px;height:22px}
 .lang-label-text{display:none}
@@ -570,8 +570,8 @@ body{
     .lang-row span{background:rgba(255,255,255,.45);border:1px solid rgba(0,0,0,.06)}
     .lang-row span:hover{background:rgba(255,255,255,.65)}
 
-    .lang-btn{background:none;color:var(--text-2)!important}
-    .lang-btn:hover{opacity:.7;color:var(--text-1)!important}
+    .lang-btn{background:none;color:var(--text-2)}
+    .lang-btn:hover{opacity:.7;color:var(--text-1)}
     .lang-dropdown{
         background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.08);
         box-shadow:0 16px 48px rgba(0,0,0,.1);

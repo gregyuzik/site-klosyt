@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Dutch",
     "langNameNative": "Nederlands",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Taal wijzigen"
   },
   "nav": {
     "features": "Functies",
@@ -42,6 +43,10 @@
     "filtersTitle": "Slimme filters",
     "filtersDesc": "Vind elk item op seizoen, kleur, categorie, materiaal of patroon in seconden."
   },
+  "whyKlosyt": {
+    "title": "Je kledingkast,<br>opnieuw bedacht",
+    "desc": "Klosyt is de AI-aangedreven kledingkastorganisator en outfitplanner die je helpt het maximale uit elk kledingstuk te halen. Of je nu de outfit van morgen kiest of de perfecte capsulegarderobe samenstelt, Klosyts on-device intelligentie verandert je kledingkast in een slim, duurzaam stijlsysteem — volledig privé, altijd gesynchroniseerd op al je Apple-apparaten."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/maand",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Privacybeleid",
-    "lastUpdated": "Laatst bijgewerkt: 13 maart 2026",
+    "lastUpdated": "Laatst bijgewerkt: 9 april 2026",
     "promiseTitle": "Onze privacybelofte",
     "promiseOwner": "Klosyt is eigendom van, wordt geëxploiteerd en onderhouden door Gregory Yuzik (\"wij\").",
     "promiseText": "Je privacy is niet zomaar een functie van Klosyt — het is de basis. <strong>Wij verzamelen, bewaren, verzenden of openen geen enkele van je persoonlijke gegevens. Punt.</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>Recht van bezwaar</strong> — Aangezien we geen verwerking van je gegevens uitvoeren, is er niets om bezwaar tegen te maken.",
     "internationalGdpr": "Voor gebruikers in de Europese Economische Ruimte (EER) worden deze rechten gegarandeerd door de Algemene Verordening Gegevensbescherming (AVG). Voor gebruikers in Brazilië worden deze rechten geboden door de Lei Geral de Proteção de Dados (LGPD). Aangezien Klosyt geen persoonsgegevens verzamelt, is er geen gegevensverwerkingsovereenkomst of rechtsgrondslag voor verwerking nodig.",
     "internationalDpo": "Voor privacy-gerelateerde vragen, neem contact met ons op via <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
+    "websiteAnalyticsTitle": "Website-analyse",
+    "websiteAnalyticsText": "Deze website (klosyt.com) gebruikt Google Analytics om anonieme gebruiksgegevens te verzamelen, zoals paginaweergaven, verwijzingsbronnen en algemene geografische regio. Deze gegevens helpen ons te begrijpen hoe bezoekers onze website vinden en gebruiken. Google Analytics kan cookies gebruiken en verzamelt informatie in overeenstemming met het <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">privacybeleid van Google</a>. Deze tracking geldt alleen voor de website — de Klosyt-app zelf bevat geen analyse of tracking van welke aard dan ook.",
     "changesTitle": "Wijzigingen in dit beleid",
     "changesText": "We kunnen dit privacybeleid van tijd tot tijd bijwerken. Wijzigingen worden weergegeven door het bijwerken van de datum \"Laatst bijgewerkt\" hierboven. Voortgezet gebruik van de app na wijzigingen vormt aanvaarding van het bijgewerkte beleid.",
     "contactTitle": "Neem contact op",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "Gebruiksvoorwaarden (EULA)",
-    "lastUpdated": "Laatst bijgewerkt: 13 maart 2026",
+    "lastUpdated": "Laatst bijgewerkt: 9 april 2026",
     "acceptanceTitle": "Aanvaarding van voorwaarden",
     "acceptanceText": "Door het downloaden, installeren of gebruiken van Klosyt (\"de App\") ga je akkoord met deze Voorwaarden. Als je niet akkoord gaat, gebruik de App dan niet.",
     "serviceTitle": "Dienstbeschrijving",

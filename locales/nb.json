@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Norwegian Bokmål",
     "langNameNative": "Norsk Bokmål",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Bytt språk"
   },
   "nav": {
     "features": "Funksjoner",
@@ -42,6 +43,10 @@
     "filtersTitle": "Smarte filtre",
     "filtersDesc": "Finn ethvert plagg etter sesong, farge, kategori, materiale eller mønster på sekunder."
   },
+  "whyKlosyt": {
+    "title": "Garderoben din,<br>nytenkt",
+    "desc": "Klosyt er den AI-drevne garderobeorganisatoren og antrekksplanleggeren som hjelper deg å få mest mulig ut av hvert plagg du eier. Enten du velger morgendagens antrekk eller bygger den perfekte kapselgarderoben, gjør Klosyts intelligens på enheten klesskapet ditt om til et smart, bærekraftig stilsystem — helt privat, alltid synkronisert på tvers av alle Apple-enhetene dine."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/måned",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Personvernerklæring",
-    "lastUpdated": "Sist oppdatert: 13. mars 2026",
+    "lastUpdated": "Sist oppdatert: 9. april 2026",
     "promiseTitle": "Vårt personvernløfte",
     "promiseOwner": "Klosyt eies, drives og vedlikeholdes av Gregory Yuzik (\"vi\").",
     "promiseText": "Ditt personvern er ikke bare en funksjon i Klosyt — det er grunnlaget. <strong>Vi samler ikke inn, lagrer, overfører eller har tilgang til noen av dine personlige data. Punktum.</strong>",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>Rett til å protestere</strong> — Siden vi ikke utfører noen behandling av dataene dine, er det ingenting å protestere mot.",
     "internationalGdpr": "For brukere i Det europeiske økonomiske samarbeidsområdet (EØS) er disse rettighetene garantert av den generelle personvernforordningen (GDPR). For brukere i Brasil er disse rettighetene gitt av Lei Geral de Proteção de Dados (LGPD). Siden Klosyt ikke samler inn personlige data, er det ikke behov for databehandlingsavtaler eller rettslig grunnlag for behandling.",
     "internationalDpo": "For personvernrelaterte henvendelser, kontakt oss på <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
+    "websiteAnalyticsTitle": "Nettstedsanalyse",
+    "websiteAnalyticsText": "Denne nettsiden (klosyt.com) bruker Google Analytics til å samle inn anonyme bruksdata som sidevisninger, henvisningskilder og generell geografisk region. Disse dataene hjelper oss å forstå hvordan besøkende finner og bruker nettsiden vår. Google Analytics kan bruke informasjonskapsler og samler inn informasjon i samsvar med <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Googles personvernerklæring</a>. Denne sporingen gjelder kun for nettsiden — selve Klosyt-appen inneholder ingen analyse eller sporing av noe slag.",
     "changesTitle": "Endringer i denne erklæringen",
     "changesText": "Vi kan oppdatere denne personvernerklæringen fra tid til annen. Endringer vil gjenspeiles ved å oppdatere datoen \"Sist oppdatert\" ovenfor. Fortsatt bruk av appen etter endringer utgjør aksept av den oppdaterte erklæringen.",
     "contactTitle": "Kontakt oss",
@@ -131,7 +138,7 @@
   },
   "terms": {
     "title": "Bruksvilkår (EULA)",
-    "lastUpdated": "Sist oppdatert: 13. mars 2026",
+    "lastUpdated": "Sist oppdatert: 9. april 2026",
     "acceptanceTitle": "Aksept av vilkår",
     "acceptanceText": "Ved å laste ned, installere eller bruke Klosyt (\"Appen\") aksepterer du å være bundet av disse vilkårene. Hvis du ikke er enig, ikke bruk Appen.",
     "serviceTitle": "Tjenestebeskrivelse",

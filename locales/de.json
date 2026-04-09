@@ -2,7 +2,8 @@
   "meta": {
     "langName": "German",
     "langNameNative": "Deutsch",
-    "dir": "ltr"
+    "dir": "ltr",
+    "changeLanguage": "Sprache ändern"
   },
   "nav": {
     "features": "Funktionen",
@@ -42,6 +43,10 @@
     "filtersTitle": "Intelligente Filter",
     "filtersDesc": "Finde jedes Teil nach Saison, Farbe, Kategorie, Material oder Muster in Sekunden."
   },
+  "whyKlosyt": {
+    "title": "Dein Kleiderschrank,<br>neu gedacht",
+    "desc": "Klosyt ist der KI-gesteuerte Kleiderschrank-Organizer und Outfit-Planer, der dir hilft, das Beste aus jedem Teil zu machen, das du besitzt. Ob du das Outfit für morgen aussuchst oder die perfekte Capsule Wardrobe zusammenstellst — Klosyts On-Device-Intelligenz verwandelt deinen Kleiderschrank in ein smartes, nachhaltiges Stilsystem — komplett privat, immer synchron auf all deinen Apple-Geräten."
+  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/Monat",
@@ -71,7 +76,7 @@
   },
   "privacy": {
     "title": "Datenschutzrichtlinie",
-    "lastUpdated": "Zuletzt aktualisiert: 13. März 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 9. April 2026",
     "promiseTitle": "Unser Datenschutzversprechen",
     "promiseOwner": "Klosyt wird von Gregory Yuzik (\"wir\") besessen, betrieben und gewartet.",
     "promiseText": "Deine Privatsphäre ist nicht nur ein Feature von Klosyt — sie ist das Fundament. <strong>Wir sammeln, speichern, übertragen oder greifen auf keine deiner persönlichen Daten zu. Punkt.</strong>",
@@ -86,7 +91,7 @@
     "tablePhotosDetail": "Ausschließlich auf deinem Gerät und in deinem persönlichen iCloud-Konto gespeichert. Wir empfangen oder greifen niemals darauf zu.",
     "tableLocation": "Standort",
     "tableLocationDetail": "Wetterfunktionen nutzen Apples WeatherKit, das den Standort vollständig auf Apples Servern verarbeitet. Dein Standort wird niemals an uns gesendet.",
-    "tableWardrobe": "Kleiderschrankndaten",
+    "tableWardrobe": "Kleiderschrankdaten",
     "tableWardrobeDetail": "Kleidungsstücke, Outfits, Kalendereinträge und Einstellungen verbleiben auf deinem Gerät und in deinem persönlichen iCloud-Konto.",
     "tableNames": "Namen oder E-Mails",
     "tableNamesDetail": "Wir sammeln keine personenbezogenen Daten.",
@@ -124,6 +129,8 @@
     "internationalObjection": "<strong>Widerspruchsrecht</strong> — Da wir keine Verarbeitung deiner Daten durchführen, gibt es nichts, wogegen du Widerspruch einlegen könntest.",
     "internationalGdpr": "Für Nutzer im Europäischen Wirtschaftsraum (EWR) werden diese Rechte durch die Datenschutz-Grundverordnung (DSGVO) garantiert. Für Nutzer in Brasilien werden diese Rechte durch die Lei Geral de Proteção de Dados (LGPD) bereitgestellt. Da Klosyt keine personenbezogenen Daten sammelt, ist weder ein Datenverarbeitungsvertrag noch eine Rechtsgrundlage für die Verarbeitung erforderlich.",
     "internationalDpo": "Bei Fragen zum Datenschutz kontaktiere uns unter <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
+    "websiteAnalyticsTitle": "Website-Analyse",
+    "websiteAnalyticsText": "Diese Website (klosyt.com) verwendet Google Analytics, um anonyme Nutzungsdaten wie Seitenaufrufe, Verweisquellen und allgemeine geografische Region zu erfassen. Diese Daten helfen uns zu verstehen, wie Besucher unsere Website finden und nutzen. Google Analytics kann Cookies verwenden und erhebt Informationen gemäß der <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Datenschutzrichtlinie von Google</a>. Dieses Tracking gilt nur für die Website — die Klosyt-App selbst enthält keinerlei Analyse oder Tracking.",
     "changesTitle": "Änderungen dieser Richtlinie",
     "changesText": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden durch Aktualisierung des Datums \"Zuletzt aktualisiert\" oben angezeigt. Die fortgesetzte Nutzung der App nach Änderungen stellt die Annahme der aktualisierten Richtlinie dar.",
     "contactTitle": "Kontaktiere uns",
@@ -131,14 +138,14 @@
   },
   "terms": {
     "title": "Nutzungsbedingungen (EULA)",
-    "lastUpdated": "Zuletzt aktualisiert: 13. März 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 9. April 2026",
     "acceptanceTitle": "Annahme der Bedingungen",
     "acceptanceText": "Durch das Herunterladen, Installieren oder Nutzen von Klosyt (\"die App\") stimmst du diesen Nutzungsbedingungen zu. Wenn du nicht zustimmst, nutze die App nicht.",
     "serviceTitle": "Dienstbeschreibung",
     "serviceText": "Klosyt ist eine Kleiderschrank-Verwaltungsanwendung für iOS, macOS, tvOS und visionOS. Sie ermöglicht das Katalogisieren von Kleidungsstücken, Erstellen von Outfits, Empfangen wetterbasierter Vorschläge und Planen von Outfits.",
     "serviceAiText": "Klosyts KI-Stylist verwendet Echtzeit-Wetterdaten von Apple WeatherKit, um personalisierte Outfit-Vorschläge zu erstellen. Bei einer Anfrage analysiert die KI aktuelle und vorhergesagte Wetterbedingungen — wie Temperatur, Niederschlag und Wind — zusammen mit deiner Kleiderschrank, um passende Kleidung zu empfehlen. Die gesamte KI-Verarbeitung findet auf dem Gerät statt; Wetterdaten werden von Apples Servern abgerufen und nie an uns oder Dritte gesendet.",
     "privacyTitle": "Deine Privatsphäre kommt zuerst",
-    "privacyText": "Wir glauben, dass deine persönlichen Daten dir gehören und nur dir. Klosyt ist so konzipiert, dass <strong>wir niemals deine persönlichen Informationen sammeln, darauf zugreifen oder sie speichern.</strong> Deine Fotos, Kleiderschrankndaten und Einstellungen verbleiben ausschließlich auf deinem Gerät und in deinem persönlichen iCloud-Konto.",
+    "privacyText": "Wir glauben, dass deine persönlichen Daten dir gehören und nur dir. Klosyt ist so konzipiert, dass <strong>wir niemals deine persönlichen Informationen sammeln, darauf zugreifen oder sie speichern.</strong> Deine Fotos, Kleiderschrankdaten und Einstellungen verbleiben ausschließlich auf deinem Gerät und in deinem persönlichen iCloud-Konto.",
     "ownershipTitle": "Dein Inhalt, dein Eigentum",
     "ownershipText": "Alles, was du in Klosyt erstellst — Fotos, Kleidungsstücke, Outfits, Einstellungen und alle anderen Inhalte — <strong>gehört vollständig dir.</strong> Deine Daten sind auf deinem Gerät und in deinem persönlichen iCloud-Konto gespeichert. Wir greifen nicht darauf zu, sammeln sie nicht und beanspruchen keine Rechte an deinen Inhalten. Wenn du die App löschst, werden deine lokalen Daten mit ihr gelöscht; deine iCloud-Daten können über deine Apple-ID-Einstellungen verwaltet werden.",
     "subscriptionsTitle": "Abonnements",
