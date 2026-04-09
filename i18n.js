@@ -122,16 +122,7 @@
         const langCode = safeStorage('get', STORAGE_KEY) || 'en';
         document.documentElement.lang = langCode;
 
-        // Update language switcher label
-        const langLabel = document.getElementById('lang-label');
-        if (langLabel) {
-            langLabel.textContent = LOCALE_LABELS[langCode] || langCode;
-        }
-
-        // Mark the active item in the dropdown and language row
-        document.querySelectorAll('.lang-option').forEach(opt => {
-            opt.classList.toggle('active', opt.dataset.lang === langCode);
-        });
+        // Mark the active language in the language row
         document.querySelectorAll('.lang-row span[lang]').forEach(span => {
             span.classList.toggle('active', span.getAttribute('lang') === langCode);
         });
@@ -152,61 +143,6 @@
         applyTranslations();
     }
 
-    /* ───── Language switcher dropdown ───── */
-
-    function buildLanguageSwitcher() {
-        const navLinks = document.querySelector('.nav-links');
-        if (!navLinks) return;
-
-        const wrapper = document.createElement('div');
-        wrapper.className = 'lang-switcher';
-
-        const btn = document.createElement('button');
-        btn.className = 'lang-btn';
-        const changeLangLabel = getNestedValue(currentTranslations, 'meta.changeLanguage')
-            || getNestedValue(fallbackTranslations, 'meta.changeLanguage')
-            || 'Change language';
-        btn.title = changeLangLabel;
-        btn.setAttribute('aria-expanded', 'false');
-        btn.setAttribute('aria-haspopup', 'true');
-        btn.setAttribute('aria-label', changeLangLabel);
-        btn.innerHTML = '<span class="lang-icon"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" aria-hidden="true"><defs><linearGradient id="iglobe" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#007aff"/><stop offset="100%" stop-color="#5ac8fa"/></linearGradient></defs><circle cx="128" cy="128" r="96" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,128c0,64-40,96-40,96s-40-32-40-96,40-96,40-96S168,64,168,128Z" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="96" x2="218.54" y2="96" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="160" x2="218.54" y2="160" fill="none" stroke="url(#iglobe)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg></span><span id="lang-label" class="lang-label-text"></span>';
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isOpen = wrapper.classList.toggle('open');
-            btn.setAttribute('aria-expanded', String(isOpen));
-        });
-
-        const dropdown = document.createElement('div');
-        dropdown.className = 'lang-dropdown';
-        dropdown.setAttribute('role', 'menu');
-
-        for (const locale of SUPPORTED_LOCALES) {
-            const item = document.createElement('button');
-            item.className = 'lang-option';
-            item.setAttribute('role', 'menuitem');
-            item.dataset.lang = locale;
-            item.textContent = LOCALE_LABELS[locale];
-            item.addEventListener('click', (e) => {
-                e.stopPropagation();
-                setLanguage(locale);
-                wrapper.classList.remove('open');
-                btn.setAttribute('aria-expanded', 'false');
-            });
-            dropdown.appendChild(item);
-        }
-
-        wrapper.appendChild(btn);
-        wrapper.appendChild(dropdown);
-        navLinks.appendChild(wrapper);
-
-        // Close dropdown when clicking outside
-        document.addEventListener('click', () => {
-            wrapper.classList.remove('open');
-            btn.setAttribute('aria-expanded', 'false');
-        });
-    }
-
     /* ───── Init ───── */
 
     async function init() {
@@ -222,7 +158,6 @@
             currentTranslations = fallbackTranslations;
         }
 
-        buildLanguageSwitcher();
         applyTranslations();
 
         // Make language display row clickable
