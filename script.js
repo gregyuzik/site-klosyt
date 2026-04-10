@@ -55,9 +55,9 @@ function updateThemePill(pill, theme) {
 
 function updateWallpaper(asset) {
     var url = "url('/assets/" + asset + "')";
+    document.documentElement.style.backgroundImage = url;
     var bg = document.querySelector('.mesh-bg');
     if (bg) bg.style.backgroundImage = url;
-    document.documentElement.style.backgroundImage = url;
 }
 
 function updateThemeColor(color) {
