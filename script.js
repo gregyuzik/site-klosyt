@@ -54,7 +54,7 @@ function updateThemePill(pill, theme) {
 }
 
 function updateWallpaper(asset) {
-    document.documentElement.style.backgroundImage = "url('/assets/" + asset + "')";
+    document.documentElement.style.setProperty('--wallpaper-image', "url('/assets/" + asset + "')");
 }
 
 function updateThemeColor(color) {
