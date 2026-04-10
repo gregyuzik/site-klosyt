@@ -57,7 +57,7 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
-    min-height:100dvh;
+    min-height:100lvh;
     overflow-x:hidden;
 }
 
@@ -195,7 +195,7 @@ body{
 /* ── Hero ── */
 
 .hero{
-    min-height:100vh;min-height:100dvh;
+    min-height:100vh;min-height:100lvh;
     display:flex;align-items:center;justify-content:center;
     text-align:center;padding:120px 1.5rem 80px;
     position:relative;z-index:1;
