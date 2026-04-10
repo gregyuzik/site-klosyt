@@ -37,7 +37,7 @@
 
     function detectLanguage() {
         // 1. User's explicit choice
-        const saved = safeStorage('get', STORAGE_KEY);
+        const saved = localStorage.getItem(STORAGE_KEY);
         if (saved && SUPPORTED_LOCALES.includes(saved)) return saved;
 
         // 2. Browser language
@@ -50,7 +50,7 @@
                 if (lang.includes('TW') || lang.includes('HK') || lang.includes('Hant')) return 'zh-Hant';
                 return 'zh-Hans';
             }
-            if (lang.startsWith('pt')) return 'pt-BR';
+            if (lang.startsWith('pt') && lang.includes('BR')) return 'pt-BR';
             if (lang.startsWith('nb') || lang.startsWith('no')) return 'nb';
             // Base language match
             const base = lang.split('-')[0];
@@ -63,13 +63,13 @@
 
     async function loadTranslations(locale) {
         try {
-            const resp = await fetch(`/locales/${locale}.json`);
+            const resp = await fetch(`locales/${locale}.json`);
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             return await resp.json();
         } catch (e) {
             console.warn(`[i18n] Failed to load ${locale}, falling back to en`, e);
             if (locale !== 'en') {
-                const resp = await fetch('/locales/en.json');
+                const resp = await fetch('locales/en.json');
                 return await resp.json();
             }
             return {};
@@ -83,28 +83,12 @@
     }
 
     function applyTranslations() {
-        // Announce content change to screen readers
-        const mainContent = document.querySelector('main') || document.querySelector('#main');
-        if (mainContent && !mainContent.hasAttribute('aria-live')) {
-            mainContent.setAttribute('aria-live', 'polite');
-        }
-
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             const value = getNestedValue(currentTranslations, key)
                 || getNestedValue(fallbackTranslations, key);
             if (value !== null) {
                 el.innerHTML = value;
-            }
-        });
-
-        // Translate alt attributes
-        document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-            const key = el.getAttribute('data-i18n-alt');
-            const value = getNestedValue(currentTranslations, key)
-                || getNestedValue(fallbackTranslations, key);
-            if (value !== null) {
-                el.alt = value;
             }
         });
 
@@ -119,12 +103,18 @@
         });
 
         // Update <html lang="...">
-        const langCode = safeStorage('get', STORAGE_KEY) || 'en';
+        const langCode = localStorage.getItem(STORAGE_KEY) || 'en';
         document.documentElement.lang = langCode;
 
-        // Mark the active language in the language row
-        document.querySelectorAll('.lang-row span[lang]').forEach(span => {
-            span.classList.toggle('active', span.getAttribute('lang') === langCode);
+        // Update language switcher label
+        const langLabel = document.getElementById('lang-label');
+        if (langLabel) {
+            langLabel.textContent = LOCALE_LABELS[langCode] || langCode;
+        }
+
+        // Mark the active item in the dropdown
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.toggle('active', opt.dataset.lang === langCode);
         });
 
         // Show/hide AI translation notice for non-English languages
@@ -137,10 +127,55 @@
 
     async function setLanguage(locale) {
         if (!SUPPORTED_LOCALES.includes(locale)) locale = 'en';
-        safeStorage('set', STORAGE_KEY, locale);
+        localStorage.setItem(STORAGE_KEY, locale);
 
         currentTranslations = await loadTranslations(locale);
         applyTranslations();
+    }
+
+    /* ───── Language switcher dropdown ───── */
+
+    function buildLanguageSwitcher() {
+        const navLinks = document.querySelector('.nav-links');
+        if (!navLinks) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'lang-switcher';
+
+        const btn = document.createElement('a');
+        btn.href = 'javascript:void(0)';
+        btn.className = 'lang-btn';
+        btn.title = 'Change language';
+        btn.innerHTML = '<span class="lang-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><defs><linearGradient id="iglobe" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#007aff"/><stop offset="100%" stop-color="#5ac8fa"/></linearGradient></defs><path fill="url(#iglobe)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span><span id="lang-label" class="lang-label-text"></span>';
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            wrapper.classList.toggle('open');
+        });
+
+        const dropdown = document.createElement('div');
+        dropdown.className = 'lang-dropdown';
+
+        for (const locale of SUPPORTED_LOCALES) {
+            const item = document.createElement('button');
+            item.className = 'lang-option';
+            item.dataset.lang = locale;
+            item.textContent = LOCALE_LABELS[locale];
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                setLanguage(locale);
+                wrapper.classList.remove('open');
+            });
+            dropdown.appendChild(item);
+        }
+
+        wrapper.appendChild(btn);
+        wrapper.appendChild(dropdown);
+        navLinks.appendChild(wrapper);
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+            wrapper.classList.remove('open');
+        });
     }
 
     /* ───── Init ───── */
@@ -150,7 +185,7 @@
         fallbackTranslations = await loadTranslations('en');
 
         const lang = detectLanguage();
-        safeStorage('set', STORAGE_KEY, lang);
+        localStorage.setItem(STORAGE_KEY, lang);
 
         if (lang !== 'en') {
             currentTranslations = await loadTranslations(lang);
@@ -158,21 +193,8 @@
             currentTranslations = fallbackTranslations;
         }
 
+        buildLanguageSwitcher();
         applyTranslations();
-
-        // Make language display row clickable
-        document.querySelectorAll('.lang-row span[lang]').forEach(span => {
-            const locale = span.getAttribute('lang');
-            if (SUPPORTED_LOCALES.includes(locale)) {
-                span.style.cursor = 'pointer';
-                span.setAttribute('role', 'button');
-                span.setAttribute('tabindex', '0');
-                span.addEventListener('click', () => setLanguage(locale));
-                span.addEventListener('keydown', e => {
-                    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLanguage(locale); }
-                });
-            }
-        });
     }
 
     // Expose globally
