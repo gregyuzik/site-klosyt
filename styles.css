@@ -102,15 +102,17 @@ body{
 
 /* ── Layout ── */
 
-.wrap{width:100%;max-width:1440px;margin:0 auto;padding:0 max(1.5rem,4vw);position:relative;z-index:1}
+.wrap{width:100%;max-width:1440px;margin:0 auto;padding-left:max(1.5rem,4vw,env(safe-area-inset-left));padding-right:max(1.5rem,4vw,env(safe-area-inset-right));position:relative;z-index:1}
 .section{padding:5rem 0;position:relative;z-index:1}
 .tc{text-align:center}
 
 /* ── Nav ── */
 
 .nav-wrap{
-    position:fixed;top:16px;left:0;width:100%;
+    position:fixed;top:calc(env(safe-area-inset-top) + 16px);left:0;width:100%;
     display:flex;justify-content:center;z-index:100;
+    padding-left:env(safe-area-inset-left);
+    padding-right:env(safe-area-inset-right);
 }
 
 .nav-bar{
@@ -145,7 +147,8 @@ body{
 .hero{
     min-height:100vh;min-height:100lvh;
     display:flex;align-items:center;justify-content:center;
-    text-align:center;padding:120px 1.5rem 80px;
+    text-align:center;
+    padding:calc(120px + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) calc(80px + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
     position:relative;z-index:1;
 }
 
@@ -355,7 +358,7 @@ body{
 
 /* ── Footer ── */
 
-.foot{padding:4rem 0;position:relative;z-index:1}
+.foot{padding:4rem 0 calc(4rem + env(safe-area-inset-bottom));position:relative;z-index:1}
 .foot-links{display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem}
 .foot-links a{
     color:var(--text-2);text-decoration:none;
