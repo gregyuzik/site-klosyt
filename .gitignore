@@ -33,10 +33,6 @@ venv/
 node_modules/
 npm-debug.log*
 
-# Claude Code
-.claude/
-CLAUDE.md
-
 # Build artifacts
 dist/
 build/

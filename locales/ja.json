@@ -2,8 +2,7 @@
   "meta": {
     "langName": "Japanese",
     "langNameNative": "日本語",
-    "dir": "ltr",
-    "changeLanguage": "言語を変更"
+    "dir": "ltr"
   },
   "nav": {
     "features": "機能",
@@ -22,7 +21,7 @@
     "categorizeTitle": "分類",
     "categorizeDesc": "AIが種類、色、柄、季節、素材を瞬時に検出。",
     "styleTitle": "スタイリング",
-    "styleDesc": "クローゼット、アクティビティ、リアルタイム天気に基づくコーディネート提案。"
+    "styleDesc": "ワードローブ、アクティビティ、リアルタイム天気に基づくコーディネート提案。"
   },
   "whatsNew": {
     "title": "Klosyt 2.0",
@@ -31,7 +30,7 @@
   "features": {
     "sectionTitle": "必要なものだけ、<br>余計なものはなし",
     "aiStylist": "AIスタイリスト",
-    "aiStylistDesc": "あなたのクローゼットから天気を考慮したコーディネート提案。オンデバイスAIで動作。",
+    "aiStylistDesc": "あなたのワードローブから天気を考慮したコーディネート提案。オンデバイスAIで動作。",
     "outfitsTitle": "コーディネート",
     "outfitsDesc": "ドラッグ＆ドロップでルックを作成。お気に入りを保存して、美しいPantoneスタイルのカードをシェア。",
     "calendarTitle": "カレンダー",
@@ -42,10 +41,6 @@
     "syncDesc": "iCloudがすべてのAppleデバイス間でクローゼットを即座に自動同期。",
     "filtersTitle": "スマートフィルター",
     "filtersDesc": "季節、色、カテゴリー、素材、柄で瞬時にアイテムを検索。"
-  },
-  "whyKlosyt": {
-    "title": "あなたのワードローブを、<br>再構築",
-    "desc": "Klosytは、すべてのアイテムを最大限に活用できるAI搭載のワードローブ整理＆コーディネートプランナーです。明日のコーディネートを選ぶときも、理想のカプセルワードローブを構築するときも、Klosytのオンデバイスインテリジェンスがクローゼットをスマートで持続可能なスタイルシステムに変えます——完全にプライベートで、すべてのAppleデバイス間で常に同期。"
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -68,23 +63,19 @@
     "supportsDev": "開発を支援",
     "supportsDevDesc": "継続的なアプリ開発"
   },
-  "cta": {
-    "appStoreAlt": "App Storeからダウンロード"
-  },
   "footer": {
     "home": "ホーム",
     "support": "サポート",
     "privacy": "プライバシー",
-    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. All rights reserved."
   },
   "privacy": {
     "title": "プライバシーポリシー",
-    "lastUpdated": "最終更新: 2026年4月9日",
+    "lastUpdated": "最終更新: 2026年3月13日",
     "promiseTitle": "私たちのプライバシーの約束",
     "promiseOwner": "KlosytはGregory Yuzik（「私たち」）が所有、運営、管理しています。",
     "promiseText": "あなたのプライバシーはKlosytの単なる機能ではなく、基盤です。<strong>私たちはあなたの個人データを収集、保存、送信、またはアクセスすることは一切ありません。以上。</strong>",
-    "promiseDetail": "Klosytは最初から、あなたのクローゼット、写真、個人情報がデバイスや個人のiCloudアカウントの外に出ないように構築されています。私たちはあなたのデータを見ることができませんし、意図的にそう設計しました。",
+    "promiseDetail": "Klosytは最初から、あなたのワードローブ、写真、個人情報がデバイスや個人のiCloudアカウントの外に出ないように構築されています。私たちはあなたのデータを見ることができませんし、意図的にそう設計しました。",
     "zeroTitle": "データ収集ゼロ",
     "zeroIntro": "完全に透明でありたいと思います：<strong>Klosytは何も収集しません。</strong>",
     "tableHeaderType": "データ種類",
@@ -95,7 +86,7 @@
     "tablePhotosDetail": "あなたのデバイスと個人のiCloudアカウントにのみ保存。私たちが受信またはアクセスすることはありません。",
     "tableLocation": "位置情報",
     "tableLocationDetail": "天気機能はAppleのWeatherKitを使用し、位置情報は完全にAppleのサーバーで処理されます。あなたの位置情報が私たちに送信されることはありません。",
-    "tableWardrobe": "クローゼットデータ",
+    "tableWardrobe": "ワードローブデータ",
     "tableWardrobeDetail": "衣類アイテム、コーディネート、カレンダー項目、設定はデバイスと個人のiCloudアカウントに保存されます。",
     "tableNames": "名前やメール",
     "tableNamesDetail": "個人を特定できる情報は収集しません。",
@@ -118,7 +109,7 @@
     "appleServicesTitle": "Appleプラットフォームサービス",
     "appleWeatherKit": "<strong>Apple WeatherKit</strong> — コーディネート提案のための天気データを提供。リクエストはAppleのサーバーで処理され、私たちのサーバーではありません。",
     "appleStoreKit": "<strong>Apple StoreKit</strong> — サブスクリプション購入を処理。すべての決済情報はAppleが管理します。決済詳細を受信または保存することはありません。",
-    "appleCloudKit": "<strong>Apple CloudKit</strong> — 個人のiCloudアカウントを通じてデバイス間でクローゼットを同期。このデータにアクセスすることはできません。",
+    "appleCloudKit": "<strong>Apple CloudKit</strong> — 個人のiCloudアカウントを通じてデバイス間でワードローブを同期。このデータにアクセスすることはできません。",
     "applePrivacyLink": "詳細は<a href=\"https://www.apple.com/legal/privacy/\" style=\"color: var(--accent-color);\">Appleのプライバシーポリシー</a>をご覧ください。",
     "subscriptionsTitle": "サブスクリプション",
     "subscriptionsText": "Klosyt+はApp Storeを通じてAppleが完全に処理するオプションの自動更新サブスクリプションです。決済情報にアクセスすることはありません。Apple ID設定でいつでもサブスクリプションを管理またはキャンセルできます。",
@@ -132,28 +123,26 @@
     "internationalPortability": "<strong>データポータビリティ権</strong> — データはあなたが管理する個人のiCloudアカウントに保存されています。",
     "internationalObjection": "<strong>異議権</strong> — データ処理を行っていないため、異議を申し立てる対象がありません。",
     "internationalGdpr": "欧州経済領域（EEA）のユーザーにとって、これらの権利は一般データ保護規則（GDPR）に基づいて保証されています。ブラジルのユーザーにとっては、Lei Geral de Proteção de Dados（LGPD）に基づいて提供されます。Klosytは個人データを収集しないため、データ処理契約や処理の法的根拠は不要です。",
-    "internationalDpo": "プライバシーに関するお問い合わせは<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>までご連絡ください。",
-    "websiteAnalyticsTitle": "ウェブサイト分析",
-    "websiteAnalyticsText": "本ウェブサイト（klosyt.com）は、ページビュー、参照元、おおまかな地域などの匿名の利用データを収集するためにGoogle Analyticsを使用しています。このデータは、訪問者がどのように当社のウェブサイトを見つけ、利用しているかを理解するのに役立ちます。Google AnalyticsはCookieを使用する場合があり、<a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Googleのプライバシーポリシー</a>に従って情報を収集します。このトラッキングはウェブサイトにのみ適用されます——Klosytアプリ自体にはいかなる分析やトラッキングも含まれていません。",
+    "internationalDpo": "プライバシーに関するお問い合わせは<a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>までご連絡ください。",
     "changesTitle": "ポリシーの変更",
     "changesText": "このプライバシーポリシーを随時更新する場合があります。変更は上記の「最終更新」日の更新により反映されます。変更後もアプリの使用を続けることは、更新されたポリシーの受諾を意味します。",
     "contactTitle": "お問い合わせ",
-    "contactText": "このプライバシーポリシーに関する質問や懸念がある場合は、<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>までKlosytにお問い合わせください。"
+    "contactText": "このプライバシーポリシーに関する質問や懸念がある場合は、<a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>までKlosytにお問い合わせください。"
   },
   "terms": {
     "title": "利用規約（EULA）",
-    "lastUpdated": "最終更新: 2026年4月9日",
+    "lastUpdated": "最終更新: 2026年3月13日",
     "acceptanceTitle": "規約への同意",
     "acceptanceText": "Klosyt（「本アプリ」）をダウンロード、インストール、または使用することにより、本規約に拘束されることに同意するものとします。同意しない場合は、本アプリを使用しないでください。",
     "serviceTitle": "サービスの説明",
-    "serviceText": "Klosytは、iOS、macOS、tvOS、visionOSで利用可能なクローゼット管理アプリケーションです。衣類アイテムのカタログ化、コーディネートの作成、天気ベースの提案の受信、着用の計画が可能です。",
-    "serviceAiText": "KlosytのAIスタイリストは、Apple WeatherKitが提供するリアルタイムの天気データを使用して、パーソナライズされたコーディネート提案を生成します。コーディネート提案をリクエストすると、AIは気温、降水量、風などの現在および予測される天気条件をクローゼットとともに分析し、適切な服装を推奨します。すべてのAI処理はデバイス上で行われ、天気データはAppleのサーバーから取得され、私たちや第三者に送信されることはありません。",
+    "serviceText": "Klosytは、iOS、macOS、tvOS、visionOSで利用可能なワードローブ管理アプリケーションです。衣類アイテムのカタログ化、コーディネートの作成、天気ベースの提案の受信、着用の計画が可能です。",
+    "serviceAiText": "KlosytのAIスタイリストは、Apple WeatherKitが提供するリアルタイムの天気データを使用して、パーソナライズされたコーディネート提案を生成します。コーディネート提案をリクエストすると、AIは気温、降水量、風などの現在および予測される天気条件をワードローブとともに分析し、適切な服装を推奨します。すべてのAI処理はデバイス上で行われ、天気データはAppleのサーバーから取得され、私たちや第三者に送信されることはありません。",
     "privacyTitle": "プライバシーが最優先",
-    "privacyText": "あなたの個人データはあなただけのものだと信じています。Klosytは<strong>あなたの個人情報を収集、アクセス、保存することは決してない</strong>ように設計されています。写真、クローゼットデータ、設定はデバイスと個人のiCloudアカウントにのみ保存されます。",
+    "privacyText": "あなたの個人データはあなただけのものだと信じています。Klosytは<strong>あなたの個人情報を収集、アクセス、保存することは決してない</strong>ように設計されています。写真、ワードローブデータ、設定はデバイスと個人のiCloudアカウントにのみ保存されます。",
     "ownershipTitle": "あなたのコンテンツ、あなたの所有物",
     "ownershipText": "Klosytで作成したすべて — 写真、衣類アイテム、コーディネート、設定、その他すべてのコンテンツ — は<strong>完全にあなたのものです。</strong>データはデバイスと個人のiCloudアカウントに保存されます。コンテンツへのアクセス、収集、または権利の主張は行いません。アプリを削除すると、ローカルデータは一緒に削除されます。iCloudデータはApple ID設定で管理できます。",
     "subscriptionsTitle": "サブスクリプション",
-    "subscriptionsText": "Klosytは、AIコーディネート提案、コーディネート計画、カレンダー追跡などのプレミアム機能をアンロックするオプションの自動更新サブスクリプション（「Klosyt+」）を提供しています。テーマと壁紙はすべてのユーザーに無料で提供されます。<strong>無料版は無制限のクローゼットストレージとコア機能を永久に提供します</strong> — 衣類ライブラリへのアクセスを失うことはありません。",
+    "subscriptionsText": "Klosytは、AIコーディネート提案、コーディネート計画、カレンダー追跡などのプレミアム機能をアンロックするオプションの自動更新サブスクリプション（「Klosyt+」）を提供しています。テーマと壁紙はすべてのユーザーに無料で提供されます。<strong>無料版は無制限のワードローブストレージとコア機能を永久に提供します</strong> — 衣類ライブラリへのアクセスを失うことはありません。",
     "subBilling1": "支払いは購入確認時にApple IDアカウントに請求されます。",
     "subBilling2": "サブスクリプションは、現在の請求期間終了の少なくとも24時間前にキャンセルしない限り、自動的に更新されます。",
     "subBilling3": "アカウントは現在の期間終了の24時間以内に更新料金が請求されます。",
@@ -191,11 +180,11 @@
     "outfitsTitle": "コーディネート作成",
     "outfitsDesc": "コーディネートタブでトップス、ボトムス、シューズを組み合わせましょう。レイヤーをドラッグして着こなしの順序で整え、お気に入りのコーディネートを保存できます。",
     "aiTitle": "AI提案の使い方",
-    "aiDesc": "何を着るか迷ったら、AIスタイリストボタンをタップ！デバイス上のAIがリアルタイムの天気とあなたのクローゼットを分析し、あらゆるアクティビティに最適なコーディネートを提案します。",
+    "aiDesc": "何を着るか迷ったら、AIスタイリストボタンをタップ！デバイス上のAIがリアルタイムの天気とあなたのワードローブを分析し、あらゆるアクティビティに最適なコーディネートを提案します。",
     "backupTitle": "バックアップと復元",
-    "backupDesc": "Klosytのデータは大切です。アプリ設定でiCloud同期を有効にして、クローゼット全体を安全にバックアップしましょう。新しいデバイスを入手したら、同じApple IDでサインインすれば、クローゼットがシームレスに復元されます。",
+    "backupDesc": "Klosytのデータは大切です。アプリ設定でiCloud同期を有効にして、ワードローブ全体を安全にバックアップしましょう。新しいデバイスを入手したら、同じApple IDでサインインすれば、クローゼットがシームレスに復元されます。",
     "multiPlatformTitle": "マルチプラットフォーム",
-    "multiPlatformDesc": "デジタルクローゼットはどこにでも持ち歩けます。KlosytはiPhone、iPad、Mac、Apple TV、Vision Pro対応のネイティブアプリ — クローゼットはいつでも手元に。",
+    "multiPlatformDesc": "デジタルクローゼットはどこにでも持ち歩けます。KlosytはiPhone、iPad、Mac、Apple TV、Vision Pro対応のネイティブアプリ — ワードローブはいつでも手元に。",
     "managingTitle": "アイテムの管理",
     "managingDesc": "アイテムをタップして詳細を表示。カテゴリー、シーズン、色、素材、柄を編集できます。詳細画面から直接写真を撮り直すこともできます。削除したアイテムはまずゴミ箱に移動するので復元可能です。",
     "calendarTitle": "カレンダーと計画",
@@ -203,7 +192,7 @@
     "sharingTitle": "共有とエクスポート",
     "sharingDesc": "お気に入りのコーディネートを美しいパントーンスタイルカードとしてシェアしましょう。iOS共有エクステンションを使って、Safari、Instagram、その他のアプリから直接画像やURLをインポートできます。",
     "filterTitle": "フィルターとソート",
-    "filterDesc": "KlosytのGelCapフィルターシステムで、クローゼットを瞬時に絞り込めます。カテゴリー、シーズン、色、素材、柄でフィルタリング。名前で検索し、グリッドとクローゼットビューを切り替えられます。",
+    "filterDesc": "KlosytのGelCapフィルターシステムで、ワードローブを瞬時に絞り込めます。カテゴリー、シーズン、色、素材、柄でフィルタリング。名前で検索し、グリッドとワードローブビューを切り替えられます。",
     "themesTitle": "テーマと壁紙",
     "themesDesc": "Klosytを自分好みにカスタマイズ！美しい壁紙やテーマからアプリの見た目をカスタマイズできます — 完全無料、サブスクリプション不要。選んだテーマはすべてのAppleデバイスで同期されます。",
     "objectCaptureTitle": "Object Capture（3Dスキャン）",
@@ -216,7 +205,7 @@
     "step3Title": "3. 最初のコーディネートを作成",
     "step3Desc": "ライブラリからアイテムを選び、レイヤーの順序をドラッグして調整し、ルックを保存。",
     "step4Title": "4. AI提案を取得",
-    "step4Desc": "アクティビティを選択して、Klosytに天気とクローゼットを分析させ、完璧なコーディネートを提案してもらいましょう。",
+    "step4Desc": "アクティビティを選択して、Klosytに天気とワードローブを分析させ、完璧なコーディネートを提案してもらいましょう。",
     "tipsTitle": "ヒントとコツ",
     "tip1Title": "より良い背景除去",
     "tip1Desc": "衣類をコントラストのある背景に掛けましょう — 白いシャツは暗いドアに、暗いジャケットは明るい壁に。",
@@ -229,7 +218,7 @@
     "tip5Title": "シーズンを正確にタグ付け",
     "tip5Desc": "アイテムを夏、冬、またはオールシーズンとマークして、天気に適したコーディネートに。",
     "tip6Title": "早めにiCloud同期を有効化",
-    "tip6Desc": "すぐにiCloud同期をオンにして、クローゼットを常にバックアップ＆同期。",
+    "tip6Desc": "すぐにiCloud同期をオンにして、ワードローブを常にバックアップ＆同期。",
     "manageSubTitle": "サブスクリプションの管理",
     "manageSubTrialDesc": "30日間すべて無料でお試し、その後月額わずか$0.99。いつでもキャンセル可能。",
     "manageSubFooter": "設定 → Apple ID → サブスクリプションで管理。Klosyt設定で「購入を復元」をタップして再有効化。",
@@ -239,7 +228,7 @@
     "ts2Summary": "写真が読み込まない",
     "ts2Answer": "設定 → Klosyt → 写真でKlosytが写真ライブラリへのアクセス権限を持っていることを確認。画像が空白の場合、iCloud同期を切り替えてみてください。",
     "ts3Summary": "AI提案が的外れ",
-    "ts3Answer": "アイテムに正確なシーズンタグとカテゴリーがあることを確認。AIはこのメタデータと天気データを使用します。クローゼットのアイテムが多い = 提案が良くなります。",
+    "ts3Answer": "アイテムに正確なシーズンタグとカテゴリーがあることを確認。AIはこのメタデータと天気データを使用します。ワードローブのアイテムが多い = 提案が良くなります。",
     "ts4Summary": "サブスクリプションが認識されない",
     "ts4Answer": "Klosyt設定に移動し、「購入を復元」をタップ。購入に使用したApple IDでサインインしていることを確認。",
     "ts5Summary": "背景除去がきれいでない",
@@ -252,7 +241,7 @@
     "ts8Answer": "アイテムをタップ → 詳細画面 → 削除ボタン。削除されたアイテムは30日間ゴミ箱に入り、復元できます。設定からゴミ箱にアクセスできます。",
     "contactTitle": "まだお困りですか？",
     "contactDesc": "お手伝いします。お問い合わせは",
-    "contactEmail": "support@klosyt.com"
+    "contactEmail": "support@Klosyt.com"
   },
   "index": {
     "languagesTitle": "16言語で利用可能"
