@@ -19,6 +19,7 @@
 
 html{
     scroll-behavior:smooth;
+    background:#050508;
 }
 
 /* ── Skip to content ── */
@@ -41,10 +42,7 @@ body{
     color:var(--text-1);
     min-height:100lvh;
     overflow-x:hidden;
-    background:
-        radial-gradient(ellipse 140% 65% at 50% 0%,rgba(26,61,143,.55),transparent 75%) fixed,
-        radial-gradient(ellipse 140% 65% at 50% 100%,rgba(212,165,40,.5),transparent 75%) fixed,
-        #050508;
+    background:#050508;
 }
 
 /* ── Animated Gradient Mesh ── */
@@ -52,6 +50,9 @@ body{
 .mesh-bg{
     position:fixed;inset:0;z-index:0;overflow:hidden;
     pointer-events:none;
+    background:
+        radial-gradient(ellipse 140% 65% at 50% 0%,rgba(26,61,143,.55),transparent 75%),
+        radial-gradient(ellipse 140% 65% at 50% 100%,rgba(212,165,40,.5),transparent 75%);
 }
 
 .mesh-orb{
@@ -456,12 +457,15 @@ body{
         --accent-color:#007aff;
     }
 
+    html{background:#f2f2f7}
     body{
         color:var(--text-1);
+        background:#f2f2f7;
+    }
+    .mesh-bg{
         background:
-            radial-gradient(ellipse 140% 65% at 50% 0%,rgba(168,196,240,.65),transparent 75%) fixed,
-            radial-gradient(ellipse 140% 65% at 50% 100%,rgba(240,220,140,.6),transparent 75%) fixed,
-            #f2f2f7;
+            radial-gradient(ellipse 140% 65% at 50% 0%,rgba(168,196,240,.65),transparent 75%),
+            radial-gradient(ellipse 140% 65% at 50% 100%,rgba(240,220,140,.6),transparent 75%);
     }
     .mesh-orb{opacity:.3}
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
