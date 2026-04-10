@@ -55,9 +55,13 @@ function updateThemePill(pill, theme) {
 
 function updateWallpaper(asset) {
     var url = "url('/assets/" + asset + "')";
-    document.documentElement.style.backgroundImage = url;
-    var bg = document.querySelector('.mesh-bg');
+    // Paint on the wallpaper div (extends past the viewport edges so iOS Safari's
+    // URL bar collapse can't expose seams) AND on the root element so the bg
+    // propagates to the canvas, covering overscroll/safe-area regions outside
+    // any positioned element.
+    var bg = document.querySelector('.wallpaper-bg');
     if (bg) bg.style.backgroundImage = url;
+    document.documentElement.style.backgroundImage = url;
 }
 
 function updateThemeColor(color) {
