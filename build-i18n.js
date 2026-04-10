@@ -111,7 +111,6 @@ function fixPaths(html) {
         .replace(/href="assets\//g, 'href="/assets/')
         .replace(/src="assets\//g, 'src="/assets/')
         .replace(/href="styles\.css/g, 'href="/styles.css')
-        .replace(/src="script\.js/g, 'src="/script.js')
         .replace(/src="i18n\.js/g, 'src="/i18n.js')
         .replace(/src="icons\.js/g, 'src="/icons.js');
 }
