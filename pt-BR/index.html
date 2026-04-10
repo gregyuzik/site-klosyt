@@ -48,7 +48,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=24">
+    <link rel="stylesheet" href="/styles.css?v=25">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -104,18 +104,12 @@
 <header class="nav-wrap">
     <nav class="glass nav-bar">
         <a href="index.html" class="nav-brand">
-            <img src="/assets/favicon.png" alt="Klosyt" class="dynamic-app-icon nav-icon" width="28" height="28">
+            <img src="/assets/favicon.png" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
         <div class="nav-links">
             <a href="#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
             <a href="support.html" data-i18n="nav.support">Suporte</a>
-            <div class="theme-switcher" id="theme-switcher">
-                <button class="theme-toggle" id="theme-btn" aria-label="Change theme">
-                    <span id="theme-pill"></span>
-                </button>
-                <div class="theme-menu glass" id="theme-dropdown"></div>
-            </div>
         </div>
     </nav>
 </header>
@@ -125,7 +119,7 @@
 <section class="hero">
     <div class="hero-inner fade-up">
         <div class="hero-glow">
-            <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon dynamic-app-icon" width="128" height="128">
+            <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
         </div>
         <h1 data-i18n="hero.mainTitle">Seu armário digital<br>com IA</h1>
         <p class="hero-sub" data-i18n="hero.mainSubtitle">Fotografe suas roupas, deixe a IA organizar tudo e receba sugestões de looks baseadas no clima — tudo no dispositivo e com privacidade.</p>
@@ -278,7 +272,6 @@ document.addEventListener('DOMContentLoaded',function(){
     document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
 });
 </script>
-<script src="/script.js?v=24"></script>
 <script src="/i18n.js?v=8"></script>
 <script src="/icons.js?v=8"></script>
 </body>
