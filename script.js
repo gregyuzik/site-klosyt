@@ -53,9 +53,17 @@ function updateThemePill(pill, theme) {
     pill.appendChild(nameSpan);
 }
 
-function updateWallpaper(asset) {}
+function updateWallpaper(asset) {
+    var url = "url('/assets/" + asset + "')";
+    document.documentElement.style.backgroundImage = url;
+    var bg = document.querySelector('.mesh-bg');
+    if (bg) bg.style.backgroundImage = url;
+}
 
-function updateThemeColor(color) {}
+function updateThemeColor(color) {
+    var meta = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: dark)"]');
+    if (meta) meta.setAttribute('content', color);
+}
 
 function updateMeshColors(theme) {
     const orbs = document.querySelectorAll('.mesh-orb');
