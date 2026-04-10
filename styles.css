@@ -99,7 +99,7 @@ body{
 
 /* ── Layout ── */
 
-.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+.wrap{width:100%;max-width:1440px;margin:0 auto;padding:0 max(1.5rem,4vw);position:relative;z-index:1}
 .section{padding:5rem 0;position:relative;z-index:1}
 .tc{text-align:center}
 
