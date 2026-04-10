@@ -55,8 +55,6 @@ function updateThemePill(pill, theme) {
 
 function updateWallpaper(asset) {
     document.documentElement.style.setProperty('--wallpaper-image', "url('/assets/" + asset + "')");
-    var theme = getTheme(asset);
-    if (theme) document.documentElement.style.backgroundColor = theme.color;
 }
 
 function updateThemeColor(color) {

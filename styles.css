@@ -20,8 +20,11 @@
 
 html{
     scroll-behavior:smooth;
-    background-color:#6E0003;
+    background-color:#050508;
+    overscroll-behavior:none;
 }
+
+body{overscroll-behavior:none}
 
 html::before{
     content:'';
