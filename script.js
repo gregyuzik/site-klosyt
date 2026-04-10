@@ -60,6 +60,11 @@ function updateWallpaper(asset) {
     if (bg) bg.style.backgroundImage = url;
 }
 
+function updateThemeColor(color) {
+    var meta = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: dark)"]');
+    if (meta) meta.setAttribute('content', color);
+}
+
 function updateMeshColors(theme) {
     const orbs = document.querySelectorAll('.mesh-orb');
     if (orbs.length < 3) return;
@@ -87,6 +92,7 @@ function setTheme(asset) {
     updateWallpaper(theme.asset);
     updateIcons(theme.icon);
     updateMeshColors(theme);
+    updateThemeColor(theme.color);
 
     const pill = document.getElementById('theme-pill');
     if (pill) updateThemePill(pill, theme);
@@ -143,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateWallpaper(theme.asset);
     updateIcons(theme.icon);
     updateMeshColors(theme);
+    updateThemeColor(theme.color);
 
     const pill = document.getElementById('theme-pill');
     if (pill) updateThemePill(pill, theme);
