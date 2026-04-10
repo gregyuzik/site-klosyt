@@ -1,15 +1,14 @@
 // Theme definitions — match the app exactly
 var themes = [
-    { asset: 'wallpaper_redvelvet.jpg', name: 'Red Velvet', icon: 'AppIcon-blue.png', color: '#6E0003', hue: '359' },
-    { asset: 'wallpaper_blue.jpg', name: 'Blue Velvet', icon: 'AppIcon-blue.png', color: '#081A4A', hue: '220' },
-    { asset: 'wallpaper_red.jpg', name: 'Red Leather', icon: 'AppIcon-red.png', color: '#4D171F', hue: '348' },
-    { asset: 'wallpaper_orange.jpg', name: 'Orange Leopard', icon: 'AppIcon-orange.png', color: '#A3540F', hue: '28' },
-    { asset: 'wallpaper_yellow.jpg', name: 'Yellow Plaid', icon: 'AppIcon-yellow.png', color: '#856624', hue: '42' },
-    { asset: 'wallpaper_green.jpg', name: 'Green Canvas', icon: 'AppIcon-green.png', color: '#5C543D', hue: '44' },
-    { asset: 'wallpaper_purple.jpg', name: 'Purple Cashmere', icon: 'AppIcon-purple.png', color: '#663354', hue: '276' },
-    { asset: 'wallpaper_pink.jpg', name: 'Pink Mohair', icon: 'AppIcon-pink.png', color: '#D42E73', hue: '338' },
-    { asset: 'wallpaper_white.jpg', name: 'White Knit', icon: 'AppIcon-white.png', color: '#DED9D1', hue: '37' },
-    { asset: 'wallpaper_gray.jpg', name: 'Gray Houndstooth', icon: 'AppIcon-gray.png', color: '#787878', hue: '0' }
+    { asset: 'wallpaper_blue.jpg', name: 'Blue Velvet', emoji: '🔵', icon: 'AppIcon-blue.png', hue: '220' },
+    { asset: 'wallpaper_red.jpg', name: 'Red Leather', emoji: '🔴', icon: 'AppIcon-red.png', hue: '0' },
+    { asset: 'wallpaper_orange.jpg', name: 'Orange Leopard', emoji: '🟠', icon: 'AppIcon-orange.png', hue: '30' },
+    { asset: 'wallpaper_yellow.jpg', name: 'Yellow Plaid', emoji: '🟡', icon: 'AppIcon-yellow.png', hue: '48' },
+    { asset: 'wallpaper_green.jpg', name: 'Green Canvas', emoji: '🟢', icon: 'AppIcon-green.png', hue: '140' },
+    { asset: 'wallpaper_purple.jpg', name: 'Purple Cashmere', emoji: '🟣', icon: 'AppIcon-purple.png', hue: '270' },
+    { asset: 'wallpaper_pink.jpg', name: 'Pink Mohair', emoji: '💗', icon: 'AppIcon-pink.png', hue: '330' },
+    { asset: 'wallpaper_white.jpg', name: 'White Knit', emoji: '⚪', icon: 'AppIcon-white.png', hue: '0' },
+    { asset: 'wallpaper_gray.jpg', name: 'Gray Houndstooth', emoji: '🩶', icon: 'AppIcon-gray.png', hue: '0' }
 ];
 
 function getTheme(asset) {
@@ -17,7 +16,7 @@ function getTheme(asset) {
 }
 
 function getCurrentWallpaper() {
-    return localStorage.getItem('klosyt_wallpaper') || 'wallpaper_redvelvet.jpg';
+    return localStorage.getItem('klosyt_wallpaper') || 'wallpaper_blue.jpg';
 }
 
 function updateIcons(iconFile) {
@@ -64,7 +63,7 @@ function setTheme(asset) {
     updateMeshColors(theme);
 
     var pill = document.getElementById('theme-pill');
-    if (pill) pill.innerHTML = '<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:' + theme.color + '"></span><span class="theme-name-text">' + theme.name + '</span>';
+    if (pill) pill.innerHTML = theme.emoji + ' <span class="theme-name-text">' + theme.name + '</span>';
 }
 
 function buildThemeDropdown() {
@@ -79,7 +78,7 @@ function buildThemeDropdown() {
         var opt = document.createElement('button');
         opt.className = 'theme-option';
         if (t.asset === current) opt.classList.add('active');
-        opt.innerHTML = '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + t.color + ';vertical-align:middle;margin-right:6px"></span>' + t.name;
+        opt.textContent = t.emoji + ' ' + t.name;
         opt.addEventListener('click', function(e) {
             e.stopPropagation();
             setTheme(t.asset);
@@ -103,15 +102,15 @@ function buildThemeDropdown() {
 
 document.addEventListener('DOMContentLoaded', function() {
     var wp = localStorage.getItem('klosyt_wallpaper_manual') === 'true'
-        ? (localStorage.getItem('klosyt_wallpaper') || 'wallpaper_redvelvet.jpg')
-        : 'wallpaper_redvelvet.jpg';
+        ? (localStorage.getItem('klosyt_wallpaper') || 'wallpaper_blue.jpg')
+        : 'wallpaper_blue.jpg';
 
     var theme = getTheme(wp);
     updateIcons(theme.icon);
     updateMeshColors(theme);
 
     var pill = document.getElementById('theme-pill');
-    if (pill) pill.innerHTML = '<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:' + theme.color + '"></span><span class="theme-name-text">' + theme.name + '</span>';
+    if (pill) pill.innerHTML = theme.emoji + ' <span class="theme-name-text">' + theme.name + '</span>';
 
     buildThemeDropdown();
 });
