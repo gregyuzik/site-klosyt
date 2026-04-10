@@ -2,8 +2,7 @@
   "meta": {
     "langName": "Korean",
     "langNameNative": "한국어",
-    "dir": "ltr",
-    "changeLanguage": "언어 변경"
+    "dir": "ltr"
   },
   "nav": {
     "features": "기능",
@@ -43,10 +42,6 @@
     "filtersTitle": "스마트 필터",
     "filtersDesc": "시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색."
   },
-  "whyKlosyt": {
-    "title": "당신의 옷장,<br>새롭게 상상하다",
-    "desc": "Klosyt은 모든 옷을 최대한 활용할 수 있도록 도와주는 AI 기반 옷장 정리 및 코디 플래너입니다. 내일의 코디를 고르든, 완벽한 캡슐 옷장을 만들든, Klosyt의 온디바이스 인텔리전스가 옷장을 스마트하고 지속 가능한 스타일 시스템으로 바꿔줍니다 — 완전히 프라이빗하며, 모든 Apple 기기에서 항상 동기화됩니다."
-  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/월",
@@ -68,19 +63,15 @@
     "supportsDev": "개발 지원",
     "supportsDevDesc": "지속적인 앱 개발"
   },
-  "cta": {
-    "appStoreAlt": "App Store에서 다운로드"
-  },
   "footer": {
     "home": "홈",
     "support": "지원",
     "privacy": "개인정보",
-    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. All rights reserved."
   },
   "privacy": {
     "title": "개인정보 처리방침",
-    "lastUpdated": "최종 업데이트: 2026년 4월 9일",
+    "lastUpdated": "최종 업데이트: 2026년 3월 13일",
     "promiseTitle": "개인정보 보호 약속",
     "promiseOwner": "Klosyt은 Gregory Yuzik(\"우리\")이 소유, 운영, 관리합니다.",
     "promiseText": "프라이버시는 Klosyt의 단순한 기능이 아니라 기반입니다. <strong>우리는 당신의 개인 데이터를 수집, 저장, 전송 또는 접근하지 않습니다. 그것이 전부입니다.</strong>",
@@ -132,17 +123,15 @@
     "internationalPortability": "<strong>데이터 이동권</strong> — 데이터는 귀하가 관리하는 개인 iCloud 계정에 저장됩니다.",
     "internationalObjection": "<strong>반대권</strong> — 데이터 처리를 하지 않으므로 반대할 것이 없습니다.",
     "internationalGdpr": "유럽 경제 지역(EEA) 사용자의 경우 이러한 권리는 일반 데이터 보호 규정(GDPR)에 의해 보장됩니다. 브라질 사용자의 경우 Lei Geral de Proteção de Dados(LGPD)에 의해 제공됩니다. Klosyt은 개인 데이터를 수집하지 않으므로 데이터 처리 계약이나 처리의 법적 근거가 필요하지 않습니다.",
-    "internationalDpo": "개인정보 관련 문의는 <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>으로 연락하세요.",
-    "websiteAnalyticsTitle": "웹사이트 분석",
-    "websiteAnalyticsText": "본 웹사이트(klosyt.com)는 페이지 조회수, 유입 경로, 대략적인 지역 등의 익명 사용 데이터를 수집하기 위해 Google Analytics를 사용합니다. 이 데이터는 방문자가 웹사이트를 어떻게 찾고 사용하는지 이해하는 데 도움이 됩니다. Google Analytics는 쿠키를 사용할 수 있으며 <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google 개인정보 보호정책</a>에 따라 정보를 수집합니다. 이 추적은 웹사이트에만 적용됩니다 — Klosyt 앱 자체에는 어떠한 분석이나 추적도 포함되어 있지 않습니다.",
+    "internationalDpo": "개인정보 관련 문의는 <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>으로 연락하세요.",
     "changesTitle": "정책 변경",
     "changesText": "본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 위의 \"최종 업데이트\" 날짜 업데이트로 반영됩니다. 변경 후 앱을 계속 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다.",
     "contactTitle": "문의하기",
-    "contactText": "본 개인정보 처리방침에 대한 질문이나 우려 사항은 <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>으로 Klosyt에 문의하세요."
+    "contactText": "본 개인정보 처리방침에 대한 질문이나 우려 사항은 <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>으로 Klosyt에 문의하세요."
   },
   "terms": {
     "title": "이용약관 (EULA)",
-    "lastUpdated": "최종 업데이트: 2026년 4월 9일",
+    "lastUpdated": "최종 업데이트: 2026년 3월 13일",
     "acceptanceTitle": "약관 동의",
     "acceptanceText": "Klosyt(\"본 앱\")을 다운로드, 설치 또는 사용함으로써 본 약관에 구속되는 데 동의합니다. 동의하지 않으면 본 앱을 사용하지 마세요.",
     "serviceTitle": "서비스 설명",
@@ -203,7 +192,7 @@
     "sharingTitle": "공유 & 내보내기",
     "sharingDesc": "좋아하는 코디를 아름다운 팬톤 스타일 카드로 공유하세요. iOS 공유 확장을 사용하여 Safari, Instagram 또는 다른 앱에서 이미지나 URL을 바로 가져올 수 있습니다.",
     "filterTitle": "필터 & 정렬",
-    "filterDesc": "Klosyt의 GelCap 필터 시스템으로 옷장을 즉시 좁힐 수 있습니다. 카테고리, 시즌, 색상, 소재, 패턴으로 필터링하세요. 이름으로 검색하고 그리드와 옷장 보기를 전환하세요.",
+    "filterDesc": "Klosyt의 GelCap 필터 시스템으로 옷장을 즉시 좁힐 수 있습니다. 카테고리, 시즌, 색상, 소재, 패턴으로 필터링하세요. 이름으로 검색하고 그리드와 워드로브 보기를 전환하세요.",
     "themesTitle": "테마 & 배경화면",
     "themesDesc": "Klosyt을 나만의 것으로 만드세요! 멋진 배경화면과 테마를 선택하여 앱 외관을 커스터마이즈하세요 — 완전 무료, 구독 필요 없음. 선택한 테마는 모든 Apple 기기에서 동기화됩니다.",
     "objectCaptureTitle": "Object Capture (3D 스캔)",
@@ -252,7 +241,7 @@
     "ts8Answer": "아이템 탭 → 상세 보기 → 삭제 버튼. 삭제된 아이템은 30일간 휴지통에 보관되며 복구할 수 있습니다. 설정에서 휴지통에 접근하세요.",
     "contactTitle": "추가 도움이 필요하신가요?",
     "contactDesc": "도움이 필요하시면 연락주세요.",
-    "contactEmail": "support@klosyt.com"
+    "contactEmail": "support@Klosyt.com"
   },
   "index": {
     "languagesTitle": "16개 언어로 이용 가능"

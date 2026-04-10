@@ -1,131 +1,60 @@
 /**
- * Klosyt Website — Phosphor Icon Replacement
- * Replaces emoji in card-ico and pl-ico elements with inline Phosphor SVGs
- * rendered with gradient strokes matching the app's SF Symbol color scheme.
- *
- * Icons: Phosphor 2.1.1 Regular weight (256×256 viewBox, stroke-based)
- * See: https://phosphoricons.com
+ * Klosyt Website — SF Symbol Icon Replacement
+ * Replaces emoji in card-ico and pl-ico elements with inline SVGs + gradients
+ * matching the app's SF Symbol color scheme.
  */
 (function () {
     'use strict';
 
-    // Phosphor SVG inner content (after bounding rect) + gradient colors
-    const icons = {
-        '✨': {
-            svg: '<path d="M84.27,171.73l-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3a7.92,7.92,0,0,1,0,14.86l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="176" y1="16" x2="176" y2="64" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="224" y1="72" x2="224" y2="104" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="152" y1="40" x2="200" y2="40" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="208" y1="88" x2="240" y2="88" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#c073ff', '#af52de']
-        },
-        '👔': {
-            svg: '<path d="M192,120h28.34a8.44,8.44,0,0,0,7.5-4.42l19.27-36.81a7.81,7.81,0,0,0-3.33-10.52L192,40" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M64,120H35.66a8.44,8.44,0,0,1-7.5-4.42L8.89,78.77a7.81,7.81,0,0,1,3.33-10.52L64,40" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M160,40a32,32,0,0,1-64,0H64V208a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V40Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#5ac8fa', '#007aff']
-        },
-        '📅': {
-            svg: '<rect x="40" y="40" width="176" height="176" rx="8" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="176" y1="24" x2="176" y2="56" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="24" x2="80" y2="56" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="40" y1="88" x2="216" y2="88" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="88 128 104 120 104 184" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M138.14,128a16,16,0,1,1,26.64,17.63L136,184h32" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ff3b30', '#ff9500']
-        },
-        '🔐': {
-            svg: '<rect x="40" y="88" width="176" height="128" rx="8" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="152" r="12"/><path d="M88,88V56a40,40,0,0,1,80,0V88" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#34c759', '#30b0c7']
-        },
-        '☁️': {
-            svg: '<path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.92,97.74" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#5ac8fa', '#007aff']
-        },
-        '🔍': {
-            svg: '<path d="M34.1,61.38A8,8,0,0,1,40,48H216a8,8,0,0,1,5.92,13.38L152,136v58.65a8,8,0,0,1-3.56,6.66l-32,21.33A8,8,0,0,1,104,216V136Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ff2d55', '#ff3b30']
-        },
-        '📸': {
-            svg: '<path d="M208,208H48a16,16,0,0,1-16-16V80A16,16,0,0,1,48,64H80L96,40h64l16,24h32a16,16,0,0,1,16,16V192A16,16,0,0,1,208,208Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="132" r="36" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#8e8e93', '#636366']
-        },
-        '📥': {
-            svg: '<path d="M184,128h40a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H72" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="24" x2="128" y2="128" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="80 80 128 128 176 80" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="188" cy="168" r="12"/>',
-            g: ['#007aff', '#5ac8fa']
-        },
-        '👗': {
-            svg: '<line x1="160" y1="35.22" x2="160" y2="8" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="8" x2="96" y2="35.22" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M200,224a8,8,0,0,0,7.35-11.15L160,112l22.86-35.88a8,8,0,0,0,0-8.24L160,35.22,153,44a32,32,0,0,1-50,0l-7-8.77L73.14,67.88a8,8,0,0,0,0,8.24L96,112,48.66,212.85A8,8,0,0,0,56,224Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="112" x2="160" y2="112" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ff3b60', '#ff2d55']
-        },
-        '📱': {
-            svg: '<rect x="64" y="24" width="128" height="208" rx="16" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="64" y1="56" x2="192" y2="56" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="64" y1="200" x2="192" y2="200" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#007aff', '#5856d6']
-        },
-        '🏷️': {
-            svg: '<path d="M42.34,138.34A8,8,0,0,1,40,132.69V40h92.69a8,8,0,0,1,5.65,2.34l99.32,99.32a8,8,0,0,1,0,11.31L153,237.66a8,8,0,0,1-11.31,0Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="84" cy="84" r="12"/>',
-            g: ['#ff9f0a', '#ffcc00']
-        },
-        '🔗': {
-            svg: '<path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#8e8e93', '#636366']
-        },
-        '🎨': {
-            svg: '<path d="M128,192a24,24,0,0,1,24-24h46.21a24,24,0,0,0,23.4-18.65A96.48,96.48,0,0,0,224,127.17c-.45-52.82-44.16-95.7-97-95.17a96,96,0,0,0-95,96c0,41.81,26.73,73.44,64,86.61A24,24,0,0,0,128,192Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="76" r="12"/><circle cx="84" cy="100" r="12"/><circle cx="84" cy="156" r="12"/><circle cx="172" cy="100" r="12"/>',
-            g: ['#ff9500', '#ffcc00']
-        },
-        '📦': {
-            svg: '<polyline points="32.7 76.92 128 129.08 223.3 76.92" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M131.84,25l88,48.18a8,8,0,0,1,4.16,7v95.64a8,8,0,0,1-4.16,7l-88,48.18a8,8,0,0,1-7.68,0l-88-48.18a8,8,0,0,1-4.16-7V80.18a8,8,0,0,1,4.16-7l88-48.18A8,8,0,0,1,131.84,25Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="129.09" x2="128" y2="232" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#a2845e', '#c89b3c']
-        },
-        '💡': {
-            svg: '<line x1="88" y1="232" x2="168" y2="232" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M78.7,167A79.87,79.87,0,0,1,48,104.45C47.76,61.09,82.72,25,126.07,24a80,80,0,0,1,51.34,142.9A24.3,24.3,0,0,0,168,186v6a8,8,0,0,1-8,8H96a8,8,0,0,1-8-8v-6A24.11,24.11,0,0,0,78.7,167Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M136,56c20,3.37,36.61,20,40,40" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ffcc00', '#ff9500']
-        },
-        '📤': {
-            svg: '<path d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="128" x2="128" y2="24" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="80 72 128 24 176 72" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="188" cy="168" r="12"/>',
-            g: ['#5b9bd5', '#5ac8fa']
-        },
-        '🧠': {
-            svg: '<path d="M88,136a40,40,0,1,1-40,40v-6.73" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,136a40,40,0,1,0,40,40v-6.73" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M72,172H64A48,48,0,0,1,48,78.73V72a40,40,0,0,1,80,0V176" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M184,172h8a48,48,0,0,0,16-93.27V72a40,40,0,0,0-80,0" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M200,112h-4a28,28,0,0,1-28-28V80" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M56,112h4A28,28,0,0,0,88,84V80" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#af52de', '#5856d6']
-        },
-        '🌤️': {
-            svg: '<line x1="87.66" y1="56.73" x2="83.5" y2="33.09" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="56.69" y1="76.46" x2="37.03" y2="62.69" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="48.73" y1="112.31" x2="25.09" y2="116.48" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="123.52" y1="64.69" x2="137.28" y2="45.03" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M96,144a68.06,68.06,0,1,1,68,72H84a44,44,0,1,1,14.2-85.66" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M59.65,135.35a48,48,0,1,1,80.19-50.94" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ffcc00', '#5ac8fa']
-        },
-        '🚀': {
-            svg: '<path d="M191.11,112.89c24-24,25.5-52.55,24.75-65.28a8,8,0,0,0-7.47-7.47c-12.73-.75-41.26.73-65.28,24.75L80,128l48,48Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M136,72H74.35a8,8,0,0,0-5.65,2.34L34.35,108.69a8,8,0,0,0,4.53,13.57L80,128" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M184,120v61.65a8,8,0,0,1-2.34,5.65l-34.35,34.35a8,8,0,0,1-13.57-4.53L128,176" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M94.56,187.82C90.69,196.31,77.65,216,40,216c0-37.65,19.69-50.69,28.18-54.56" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ff9500', '#ffcc00']
-        },
-        '👑': {
-            svg: '<circle cx="128" cy="52" r="20" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="220" cy="80" r="20" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="36" cy="80" r="20" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="120.02 70.35 88 144 48.61 95.52" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="207.39 95.52 168 144 135.98 70.35" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M39.29,99.73l15.6,93.59A8,8,0,0,0,62.78,200H193.22a8,8,0,0,0,7.89-6.68l15.6-93.59" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#FFD700', '#FFB300']
-        },
-        '❌': {
-            svg: '<line x1="160" y1="96" x2="96" y2="160" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="96" x2="160" y2="160" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="128" r="96" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#ff3b30', '#ff3b30']
-        },
-        '🌐': {
-            svg: '<circle cx="128" cy="128" r="96" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,128c0,64-40,96-40,96s-40-32-40-96,40-96,40-96S168,64,168,128Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="96" x2="218.54" y2="96" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="37.46" y1="160" x2="218.54" y2="160" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#007aff', '#5ac8fa']
-        }
+    // Icon definitions: SVG path + gradient colors matching the app
+    var icons = {
+        '✨': { d: 'M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2zm8 5l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3zm-4 9l.75 2.25L17 19.5l-2.25.75L14 22.5l-.75-2.25L11 19.5l2.25-.75L14 16z', g: ['#c073ff', '#af52de'] },
+        '👔': { d: 'M12 2a2 2 0 012 2c0 .7-.37 1.32-.93 1.66L13 5.73V8l6.5 4.5c.31.21.5.56.5.94 0 .62-.5 1.12-1.12 1.12H5.12C4.5 14.56 4 14.06 4 13.44c0-.38.19-.73.5-.94L11 8V5.73A2 2 0 0112 2z', g: ['#5ac8fa', '#007aff'] },
+        '📅': { d: 'M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z', g: ['#ff3b30', '#ff9500'] },
+        '🔐': { d: 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM15 8H9V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2z', g: ['#34c759', '#30b0c7'] },
+        '☁️': { d: 'M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A6 6 0 006 20h13a5 5 0 00.35-9.96z', g: ['#5ac8fa', '#007aff'] },
+        '🔍': { d: 'M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z', g: ['#ff2d55', '#ff3b30'] },
+        '📸': { d: 'M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z', g: ['#8e8e93', '#636366'] },
+        '📥': { d: 'M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z', g: ['#007aff', '#5ac8fa'] },
+        '👗': { d: 'M16 3l4 4-3 2v11H7V9L4 7l4-4c0 0 1.5 2 4 2s4-2 4-2z', g: ['#ff3b60', '#ff2d55'] },
+        '📱': { d: 'M16 1H8c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm-4 20c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm4-4H8V5h8v12z', g: ['#007aff', '#5856d6'] },
+        '🏷️': { d: 'M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58s1.05-.22 1.41-.58l7-7c.37-.36.59-.86.59-1.42 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z', g: ['#ff9f0a', '#ffcc00'] },
+        '🔗': { d: 'M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z', g: ['#8e8e93', '#636366'] },
+        '🎨': { d: 'M22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM12 4c-4.42 0-8 3.58-8 8 0 .88.14 1.73.42 2.52.6-.34 1.3-.52 2.08-.52 1.58 0 2.96.86 3.7 2.13.5.86 1.4 1.37 2.3 1.37h1c1.1 0 2-.9 2-2 0-.37-.1-.72-.28-1.02a.97.97 0 01.28-1.23c.47-.35 1.05-.5 1.63-.25.9.4 1.87-.36 1.87-1.35V12c0-4.42-3.58-8-8-8zM6.5 11a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3-4a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3 4a1.5 1.5 0 110-3 1.5 1.5 0 010 3z', g: ['#ff9500', '#ffcc00'] },
+        '📦': { d: 'M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.36.2-.78.2-1.14 0l-7.9-4.44A1 1 0 013 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.36-.2.78-.2 1.14 0l7.9 4.44c.32.17.53.5.53.88v9z', g: ['#a2845e', '#c89b3c'] },
+        '💡': { d: 'M9 21h6v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z', g: ['#ffcc00', '#ff9500'] },
+        '📤': { d: 'M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6c-1.11 0-2-.9-2-2V10c0-1.11.89-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .89 2 2z', g: ['#5b9bd5', '#5ac8fa'] },
+        '🧠': { d: 'M12 2a9 9 0 00-9 9c0 3.1 1.6 5.8 4 7.4V21a1 1 0 001 1h8a1 1 0 001-1v-2.6c2.4-1.6 4-4.3 4-7.4a9 9 0 00-9-9zm-2 15H9v-3h1v3zm2 0h-1v-5h1v5zm2 0h-1v-3h1v3z', g: ['#af52de', '#5856d6'] },
+        '🌤️': { d: 'M17 8a4 4 0 11-4.27-3.98A5.5 5.5 0 003 10.5C3 13.54 5.46 16 8.5 16H18a4 4 0 00-1-8zm2.5-5a3 3 0 110 6 3 3 0 010-6z', g: ['#ffcc00', '#5ac8fa'] },
+        '🔓': { d: 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h2c0-1.66 1.34-3 3-3s3 1.34 3 3v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z', g: ['#66bfff', '#007aff'] },
+        '🏗️': { d: 'M13.7 2.3l-1.4 1.4L15.6 7H11v2h2l-4 9.5L7 17H2v2h5.3l2-4.7 1.4 1.4c.4.4 1 .4 1.4 0l5.6-5.6c.4-.4.4-1 0-1.4L13.7 2.3z', g: ['#8e8e93', '#636366'] },
+        '🚀': { d: 'M18 3v2h-1V3H7v2H6V3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.5l-3-1.5-3 1.5.58-3.35L7.15 9.9l3.4-.5L12 6.25l1.45 3.15 3.4.5-2.43 2.25.58 3.35z', g: ['#ff9500', '#ffcc00'] },
+        '👑': { d: 'M3 14l2-7 3.5 3L12 4l3.5 6L19 7l2 7H3zm1 2h16v2H4v-2z', g: ['#FFD700', '#FFB300'] },
+        '❌': { d: 'M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z', g: ['#ff3b30', '#ff3b30'] },
+        '🌐': { d: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z', g: ['#007aff', '#5ac8fa'] }
     };
 
-    let idCounter = 0;
-    const MAX_MUTATIONS = 10;
+    var idCounter = 0;
 
     function makeSvg(icon, size) {
         size = size || 22;
-        const id = 'ig' + (++idCounter);
-        const ref = 'url(#' + id + ')';
-        const content = icon.svg.replace(/cC/g, ref);
-        return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 256 256" fill="' + ref + '" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-            '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">' +
+        var id = 'ig' + (++idCounter);
+        return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+            '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="1" y2="1">' +
             '<stop offset="0%" stop-color="' + icon.g[0] + '"/>' +
             '<stop offset="100%" stop-color="' + icon.g[1] + '"/>' +
             '</linearGradient></defs>' +
-            '<rect width="256" height="256" fill="none"/>' +
-            content + '</svg>';
+            '<path fill="url(#' + id + ')" d="' + icon.d + '"/></svg>';
     }
 
     function replaceEmoji() {
         // Replace emoji in card-ico and pl-ico elements (skip if already has SVG)
-        const targets = document.querySelectorAll('.card-ico, .pl-ico');
+        var targets = document.querySelectorAll('.card-ico, .pl-ico');
         targets.forEach(function (el) {
             if (el.querySelector('svg')) return;
-            const text = el.textContent.trim();
+            var text = el.textContent.trim();
             if (icons[text]) {
-                const size = el.classList.contains('pl-ico') ? 16 : 22;
+                var size = el.classList.contains('pl-ico') ? 16 : 22;
                 el.innerHTML = makeSvg(icons[text], size);
             }
         });
@@ -143,7 +72,7 @@
         });
     }
 
-    let running = false;
+    var running = false;
     function safeReplace() {
         if (running) return;
         running = true;
@@ -159,19 +88,18 @@
     }
 
     // Re-run after i18n applies translations (short delay to batch mutations)
-    let pending = null;
-    let mutationCount = 0;
-    const observer = new MutationObserver(function () {
+    var pending = null;
+    var observer = new MutationObserver(function () {
         if (pending) return;
         pending = setTimeout(function () {
             pending = null;
             safeReplace();
-            if (++mutationCount >= MAX_MUTATIONS) {
-                observer.disconnect();
-            }
         }, 100);
     });
     observer.observe(document.documentElement, { childList: true, subtree: true });
+
+    // Stop observing after 3 seconds
+    setTimeout(function () { observer.disconnect(); }, 3000);
 
     // Expose for manual re-run
     window.klosytIcons = { replace: replaceEmoji, makeSvg: makeSvg, icons: icons };
