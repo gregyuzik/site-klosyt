@@ -20,7 +20,7 @@
 
 html{
     scroll-behavior:smooth;
-    background-color:#050508;
+    background-color:#6E0003;
     overscroll-behavior:none;
 }
 
@@ -30,7 +30,7 @@ html::before{
     content:'';
     position:fixed;
     inset:0;
-    background-color:#050508;
+    background-color:#6E0003;
     background-image:var(--wallpaper-image);
     background-size:cover;
     background-position:center;
