@@ -67,20 +67,18 @@ body{
 
 /* ── Language switcher (injected by i18n.js) ── */
 
-.lang-switcher{position:relative;display:flex;align-items:center}
+.lang-switcher{position:relative}
 .lang-btn{
     display:inline-flex;align-items:center;gap:4px;
-    padding:0;border-radius:100px;border:none;
-    background:none;
+    padding:4px 10px;border-radius:100px;
+    background:rgba(255,255,255,.08);
     text-decoration:none!important;color:var(--text-2)!important;
-    font-size:.85rem;cursor:pointer;transition:opacity .2s;
-    white-space:nowrap;height:22px;
+    font-size:.85rem;cursor:pointer;transition:background .2s;
+    white-space:nowrap;
 }
-.lang-btn:hover{opacity:.7;color:var(--text-1)!important}
-.lang-icon{display:inline-flex;align-items:center}
-.lang-icon svg{width:22px;height:22px}
-.lang-label-text{display:none}
-.theme-name-text{display:none}
+.lang-btn:hover{background:rgba(255,255,255,.14);color:var(--text-1)!important}
+.lang-icon{font-size:1rem}
+.lang-label-text{font-size:.8rem;font-weight:500}
 
 .lang-dropdown{
     display:none;position:absolute;top:calc(100% + 10px);right:0;
@@ -152,41 +150,32 @@ body{
 
 .nav-links{display:flex;align-items:center;gap:1rem}
 .nav-links a{
-    display:inline-flex;align-items:center;gap:4px;
     text-decoration:none;color:var(--text-2);
     font-weight:500;font-size:.9rem;
     transition:color .2s;
 }
 .nav-links a:hover{color:var(--text-1)}
-.nav-links a svg{flex-shrink:0}
 
 /* Theme switcher */
-.theme-switcher{position:relative;display:flex;align-items:center}
+.theme-switcher{position:relative}
 .theme-toggle{
-    background:none;border:none;
-    padding:0;border-radius:100px;
+    background:rgba(255,255,255,.08);border:none;
+    padding:4px 10px;border-radius:100px;
     font-size:.85rem;cursor:pointer;
-    color:var(--text-2);transition:opacity .2s;
-    display:inline-flex;align-items:center;
-    height:22px;
+    color:var(--text-2);transition:background .2s;
 }
-.theme-toggle:hover{opacity:.7}
-#theme-pill{display:inline-flex;align-items:center;gap:6px}
+.theme-toggle:hover{background:rgba(255,255,255,.14)}
 
 .theme-menu{
     display:none;position:absolute;top:calc(100% + 10px);right:0;
     min-width:200px;max-height:400px;overflow-y:auto;
-    background:rgba(20,20,20,.92);
-    backdrop-filter:blur(40px) saturate(1.6);
-    -webkit-backdrop-filter:blur(40px) saturate(1.6);
-    border:1px solid var(--glass-border);
     border-radius:16px;padding:6px;z-index:200;
     box-shadow:0 16px 48px rgba(0,0,0,.6);
 }
 .theme-switcher.open .theme-menu{display:block}
 
 .theme-option{
-    display:flex;align-items:center;width:100%;padding:8px 14px;
+    display:block;width:100%;padding:8px 14px;
     border:none;background:none;color:var(--text-2);
     font-size:.88rem;font-weight:500;text-align:left;
     cursor:pointer;border-radius:10px;
@@ -244,12 +233,6 @@ body{
     margin-top:1.25rem;
     font-size:.85rem;color:var(--text-3);font-weight:500;letter-spacing:.02em;
 }
-
-/* ── What's New ── */
-
-.wn-section{padding-top:0;padding-bottom:0}
-.wn-card{max-width:480px;margin:0 auto;text-align:center}
-.wn-card .card-ico{margin-left:auto;margin-right:auto}
 
 /* ── Steps ── */
 
@@ -311,8 +294,6 @@ body{
     font-size:1.25rem;margin-bottom:1.25rem;
     background:var(--bg);color:var(--c);
 }
-
-.card-ico svg,.pl-ico svg{display:block}
 
 .card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em}
 .card p{font-size:.88rem;color:var(--text-2);line-height:1.55}
@@ -595,8 +576,8 @@ body{
     .nav-bar{background:rgba(255,255,255,.6);border:1px solid rgba(0,0,0,.06)}
     .nav-bar:hover{background:rgba(255,255,255,.75)}
 
-    .theme-toggle{background:none}
-    .theme-toggle:hover{opacity:.7}
+    .theme-toggle{background:rgba(0,0,0,.05)}
+    .theme-toggle:hover{background:rgba(0,0,0,.08)}
 
     .theme-menu{
         background:rgba(255,255,255,.9);border:1px solid rgba(0,0,0,.08);
@@ -627,8 +608,8 @@ body{
     .lang-row span{background:rgba(255,255,255,.45);border:1px solid rgba(0,0,0,.06)}
     .lang-row span:hover{background:rgba(255,255,255,.65)}
 
-    .lang-btn{background:none;color:var(--text-2)!important}
-    .lang-btn:hover{opacity:.7;color:var(--text-1)!important}
+    .lang-btn{background:rgba(0,0,0,.05);color:var(--text-2)!important}
+    .lang-btn:hover{background:rgba(0,0,0,.08);color:var(--text-1)!important}
     .lang-dropdown{
         background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.08);
         box-shadow:0 16px 48px rgba(0,0,0,.1);
