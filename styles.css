@@ -17,11 +17,7 @@
     --ease:cubic-bezier(.16,1,.3,1);
 }
 
-html{
-    scroll-behavior:smooth;
-    background-color:#050508;
-    background-size:cover;background-position:center;background-repeat:no-repeat;
-}
+html{scroll-behavior:smooth;background-color:#050508}
 
 /* ── Skip to content ── */
 .skip-link{
@@ -41,24 +37,13 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
-    min-height:100vh;min-height:100dvh;
-    overflow-x:hidden;
-}
-
-/* ── Wallpaper background ──
-   Separate fixed layer extended 100px beyond the viewport (plus safe-area
-   insets) so the wallpaper still covers when iOS Safari's URL bar collapses
-   or dynamic viewport changes. Sits behind .mesh-bg in DOM order so the orbs
-   composite over it without having to shift their positions. */
-
-.wallpaper-bg{
-    position:fixed;z-index:0;
-    left:0;right:0;
-    top:calc(-1 * env(safe-area-inset-top, 0px) - 100px);
-    bottom:calc(-1 * env(safe-area-inset-bottom, 0px) - 100px);
     background-color:#050508;
-    background-size:cover;background-position:center;background-repeat:no-repeat;
-    pointer-events:none;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100dvh;
+    overflow-x:hidden;
 }
 
 /* ── Animated Gradient Mesh ── */
@@ -513,9 +498,7 @@ body{
     }
 
     html{background-color:#f2f2f7}
-    body{color:var(--text-1)}
-
-    .wallpaper-bg{background-color:#f2f2f7}
+    body{background-color:#f2f2f7;color:var(--text-1)}
     .mesh-orb{opacity:.3}
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
     .orb-2{background:radial-gradient(circle,#d4b8f0 0%,transparent 70%)}
