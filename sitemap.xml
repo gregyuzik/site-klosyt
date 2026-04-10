@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://klosyt.com/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://klosyt.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://klosyt.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://klosyt.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://klosyt.com/da/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://klosyt.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://klosyt.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://klosyt.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://klosyt.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://klosyt.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://klosyt.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://klosyt.com/nb/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://klosyt.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klosyt.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://klosyt.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://klosyt.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://klosyt.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klosyt.com/"/>
+  </url>
+
+  <!-- Support -->
+  <url>
+    <loc>https://klosyt.com/support.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://klosyt.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://klosyt.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://klosyt.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://klosyt.com/da/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://klosyt.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://klosyt.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://klosyt.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://klosyt.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://klosyt.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://klosyt.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://klosyt.com/nb/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://klosyt.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klosyt.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://klosyt.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://klosyt.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://klosyt.com/vi/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klosyt.com/support.html"/>
+  </url>
+
+  <!-- Privacy -->
+  <url>
+    <loc>https://klosyt.com/privacy.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://klosyt.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://klosyt.com/zh-Hans/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://klosyt.com/zh-Hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://klosyt.com/da/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://klosyt.com/nl/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://klosyt.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://klosyt.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://klosyt.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://klosyt.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://klosyt.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://klosyt.com/nb/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://klosyt.com/pt-BR/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klosyt.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://klosyt.com/sv/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://klosyt.com/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://klosyt.com/vi/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klosyt.com/privacy.html"/>
+  </url>
+
+  <!-- Localized homepages -->
+  <url><loc>https://klosyt.com/zh-Hans/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/zh-Hant/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/da/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/nl/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/fr/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/de/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/it/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/ja/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/ko/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/nb/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/pt-BR/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/es/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/sv/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/tr/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://klosyt.com/vi/</loc><lastmod>2026-04-09</lastmod><priority>0.9</priority></url>
+
+  <!-- Localized support pages -->
+  <url><loc>https://klosyt.com/zh-Hans/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/zh-Hant/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/da/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/nl/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/fr/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/de/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/it/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/ja/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/ko/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/nb/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/pt-BR/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/es/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/sv/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/tr/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+  <url><loc>https://klosyt.com/vi/support.html</loc><lastmod>2026-04-09</lastmod><priority>0.7</priority></url>
+
+  <!-- Localized privacy pages -->
+  <url><loc>https://klosyt.com/zh-Hans/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/zh-Hant/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/da/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/nl/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/fr/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/de/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/it/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/ja/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/ko/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/nb/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/pt-BR/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/es/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/sv/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/tr/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://klosyt.com/vi/privacy.html</loc><lastmod>2026-04-09</lastmod><priority>0.5</priority></url>
+
+</urlset>

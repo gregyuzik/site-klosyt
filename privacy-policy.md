@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last Updated: March 13, 2026**
+**Last Updated: April 9, 2026**
 
 ## Our Privacy Promise
 
@@ -8,7 +8,7 @@ Klosyt is owned, operated, and maintained by Gregory Yuzik ("us", or "we").
 
 Your privacy isn't just a feature of Klosyt — it's the foundation. **We do not collect, store, transmit, or have access to any of your personal data. Period.**
 
-Klosyt was built from the ground up so that your wardrobe, your photos, and your personal information never leave your device or your personal iCloud account. We cannot see your data, and we designed it that way on purpose.
+Klosyt was built from the ground up so that your Klosyt, your photos, and your personal information never leave your device or your personal iCloud account. We cannot see your data, and we designed it that way on purpose.
 
 ## Zero Data Collection
 
@@ -18,7 +18,7 @@ We want to be completely transparent: **Klosyt collects nothing.**
 |-----------|-----------|---------|
 | Photos & Images | ❌ No | Stored only on your device and your personal iCloud account. We never receive or access them. |
 | Location | ❌ No | Weather features use Apple's WeatherKit, which processes location entirely on Apple's servers. Your location is never sent to us. |
-| Wardrobe Data | ❌ No | Clothing items, outfits, calendar entries, and preferences stay on your device and in your personal iCloud account. |
+| Klosyt Data | ❌ No | Clothing items, outfits, calendar entries, and preferences stay on your device and in your personal iCloud account. |
 | Names or Emails | ❌ No | We do not collect any personally identifiable information. |
 | Usage Analytics | ❌ No | We do not track how you use the App. |
 | Advertising Data | ❌ No | There are no ads in Klosyt and no advertising SDKs. |
@@ -48,7 +48,7 @@ Klosyt may request the following device permissions. These are used entirely on-
 
 - **Apple WeatherKit** — Provides weather data for outfit suggestions. Requests are processed by Apple's servers, not ours.
 - **Apple StoreKit** — Handles subscription purchases. All payment information is managed by Apple. We never receive or store your payment details.
-- **Apple CloudKit** — Syncs your wardrobe across your devices through your personal iCloud account. We cannot access this data.
+- **Apple CloudKit** — Syncs your Klosyt across your devices through your personal iCloud account. We cannot access this data.
 
 For more information, see [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
 
@@ -72,7 +72,7 @@ Regardless of where you live, Klosyt's privacy-first architecture means your rig
 
 For users in the European Economic Area (EEA), these rights are guaranteed under the General Data Protection Regulation (GDPR). For users in Brazil, these rights are provided under the Lei Geral de Proteção de Dados (LGPD). Since Klosyt collects no personal data, no data processing agreement or legal basis for processing is required.
 
-For any privacy-related inquiries, contact us at [support@Klosyt.com](mailto:support@Klosyt.com).
+For any privacy-related inquiries, contact us at [support@klosyt.com](mailto:support@klosyt.com).
 
 ## Website Analytics
 
@@ -84,4 +84,4 @@ We may update this Privacy Policy from time to time. Changes will be reflected b
 
 ## Contact Us
 
-If you have any questions or concerns about this Privacy Policy, please contact Klosyt at [support@Klosyt.com](mailto:support@Klosyt.com).
+If you have any questions or concerns about this Privacy Policy, please contact Klosyt at [support@klosyt.com](mailto:support@klosyt.com).
