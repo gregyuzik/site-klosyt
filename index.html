@@ -5,24 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klosyt — Your AI Closet</title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=__GA_MEASUREMENT_ID__"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
+      gtag('config', '__GA_MEASUREMENT_ID__');
     </script>
     <meta name="description" content="Klosyt is the ultimate AI closet app. Organize, style, and track your clothing seamlessly.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://klosyt.com/">
-    <meta property="og:title" content="Klosyt — Your AI Closet">
-    <meta property="og:description" content="Klosyt is the ultimate AI closet app. Organize, style, and track your clothing seamlessly.">
-    <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://klosyt.com/assets/AppIcon.png">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/AppIcon.png">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -45,7 +38,7 @@
             <a href="support.html" data-i18n="nav.support">Support</a>
             <div class="theme-switcher" id="theme-switcher">
                 <button class="theme-toggle" id="theme-btn" aria-label="Change theme">
-                    <span id="theme-pill"></span>
+                    <span id="theme-pill">🎨</span>
                 </button>
                 <div class="theme-menu glass" id="theme-dropdown"></div>
             </div>
@@ -60,22 +53,11 @@
             <img src="assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon dynamic-app-icon">
         </div>
         <h1 data-i18n="hero.mainTitle">Your AI-Powered<br>Digital Closet</h1>
-        <p class="hero-sub" data-i18n="hero.mainSubtitle">Snap your clothes, let AI organize them, and get weather-smart outfit suggestions&nbsp;&mdash; all on-device.</p>
+        <p class="hero-sub" data-i18n="hero.mainSubtitle">Snap your clothes, let AI organize them, and get weather-smart outfit suggestions&nbsp;&mdash; all on-device and private.</p>
         <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
             <img src="assets/app-store-badge.svg" alt="Download on the App Store" class="badge-img">
         </a>
         <p class="hero-devices" data-i18n="hero.platforms">iPhone &middot; iPad &middot; Mac &middot; Apple&nbsp;TV &middot; Vision&nbsp;Pro</p>
-    </div>
-</section>
-
-<!-- What's New -->
-<section class="section wn-section">
-    <div class="wrap tc">
-        <div class="glass card wn-card fade-up">
-            <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)">🚀</span>
-            <h3 data-i18n="whatsNew.title">Klosyt 2.0</h3>
-            <p data-i18n="whatsNew.desc">10x faster AI with color theory, tap any item to generate outfits, lock &amp; regenerate pieces, Siri support, outfit widgets, Instagram sharing, free themes, and 16 languages.</p>
-        </div>
     </div>
 </section>
 
@@ -153,7 +135,7 @@
                 <li><span class="pl-ico" style="--c:#c073ff;--bg:rgba(192,115,255,.15)">✨</span><span data-i18n="pricing.aiStyleAssistant">AI Style Assistant</span></li>
                 <li><span class="pl-ico" style="--c:#007aff;--bg:rgba(0,122,255,.15)">👔</span><span data-i18n="pricing.outfits">Outfits</span></li>
                 <li><span class="pl-ico" style="--c:#34c759;--bg:rgba(52,199,89,.15)">📅</span><span data-i18n="pricing.calendarTracking">Calendar Tracking</span></li>
-                <li><span class="pl-ico" style="--c:#ff9940;--bg:rgba(255,153,64,.15)">🎨</span><span data-i18n="pricing.themesWallpapers">Themes &amp; Wallpapers (Free)</span></li>
+                <li><span class="pl-ico" style="--c:#ff9940;--bg:rgba(255,153,64,.15)">🎨</span><span data-i18n="pricing.themesWallpapers">Themes &amp; Wallpapers</span></li>
                 <li><span class="pl-ico" style="--c:#ffcc00;--bg:rgba(255,204,0,.15)">🌤️</span><span data-i18n="pricing.weatherData">Real-Time Weather</span></li>
             </ul>
             <div class="price-foot">
@@ -184,7 +166,6 @@
             <a href="index.html" data-i18n="footer.home">Home</a>
             <a href="support.html" data-i18n="footer.support">Support</a>
             <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-            <a href="https://vultyr.app">Vultyr</a>
         </div>
         <p class="foot-copy" data-i18n="footer.copyright">&copy; 2026 Klosyt. All rights reserved.</p>
     </div>
@@ -200,8 +181,7 @@ document.addEventListener('DOMContentLoaded',function(){
     document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
 });
 </script>
-<script src="script.js?v=5"></script>
+<script src="script.js?v=4"></script>
 <script src="i18n.js"></script>
-<script src="icons.js"></script>
 </body>
 </html>

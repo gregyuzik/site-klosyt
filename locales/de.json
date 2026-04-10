@@ -6,7 +6,7 @@
   },
   "nav": {
     "features": "Funktionen",
-    "klosytPlus": "Klosyt+",
+    "klosytPlus": "👑 Klosyt+",
     "support": "Support",
     "privacy": "Datenschutz"
   },
@@ -22,10 +22,6 @@
     "categorizeDesc": "KI erkennt Typ, Farbe, Muster, Saison und Material sofort.",
     "styleTitle": "Stylen",
     "styleDesc": "Erhalte Outfit-Vorschläge basierend auf deiner Garderobe, Aktivität und dem aktuellen Wetter."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "10x schnellere KI mit Farbtheorie, tippe auf ein Kleidungsstück um Outfits zu generieren, Teile sperren und neu generieren, Siri-Unterstützung, Outfit-Widgets, Instagram-Teilen, kostenlose Themen und 16 Sprachen."
   },
   "features": {
     "sectionTitle": "Alles was du brauchst,<br>nichts was du nicht brauchst",
@@ -54,8 +50,8 @@
     "outfitsDesc": "Erstelle, speichere und teile deine Outfits",
     "calendarTracking": "Kalender-Tracking",
     "calendarTrackingDesc": "Notiere was du trägst und erstelle einen Verlauf",
-    "themesWallpapers": "Themen & Hintergründe (Kostenlos)",
-    "themesWallpapersDesc": "Gestalte die App mit deinen Lieblingsthemen — kostenlos für alle",
+    "themesWallpapers": "Themen & Hintergründe",
+    "themesWallpapersDesc": "Gestalte die App mit deinen Lieblingsthemen",
     "alwaysFree": "Klosyt ist immer kostenlos",
     "alwaysFreeDesc": "Dein Klosyt bleibt immer kostenlos",
     "weatherData": "Echtzeit-Wetterdaten",
@@ -81,7 +77,7 @@
     "tableHeaderType": "Datentyp",
     "tableHeaderCollected": "Gesammelt?",
     "tableHeaderDetails": "Details",
-    "tableNo": "Nein",
+    "tableNo": "❌ Nein",
     "tablePhotos": "Fotos & Bilder",
     "tablePhotosDetail": "Ausschließlich auf deinem Gerät und in deinem persönlichen iCloud-Konto gespeichert. Wir empfangen oder greifen niemals darauf zu.",
     "tableLocation": "Standort",
@@ -142,7 +138,7 @@
     "ownershipTitle": "Dein Inhalt, dein Eigentum",
     "ownershipText": "Alles, was du in Klosyt erstellst — Fotos, Kleidungsstücke, Outfits, Einstellungen und alle anderen Inhalte — <strong>gehört vollständig dir.</strong> Deine Daten sind auf deinem Gerät und in deinem persönlichen iCloud-Konto gespeichert. Wir greifen nicht darauf zu, sammeln sie nicht und beanspruchen keine Rechte an deinen Inhalten. Wenn du die App löschst, werden deine lokalen Daten mit ihr gelöscht; deine iCloud-Daten können über deine Apple-ID-Einstellungen verwaltet werden.",
     "subscriptionsTitle": "Abonnements",
-    "subscriptionsText": "Klosyt bietet ein optionales, automatisch verlängerbares Abonnement (\"Klosyt+\"), das Premium-Funktionen wie KI-Outfit-Vorschläge, Outfit-Planung und Kalender-Tracking freischaltet. Themen und Hintergründe stehen allen Nutzern kostenlos zur Verfügung. <strong>Die kostenlose Version bietet unbegrenzten Garderobenspeicher und Kernfunktionen für immer</strong> — du verlierst nie den Zugriff auf deine Kleiderbibliothek.",
+    "subscriptionsText": "Klosyt bietet ein optionales, automatisch verlängerbares Abonnement (\"Klosyt+\"), das Premium-Funktionen wie KI-Outfit-Vorschläge, Outfit-Planung, Kalender-Tracking und Themen freischaltet. <strong>Die kostenlose Version bietet unbegrenzten Garderobenspeicher und Kernfunktionen für immer</strong> — du verlierst nie den Zugriff auf deine Kleiderbibliothek.",
     "subBilling1": "Die Zahlung wird bei Kaufbestätigung deinem Apple-ID-Konto belastet.",
     "subBilling2": "Abonnements verlängern sich automatisch, es sei denn, sie werden mindestens 24 Stunden vor Ende des aktuellen Abrechnungszeitraums gekündigt.",
     "subBilling3": "Deinem Konto wird die Verlängerung innerhalb von 24 Stunden vor Ende des aktuellen Zeitraums belastet.",
@@ -194,7 +190,7 @@
     "filterTitle": "Filtern & Sortieren",
     "filterDesc": "Klosyts GelCap-Filtersystem lässt dich deine Garderobe sofort eingrenzen. Filtere nach Kategorie, Saison, Farbe, Material oder Muster. Suche nach Namen und wechsle zwischen Raster- und Garderobenansicht.",
     "themesTitle": "Themen & Hintergründe",
-    "themesDesc": "Mache Klosyt zu deinem eigenen! Wähle aus atemberaubenden Hintergrundbildern und Themes, um das Erscheinungsbild deiner App anzupassen — völlig kostenlos, kein Abonnement erforderlich. Dein gewähltes Theme synchronisiert sich über alle Apple-Geräte.",
+    "themesDesc": "Mache Klosyt zu deinem eigenen! Mit Klosyt+ wähle aus atemberaubenden Hintergrundbildern und Themes, um das Erscheinungsbild deiner App anzupassen. Dein gewähltes Theme synchronisiert sich über alle Apple-Geräte.",
     "objectCaptureTitle": "Object Capture (3D-Scan)",
     "objectCaptureDesc": "Auf iPhone Pro-Modellen mit LiDAR kannst du beeindruckende 3D-Scans deiner Kleidungsstücke erstellen. Gehe um den Artikel herum, um jeden Winkel zu erfassen. Das 3D-Modell wird zusammen mit dem Standardfoto gespeichert.",
     "gettingStartedTitle": "Erste Schritte",
