@@ -23,6 +23,19 @@ html{
     background-color:#050508;
 }
 
+html::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background-color:#050508;
+    background-image:var(--wallpaper-image);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    z-index:-2;
+    pointer-events:none;
+}
+
 /* ── Skip to content ── */
 .skip-link{
     position:absolute;top:-100%;left:50%;transform:translateX(-50%);
@@ -43,21 +56,6 @@ body{
     color:var(--text-1);
     min-height:100dvh;
     overflow-x:hidden;
-    position:relative;
-    isolation:isolate;
-}
-
-body::before{
-    content:'';
-    position:fixed;
-    inset:0;
-    background-color:#050508;
-    background-image:var(--wallpaper-image);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    z-index:-2;
-    pointer-events:none;
 }
 
 /* ── Animated Gradient Mesh ── */
