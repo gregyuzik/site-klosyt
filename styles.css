@@ -19,7 +19,6 @@
 
 html{
     scroll-behavior:smooth;
-    background-color:#050508;
 }
 
 /* ── Skip to content ── */
@@ -42,6 +41,10 @@ body{
     color:var(--text-1);
     min-height:100lvh;
     overflow-x:hidden;
+    background:
+        radial-gradient(ellipse 140% 65% at 50% 0%,rgba(26,61,143,.55),transparent 75%) fixed,
+        radial-gradient(ellipse 140% 65% at 50% 100%,rgba(212,165,40,.5),transparent 75%) fixed,
+        #050508;
 }
 
 /* ── Animated Gradient Mesh ── */
@@ -49,9 +52,6 @@ body{
 .mesh-bg{
     position:fixed;inset:0;z-index:0;overflow:hidden;
     pointer-events:none;
-    background:
-        radial-gradient(ellipse 120% 55% at 50% 0%,rgba(26,61,143,.45),transparent 70%),
-        radial-gradient(ellipse 120% 55% at 50% 100%,rgba(106,47,193,.4),transparent 70%);
 }
 
 .mesh-orb{
@@ -70,7 +70,7 @@ body{
 }
 .orb-2{
     width:500px;height:500px;
-    background:radial-gradient(circle,#6a2fc1 0%,transparent 70%);
+    background:radial-gradient(circle,#c19a2f 0%,transparent 70%);
     bottom:-10%;right:-5%;
     animation:float-2 22s ease-in-out infinite alternate;
 }
@@ -456,16 +456,16 @@ body{
         --accent-color:#007aff;
     }
 
-    html{background-color:#f2f2f7}
-    body{color:var(--text-1)}
-    .mesh-orb{opacity:.3}
-    .mesh-bg{
+    body{
+        color:var(--text-1);
         background:
-            radial-gradient(ellipse 120% 55% at 50% 0%,rgba(168,196,240,.5),transparent 70%),
-            radial-gradient(ellipse 120% 55% at 50% 100%,rgba(212,184,240,.45),transparent 70%);
+            radial-gradient(ellipse 140% 65% at 50% 0%,rgba(168,196,240,.65),transparent 75%) fixed,
+            radial-gradient(ellipse 140% 65% at 50% 100%,rgba(240,220,140,.6),transparent 75%) fixed,
+            #f2f2f7;
     }
+    .mesh-orb{opacity:.3}
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
-    .orb-2{background:radial-gradient(circle,#d4b8f0 0%,transparent 70%)}
+    .orb-2{background:radial-gradient(circle,#f0dc8c 0%,transparent 70%)}
     .orb-3{background:radial-gradient(circle,#a0d8e8 0%,transparent 70%)}
 
     .hero-glow::after{background:radial-gradient(circle,rgba(26,61,143,.15) 0%,transparent 70%)}
