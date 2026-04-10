@@ -2,8 +2,7 @@
   "meta": {
     "langName": "Spanish",
     "langNameNative": "Español",
-    "dir": "ltr",
-    "changeLanguage": "Cambiar idioma"
+    "dir": "ltr"
   },
   "nav": {
     "features": "Funciones",
@@ -22,7 +21,7 @@
     "categorizeTitle": "Categoriza",
     "categorizeDesc": "La IA detecta tipo, color, patrón, temporada y material al instante.",
     "styleTitle": "Estiliza",
-    "styleDesc": "Recibe sugerencias de outfits basadas en tu armario, actividad y el clima en tiempo real."
+    "styleDesc": "Recibe sugerencias de outfits basadas en tu guardarropa, actividad y el clima en tiempo real."
   },
   "whatsNew": {
     "title": "Klosyt 2.0",
@@ -31,7 +30,7 @@
   "features": {
     "sectionTitle": "Todo lo que necesitas,<br>nada que no",
     "aiStylist": "Estilista IA",
-    "aiStylistDesc": "Sugerencias de outfits adaptadas al clima, creadas a partir de tu armario. Con IA en el dispositivo.",
+    "aiStylistDesc": "Sugerencias de outfits adaptadas al clima, creadas a partir de tu guardarropa. Con IA en el dispositivo.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Arrastra y suelta prendas para crear looks. Guarda favoritos y comparte elegantes tarjetas estilo Pantone.",
     "calendarTitle": "Calendario",
@@ -42,10 +41,6 @@
     "syncDesc": "iCloud mantiene tu armario sincronizado en todos tus dispositivos Apple, al instante y automáticamente.",
     "filtersTitle": "Filtros inteligentes",
     "filtersDesc": "Encuentra cualquier prenda por temporada, color, categoría, material o patrón en segundos."
-  },
-  "whyKlosyt": {
-    "title": "Tu armario,<br>reimaginado",
-    "desc": "Klosyt es el organizador de armario y planificador de outfits con IA que te ayuda a sacar el máximo provecho de cada prenda que tienes. Ya sea que estés eligiendo el outfit de mañana o construyendo el armario cápsula perfecto, la inteligencia en el dispositivo de Klosyt convierte tu clóset en un sistema de estilo inteligente y sostenible — completamente privado, siempre sincronizado en todos tus dispositivos Apple."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -68,23 +63,19 @@
     "supportsDev": "Apoya el desarrollo",
     "supportsDevDesc": "Desarrollo continuo de la app"
   },
-  "cta": {
-    "appStoreAlt": "Descargar en el App Store"
-  },
   "footer": {
     "home": "Inicio",
     "support": "Soporte",
     "privacy": "Privacidad",
-    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. Todos los derechos reservados."
   },
   "privacy": {
     "title": "Política de privacidad",
-    "lastUpdated": "Última actualización: 9 de abril de 2026",
+    "lastUpdated": "Última actualización: 13 de marzo de 2026",
     "promiseTitle": "Nuestra promesa de privacidad",
     "promiseOwner": "Klosyt es propiedad, está operado y es mantenido por Gregory Yuzik (\"nosotros\").",
     "promiseText": "Tu privacidad no es solo una función de Klosyt — es la base. <strong>No recopilamos, almacenamos, transmitimos ni accedemos a ninguno de tus datos personales. Punto.</strong>",
-    "promiseDetail": "Klosyt fue construido desde cero para que tu armario, fotos e información personal nunca salgan de tu dispositivo o tu cuenta personal de iCloud. No podemos ver tus datos, y lo diseñamos así intencionalmente.",
+    "promiseDetail": "Klosyt fue construido desde cero para que tu guardarropa, fotos e información personal nunca salgan de tu dispositivo o tu cuenta personal de iCloud. No podemos ver tus datos, y lo diseñamos así intencionalmente.",
     "zeroTitle": "Cero recopilación de datos",
     "zeroIntro": "Queremos ser completamente transparentes: <strong>Klosyt no recopila nada.</strong>",
     "tableHeaderType": "Tipo de dato",
@@ -95,7 +86,7 @@
     "tablePhotosDetail": "Almacenadas solo en tu dispositivo y tu cuenta personal de iCloud. Nunca las recibimos ni accedemos a ellas.",
     "tableLocation": "Ubicación",
     "tableLocationDetail": "Las funciones meteorológicas usan WeatherKit de Apple, que procesa la ubicación completamente en los servidores de Apple. Tu ubicación nunca se envía a nosotros.",
-    "tableWardrobe": "Datos del armario",
+    "tableWardrobe": "Datos del guardarropa",
     "tableWardrobeDetail": "Prendas, outfits, entradas del calendario y preferencias permanecen en tu dispositivo y tu cuenta personal de iCloud.",
     "tableNames": "Nombres o emails",
     "tableNamesDetail": "No recopilamos información personal identificable.",
@@ -118,7 +109,7 @@
     "appleServicesTitle": "Servicios de la plataforma Apple",
     "appleWeatherKit": "<strong>Apple WeatherKit</strong> — Proporciona datos climáticos para sugerencias de outfits. Las solicitudes son procesadas por los servidores de Apple, no los nuestros.",
     "appleStoreKit": "<strong>Apple StoreKit</strong> — Procesa compras de suscripciones. Toda la información de pago es gestionada por Apple. Nunca recibimos ni almacenamos tus datos de pago.",
-    "appleCloudKit": "<strong>Apple CloudKit</strong> — Sincroniza tu armario entre dispositivos a través de tu cuenta personal de iCloud. No podemos acceder a estos datos.",
+    "appleCloudKit": "<strong>Apple CloudKit</strong> — Sincroniza tu guardarropa entre dispositivos a través de tu cuenta personal de iCloud. No podemos acceder a estos datos.",
     "applePrivacyLink": "Para más información, consulta la <a href=\"https://www.apple.com/legal/privacy/\" style=\"color: var(--accent-color);\">Política de privacidad de Apple</a>.",
     "subscriptionsTitle": "Suscripciones",
     "subscriptionsText": "Klosyt+ es una suscripción opcional con renovación automática procesada completamente por Apple a través del App Store. No tenemos acceso a tu información de pago. Puedes gestionar o cancelar tu suscripción en cualquier momento desde los ajustes de tu Apple ID.",
@@ -132,28 +123,26 @@
     "internationalPortability": "<strong>Derecho a la portabilidad</strong> — Tus datos están almacenados en tu cuenta personal de iCloud bajo tu control.",
     "internationalObjection": "<strong>Derecho de oposición</strong> — Como no realizamos ningún procesamiento de tus datos, no hay nada a lo que oponerse.",
     "internationalGdpr": "Para usuarios en el Espacio Económico Europeo (EEE), estos derechos están garantizados por el Reglamento General de Protección de Datos (RGPD). Para usuarios en Brasil, estos derechos están previstos por la Lei Geral de Proteção de Dados (LGPD). Dado que Klosyt no recopila datos personales, no se requiere acuerdo de procesamiento de datos ni base legal para el procesamiento.",
-    "internationalDpo": "Para consultas relacionadas con la privacidad, contáctanos en <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
-    "websiteAnalyticsTitle": "Análisis del sitio web",
-    "websiteAnalyticsText": "Este sitio web (klosyt.com) utiliza Google Analytics para recopilar datos de uso anónimos como páginas vistas, fuentes de referencia y región geográfica general. Estos datos nos ayudan a entender cómo los visitantes encuentran y usan nuestro sitio web. Google Analytics puede usar cookies y recopila información de acuerdo con la <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Política de privacidad de Google</a>. Este seguimiento se aplica solo al sitio web — la app Klosyt en sí no contiene ningún tipo de análisis ni seguimiento.",
+    "internationalDpo": "Para consultas relacionadas con la privacidad, contáctanos en <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>.",
     "changesTitle": "Cambios a esta política",
     "changesText": "Podemos actualizar esta Política de Privacidad de vez en cuando. Los cambios se reflejarán actualizando la fecha de \"Última actualización\" arriba. El uso continuado de la app después de los cambios constituye la aceptación de la política actualizada.",
     "contactTitle": "Contáctanos",
-    "contactText": "Para preguntas o inquietudes sobre esta Política de Privacidad, contacta a Klosyt en <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>."
+    "contactText": "Para preguntas o inquietudes sobre esta Política de Privacidad, contacta a Klosyt en <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>."
   },
   "terms": {
     "title": "Términos de uso (EULA)",
-    "lastUpdated": "Última actualización: 9 de abril de 2026",
+    "lastUpdated": "Última actualización: 13 de marzo de 2026",
     "acceptanceTitle": "Aceptación de los términos",
     "acceptanceText": "Al descargar, instalar o usar Klosyt (\"la App\"), aceptas quedar vinculado por estos Términos. Si no estás de acuerdo, no uses la App.",
     "serviceTitle": "Descripción del servicio",
-    "serviceText": "Klosyt es una aplicación de gestión de armario disponible en iOS, macOS, tvOS y visionOS. Te permite catalogar prendas, crear outfits, recibir sugerencias basadas en el clima y planificar lo que usarás.",
-    "serviceAiText": "El Estilista IA de Klosyt utiliza datos climáticos en tiempo real proporcionados por Apple WeatherKit para generar sugerencias de outfits personalizadas. Cuando solicitas una sugerencia, la IA analiza las condiciones climáticas actuales y previstas — como temperatura, precipitación y viento — junto con tu armario para recomendar ropa apropiada. Todo el procesamiento de IA ocurre en el dispositivo; los datos climáticos se obtienen de los servidores de Apple y no se envían a nosotros ni a terceros.",
+    "serviceText": "Klosyt es una aplicación de gestión de guardarropa disponible en iOS, macOS, tvOS y visionOS. Te permite catalogar prendas, crear outfits, recibir sugerencias basadas en el clima y planificar lo que usarás.",
+    "serviceAiText": "El Estilista IA de Klosyt utiliza datos climáticos en tiempo real proporcionados por Apple WeatherKit para generar sugerencias de outfits personalizadas. Cuando solicitas una sugerencia, la IA analiza las condiciones climáticas actuales y previstas — como temperatura, precipitación y viento — junto con tu guardarropa para recomendar ropa apropiada. Todo el procesamiento de IA ocurre en el dispositivo; los datos climáticos se obtienen de los servidores de Apple y no se envían a nosotros ni a terceros.",
     "privacyTitle": "Tu privacidad es lo primero",
-    "privacyText": "Creemos que tus datos personales te pertenecen a ti y solo a ti. Klosyt está diseñado para que <strong>nunca recopilemos, accedamos ni almacenemos ninguna de tu información personal.</strong> Tus fotos, datos del armario y preferencias permanecen exclusivamente en tu dispositivo y tu cuenta personal de iCloud.",
+    "privacyText": "Creemos que tus datos personales te pertenecen a ti y solo a ti. Klosyt está diseñado para que <strong>nunca recopilemos, accedamos ni almacenemos ninguna de tu información personal.</strong> Tus fotos, datos del guardarropa y preferencias permanecen exclusivamente en tu dispositivo y tu cuenta personal de iCloud.",
     "ownershipTitle": "Tu contenido, tu propiedad",
     "ownershipText": "Todo lo que creas en Klosyt — fotos, prendas, outfits, preferencias y todo otro contenido — <strong>te pertenece completamente.</strong> Tus datos se almacenan en tu dispositivo y tu cuenta personal de iCloud. No accedemos, recopilamos ni reclamamos ningún derecho sobre tu contenido. Si eliminas la App, tus datos locales se eliminan con ella; tus datos de iCloud se pueden gestionar a través de los ajustes de tu Apple ID.",
     "subscriptionsTitle": "Suscripciones",
-    "subscriptionsText": "Klosyt ofrece una suscripción opcional con auto-renovación (\"Klosyt+\") que desbloquea funciones premium incluyendo sugerencias de outfits IA, planificación de outfits y seguimiento de calendario. Los temas y fondos de pantalla están disponibles para todos los usuarios de forma gratuita. <strong>El nivel gratuito ofrece almacenamiento ilimitado de armario y funciones básicas para siempre</strong> — nunca perderás acceso a tu biblioteca de ropa.",
+    "subscriptionsText": "Klosyt ofrece una suscripción opcional con auto-renovación (\"Klosyt+\") que desbloquea funciones premium incluyendo sugerencias de outfits IA, planificación de outfits y seguimiento de calendario. Los temas y fondos de pantalla están disponibles para todos los usuarios de forma gratuita. <strong>El nivel gratuito ofrece almacenamiento ilimitado de guardarropa y funciones básicas para siempre</strong> — nunca perderás acceso a tu biblioteca de ropa.",
     "subBilling1": "El pago se cobra a tu cuenta de Apple ID al confirmar la compra.",
     "subBilling2": "Las suscripciones se renuevan automáticamente a menos que se cancelen al menos 24 horas antes del final del período de facturación actual.",
     "subBilling3": "La renovación se cobra a tu cuenta dentro de las 24 horas antes del final del período actual.",
@@ -191,11 +180,11 @@
     "outfitsTitle": "Crear outfits",
     "outfitsDesc": "Ve a la pestaña Outfits para mezclar y combinar tus partes superiores, inferiores y zapatos. Arrastra y organiza las capas como las usas, y guarda tus combinaciones favoritas.",
     "aiTitle": "Usar sugerencias IA",
-    "aiDesc": "¿No sabes qué ponerte? ¡Toca el botón Estilista IA! Nuestra inteligencia en el dispositivo analiza el clima en tiempo real y tu armario real para sugerir el outfit perfecto para cualquier actividad.",
+    "aiDesc": "¿No sabes qué ponerte? ¡Toca el botón Estilista IA! Nuestra inteligencia en el dispositivo analiza el clima en tiempo real y tu guardarropa real para sugerir el outfit perfecto para cualquier actividad.",
     "backupTitle": "Respaldo y restauración",
-    "backupDesc": "Tus datos de Klosyt son valiosos. Activa la sincronización con iCloud en los ajustes de la app para hacer una copia de seguridad de todo tu armario. Si obtienes un nuevo dispositivo, inicia sesión con el mismo Apple ID y tu armario se restaurará automáticamente.",
+    "backupDesc": "Tus datos de Klosyt son valiosos. Activa la sincronización con iCloud en los ajustes de la app para hacer una copia de seguridad de todo tu guardarropa. Si obtienes un nuevo dispositivo, inicia sesión con el mismo Apple ID y tu armario se restaurará automáticamente.",
     "multiPlatformTitle": "Multiplataforma",
-    "multiPlatformDesc": "Tu armario digital va contigo a donde vayas. Klosyt es una app nativa en iPhone, iPad, Mac, Apple TV y Vision Pro — tu armario siempre está al alcance.",
+    "multiPlatformDesc": "Tu armario digital va contigo a donde vayas. Klosyt es una app nativa en iPhone, iPad, Mac, Apple TV y Vision Pro — tu guardarropa siempre está al alcance.",
     "managingTitle": "Gestionar tus artículos",
     "managingDesc": "Toca cualquier artículo para ver sus detalles. Edita la categoría, temporada, color, material y patrón. Retoma fotos directamente desde la vista de detalles. Los artículos eliminados van primero a la papelera para poder recuperarlos.",
     "calendarTitle": "Calendario y planificación",
@@ -203,7 +192,7 @@
     "sharingTitle": "Compartir y exportar",
     "sharingDesc": "Comparte tus outfits favoritos como hermosas tarjetas estilo Pantone. Usa la extensión de compartir de iOS para importar imágenes o URLs directamente desde Safari, Instagram o cualquier otra app.",
     "filterTitle": "Filtros y ordenamiento",
-    "filterDesc": "El sistema de filtros GelCap de Klosyt te permite reducir tu armario al instante. Filtra por categoría, temporada, color, material o patrón. Busca por nombre y alterna entre vistas de cuadrícula y armario.",
+    "filterDesc": "El sistema de filtros GelCap de Klosyt te permite reducir tu guardarropa al instante. Filtra por categoría, temporada, color, material o patrón. Busca por nombre y alterna entre vistas de cuadrícula y guardarropa.",
     "themesTitle": "Temas y fondos",
     "themesDesc": "¡Haz que Klosyt sea tuyo! Elige entre impresionantes fondos de pantalla y temas para personalizar el aspecto de tu app — completamente gratis, sin suscripción requerida. El tema elegido se sincroniza en todos tus dispositivos Apple.",
     "objectCaptureTitle": "Object Capture (Escaneo 3D)",
@@ -216,7 +205,7 @@
     "step3Title": "3. Crea tu primer outfit",
     "step3Desc": "Selecciona artículos de tu biblioteca, arrastra para reordenar capas y guarda tu look.",
     "step4Title": "4. Obtén sugerencias IA",
-    "step4Desc": "Elige una actividad y deja que Klosyt analice el clima y tu armario para el outfit perfecto.",
+    "step4Desc": "Elige una actividad y deja que Klosyt analice el clima y tu guardarropa para el outfit perfecto.",
     "tipsTitle": "Consejos y trucos",
     "tip1Title": "Mejor eliminación de fondo",
     "tip1Desc": "Cuelga artículos sobre fondo contrastante — camisa blanca en puerta oscura, chaqueta oscura en pared clara.",
@@ -229,7 +218,7 @@
     "tip5Title": "Etiqueta las temporadas con precisión",
     "tip5Desc": "Marca artículos como verano, invierno o todas las temporadas para outfits apropiados al clima.",
     "tip6Title": "Activa iCloud desde el principio",
-    "tip6Desc": "Activa la sincronización iCloud desde el primer momento para tener tu armario siempre respaldado y sincronizado.",
+    "tip6Desc": "Activa la sincronización iCloud desde el primer momento para tener tu guardarropa siempre respaldado y sincronizado.",
     "manageSubTitle": "Gestiona tu suscripción",
     "manageSubTrialDesc": "Prueba todo gratis por 30 días, luego solo $0.99/mes. Cancela cuando quieras.",
     "manageSubFooter": "Gestiona en Ajustes → Apple ID → Suscripciones. Toca \"Restaurar compras\" en Ajustes de Klosyt para reactivar.",
@@ -239,7 +228,7 @@
     "ts2Summary": "Las fotos no se cargan",
     "ts2Answer": "Verifica que Klosyt tenga permiso para acceder a tu biblioteca de fotos en Ajustes → Klosyt → Fotos. Si las imágenes aparecen vacías, intenta alternar la sincronización iCloud.",
     "ts3Summary": "Las sugerencias IA parecen incorrectas",
-    "ts3Answer": "Asegúrate de que tus artículos tengan etiquetas de temporada y categorías precisas. La IA usa estos metadatos junto con datos climáticos. Más artículos en el armario = mejores sugerencias.",
+    "ts3Answer": "Asegúrate de que tus artículos tengan etiquetas de temporada y categorías precisas. La IA usa estos metadatos junto con datos climáticos. Más artículos en el guardarropa = mejores sugerencias.",
     "ts4Summary": "Suscripción no reconocida",
     "ts4Answer": "Ve a Ajustes de Klosyt y toca \"Restaurar compras\". Asegúrate de haber iniciado sesión con el Apple ID usado para la compra.",
     "ts5Summary": "La eliminación de fondo no es limpia",
@@ -252,7 +241,7 @@
     "ts8Answer": "Toca un artículo → vista de detalles → botón eliminar. Los artículos eliminados van a la papelera por 30 días y pueden recuperarse. Accede a la papelera desde Ajustes.",
     "contactTitle": "¿Aún necesitas ayuda?",
     "contactDesc": "Estamos aquí para ayudarte. Escríbenos a",
-    "contactEmail": "support@klosyt.com"
+    "contactEmail": "support@Klosyt.com"
   },
   "index": {
     "languagesTitle": "Disponible en 16 idiomas"

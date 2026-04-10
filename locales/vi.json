@@ -2,8 +2,7 @@
   "meta": {
     "langName": "Vietnamese",
     "langNameNative": "Tiếng Việt",
-    "dir": "ltr",
-    "changeLanguage": "Đổi ngôn ngữ"
+    "dir": "ltr"
   },
   "nav": {
     "features": "Tính năng",
@@ -12,7 +11,7 @@
     "privacy": "Quyền riêng tư"
   },
   "hero": {
-    "mainTitle": "Tủ đồ kỹ thuật số<br>được hỗ trợ bởi AI",
+    "mainTitle": "Tủ quần áo kỹ thuật số<br>được hỗ trợ bởi AI",
     "mainSubtitle": "Chụp ảnh quần áo, để AI sắp xếp và nhận gợi ý trang phục thông minh theo thời tiết — tất cả trên thiết bị và riêng tư.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
@@ -22,7 +21,7 @@
     "categorizeTitle": "Phân loại",
     "categorizeDesc": "AI nhận biết loại, màu sắc, họa tiết, mùa và chất liệu ngay lập tức.",
     "styleTitle": "Phối đồ",
-    "styleDesc": "Nhận gợi ý trang phục dựa trên tủ đồ, hoạt động và thời tiết thực tế."
+    "styleDesc": "Nhận gợi ý trang phục dựa trên tủ quần áo, hoạt động và thời tiết thực tế."
   },
   "whatsNew": {
     "title": "Klosyt 2.0",
@@ -31,7 +30,7 @@
   "features": {
     "sectionTitle": "Mọi thứ bạn cần,<br>không gì thừa thãi",
     "aiStylist": "AI Stylist",
-    "aiStylistDesc": "Gợi ý trang phục phù hợp thời tiết từ tủ đồ thực của bạn. Chạy bằng AI trên thiết bị.",
+    "aiStylistDesc": "Gợi ý trang phục phù hợp thời tiết từ tủ quần áo thực của bạn. Chạy bằng AI trên thiết bị.",
     "outfitsTitle": "Trang phục",
     "outfitsDesc": "Kéo thả món đồ để tạo phong cách. Lưu yêu thích và chia sẻ thẻ Pantone tuyệt đẹp.",
     "calendarTitle": "Lịch",
@@ -39,19 +38,15 @@
     "privacyTitle": "Riêng tư từ thiết kế",
     "privacyDesc": "Mọi thứ chạy trên thiết bị. Dữ liệu chỉ đồng bộ với iCloud của bạn — không bao giờ chia sẻ với ai.",
     "syncTitle": "Đồng bộ mọi nơi",
-    "syncDesc": "iCloud giữ tủ đồ đồng bộ trên mọi thiết bị Apple, tức thì và tự động.",
+    "syncDesc": "iCloud giữ tủ quần áo đồng bộ trên mọi thiết bị Apple, tức thì và tự động.",
     "filtersTitle": "Bộ lọc thông minh",
     "filtersDesc": "Tìm bất kỳ món đồ nào theo mùa, màu sắc, danh mục, chất liệu hoặc họa tiết trong vài giây."
-  },
-  "whyKlosyt": {
-    "title": "Tủ đồ của bạn,<br>được tái tưởng tượng",
-    "desc": "Klosyt là ứng dụng sắp xếp tủ đồ và lên kế hoạch trang phục được hỗ trợ bởi AI, giúp bạn tận dụng tối đa mọi món đồ. Dù bạn đang chọn trang phục cho ngày mai hay xây dựng tủ đồ viên nang hoàn hảo, trí tuệ trên thiết bị của Klosyt biến tủ đồ thành hệ thống phong cách thông minh, bền vững — hoàn toàn riêng tư, luôn đồng bộ trên mọi thiết bị Apple."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/tháng",
     "trial": "Dùng thử miễn phí 30 ngày · Hủy bất cứ lúc nào",
-    "note": "Tủ đồ luôn miễn phí. Klosyt+ mở khóa tính năng cao cấp.",
+    "note": "Tủ quần áo luôn miễn phí. Klosyt+ mở khóa tính năng cao cấp.",
     "trialDesc": "Dùng thử miễn phí 30 ngày, sau đó chỉ $0.99/tháng. Hủy bất cứ lúc nào. Bạn không bao giờ mất quyền truy cập thư viện.",
     "aiStyleAssistant": "Trợ lý phong cách AI",
     "aiStyleAssistantDesc": "Trang phục cá nhân hóa, thông minh theo thời tiết",
@@ -68,23 +63,19 @@
     "supportsDev": "Hỗ trợ phát triển",
     "supportsDevDesc": "Phát triển ứng dụng liên tục"
   },
-  "cta": {
-    "appStoreAlt": "Tải về trên App Store"
-  },
   "footer": {
     "home": "Trang chủ",
     "support": "Hỗ trợ",
     "privacy": "Quyền riêng tư",
-    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. Mọi quyền được bảo lưu."
   },
   "privacy": {
     "title": "Chính sách quyền riêng tư",
-    "lastUpdated": "Cập nhật lần cuối: 9 tháng 4, 2026",
+    "lastUpdated": "Cập nhật lần cuối: 13 tháng 3 năm 2026",
     "promiseTitle": "Cam kết quyền riêng tư của chúng tôi",
     "promiseOwner": "Klosyt được sở hữu, vận hành và duy trì bởi Gregory Yuzik (\"chúng tôi\").",
     "promiseText": "Quyền riêng tư của bạn không chỉ là một tính năng của Klosyt — đó là nền tảng. <strong>Chúng tôi không thu thập, lưu trữ, truyền tải hoặc truy cập bất kỳ dữ liệu cá nhân nào của bạn. Chấm hết.</strong>",
-    "promiseDetail": "Klosyt được xây dựng từ đầu để đảm bảo rằng tủ đồ, ảnh và thông tin cá nhân của bạn không bao giờ rời khỏi thiết bị hoặc tài khoản iCloud cá nhân của bạn. Chúng tôi không thể xem dữ liệu của bạn, và chúng tôi cố tình thiết kế như vậy.",
+    "promiseDetail": "Klosyt được xây dựng từ đầu để đảm bảo rằng tủ quần áo, ảnh và thông tin cá nhân của bạn không bao giờ rời khỏi thiết bị hoặc tài khoản iCloud cá nhân của bạn. Chúng tôi không thể xem dữ liệu của bạn, và chúng tôi cố tình thiết kế như vậy.",
     "zeroTitle": "Thu thập dữ liệu bằng không",
     "zeroIntro": "Chúng tôi muốn hoàn toàn minh bạch: <strong>Klosyt không thu thập bất cứ thứ gì.</strong>",
     "tableHeaderType": "Loại dữ liệu",
@@ -95,7 +86,7 @@
     "tablePhotosDetail": "Chỉ được lưu trữ trên thiết bị và tài khoản iCloud cá nhân của bạn. Chúng tôi không bao giờ nhận hoặc truy cập chúng.",
     "tableLocation": "Vị trí",
     "tableLocationDetail": "Tính năng thời tiết sử dụng WeatherKit của Apple, xử lý vị trí hoàn toàn trên máy chủ của Apple. Vị trí của bạn không bao giờ được gửi cho chúng tôi.",
-    "tableWardrobe": "Dữ liệu tủ đồ",
+    "tableWardrobe": "Dữ liệu tủ quần áo",
     "tableWardrobeDetail": "Quần áo, trang phục, mục lịch và tùy chọn vẫn nằm trên thiết bị và tài khoản iCloud cá nhân của bạn.",
     "tableNames": "Tên hoặc email",
     "tableNamesDetail": "Chúng tôi không thu thập thông tin nhận dạng cá nhân.",
@@ -118,7 +109,7 @@
     "appleServicesTitle": "Dịch vụ nền tảng Apple",
     "appleWeatherKit": "<strong>Apple WeatherKit</strong> — Cung cấp dữ liệu thời tiết cho gợi ý trang phục. Yêu cầu được xử lý bởi máy chủ Apple, không phải của chúng tôi.",
     "appleStoreKit": "<strong>Apple StoreKit</strong> — Xử lý mua đăng ký. Tất cả thông tin thanh toán được Apple quản lý. Chúng tôi không bao giờ nhận hoặc lưu trữ thông tin thanh toán.",
-    "appleCloudKit": "<strong>Apple CloudKit</strong> — Đồng bộ tủ đồ qua các thiết bị thông qua tài khoản iCloud cá nhân. Chúng tôi không thể truy cập dữ liệu này.",
+    "appleCloudKit": "<strong>Apple CloudKit</strong> — Đồng bộ tủ quần áo qua các thiết bị thông qua tài khoản iCloud cá nhân. Chúng tôi không thể truy cập dữ liệu này.",
     "applePrivacyLink": "Để biết thêm, xem <a href=\"https://www.apple.com/legal/privacy/\" style=\"color: var(--accent-color);\">Chính sách quyền riêng tư của Apple</a>.",
     "subscriptionsTitle": "Đăng ký",
     "subscriptionsText": "Klosyt+ là đăng ký tự động gia hạn tùy chọn, được xử lý hoàn toàn bởi Apple qua App Store. Chúng tôi không có quyền truy cập thông tin thanh toán. Bạn có thể quản lý hoặc hủy đăng ký trong cài đặt Apple ID bất cứ lúc nào.",
@@ -132,28 +123,26 @@
     "internationalPortability": "<strong>Quyền mang dữ liệu</strong> — Dữ liệu của bạn được lưu trữ trong tài khoản iCloud cá nhân dưới sự kiểm soát của bạn.",
     "internationalObjection": "<strong>Quyền phản đối</strong> — Vì chúng tôi không thực hiện bất kỳ xử lý nào đối với dữ liệu của bạn, không có gì để phản đối.",
     "internationalGdpr": "Đối với người dùng trong Khu vực Kinh tế Châu Âu (EEA), các quyền này được đảm bảo bởi Quy định Bảo vệ Dữ liệu Chung (GDPR). Đối với người dùng tại Brazil, các quyền này được quy định bởi Lei Geral de Proteção de Dados (LGPD). Vì Klosyt không thu thập dữ liệu cá nhân, không cần thỏa thuận xử lý dữ liệu hoặc cơ sở pháp lý cho xử lý.",
-    "internationalDpo": "Để hỏi về quyền riêng tư, liên hệ tại <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
-    "websiteAnalyticsTitle": "Phân tích trang web",
-    "websiteAnalyticsText": "Trang web này (klosyt.com) sử dụng Google Analytics để thu thập dữ liệu sử dụng ẩn danh như lượt xem trang, nguồn giới thiệu và khu vực địa lý chung. Dữ liệu này giúp chúng tôi hiểu cách khách truy cập tìm và sử dụng trang web. Google Analytics có thể sử dụng cookie và thu thập thông tin theo <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Chính sách quyền riêng tư của Google</a>. Việc theo dõi này chỉ áp dụng cho trang web — ứng dụng Klosyt không chứa bất kỳ phân tích hoặc theo dõi nào.",
+    "internationalDpo": "Để hỏi về quyền riêng tư, liên hệ tại <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>.",
     "changesTitle": "Thay đổi chính sách",
     "changesText": "Chúng tôi có thể cập nhật Chính sách quyền riêng tư này theo thời gian. Các thay đổi sẽ được phản ánh bằng cách cập nhật ngày \"Cập nhật lần cuối\" ở trên. Việc tiếp tục sử dụng ứng dụng sau các thay đổi đồng nghĩa với việc chấp nhận chính sách cập nhật.",
     "contactTitle": "Liên hệ với chúng tôi",
-    "contactText": "Nếu có câu hỏi hoặc lo ngại về Chính sách quyền riêng tư này, hãy liên hệ Klosyt tại <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>."
+    "contactText": "Nếu có câu hỏi hoặc lo ngại về Chính sách quyền riêng tư này, hãy liên hệ Klosyt tại <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>."
   },
   "terms": {
     "title": "Điều khoản sử dụng (EULA)",
-    "lastUpdated": "Cập nhật lần cuối: 9 tháng 4, 2026",
+    "lastUpdated": "Cập nhật lần cuối: 13 tháng 3 năm 2026",
     "acceptanceTitle": "Chấp nhận điều khoản",
     "acceptanceText": "Bằng việc tải xuống, cài đặt hoặc sử dụng Klosyt (\"Ứng dụng\"), bạn đồng ý bị ràng buộc bởi các Điều khoản này. Nếu không đồng ý, đừng sử dụng Ứng dụng.",
     "serviceTitle": "Mô tả dịch vụ",
-    "serviceText": "Klosyt là ứng dụng quản lý tủ đồ có sẵn cho iOS, macOS, tvOS và visionOS. Cho phép bạn phân loại quần áo, tạo trang phục, nhận gợi ý dựa trên thời tiết và lên kế hoạch trang phục.",
-    "serviceAiText": "Nhà tạo phong cách AI của Klosyt sử dụng dữ liệu thời tiết thực tế từ Apple WeatherKit để tạo gợi ý trang phục cá nhân hóa. Khi bạn yêu cầu gợi ý, AI phân tích điều kiện thời tiết hiện tại và dự báo — như nhiệt độ, lượng mưa và gió — cùng với tủ đồ của bạn để đề xuất quần áo phù hợp. Tất cả xử lý AI diễn ra trên thiết bị; dữ liệu thời tiết được lấy từ máy chủ Apple và không được gửi cho chúng tôi hoặc bên thứ ba.",
+    "serviceText": "Klosyt là ứng dụng quản lý tủ quần áo có sẵn cho iOS, macOS, tvOS và visionOS. Cho phép bạn phân loại quần áo, tạo trang phục, nhận gợi ý dựa trên thời tiết và lên kế hoạch trang phục.",
+    "serviceAiText": "Nhà tạo phong cách AI của Klosyt sử dụng dữ liệu thời tiết thực tế từ Apple WeatherKit để tạo gợi ý trang phục cá nhân hóa. Khi bạn yêu cầu gợi ý, AI phân tích điều kiện thời tiết hiện tại và dự báo — như nhiệt độ, lượng mưa và gió — cùng với tủ quần áo của bạn để đề xuất quần áo phù hợp. Tất cả xử lý AI diễn ra trên thiết bị; dữ liệu thời tiết được lấy từ máy chủ Apple và không được gửi cho chúng tôi hoặc bên thứ ba.",
     "privacyTitle": "Quyền riêng tư của bạn là ưu tiên",
-    "privacyText": "Chúng tôi tin rằng dữ liệu cá nhân thuộc về bạn và chỉ bạn. Klosyt được thiết kế để <strong>chúng tôi không bao giờ thu thập, truy cập hoặc lưu trữ bất kỳ thông tin cá nhân nào của bạn.</strong> Ảnh, dữ liệu tủ đồ và tùy chọn của bạn chỉ nằm trên thiết bị và tài khoản iCloud cá nhân.",
+    "privacyText": "Chúng tôi tin rằng dữ liệu cá nhân thuộc về bạn và chỉ bạn. Klosyt được thiết kế để <strong>chúng tôi không bao giờ thu thập, truy cập hoặc lưu trữ bất kỳ thông tin cá nhân nào của bạn.</strong> Ảnh, dữ liệu tủ quần áo và tùy chọn của bạn chỉ nằm trên thiết bị và tài khoản iCloud cá nhân.",
     "ownershipTitle": "Nội dung của bạn, quyền sở hữu của bạn",
     "ownershipText": "Mọi thứ bạn tạo trong Klosyt — ảnh, quần áo, trang phục, tùy chọn và tất cả nội dung khác — <strong>hoàn toàn thuộc về bạn.</strong> Dữ liệu được lưu trữ trên thiết bị và tài khoản iCloud cá nhân. Chúng tôi không truy cập, thu thập hoặc yêu cầu quyền đối với nội dung của bạn. Nếu bạn xóa Ứng dụng, dữ liệu cục bộ sẽ bị xóa cùng; dữ liệu iCloud có thể được quản lý qua cài đặt Apple ID.",
     "subscriptionsTitle": "Đăng ký",
-    "subscriptionsText": "Klosyt cung cấp đăng ký tự động gia hạn tùy chọn (\"Klosyt+\") mở khóa các tính năng cao cấp bao gồm gợi ý trang phục AI, lên kế hoạch trang phục và theo dõi lịch. Chủ đề và hình nền miễn phí cho tất cả người dùng. <strong>Phiên bản miễn phí cung cấp lưu trữ tủ đồ không giới hạn và tính năng cốt lõi mãi mãi</strong> — bạn không bao giờ mất quyền truy cập thư viện quần áo.",
+    "subscriptionsText": "Klosyt cung cấp đăng ký tự động gia hạn tùy chọn (\"Klosyt+\") mở khóa các tính năng cao cấp bao gồm gợi ý trang phục AI, lên kế hoạch trang phục và theo dõi lịch. Chủ đề và hình nền miễn phí cho tất cả người dùng. <strong>Phiên bản miễn phí cung cấp lưu trữ tủ quần áo không giới hạn và tính năng cốt lõi mãi mãi</strong> — bạn không bao giờ mất quyền truy cập thư viện quần áo.",
     "subBilling1": "Thanh toán được tính vào tài khoản Apple ID khi xác nhận mua hàng.",
     "subBilling2": "Đăng ký tự động gia hạn trừ khi hủy ít nhất 24 giờ trước khi kỳ thanh toán hiện tại kết thúc.",
     "subBilling3": "Tài khoản bị tính phí gia hạn trong vòng 24 giờ trước khi kỳ hiện tại kết thúc.",
@@ -191,11 +180,11 @@
     "outfitsTitle": "Tạo trang phục",
     "outfitsDesc": "Chuyển đến tab Trang phục để phối áo, quần và giày. Kéo và sắp xếp các lớp như cách bạn mặc, và lưu các kết hợp yêu thích.",
     "aiTitle": "Sử dụng gợi ý AI",
-    "aiDesc": "Không biết mặc gì? Nhấn nút Nhà tạo phong cách AI! AI trên thiết bị phân tích thời tiết thực tế và tủ đồ thực của bạn để gợi ý trang phục hoàn hảo cho mọi hoạt động.",
+    "aiDesc": "Không biết mặc gì? Nhấn nút Nhà tạo phong cách AI! AI trên thiết bị phân tích thời tiết thực tế và tủ quần áo thực của bạn để gợi ý trang phục hoàn hảo cho mọi hoạt động.",
     "backupTitle": "Sao lưu & khôi phục",
-    "backupDesc": "Dữ liệu Klosyt rất quý giá. Bật đồng bộ iCloud trong cài đặt ứng dụng để sao lưu toàn bộ tủ đồ. Khi có thiết bị mới, đăng nhập cùng Apple ID và tủ đồ sẽ được khôi phục liền mạch.",
+    "backupDesc": "Dữ liệu Klosyt rất quý giá. Bật đồng bộ iCloud trong cài đặt ứng dụng để sao lưu toàn bộ tủ quần áo. Khi có thiết bị mới, đăng nhập cùng Apple ID và tủ quần áo sẽ được khôi phục liền mạch.",
     "multiPlatformTitle": "Đa nền tảng",
-    "multiPlatformDesc": "Tủ đồ kỹ thuật số đi cùng bạn mọi nơi. Klosyt là ứng dụng gốc trên iPhone, iPad, Mac, Apple TV và Vision Pro — tủ đồ luôn trong tầm tay.",
+    "multiPlatformDesc": "Tủ quần áo kỹ thuật số đi cùng bạn mọi nơi. Klosyt là ứng dụng gốc trên iPhone, iPad, Mac, Apple TV và Vision Pro — tủ quần áo luôn trong tầm tay.",
     "managingTitle": "Quản lý đồ",
     "managingDesc": "Nhấn vào món đồ để xem chi tiết. Chỉnh sửa danh mục, mùa, màu sắc, chất liệu và họa tiết. Chụp lại ảnh trực tiếp từ trang chi tiết. Đồ đã xóa vào thùng rác trước để khôi phục.",
     "calendarTitle": "Lịch & lập kế hoạch",
@@ -203,7 +192,7 @@
     "sharingTitle": "Chia sẻ & xuất",
     "sharingDesc": "Chia sẻ trang phục yêu thích dưới dạng thẻ phong cách Pantone đẹp. Dùng tiện ích chia sẻ iOS để nhập ảnh hoặc URL trực tiếp từ Safari, Instagram hoặc bất kỳ ứng dụng nào.",
     "filterTitle": "Lọc & sắp xếp",
-    "filterDesc": "Hệ thống lọc GelCap của Klosyt cho phép thu hẹp tủ đồ ngay lập tức. Lọc theo danh mục, mùa, màu sắc, chất liệu hoặc họa tiết. Tìm theo tên và chuyển đổi giữa chế độ xem lưới và tủ đồ.",
+    "filterDesc": "Hệ thống lọc GelCap của Klosyt cho phép thu hẹp tủ quần áo ngay lập tức. Lọc theo danh mục, mùa, màu sắc, chất liệu hoặc họa tiết. Tìm theo tên và chuyển đổi giữa chế độ xem lưới và tủ quần áo.",
     "themesTitle": "Chủ đề & hình nền",
     "themesDesc": "Biến Klosyt thành của riêng bạn! Chọn từ những hình nền và chủ đề tuyệt đẹp để tùy chỉnh giao diện — hoàn toàn miễn phí, không cần đăng ký. Chủ đề bạn chọn đồng bộ trên tất cả thiết bị Apple.",
     "objectCaptureTitle": "Object Capture (Quét 3D)",
@@ -216,7 +205,7 @@
     "step3Title": "3. Tạo bộ trang phục đầu tiên",
     "step3Desc": "Chọn món đồ từ thư viện, kéo để sắp xếp lớp và lưu phong cách.",
     "step4Title": "4. Nhận gợi ý AI",
-    "step4Desc": "Chọn hoạt động và để Klosyt phân tích thời tiết và tủ đồ để gợi ý trang phục hoàn hảo.",
+    "step4Desc": "Chọn hoạt động và để Klosyt phân tích thời tiết và tủ quần áo để gợi ý trang phục hoàn hảo.",
     "tipsTitle": "Mẹo & thủ thuật",
     "tip1Title": "Xóa phông nền tốt hơn",
     "tip1Desc": "Treo đồ trên nền tương phản — áo trắng trên cửa tối, áo khoác tối trên tường sáng.",
@@ -229,7 +218,7 @@
     "tip5Title": "Gắn nhãn mùa chính xác",
     "tip5Desc": "Đánh dấu đồ là mùa hè, mùa đông hoặc quanh năm để có trang phục phù hợp thời tiết.",
     "tip6Title": "Bật iCloud sớm",
-    "tip6Desc": "Bật đồng bộ iCloud ngay từ đầu để tủ đồ luôn được sao lưu và đồng bộ.",
+    "tip6Desc": "Bật đồng bộ iCloud ngay từ đầu để tủ quần áo luôn được sao lưu và đồng bộ.",
     "manageSubTitle": "Quản lý đăng ký",
     "manageSubTrialDesc": "Dùng thử miễn phí 30 ngày, sau đó chỉ $0.99/tháng. Hủy bất cứ lúc nào.",
     "manageSubFooter": "Quản lý trong Cài đặt → Apple ID → Đăng ký. Nhấn \"Khôi phục mua hàng\" trong Cài đặt Klosyt để kích hoạt lại.",
@@ -252,7 +241,7 @@
     "ts8Answer": "Nhấn vào món đồ → xem chi tiết → nút xóa. Đồ đã xóa nằm trong thùng rác 30 ngày và có thể khôi phục. Truy cập thùng rác từ Cài đặt.",
     "contactTitle": "Vẫn cần giúp đỡ?",
     "contactDesc": "Chúng tôi ở đây để giúp bạn. Liên hệ tại",
-    "contactEmail": "support@klosyt.com"
+    "contactEmail": "support@Klosyt.com"
   },
   "index": {
     "languagesTitle": "Có sẵn bằng 16 ngôn ngữ"

@@ -2,8 +2,7 @@
   "meta": {
     "langName": "Chinese (Simplified)",
     "langNameNative": "简体中文",
-    "dir": "ltr",
-    "changeLanguage": "切换语言"
+    "dir": "ltr"
   },
   "nav": {
     "features": "功能",
@@ -43,10 +42,6 @@
     "filtersTitle": "智能筛选",
     "filtersDesc": "按季节、颜色、类别、面料或图案，几秒钟找到任何物品。"
   },
-  "whyKlosyt": {
-    "title": "你的衣橱，<br>重新想象",
-    "desc": "Klosyt是一款AI驱动的衣橱整理和穿搭规划应用，帮助你充分利用每一件衣物。无论你是在挑选明天的穿搭，还是打造完美的胶囊衣橱，Klosyt的设备端智能都能将你的衣橱变成一个智能、可持续的时尚系统——完全私密，始终在所有Apple设备间同步。"
-  },
   "pricing": {
     "klosytPlus": "Klosyt+",
     "period": "/月",
@@ -68,19 +63,15 @@
     "supportsDev": "支持开发",
     "supportsDevDesc": "持续的应用开发"
   },
-  "cta": {
-    "appStoreAlt": "从 App Store 下载"
-  },
   "footer": {
     "home": "首页",
     "support": "支持",
     "privacy": "隐私",
-    "vultyr": "Vultyr",
     "copyright": "© 2026 Klosyt. 保留所有权利。"
   },
   "privacy": {
     "title": "隐私政策",
-    "lastUpdated": "最后更新：2026年4月9日",
+    "lastUpdated": "最后更新：2026年3月13日",
     "promiseTitle": "我们的隐私承诺",
     "promiseOwner": "Klosyt由Gregory Yuzik（\"我们\"）拥有、运营和维护。",
     "promiseText": "你的隐私不仅仅是Klosyt的一项功能——它是基础。<strong>我们不收集、存储、传输或访问你的任何个人数据。就这样。</strong>",
@@ -132,17 +123,15 @@
     "internationalPortability": "<strong>数据可移植权</strong>——你的数据存储在你控制的个人iCloud账户中。",
     "internationalObjection": "<strong>反对权</strong>——由于我们不对你的数据进行任何处理，因此没有什么可以反对的。",
     "internationalGdpr": "对于欧洲经济区（EEA）的用户，这些权利受到《通用数据保护条例》（GDPR）的保障。对于巴西的用户，这些权利由《通用数据保护法》（LGPD）提供。由于Klosyt不收集个人数据，因此不需要数据处理协议或处理的法律依据。",
-    "internationalDpo": "如有任何隐私相关咨询，请联系我们<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。",
-    "websiteAnalyticsTitle": "网站分析",
-    "websiteAnalyticsText": "本网站（klosyt.com）使用Google Analytics收集匿名使用数据，如页面浏览量、来源和大致地理区域。这些数据帮助我们了解访客如何发现和使用我们的网站。Google Analytics可能使用Cookie，并根据<a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google隐私政策</a>收集信息。此跟踪仅适用于网站——Klosyt应用本身不包含任何分析或跟踪。",
+    "internationalDpo": "如有任何隐私相关咨询，请联系我们<a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>。",
     "changesTitle": "政策变更",
     "changesText": "我们可能会不时更新本隐私政策。更改将通过更新上方的\u201c最后更新\u201d日期来体现。在更改后继续使用本应用即表示接受更新后的政策。",
     "contactTitle": "联系我们",
-    "contactText": "如果你对本隐私政策有任何疑问或顾虑，请联系Klosyt <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。"
+    "contactText": "如果你对本隐私政策有任何疑问或顾虑，请联系Klosyt <a href=\"mailto:support@Klosyt.com\" style=\"color: var(--accent-color);\">support@Klosyt.com</a>。"
   },
   "terms": {
     "title": "使用条款（EULA）",
-    "lastUpdated": "最后更新：2026年4月9日",
+    "lastUpdated": "最后更新：2026年3月13日",
     "acceptanceTitle": "接受条款",
     "acceptanceText": "下载、安装或使用Klosyt（\"本应用\"）即表示你同意受这些条款的约束。如果你不同意，请不要使用本应用。",
     "serviceTitle": "服务说明",
@@ -252,7 +241,7 @@
     "ts8Answer": "点击一个物品 → 详情视图 → 删除按钮。删除的物品会在垃圾箱中保留30天，可以恢复。从设置中访问垃圾箱。",
     "contactTitle": "还需要帮助？",
     "contactDesc": "我们随时为你提供帮助。联系我们：",
-    "contactEmail": "support@klosyt.com"
+    "contactEmail": "support@Klosyt.com"
   },
   "index": {
     "languagesTitle": "提供16种语言"
