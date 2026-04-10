@@ -49,6 +49,9 @@ body{
 .mesh-bg{
     position:fixed;inset:0;z-index:0;overflow:hidden;
     pointer-events:none;
+    background:
+        radial-gradient(ellipse 120% 55% at 50% 0%,rgba(26,61,143,.45),transparent 70%),
+        radial-gradient(ellipse 120% 55% at 50% 100%,rgba(106,47,193,.4),transparent 70%);
 }
 
 .mesh-orb{
@@ -456,6 +459,11 @@ body{
     html{background-color:#f2f2f7}
     body{color:var(--text-1)}
     .mesh-orb{opacity:.3}
+    .mesh-bg{
+        background:
+            radial-gradient(ellipse 120% 55% at 50% 0%,rgba(168,196,240,.5),transparent 70%),
+            radial-gradient(ellipse 120% 55% at 50% 100%,rgba(212,184,240,.45),transparent 70%);
+    }
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
     .orb-2{background:radial-gradient(circle,#d4b8f0 0%,transparent 70%)}
     .orb-3{background:radial-gradient(circle,#a0d8e8 0%,transparent 70%)}
