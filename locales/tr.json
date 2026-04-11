@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Turkish",
-    "langNameNative": "Türkçe",
-    "dir": "ltr",
-    "changeLanguage": "Dili değiştir"
-  },
   "nav": {
-    "features": "Özellikler",
     "klosytPlus": "Klosyt+",
-    "support": "Destek",
-    "privacy": "Gizlilik"
+    "support": "Destek"
   },
   "hero": {
     "mainTitle": "Yapay Zeka Destekli<br>Dijital Gardırobun",
@@ -31,25 +23,14 @@
     "filtersDesc": "Herhangi bir kıyafeti mevsim, renk, kategori, kumaş veya desene göre saniyeler içinde bul."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/ay",
     "trial": "30 gün ücretsiz deneme · İstediğin zaman iptal et",
     "note": "Gardırobun her zaman ücretsiz. Klosyt+ premium özelliklerin kilidini açar.",
-    "trialDesc": "30 gün ücretsiz dene, sonra sadece aylık $0,99. İstediğin zaman iptal et. Kütüphanene erişimi asla kaybetmezsin.",
     "aiStyleAssistant": "Yapay Zeka Stil Asistanı",
-    "aiStyleAssistantDesc": "Kişiselleştirilmiş, hava durumuna uygun kombinler",
     "outfits": "Kombinler",
-    "outfitsDesc": "Kombin oluştur, kaydet ve paylaş",
     "calendarTracking": "Takvim Takibi",
-    "calendarTrackingDesc": "Ne giydiğini kaydet ve geçmişini oluştur",
     "themesWallpapers": "Temalar & Duvar Kağıtları (Ücretsiz)",
-    "themesWallpapersDesc": "Uygulamayı sevdiğin temalarla özelleştir — herkes için ücretsiz",
-    "alwaysFree": "Klosyt Her Zaman Ücretsiz",
-    "alwaysFreeDesc": "Klosyt'un sonsuza kadar senin, her zaman ücretsiz",
-    "weatherData": "Anlık Hava Durumu Verileri",
-    "weatherDataDesc": "Apple Weather tarafından desteklenir",
-    "supportsDev": "Geliştirmeyi Destekle",
-    "supportsDevDesc": "Sürekli uygulama geliştirme"
+    "weatherData": "Anlık Hava Durumu Verileri"
   },
   "cta": {
     "appStoreAlt": "App Store'dan indirin",
@@ -215,7 +196,6 @@
     "tip5Desc": "Hava durumuna uygun kombinler için kıyafetleri yaz, kış veya dört mevsim olarak işaretleyin.",
     "tip6Title": "iCloud'u Erken Etkinleştir",
     "tip6Desc": "Gardırobunuzun her zaman yedeklenmesi ve senkronize olması için iCloud senkronizasyonunu hemen açın.",
-    "manageSubTitle": "Aboneliğinizi Yönetin",
     "manageSubTrialDesc": "30 gün ücretsiz deneyin, sonra sadece aylık $0,99. İstediğiniz zaman iptal edin.",
     "manageSubFooter": "Ayarlar → Apple ID → Abonelikler'den yönetin. Yeniden etkinleştirmek için Klosyt ayarlarında \"Satın Almaları Geri Yükle\"ye dokunun.",
     "troubleshootTitle": "Sorun Giderme",
@@ -236,8 +216,7 @@
     "ts8Summary": "Bir kıyafeti nasıl silerim?",
     "ts8Answer": "Bir kıyafete dokunun → detay görünümü → silme düğmesi. Silinen kıyafetler 30 gün boyunca çöp kutusunda kalır ve geri yüklenebilir. Çöp kutusuna Ayarlar'dan erişin.",
     "contactTitle": "Hâlâ Yardıma mı İhtiyacınız Var?",
-    "contactDesc": "Yardımcı olmak için buradayız. Bize ulaşın:",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Yardımcı olmak için buradayız. Bize ulaşın:"
   },
   "index": {
     "languagesTitle": "16 dilde kullanılabilir"

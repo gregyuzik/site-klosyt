@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Spanish",
-    "langNameNative": "Español",
-    "dir": "ltr",
-    "changeLanguage": "Cambiar idioma"
-  },
   "nav": {
-    "features": "Funciones",
     "klosytPlus": "Klosyt+",
-    "support": "Soporte",
-    "privacy": "Privacidad"
+    "support": "Soporte"
   },
   "hero": {
     "mainTitle": "Tu armario digital<br>con IA",
@@ -31,25 +23,14 @@
     "filtersDesc": "Encuentra cualquier prenda por temporada, color, categoría, material o patrón en segundos."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/mes",
     "trial": "30 días de prueba gratis · Cancela cuando quieras",
     "note": "Tu armario es siempre gratis. Klosyt+ desbloquea funciones premium.",
-    "trialDesc": "Prueba todo gratis por 30 días, luego solo $0.99/mes. Cancela cuando quieras. Nunca pierdas acceso a tu biblioteca.",
     "aiStyleAssistant": "Asistente de estilo IA",
-    "aiStyleAssistantDesc": "Outfits personalizados e inteligentes para el clima",
     "outfits": "Outfits",
-    "outfitsDesc": "Crea, guarda y comparte tus outfits",
     "calendarTracking": "Seguimiento de calendario",
-    "calendarTrackingDesc": "Registra lo que usas y construye tu historial",
     "themesWallpapers": "Temas y fondos (Gratis)",
-    "themesWallpapersDesc": "Personaliza la app con los temas que amas — gratis para todos",
-    "alwaysFree": "Klosyt es siempre gratis",
-    "alwaysFreeDesc": "Tu Klosyt es tuyo para siempre, siempre gratis",
-    "weatherData": "Datos climáticos en tiempo real",
-    "weatherDataDesc": "Impulsado por Apple Weather",
-    "supportsDev": "Apoya el desarrollo",
-    "supportsDevDesc": "Desarrollo continuo de la app"
+    "weatherData": "Datos climáticos en tiempo real"
   },
   "cta": {
     "appStoreAlt": "Descargar en el App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Marca artículos como verano, invierno o todas las temporadas para outfits apropiados al clima.",
     "tip6Title": "Activa iCloud desde el principio",
     "tip6Desc": "Activa la sincronización iCloud desde el primer momento para tener tu armario siempre respaldado y sincronizado.",
-    "manageSubTitle": "Gestiona tu suscripción",
     "manageSubTrialDesc": "Prueba todo gratis por 30 días, luego solo $0.99/mes. Cancela cuando quieras.",
     "manageSubFooter": "Gestiona en Ajustes → Apple ID → Suscripciones. Toca \"Restaurar compras\" en Ajustes de Klosyt para reactivar.",
     "troubleshootTitle": "Solución de problemas",
@@ -236,8 +216,7 @@
     "ts8Summary": "¿Cómo elimino un artículo?",
     "ts8Answer": "Toca un artículo → vista de detalles → botón eliminar. Los artículos eliminados van a la papelera por 30 días y pueden recuperarse. Accede a la papelera desde Ajustes.",
     "contactTitle": "¿Aún necesitas ayuda?",
-    "contactDesc": "Estamos aquí para ayudarte. Escríbenos a",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Estamos aquí para ayudarte. Escríbenos a"
   },
   "index": {
     "languagesTitle": "Disponible en 16 idiomas"

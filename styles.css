@@ -9,6 +9,7 @@
     --glass-bg:rgba(255,255,255,.06);
     --glass-border:rgba(255,255,255,.12);
     --glass-hover:rgba(255,255,255,.10);
+    --glass-hover-border:rgba(255,255,255,.18);
     --text-1:#fff;
     --text-2:rgba(255,255,255,.75);
     --text-3:rgba(255,255,255,.55);
@@ -27,8 +28,10 @@
    Visual interest comes from the animated .mesh-bg orb layer on top. */
 
 html{
-    scroll-behavior:smooth;
     background:#0a1838;
+}
+@media(prefers-reduced-motion:no-preference){
+    html{scroll-behavior:smooth}
 }
 
 /* ── Skip to content ── */
@@ -40,6 +43,13 @@ html{
 }
 .skip-link:focus{top:16px}
 @media(prefers-color-scheme:light){.skip-link{color:#fff}}
+
+/* Visually hidden but reachable by assistive tech (for section headings that
+   stay out of the visual design but keep the outline coherent). */
+.sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
 
 /* ── Keyboard Focus Indicators ── */
 :focus-visible{outline:2px solid rgba(255,255,255,.5);outline-offset:2px;border-radius:8px}
@@ -53,7 +63,7 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
-    min-height:100dvh;
+    min-height:100lvh;
     background:transparent;
 }
 
@@ -89,7 +99,7 @@ body{
 .orb-3{
     width:480px;height:480px;
     background:radial-gradient(circle,#0a5e8a 0%,transparent 70%);
-    top:42%;left:50%;transform:translateX(-50%);
+    top:42%;left:50%;margin-left:-240px;
     animation:float-3 20s ease-in-out infinite alternate;
 }
 
@@ -109,6 +119,15 @@ body{
     backdrop-filter:blur(40px) saturate(1.6);
     -webkit-backdrop-filter:blur(40px) saturate(1.6);
     border:1px solid var(--glass-border);
+}
+/* Cards use a lighter blur — cheaper GPU composite than the nav's deep blur */
+.feature-card,.card,.price-card{
+    backdrop-filter:blur(20px) saturate(1.6);
+    -webkit-backdrop-filter:blur(20px) saturate(1.6);
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+    .glass{background:rgba(10,24,56,.72)}
+    @media(prefers-color-scheme:light){.glass{background:rgba(255,255,255,.82)}}
 }
 
 /* ── Layout ── */
@@ -143,9 +162,10 @@ body{
 }
 .nav-icon{height:28px;width:28px;border-radius:7px}
 
-.nav-links{display:flex;align-items:center;gap:1rem}
+.nav-links{display:flex;align-items:center;gap:.5rem}
 .nav-links a{
     display:inline-flex;align-items:center;gap:4px;
+    min-height:44px;padding:0 10px;
     text-decoration:none;color:var(--text-2);
     font-weight:500;font-size:.9rem;
     transition:color .2s;
@@ -156,7 +176,7 @@ body{
 /* ── Hero ── */
 
 .hero{
-    min-height:100vh;min-height:100lvh;
+    min-height:100lvh;
     display:flex;align-items:center;justify-content:center;
     text-align:center;
     padding:calc(120px + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) calc(80px + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
@@ -265,7 +285,7 @@ body{
 }
 .feature-card:hover{
     background:var(--glass-hover);
-    border-color:rgba(255,255,255,.18);
+    border-color:var(--glass-hover-border);
     transform:translateY(-3px);
 }
 
@@ -288,7 +308,7 @@ body{
 }
 .card:hover{
     background:var(--glass-hover);
-    border-color:rgba(255,255,255,.18);
+    border-color:var(--glass-hover-border);
     transform:translateY(-3px);
 }
 .card-ico{
@@ -308,7 +328,7 @@ body{
     border-radius:var(--radius);overflow:hidden;
     transition:border-color .3s var(--ease),transform .3s var(--ease);
 }
-.price-card:hover{border-color:rgba(255,255,255,.18);transform:translateY(-3px)}
+.price-card:hover{border-color:var(--glass-hover-border);transform:translateY(-3px)}
 
 .price-head{
     padding:2.5rem 2rem 2rem;text-align:center;
@@ -362,19 +382,19 @@ body{
     display:flex;flex-wrap:wrap;justify-content:center;
     gap:8px;max-width:680px;margin:0 auto;
 }
-.lang-row a,.lang-row span{
-    display:inline-block;
-    padding:6px 14px;
+.lang-row a{
+    display:inline-flex;align-items:center;
+    min-height:44px;padding:0 18px;
     background:var(--glass-bg);border:1px solid var(--glass-border);
     border-radius:100px;font-size:.82rem;color:var(--text-2);font-weight:500;
     text-decoration:none;
     transition:background .15s,color .15s,border-color .15s,transform .15s;
 }
-.lang-row a:hover,.lang-row span:hover{
+.lang-row a:hover{
     background:var(--glass-hover);color:var(--text-1);
     transform:translateY(-1px);
 }
-.lang-row a.active,.lang-row span.active{
+.lang-row a.active{
     background:rgba(255,255,255,.16);
     border-color:rgba(255,255,255,.24);
     color:var(--text-1);font-weight:700;
@@ -404,8 +424,10 @@ body{
 /* ── Footer ── */
 
 .foot{padding:4rem 0 calc(4rem + env(safe-area-inset-bottom));position:relative;z-index:1}
-.foot-links{display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem}
+.foot-links{display:flex;justify-content:center;gap:1rem;margin-bottom:1rem;flex-wrap:wrap}
 .foot-links a{
+    display:inline-flex;align-items:center;
+    min-height:44px;padding:0 12px;
     color:var(--text-2);text-decoration:none;
     font-size:.9rem;font-weight:500;transition:color .2s;
 }
@@ -419,6 +441,10 @@ body{
     transition:opacity .7s var(--ease),transform .7s var(--ease);
 }
 .fade-up.in{opacity:1;transform:translateY(0)}
+/* If JS is disabled, never hide content — IntersectionObserver won't run. */
+@media(scripting:none){
+    .fade-up{opacity:1;transform:none;transition:none}
+}
 
 /* ═══════════════════════════════════════
    Support page components
@@ -480,9 +506,11 @@ body{
 
     .nav-brand span{font-size:.9rem}
     .nav-icon{height:24px;width:24px}
-    .nav-bar{border-radius:18px;height:44px}
+    .nav-bar{border-radius:22px;height:48px}
+    .nav-links{gap:.4rem}
+    .nav-links a{padding:0 8px}
 
-    .wrap{padding:0 1rem}
+    .wrap{padding-left:max(1rem,env(safe-area-inset-left));padding-right:max(1rem,env(safe-area-inset-right))}
     .feature-card{padding:1.25rem;gap:.9rem}
     .feature-icon{width:40px;height:40px}
     .card{padding:1.5rem}
@@ -501,9 +529,10 @@ body{
         --glass-bg:rgba(255,255,255,.45);
         --glass-border:rgba(0,0,0,.08);
         --glass-hover:rgba(255,255,255,.6);
+        --glass-hover-border:rgba(0,0,0,.12);
         --text-1:#1d1d1f;
         --text-2:rgba(0,0,0,.65);
-        --text-3:rgba(0,0,0,.5);
+        --text-3:rgba(0,0,0,.6);
         --accent-color:#007aff;
     }
 
@@ -525,10 +554,7 @@ body{
     .nav-bar{background:rgba(255,255,255,.6);border:1px solid rgba(0,0,0,.06)}
     .nav-bar:hover{background:rgba(255,255,255,.75)}
 
-    .feature-card:hover{background:rgba(255,255,255,.6);border-color:rgba(0,0,0,.12)}
-    .card:hover{background:rgba(255,255,255,.6);border-color:rgba(0,0,0,.12)}
-    .price-card:hover{border-color:rgba(0,0,0,.12)}
-    .price-badge{color:#cc8800;background:linear-gradient(135deg,rgba(255,204,0,.2),rgba(255,149,0,.2));border:1px solid rgba(255,204,0,.3)}
+    .price-badge{color:#8b5400;background:linear-gradient(135deg,rgba(255,204,0,.2),rgba(255,149,0,.2));border:1px solid rgba(255,149,0,.35)}
 
     .divider,hr.divider{background:linear-gradient(90deg,transparent,rgba(26,61,143,.4),rgba(180,140,30,.35),transparent);opacity:.7}
 
@@ -541,10 +567,9 @@ body{
     .troubleshoot-item summary:hover{color:rgba(0,0,0,.85)}
 
     .price-list li:hover{background:rgba(0,0,0,.03)}
-    .lang-row a,.lang-row span{background:rgba(255,255,255,.45);border:1px solid rgba(0,0,0,.06)}
-    .lang-row a:hover,.lang-row span:hover{background:rgba(255,255,255,.65);color:var(--text-1)}
-    .lang-row a.active,.lang-row span.active{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.18);color:var(--text-1);font-weight:700}
-
+    .lang-row a{background:rgba(255,255,255,.45);border:1px solid rgba(0,0,0,.06)}
+    .lang-row a:hover{background:rgba(255,255,255,.65);color:var(--text-1)}
+    .lang-row a.active{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.18);color:var(--text-1);font-weight:700}
 }
 
 /* ═══════════════════════════════════════

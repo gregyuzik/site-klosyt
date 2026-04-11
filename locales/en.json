@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "English",
-    "langNameNative": "English",
-    "dir": "ltr",
-    "changeLanguage": "Change language"
-  },
   "nav": {
-    "features": "Features",
     "klosytPlus": "Klosyt+",
-    "support": "Support",
-    "privacy": "Privacy"
+    "support": "Support"
   },
   "hero": {
     "mainTitle": "Your AI-Powered<br>Digital Closet",
@@ -31,25 +23,14 @@
     "filtersDesc": "Find any item by season, color, category, material, or pattern in seconds. Quickly narrow down your digital closet to find exactly what you need."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/month",
     "trial": "30-day free trial · Cancel anytime",
     "note": "Your Klosyt is always free. Klosyt+ unlocks premium features.",
-    "trialDesc": "Try everything free for 30 days, then just $0.99/month. Cancel anytime. Never lose access to your library.",
     "aiStyleAssistant": "AI Style Assistant",
-    "aiStyleAssistantDesc": "Personalized, weather-smart outfits",
     "outfits": "Outfits",
-    "outfitsDesc": "Create, save, and share your outfits",
     "calendarTracking": "Calendar Tracking",
-    "calendarTrackingDesc": "Log what you wear and build history",
     "themesWallpapers": "Themes & Wallpapers (Free)",
-    "themesWallpapersDesc": "Style the app with themes you love — free for everyone",
-    "alwaysFree": "Klosyt is Always Free",
-    "alwaysFreeDesc": "Your Klosyt stays yours, always free",
-    "weatherData": "Real-Time Weather Data",
-    "weatherDataDesc": "Powered by Apple Weather",
-    "supportsDev": "Supports Development",
-    "supportsDevDesc": "Continued app development"
+    "weatherData": "Real-Time Weather Data"
   },
   "cta": {
     "appStoreAlt": "Download on the App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Mark items as summer, winter, or all-season for weather-appropriate outfits.",
     "tip6Title": "Enable iCloud sync early",
     "tip6Desc": "Turn on iCloud sync right away so your Klosyt is backed up and synced everywhere.",
-    "manageSubTitle": "Manage Your Subscription",
     "manageSubTrialDesc": "Try everything free for 30 days, then just $0.99/month. Cancel anytime.",
     "manageSubFooter": "Manage in Settings → Apple ID → Subscriptions. Tap \"Restore Purchases\" in Klosyt Settings to reactivate.",
     "troubleshootTitle": "Troubleshooting",
@@ -236,8 +216,7 @@
     "ts8Summary": "How do I delete an item?",
     "ts8Answer": "Tap an item → detail view → delete button. Deleted items go to the Trash for 30 days and can be recovered. Access the Trash from Settings.",
     "contactTitle": "Still need help?",
-    "contactDesc": "We're here to help. Reach out at",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "We're here to help. Reach out at"
   },
   "index": {
     "languagesTitle": "Available in 16 languages"
