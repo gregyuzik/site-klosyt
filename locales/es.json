@@ -242,11 +242,5 @@
   },
   "index": {
     "languagesTitle": "Disponible en 16 idiomas"
-  },
-  "stats": {
-    "platforms": "Plataformas",
-    "languages": "Idiomas",
-    "private": "En el dispositivo",
-    "toStart": "Para empezar"
   }
 }

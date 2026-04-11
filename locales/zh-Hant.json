@@ -242,11 +242,5 @@
   },
   "index": {
     "languagesTitle": "提供16種語言"
-  },
-  "stats": {
-    "platforms": "平台",
-    "languages": "語言",
-    "private": "裝置端",
-    "toStart": "起步"
   }
 }
