@@ -73,20 +73,27 @@ body{
 
 /* Full-bleed gradient layer. position:absolute with inset:0 fills the
    entire body content box (which, with viewport-fit=cover, extends under
-   the iOS status bar, dynamic island, URL bar, and home indicator). The
-   gradient centers at 50% 0% / 50% 100% of the body, so the saturated
-   blue lives at the very top of the page and gold at the very bottom —
-   no dark edges where the gradient faded out too early. */
+   the iOS status bar, dynamic island, URL bar, and home indicator).
+
+   A smooth linear gradient over the full body height, not radials —
+   radial ellipses have a visible edge where they fade out to transparent
+   (wherever you put the stop, that's where you get a line). Linear
+   gradients with well-spaced colour stops have no such edge and scroll
+   cleanly with the document. */
 body::before{
     content:'';
     position:absolute;
     inset:0;
     z-index:-1;
     pointer-events:none;
-    background:
-        radial-gradient(ellipse 180% 60% at 50% 0%,rgba(36,80,179,.95),transparent 80%),
-        radial-gradient(ellipse 180% 60% at 50% 100%,rgba(212,165,40,.85),transparent 80%),
-        #050814;
+    background:linear-gradient(180deg,
+        #1e4aa8 0%,
+        #0e2566 8%,
+        #060c20 32%,
+        #050814 50%,
+        #060c20 68%,
+        #3a2d0a 92%,
+        #b08820 100%);
 }
 
 /* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
@@ -547,10 +554,14 @@ body::before{
         background:transparent;
     }
     body::before{
-        background:
-            radial-gradient(ellipse 180% 60% at 50% 0%,rgba(168,196,240,.85),transparent 80%),
-            radial-gradient(ellipse 180% 60% at 50% 100%,rgba(240,220,140,.8),transparent 80%),
-            #e6ebf3;
+        background:linear-gradient(180deg,
+            #b5c8e8 0%,
+            #d6dfee 12%,
+            #eaedf4 36%,
+            #e6ebf3 50%,
+            #eaedf4 64%,
+            #f0e7c8 88%,
+            #e3c97f 100%);
     }
     .mesh-bg{background:transparent}
     .mesh-orb{opacity:.3}
