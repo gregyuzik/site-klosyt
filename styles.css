@@ -17,30 +17,37 @@
     --ease:cubic-bezier(.16,1,.3,1);
 }
 
-/* Gradient strategy, after much iOS Safari archaeology:
+/* Gradient strategy, after much cross-platform archaeology:
 
    - background-attachment:fixed has never worked on iOS Safari (silently
-     treated as scroll), so positioning the gradient on <html> meant the
-     ellipse centers ended up relative to the full document box, not the
-     viewport. The saturated edges only showed near the top of the page
-     and faded to black everywhere else.
-   - iOS 26 additionally clips position:fixed elements at the inner
-     viewport, stopping short of the area under the status bar and the
-     URL bar. So a .mesh-bg with position:fixed;inset:0 leaves dark bars
-     behind the Safari chrome.
+     treated as scroll). Old radial-gradient attempts on <html> had their
+     ellipse centers anchored to the full document box, so saturated
+     edges only showed near the top. Linear gradients have no centers,
+     so this concern is moot — they stretch cleanly across html.
+   - iOS 26 clips position:fixed elements at the inner viewport, stopping
+     short of the area under the status bar and the URL bar. So a fixed
+     bg layer leaves dark bars behind the Safari chrome.
+   - On macOS Tahoe (Safari 26), the toolbar and overlay scrollbar are
+     translucent and sample whatever the page paints behind them. A
+     pseudo-element inside <body> doesn't reach the canvas, so the
+     toolbar/scrollbar regions sampled the flat html fallback instead of
+     the gradient — leaving a hard seam at the toolbar edge.
 
-   The working pattern is position:absolute on a pseudo-element inside
-   body. With viewport-fit=cover, body extends under the iOS chrome, and
-   absolute positioning (unlike fixed) isn't clipped to the inner
-   viewport on iOS 26. So body::before with inset:0 fills the whole page
-   including the safe areas.
-
-   html keeps a solid fallback color so rubber-band zones don't flash
-   black behind the absolute layer. */
+   Putting the linear gradient directly on <html> fixes both ends: the
+   root element's background propagates to the CSS canvas, which fills
+   the entire visible viewport on every platform — under iOS safe areas,
+   under the macOS translucent toolbar, and behind overlay scrollbars. */
 
 html{
     scroll-behavior:smooth;
-    background:#050814;
+    background:linear-gradient(180deg,
+        #1e4aa8 0%,
+        #0e2566 8%,
+        #060c20 32%,
+        #050814 50%,
+        #060c20 68%,
+        #3a2d0a 92%,
+        #b08820 100%);
 }
 
 /* ── Skip to content ── */
@@ -57,43 +64,16 @@ html{
 :focus-visible{outline:2px solid rgba(255,255,255,.5);outline-offset:2px;border-radius:8px}
 @media(prefers-color-scheme:light){:focus-visible{outline-color:rgba(0,0,0,.7)}}
 
-/* body is the positioned parent for the background pseudo-element. It
-   must not be overflow-x:hidden because that creates a new containing
-   block that interferes with absolute positioning into the safe areas
-   on iOS. Instead, horizontal overflow is contained by .mesh-bg (the
-   orb container) which has its own overflow:hidden. */
+/* body must not be overflow-x:hidden — that creates a new containing
+   block that interferes with descendants positioning into the safe
+   areas on iOS. Horizontal overflow is contained by .mesh-bg (the orb
+   container) which has its own overflow:hidden. */
 body{
-    position:relative;
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
     min-height:100dvh;
     background:transparent;
-}
-
-/* Full-bleed gradient layer. position:absolute with inset:0 fills the
-   entire body content box (which, with viewport-fit=cover, extends under
-   the iOS status bar, dynamic island, URL bar, and home indicator).
-
-   A smooth linear gradient over the full body height, not radials —
-   radial ellipses have a visible edge where they fade out to transparent
-   (wherever you put the stop, that's where you get a line). Linear
-   gradients with well-spaced colour stops have no such edge and scroll
-   cleanly with the document. */
-body::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    z-index:-1;
-    pointer-events:none;
-    background:linear-gradient(180deg,
-        #1e4aa8 0%,
-        #0e2566 8%,
-        #060c20 32%,
-        #050814 50%,
-        #060c20 68%,
-        #3a2d0a 92%,
-        #b08820 100%);
 }
 
 /* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
@@ -547,13 +527,6 @@ body::before{
     }
 
     html{
-        background:#e6ebf3;
-    }
-    body{
-        color:var(--text-1);
-        background:transparent;
-    }
-    body::before{
         background:linear-gradient(180deg,
             #b5c8e8 0%,
             #d6dfee 12%,
@@ -562,6 +535,10 @@ body::before{
             #eaedf4 64%,
             #f0e7c8 88%,
             #e3c97f 100%);
+    }
+    body{
+        color:var(--text-1);
+        background:transparent;
     }
     .mesh-bg{background:transparent}
     .mesh-orb{opacity:.3}
