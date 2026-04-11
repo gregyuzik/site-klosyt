@@ -242,11 +242,5 @@
   },
   "index": {
     "languagesTitle": "16言語で利用可能"
-  },
-  "stats": {
-    "platforms": "プラットフォーム",
-    "languages": "言語",
-    "private": "デバイス内",
-    "toStart": "開始"
   }
 }

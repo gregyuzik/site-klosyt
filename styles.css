@@ -17,20 +17,17 @@
     --ease:cubic-bezier(.16,1,.3,1);
 }
 
-/* Background lives on <html> with background-attachment:fixed. HTML IS the
-   canvas in CSS — its background is natively propagated to the viewport
-   backdrop (under notch, URL pill, home indicator) without the body→canvas
-   propagation bug that bit us before. background-attachment:fixed pins the
-   gradient to the viewport so the same colors remain visible regardless of
-   scroll position or dynamic Safari chrome collapsing/expanding. */
+/* html gets a solid fallback color only — it shows through when iOS
+   rubber-bands past scroll edges or exposes the safe-area canvas behind
+   the visual viewport. The actual gradient lives on .mesh-bg, a
+   position:fixed;inset:0 layer that iOS Safari resizes correctly on
+   chrome transitions. Using background-attachment:fixed on <html>
+   triggered two Safari bugs: the gradient wouldn't fill the top until
+   you scrolled, and a ghost/duplicate layer appeared near the bottom
+   as the chrome collapsed. */
 html{
     scroll-behavior:smooth;
-    background:
-        radial-gradient(ellipse 160% 90% at 50% 20%,rgba(26,61,143,.9),transparent 70%),
-        radial-gradient(ellipse 160% 90% at 50% 80%,rgba(212,165,40,.8),transparent 70%),
-        #050508;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
+    background:#050508;
 }
 
 /* ── Skip to content ── */
@@ -59,13 +56,16 @@ body{
     background:transparent;
 }
 
-/* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
+/* ── Fixed background layer (gradient + animated orbs) ── */
 
 .mesh-bg{
-    position:fixed;top:0;left:0;
-    width:100vw;height:100lvh;
+    position:fixed;inset:0;
     z-index:0;overflow:hidden;
     pointer-events:none;
+    background:
+        radial-gradient(ellipse 160% 90% at 50% 20%,rgba(26,61,143,.9),transparent 70%),
+        radial-gradient(ellipse 160% 90% at 50% 80%,rgba(212,165,40,.8),transparent 70%),
+        #050508;
 }
 
 .mesh-orb{
@@ -228,39 +228,6 @@ body{
     background:linear-gradient(90deg,transparent,rgba(90,200,250,.45),rgba(212,165,40,.35),transparent);
     opacity:.55;
     position:relative;z-index:1;
-}
-
-/* ── Stats ── */
-
-.stats-section{padding:3.5rem 0;position:relative;z-index:1}
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:1.5rem;
-    max-width:760px;
-    margin:0 auto;
-}
-.stat{
-    display:flex;flex-direction:column;align-items:center;
-    gap:.5rem;text-align:center;
-}
-.stat-value{
-    font-size:clamp(2rem,5vw,2.75rem);
-    font-weight:800;letter-spacing:-.04em;line-height:1;
-    background:linear-gradient(135deg,#7fd4ff 0%,#e8c14a 100%);
-    -webkit-background-clip:text;background-clip:text;
-    -webkit-text-fill-color:transparent;color:transparent;
-}
-@media(forced-colors:active){
-    .stat-value{
-        background:none;
-        -webkit-text-fill-color:currentColor;
-        color:CanvasText;
-    }
-}
-.stat-label{
-    font-size:.78rem;color:var(--text-3);
-    text-transform:uppercase;letter-spacing:.1em;font-weight:600;
 }
 
 /* ── Bottom CTA ── */
@@ -491,9 +458,6 @@ body{
 
     .features-grid{grid-template-columns:1fr;gap:.85rem}
 
-    .stats-section{padding:2.5rem 0}
-    .stats-grid{gap:1.25rem}
-
     .bottom-cta{padding:4rem 0 5rem}
 
     .nav-bar{width:94%;padding:0 1rem;height:48px}
@@ -518,7 +482,6 @@ body{
     .section{padding:2.5rem 0}
     .price-card{border-radius:16px}
 
-    .stats-grid{grid-template-columns:repeat(2,1fr);gap:1.5rem}
     .divider{max-width:160px}
 }
 
@@ -538,18 +501,18 @@ body{
     }
 
     html{
-        background:
-            radial-gradient(ellipse 160% 90% at 50% 20%,rgba(168,196,240,.75),transparent 70%),
-            radial-gradient(ellipse 160% 90% at 50% 80%,rgba(240,220,140,.7),transparent 70%),
-            #f2f2f7;
-        background-attachment:fixed;
-        background-repeat:no-repeat;
+        background:#f2f2f7;
     }
     body{
         color:var(--text-1);
         background:transparent;
     }
-    .mesh-bg{background:transparent}
+    .mesh-bg{
+        background:
+            radial-gradient(ellipse 160% 90% at 50% 20%,rgba(168,196,240,.75),transparent 70%),
+            radial-gradient(ellipse 160% 90% at 50% 80%,rgba(240,220,140,.7),transparent 70%),
+            #f2f2f7;
+    }
     .mesh-orb{opacity:.3}
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
     .orb-2{background:radial-gradient(circle,#f0dc8c 0%,transparent 70%)}
@@ -565,7 +528,6 @@ body{
     .price-card:hover{border-color:rgba(0,0,0,.12)}
     .price-badge{color:#cc8800;background:linear-gradient(135deg,rgba(255,204,0,.2),rgba(255,149,0,.2));border:1px solid rgba(255,204,0,.3)}
 
-    .stat-value{background:linear-gradient(135deg,#1a4dd6 0%,#6b5510 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
     .divider,hr.divider{background:linear-gradient(90deg,transparent,rgba(26,61,143,.4),rgba(180,140,30,.35),transparent);opacity:.7}
 
     .step-n{background:rgba(0,122,255,.1);color:#007aff;border:1px solid rgba(0,122,255,.15)}
