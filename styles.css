@@ -17,25 +17,30 @@
     --ease:cubic-bezier(.16,1,.3,1);
 }
 
-/* Background lives on <html> with background-attachment:fixed. Only <html>'s
-   background propagates to the iOS viewport canvas — the area behind the
-   notch, URL pill, home indicator, and rubber-band zones. A position:fixed
-   layer on top of <html> cannot reach those areas, so moving the gradient
-   off <html> leaves solid-color bars at the top and bottom on iOS.
+/* Gradient strategy, after much iOS Safari archaeology:
 
-   The radial centers sit at 0%/100% (not 20%/80%) so the blue and gold are
-   fully saturated at the very top and bottom of the viewport. With the
-   centers pulled inward the edges only received ~30% opacity, which
-   composited to near-black and read as dark bars — especially on iPhone
-   where the status bar sits over y=0 and Safari's URL bar hugs y=100. */
+   - background-attachment:fixed has never worked on iOS Safari (silently
+     treated as scroll), so positioning the gradient on <html> meant the
+     ellipse centers ended up relative to the full document box, not the
+     viewport. The saturated edges only showed near the top of the page
+     and faded to black everywhere else.
+   - iOS 26 additionally clips position:fixed elements at the inner
+     viewport, stopping short of the area under the status bar and the
+     URL bar. So a .mesh-bg with position:fixed;inset:0 leaves dark bars
+     behind the Safari chrome.
+
+   The working pattern is position:absolute on a pseudo-element inside
+   body. With viewport-fit=cover, body extends under the iOS chrome, and
+   absolute positioning (unlike fixed) isn't clipped to the inner
+   viewport on iOS 26. So body::before with inset:0 fills the whole page
+   including the safe areas.
+
+   html keeps a solid fallback color so rubber-band zones don't flash
+   black behind the absolute layer. */
+
 html{
     scroll-behavior:smooth;
-    background:
-        radial-gradient(ellipse 200% 100% at 50% 0%,rgba(36,80,179,.95),transparent 75%),
-        radial-gradient(ellipse 200% 100% at 50% 100%,rgba(212,165,40,.85),transparent 75%),
-        #050814;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
+    background:#050814;
 }
 
 /* ── Skip to content ── */
@@ -52,16 +57,36 @@ html{
 :focus-visible{outline:2px solid rgba(255,255,255,.5);outline-offset:2px;border-radius:8px}
 @media(prefers-color-scheme:light){:focus-visible{outline-color:rgba(0,0,0,.7)}}
 
-/* body stays transparent so <html>'s gradient shows through. min-height is
-   100dvh (dynamic) so the body tracks the currently-visible viewport for
-   layout purposes, while the html gradient uses its own fixed attachment. */
+/* body is the positioned parent for the background pseudo-element. It
+   must not be overflow-x:hidden because that creates a new containing
+   block that interferes with absolute positioning into the safe areas
+   on iOS. Instead, horizontal overflow is contained by .mesh-bg (the
+   orb container) which has its own overflow:hidden. */
 body{
+    position:relative;
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
     min-height:100dvh;
-    overflow-x:hidden;
     background:transparent;
+}
+
+/* Full-bleed gradient layer. position:absolute with inset:0 fills the
+   entire body content box (which, with viewport-fit=cover, extends under
+   the iOS status bar, dynamic island, URL bar, and home indicator). The
+   gradient centers at 50% 0% / 50% 100% of the body, so the saturated
+   blue lives at the very top of the page and gold at the very bottom —
+   no dark edges where the gradient faded out too early. */
+body::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    background:
+        radial-gradient(ellipse 180% 60% at 50% 0%,rgba(36,80,179,.95),transparent 80%),
+        radial-gradient(ellipse 180% 60% at 50% 100%,rgba(212,165,40,.85),transparent 80%),
+        #050814;
 }
 
 /* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
@@ -515,16 +540,17 @@ body{
     }
 
     html{
-        background:
-            radial-gradient(ellipse 200% 100% at 50% 0%,rgba(168,196,240,.85),transparent 75%),
-            radial-gradient(ellipse 200% 100% at 50% 100%,rgba(240,220,140,.8),transparent 75%),
-            #e6ebf3;
-        background-attachment:fixed;
-        background-repeat:no-repeat;
+        background:#e6ebf3;
     }
     body{
         color:var(--text-1);
         background:transparent;
+    }
+    body::before{
+        background:
+            radial-gradient(ellipse 180% 60% at 50% 0%,rgba(168,196,240,.85),transparent 80%),
+            radial-gradient(ellipse 180% 60% at 50% 100%,rgba(240,220,140,.8),transparent 80%),
+            #e6ebf3;
     }
     .mesh-bg{background:transparent}
     .mesh-orb{opacity:.3}
