@@ -17,17 +17,19 @@
     --ease:cubic-bezier(.16,1,.3,1);
 }
 
-/* html gets a solid fallback color only — it shows through when iOS
-   rubber-bands past scroll edges or exposes the safe-area canvas behind
-   the visual viewport. The actual gradient lives on .mesh-bg, a
-   position:fixed;inset:0 layer that iOS Safari resizes correctly on
-   chrome transitions. Using background-attachment:fixed on <html>
-   triggered two Safari bugs: the gradient wouldn't fill the top until
-   you scrolled, and a ghost/duplicate layer appeared near the bottom
-   as the chrome collapsed. */
+/* Background lives on <html> with background-attachment:fixed. Only <html>'s
+   background propagates to the iOS viewport canvas — the area behind the
+   notch, URL pill, home indicator, and rubber-band zones. A position:fixed
+   layer on top of <html> cannot reach those areas, so moving the gradient
+   off <html> leaves solid-color bars at the top and bottom on iOS. */
 html{
     scroll-behavior:smooth;
-    background:#050508;
+    background:
+        radial-gradient(ellipse 160% 90% at 50% 20%,rgba(26,61,143,.9),transparent 70%),
+        radial-gradient(ellipse 160% 90% at 50% 80%,rgba(212,165,40,.8),transparent 70%),
+        #050508;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
 }
 
 /* ── Skip to content ── */
@@ -56,16 +58,13 @@ body{
     background:transparent;
 }
 
-/* ── Fixed background layer (gradient + animated orbs) ── */
+/* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
 
 .mesh-bg{
-    position:fixed;inset:0;
+    position:fixed;top:0;left:0;
+    width:100vw;height:100lvh;
     z-index:0;overflow:hidden;
     pointer-events:none;
-    background:
-        radial-gradient(ellipse 160% 90% at 50% 20%,rgba(26,61,143,.9),transparent 70%),
-        radial-gradient(ellipse 160% 90% at 50% 80%,rgba(212,165,40,.8),transparent 70%),
-        #050508;
 }
 
 .mesh-orb{
@@ -364,14 +363,23 @@ body{
     display:flex;flex-wrap:wrap;justify-content:center;
     gap:8px;max-width:680px;margin:0 auto;
 }
-.lang-row span{
+.lang-row a,.lang-row span{
+    display:inline-block;
     padding:6px 14px;
     background:var(--glass-bg);border:1px solid var(--glass-border);
     border-radius:100px;font-size:.82rem;color:var(--text-2);font-weight:500;
-    transition:background .15s;
+    text-decoration:none;
+    transition:background .15s,color .15s,border-color .15s,transform .15s;
 }
-.lang-row span:hover{background:var(--glass-hover);color:var(--text-1)}
-.lang-row span.active{background:rgba(255,255,255,.12);color:var(--text-1);font-weight:600}
+.lang-row a:hover,.lang-row span:hover{
+    background:var(--glass-hover);color:var(--text-1);
+    transform:translateY(-1px);
+}
+.lang-row a.active,.lang-row span.active{
+    background:rgba(255,255,255,.16);
+    border-color:rgba(255,255,255,.24);
+    color:var(--text-1);font-weight:700;
+}
 
 /* ── Legal / Support pages ── */
 
@@ -501,18 +509,18 @@ body{
     }
 
     html{
-        background:#f2f2f7;
+        background:
+            radial-gradient(ellipse 160% 90% at 50% 20%,rgba(168,196,240,.75),transparent 70%),
+            radial-gradient(ellipse 160% 90% at 50% 80%,rgba(240,220,140,.7),transparent 70%),
+            #f2f2f7;
+        background-attachment:fixed;
+        background-repeat:no-repeat;
     }
     body{
         color:var(--text-1);
         background:transparent;
     }
-    .mesh-bg{
-        background:
-            radial-gradient(ellipse 160% 90% at 50% 20%,rgba(168,196,240,.75),transparent 70%),
-            radial-gradient(ellipse 160% 90% at 50% 80%,rgba(240,220,140,.7),transparent 70%),
-            #f2f2f7;
-    }
+    .mesh-bg{background:transparent}
     .mesh-orb{opacity:.3}
     .orb-1{background:radial-gradient(circle,#a8c4f0 0%,transparent 70%)}
     .orb-2{background:radial-gradient(circle,#f0dc8c 0%,transparent 70%)}
@@ -539,9 +547,9 @@ body{
     .troubleshoot-item summary:hover{color:rgba(0,0,0,.85)}
 
     .price-list li:hover{background:rgba(0,0,0,.03)}
-    .lang-row span{background:rgba(255,255,255,.45);border:1px solid rgba(0,0,0,.06)}
-    .lang-row span:hover{background:rgba(255,255,255,.65);color:var(--text-1)}
-    .lang-row span.active{background:rgba(0,0,0,.08);color:var(--text-1);font-weight:600}
+    .lang-row a,.lang-row span{background:rgba(255,255,255,.45);border:1px solid rgba(0,0,0,.06)}
+    .lang-row a:hover,.lang-row span:hover{background:rgba(255,255,255,.65);color:var(--text-1)}
+    .lang-row a.active,.lang-row span.active{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.18);color:var(--text-1);font-weight:700}
 
 }
 
