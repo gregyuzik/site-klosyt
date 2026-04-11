@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Chinese (Traditional)",
-    "langNameNative": "繁體中文",
-    "dir": "ltr",
-    "changeLanguage": "切換語言"
-  },
   "nav": {
-    "features": "功能",
     "klosytPlus": "Klosyt+",
-    "support": "支援",
-    "privacy": "隱私"
+    "support": "支援"
   },
   "hero": {
     "mainTitle": "AI驅動的<br>數位衣櫥",
@@ -31,25 +23,14 @@
     "filtersDesc": "按季節、顏色、類別、面料或圖案，幾秒鐘找到任何物品。"
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/月",
     "trial": "30天免費試用 · 隨時取消",
     "note": "你的衣櫥永遠免費。Klosyt+解鎖進階功能。",
-    "trialDesc": "免費試用所有功能30天，之後僅$0.99/月。隨時取消。永遠不會失去對你衣櫥庫的存取權。",
     "aiStyleAssistant": "AI風格助手",
-    "aiStyleAssistantDesc": "個人化、天氣智慧搭配",
     "outfits": "搭配",
-    "outfitsDesc": "建立、儲存和分享你的搭配",
     "calendarTracking": "行事曆追蹤",
-    "calendarTrackingDesc": "記錄穿著並建立歷史",
     "themesWallpapers": "主題和桌布（免費）",
-    "themesWallpapersDesc": "用你喜歡的主題自訂應用程式——所有人免費",
-    "alwaysFree": "Klosyt永遠免費",
-    "alwaysFreeDesc": "你的Klosyt永遠屬於你，永遠免費",
-    "weatherData": "即時天氣資料",
-    "weatherDataDesc": "由Apple Weather提供支援",
-    "supportsDev": "支持開發",
-    "supportsDevDesc": "持續的應用程式開發"
+    "weatherData": "即時天氣資料"
   },
   "cta": {
     "appStoreAlt": "從 App Store 下載",
@@ -215,7 +196,6 @@
     "tip5Desc": "將物品標記為夏季、冬季或全季節，以獲得適合天氣的搭配。",
     "tip6Title": "儘早啟用iCloud同步",
     "tip6Desc": "立即開啟iCloud同步，讓你的衣櫥始終備份並在各處同步。",
-    "manageSubTitle": "管理你的訂閱",
     "manageSubTrialDesc": "免費試用30天，之後僅$0.99/月。隨時取消。",
     "manageSubFooter": "在設定 → Apple ID → 訂閱中管理。在Klosyt設定中點擊「恢復購買」以重新啟用。",
     "troubleshootTitle": "疑難排解",
@@ -236,8 +216,7 @@
     "ts8Summary": "如何刪除一個物品？",
     "ts8Answer": "點擊一個物品 → 詳情檢視 → 刪除按鈕。刪除的物品會在垃圾桶中保留30天，可以還原。從設定中存取垃圾桶。",
     "contactTitle": "還需要幫助嗎？",
-    "contactDesc": "我們隨時為你提供幫助。聯繫我們：",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "我們隨時為你提供幫助。聯繫我們："
   },
   "index": {
     "languagesTitle": "提供16種語言"

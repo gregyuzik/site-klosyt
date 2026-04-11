@@ -111,7 +111,7 @@ function fixPaths(html) {
         .replace(/href="assets\//g, 'href="/assets/')
         .replace(/src="assets\//g, 'src="/assets/')
         .replace(/href="styles\.css/g, 'href="/styles.css')
-        .replace(/src="i18n\.js/g, 'src="/i18n.js')
+        .replace(/src="reveal\.js/g, 'src="/reveal.js')
         .replace(/src="icons\.js/g, 'src="/icons.js');
 }
 
@@ -143,11 +143,14 @@ function updateMeta(html, locale, page, translations, fallback) {
         ? `Klosyt \u2014 ${titleText}`
         : `${titleText} \u2014 Klosyt`;
 
-    // Build canonical URL
+    // Build canonical URL and the English source URL we're replacing
     const canonicalBase = `https://klosyt.com/${locale}/`;
     const canonicalUrl = meta.canonicalPath
         ? canonicalBase + meta.canonicalPath
         : canonicalBase;
+    const enCanonical = meta.canonicalPath
+        ? `https://klosyt.com/${meta.canonicalPath}`
+        : `https://klosyt.com/`;
 
     html = html.replace(/<html lang="[^"]*"/, `<html lang="${locale}"`);
     html = html.replace(/<title>[^<]*<\/title>/, `<title>${pageTitle}</title>`);
@@ -179,6 +182,14 @@ function updateMeta(html, locale, page, translations, fallback) {
         /<meta name="twitter:description" content="[^"]*"/,
         `<meta name="twitter:description" content="${escAttr(descText)}"`
     );
+
+    // Rewrite LD-JSON "url" and "inLanguage" for the target locale. Only
+    // rewrites the exact en-source URL so we don't touch downloadUrl, image,
+    // or any URL that should stay global.
+    const escapedEn = enCanonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const ldUrlRegex = new RegExp(`"url":\\s*"${escapedEn}"`);
+    html = html.replace(ldUrlRegex, `"url": "${canonicalUrl}"`);
+    html = html.replace(/"inLanguage":\s*"en"/, `"inLanguage": "${locale}"`);
 
     return html;
 }

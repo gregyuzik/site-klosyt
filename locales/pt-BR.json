@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Portuguese (Brazil)",
-    "langNameNative": "Português (Brasil)",
-    "dir": "ltr",
-    "changeLanguage": "Mudar idioma"
-  },
   "nav": {
-    "features": "Recursos",
     "klosytPlus": "Klosyt+",
-    "support": "Suporte",
-    "privacy": "Privacidade"
+    "support": "Suporte"
   },
   "hero": {
     "mainTitle": "Seu armário digital<br>com IA",
@@ -31,25 +23,14 @@
     "filtersDesc": "Encontre qualquer peça por estação, cor, categoria, material ou padrão em segundos."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/mês",
     "trial": "30 dias grátis · Cancele quando quiser",
     "note": "Seu armário é sempre grátis. O Klosyt+ desbloqueia recursos premium.",
-    "trialDesc": "Teste tudo grátis por 30 dias, depois apenas $0,99/mês. Cancele quando quiser. Nunca perca acesso à sua biblioteca.",
     "aiStyleAssistant": "Assistente de estilo IA",
-    "aiStyleAssistantDesc": "Looks personalizados e inteligentes para o clima",
     "outfits": "Looks",
-    "outfitsDesc": "Crie, salve e compartilhe seus looks",
     "calendarTracking": "Acompanhamento do calendário",
-    "calendarTrackingDesc": "Registre o que veste e construa seu histórico",
     "themesWallpapers": "Temas e papéis de parede (Grátis)",
-    "themesWallpapersDesc": "Personalize o app com os temas que ama — grátis para todos",
-    "alwaysFree": "Klosyt é sempre grátis",
-    "alwaysFreeDesc": "Seu Klosyt é seu para sempre, sempre gratuito",
-    "weatherData": "Dados climáticos em tempo real",
-    "weatherDataDesc": "Fornecidos pelo Apple Weather",
-    "supportsDev": "Apoie o desenvolvimento",
-    "supportsDevDesc": "Desenvolvimento contínuo do app"
+    "weatherData": "Dados climáticos em tempo real"
   },
   "cta": {
     "appStoreAlt": "Baixar na App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Marque itens como verão, inverno ou todas as estações para looks apropriados ao clima.",
     "tip6Title": "Ative o iCloud cedo",
     "tip6Desc": "Ative a sincronização iCloud desde o início para ter seu armário sempre com backup e sincronizado.",
-    "manageSubTitle": "Gerencie sua assinatura",
     "manageSubTrialDesc": "Teste tudo grátis por 30 dias, depois apenas $0,99/mês. Cancele quando quiser.",
     "manageSubFooter": "Gerencie em Ajustes → Apple ID → Assinaturas. Toque em \"Restaurar compras\" nos Ajustes do Klosyt para reativar.",
     "troubleshootTitle": "Solução de problemas",
@@ -236,8 +216,7 @@
     "ts8Summary": "Como excluo um item?",
     "ts8Answer": "Toque em um item → visualização de detalhes → botão excluir. Itens excluídos ficam na lixeira por 30 dias e podem ser recuperados. Acesse a lixeira nas Configurações.",
     "contactTitle": "Ainda precisa de ajuda?",
-    "contactDesc": "Estamos aqui para ajudar. Escreva para",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Estamos aqui para ajudar. Escreva para"
   },
   "index": {
     "languagesTitle": "Disponível em 16 idiomas"

@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "French",
-    "langNameNative": "Français",
-    "dir": "ltr",
-    "changeLanguage": "Changer de langue"
-  },
   "nav": {
-    "features": "Fonctionnalités",
     "klosytPlus": "Klosyt+",
-    "support": "Assistance",
-    "privacy": "Confidentialité"
+    "support": "Assistance"
   },
   "hero": {
     "mainTitle": "Votre dressing numérique<br>propulsé par l'IA",
@@ -31,25 +23,14 @@
     "filtersDesc": "Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/mois",
     "trial": "30 jours d'essai gratuit · Annulez à tout moment",
     "note": "Votre dressing est toujours gratuit. Klosyt+ débloque les fonctionnalités premium.",
-    "trialDesc": "Essayez tout gratuitement pendant 30 jours, puis seulement 0,99 $/mois. Annulez à tout moment. Vous ne perdez jamais l'accès à votre bibliothèque.",
     "aiStyleAssistant": "Assistant de style IA",
-    "aiStyleAssistantDesc": "Des tenues personnalisées et adaptées à la météo",
     "outfits": "Tenues",
-    "outfitsDesc": "Créez, sauvegardez et partagez vos tenues",
     "calendarTracking": "Suivi calendrier",
-    "calendarTrackingDesc": "Enregistrez ce que vous portez et construisez votre historique",
     "themesWallpapers": "Thèmes et fonds d'écran (Gratuit)",
-    "themesWallpapersDesc": "Personnalisez l'app avec les thèmes que vous aimez — gratuit pour tous",
-    "alwaysFree": "Klosyt est toujours gratuit",
-    "alwaysFreeDesc": "Votre Klosyt reste le vôtre pour toujours, toujours gratuit",
-    "weatherData": "Données météo en temps réel",
-    "weatherDataDesc": "Propulsé par Apple Weather",
-    "supportsDev": "Soutient le développement",
-    "supportsDevDesc": "Développement continu de l'app"
+    "weatherData": "Données météo en temps réel"
   },
   "cta": {
     "appStoreAlt": "Télécharger dans l'App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Marquez les articles comme été, hiver ou toutes saisons pour des tenues adaptées au temps.",
     "tip6Title": "Activez iCloud tôt",
     "tip6Desc": "Activez la synchronisation iCloud dès le début pour que votre dressing soit toujours sauvegardée et synchronisée.",
-    "manageSubTitle": "Gérer votre abonnement",
     "manageSubTrialDesc": "Essayez tout gratuitement pendant 30 jours, puis seulement 0,99 $/mois. Annulez à tout moment.",
     "manageSubFooter": "Gérez dans Réglages → Identifiant Apple → Abonnements. Appuyez sur « Restaurer les achats » dans les réglages Klosyt pour réactiver.",
     "troubleshootTitle": "Dépannage",
@@ -236,8 +216,7 @@
     "ts8Summary": "Comment supprimer un article ?",
     "ts8Answer": "Appuyez sur un article → vue détaillée → bouton supprimer. Les articles supprimés restent dans la Corbeille pendant 30 jours et peuvent être récupérés. Accédez à la Corbeille depuis les Réglages.",
     "contactTitle": "Besoin d'aide ?",
-    "contactDesc": "Nous sommes là pour vous aider. Contactez-nous à",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Nous sommes là pour vous aider. Contactez-nous à"
   },
   "index": {
     "languagesTitle": "Disponible en 16 langues"

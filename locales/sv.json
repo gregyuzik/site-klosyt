@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Swedish",
-    "langNameNative": "Svenska",
-    "dir": "ltr",
-    "changeLanguage": "Byt språk"
-  },
   "nav": {
-    "features": "Funktioner",
     "klosytPlus": "Klosyt+",
-    "support": "Support",
-    "privacy": "Integritet"
+    "support": "Support"
   },
   "hero": {
     "mainTitle": "Din AI-drivna<br>digitala garderob",
@@ -31,25 +23,14 @@
     "filtersDesc": "Hitta alla plagg efter säsong, färg, kategori, material eller mönster på sekunder."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/månad",
     "trial": "30 dagars gratis provperiod · Avbryt när som helst",
     "note": "Din garderob är alltid gratis. Klosyt+ låser upp premiumfunktioner.",
-    "trialDesc": "Testa allt gratis i 30 dagar, sedan bara $0,99/mån. Avbryt när som helst. Du förlorar aldrig åtkomst till ditt bibliotek.",
     "aiStyleAssistant": "AI-stilassistent",
-    "aiStyleAssistantDesc": "Personaliserade, vädersmarta outfits",
     "outfits": "Outfits",
-    "outfitsDesc": "Skapa, spara och dela dina outfits",
     "calendarTracking": "Kalenderspårning",
-    "calendarTrackingDesc": "Logga vad du bär och bygg upp din historik",
     "themesWallpapers": "Teman & bakgrunder (Gratis)",
-    "themesWallpapersDesc": "Anpassa appen med dina favoritteman — gratis för alla",
-    "alwaysFree": "Klosyt är alltid gratis",
-    "alwaysFreeDesc": "Din Klosyt är din för alltid, alltid gratis",
-    "weatherData": "Realtidsväderdata",
-    "weatherDataDesc": "Drivs av Apple Weather",
-    "supportsDev": "Stödjer utveckling",
-    "supportsDevDesc": "Kontinuerlig apputveckling"
+    "weatherData": "Realtidsväderdata"
   },
   "cta": {
     "appStoreAlt": "Hämta från App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Märk plagg som sommar, vinter eller helår för väderanpassade outfits.",
     "tip6Title": "Aktivera iCloud tidigt",
     "tip6Desc": "Slå på iCloud-synkronisering från början så din garderob alltid är säkerhetskopierad och synkroniserad.",
-    "manageSubTitle": "Hantera din prenumeration",
     "manageSubTrialDesc": "Testa allt gratis i 30 dagar, sedan bara $0,99/mån. Avbryt när som helst.",
     "manageSubFooter": "Hantera i Inställningar → Apple ID → Prenumerationer. Tryck \"Återställ köp\" i Klosyt-inställningar för att återaktivera.",
     "troubleshootTitle": "Felsökning",
@@ -236,8 +216,7 @@
     "ts8Summary": "Hur tar jag bort ett plagg?",
     "ts8Answer": "Tryck på ett plagg → detaljvy → raderingsknapp. Borttagna plagg hamnar i papperskorgen i 30 dagar och kan återställas. Gå till papperskorgen från Inställningar.",
     "contactTitle": "Behöver du fortfarande hjälp?",
-    "contactDesc": "Vi är här för att hjälpa. Kontakta oss på",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Vi är här för att hjälpa. Kontakta oss på"
   },
   "index": {
     "languagesTitle": "Tillgänglig på 16 språk"
