@@ -16,18 +16,6 @@
     "mainSubtitle": "服を撮影するだけでAIが自動整理。天気に合わせたコーディネート提案まで、すべてデバイス上で完結。プライバシーも安心。",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "撮影",
-    "snapDesc": "写真、共有シート、リンク貼り付け — 背景は自動で除去。",
-    "categorizeTitle": "分類",
-    "categorizeDesc": "AIが種類、色、柄、季節、素材を瞬時に検出。",
-    "styleTitle": "スタイリング",
-    "styleDesc": "クローゼット、アクティビティ、リアルタイム天気に基づくコーディネート提案。"
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "カラー理論搭載のAIが10倍高速に。アイテムをタップしてコーディネートを生成、ロック＆再生成、Siri対応、コーディネートウィジェット、Instagram共有、無料テーマ、16言語対応。"
-  },
   "features": {
     "sectionTitle": "必要なものだけ、<br>余計なものはなし",
     "aiStylist": "AIスタイリスト",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloudがすべてのAppleデバイス間でクローゼットを即座に自動同期。",
     "filtersTitle": "スマートフィルター",
     "filtersDesc": "季節、色、カテゴリー、素材、柄で瞬時にアイテムを検索。"
-  },
-  "whyKlosyt": {
-    "title": "あなたのワードローブを、<br>再構築",
-    "desc": "Klosytは、すべてのアイテムを最大限に活用できるAI搭載のワードローブ整理＆コーディネートプランナーです。明日のコーディネートを選ぶときも、理想のカプセルワードローブを構築するときも、Klosytのオンデバイスインテリジェンスがクローゼットをスマートで持続可能なスタイルシステムに変えます——完全にプライベートで、すべてのAppleデバイス間で常に同期。"
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "継続的なアプリ開発"
   },
   "cta": {
-    "appStoreAlt": "App Storeからダウンロード"
+    "appStoreAlt": "App Storeからダウンロード",
+    "bottomTitle": "クローゼットを整理する準備はできましたか？",
+    "bottomDesc": "無料で始められます。無制限のワードローブ容量。常にプライベート。"
   },
   "footer": {
     "home": "ホーム",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "16言語で利用可能"
+  },
+  "stats": {
+    "platforms": "プラットフォーム",
+    "languages": "言語",
+    "private": "デバイス内",
+    "toStart": "開始"
   }
 }

@@ -16,18 +16,6 @@
     "mainSubtitle": "Chụp ảnh quần áo, để AI sắp xếp và nhận gợi ý trang phục thông minh theo thời tiết — tất cả trên thiết bị và riêng tư.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Chụp",
-    "snapDesc": "Chụp ảnh, chia sẻ hoặc dán liên kết — phông nền được xóa tự động.",
-    "categorizeTitle": "Phân loại",
-    "categorizeDesc": "AI nhận biết loại, màu sắc, họa tiết, mùa và chất liệu ngay lập tức.",
-    "styleTitle": "Phối đồ",
-    "styleDesc": "Nhận gợi ý trang phục dựa trên tủ đồ, hoạt động và thời tiết thực tế."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "AI nhanh hơn 10 lần với lý thuyết màu sắc, chạm vào bất kỳ món đồ nào để tạo trang phục, khóa và tạo lại các món đồ, hỗ trợ Siri, widget trang phục, chia sẻ lên Instagram, giao diện miễn phí và 16 ngôn ngữ."
-  },
   "features": {
     "sectionTitle": "Mọi thứ bạn cần,<br>không gì thừa thãi",
     "aiStylist": "AI Stylist",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud giữ tủ đồ đồng bộ trên mọi thiết bị Apple, tức thì và tự động.",
     "filtersTitle": "Bộ lọc thông minh",
     "filtersDesc": "Tìm bất kỳ món đồ nào theo mùa, màu sắc, danh mục, chất liệu hoặc họa tiết trong vài giây."
-  },
-  "whyKlosyt": {
-    "title": "Tủ đồ của bạn,<br>được tái tưởng tượng",
-    "desc": "Klosyt là ứng dụng sắp xếp tủ đồ và lên kế hoạch trang phục được hỗ trợ bởi AI, giúp bạn tận dụng tối đa mọi món đồ. Dù bạn đang chọn trang phục cho ngày mai hay xây dựng tủ đồ viên nang hoàn hảo, trí tuệ trên thiết bị của Klosyt biến tủ đồ thành hệ thống phong cách thông minh, bền vững — hoàn toàn riêng tư, luôn đồng bộ trên mọi thiết bị Apple."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Phát triển ứng dụng liên tục"
   },
   "cta": {
-    "appStoreAlt": "Tải về trên App Store"
+    "appStoreAlt": "Tải về trên App Store",
+    "bottomTitle": "Sẵn sàng sắp xếp tủ quần áo của bạn?",
+    "bottomDesc": "Bắt đầu miễn phí. Lưu trữ tủ quần áo không giới hạn. Luôn riêng tư."
   },
   "footer": {
     "home": "Trang chủ",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Có sẵn bằng 16 ngôn ngữ"
+  },
+  "stats": {
+    "platforms": "Nền tảng",
+    "languages": "Ngôn ngữ",
+    "private": "Trên thiết bị",
+    "toStart": "Để bắt đầu"
   }
 }

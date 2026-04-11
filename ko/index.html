@@ -48,7 +48,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=32">
+    <link rel="stylesheet" href="/styles.css?v=33">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -94,7 +94,7 @@
 <a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Animated gradient mesh background -->
-<div class="mesh-bg">
+<div class="mesh-bg" aria-hidden="true">
     <div class="mesh-orb orb-1"></div>
     <div class="mesh-orb orb-2"></div>
     <div class="mesh-orb orb-3"></div>
@@ -115,12 +115,11 @@
 </header>
 
 <main id="main">
+
 <!-- Hero -->
 <section class="hero">
     <div class="hero-inner fade-up">
-        <div class="hero-glow">
-            <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
-        </div>
+        <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
         <h1 data-i18n="hero.mainTitle">AI가 함께하는<br>디지털 옷장</h1>
         <p class="hero-sub" data-i18n="hero.mainSubtitle">옷을 촬영하면 AI가 자동으로 정리하고, 날씨에 맞는 코디를 제안합니다 — 모두 기기 내에서 프라이버시를 지키며.</p>
         <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
@@ -130,85 +129,86 @@
     </div>
 </section>
 
-<!-- What's New -->
-<section class="section wn-section">
-    <div class="wrap tc">
-        <div class="glass card wn-card fade-up">
-            <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)" aria-hidden="true">🚀</span>
-            <h3 data-i18n="whatsNew.title">Klosyt 2.0</h3>
-            <p data-i18n="whatsNew.desc">색채 이론을 적용한 10배 빠른 AI, 아이템을 탭하여 코디 생성, 잠금 및 재생성, Siri 지원, 코디 위젯, Instagram 공유, 무료 테마, 16개 언어 지원.</p>
+<hr class="divider" aria-hidden="true">
+
+<!-- Stats -->
+<section class="stats-section" aria-label="Key numbers">
+    <div class="wrap">
+        <div class="stats-grid fade-up">
+            <div class="stat">
+                <span class="stat-value">5</span>
+                <span class="stat-label" data-i18n="stats.platforms">플랫폼</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">16</span>
+                <span class="stat-label" data-i18n="stats.languages">언어</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">100%</span>
+                <span class="stat-label" data-i18n="stats.private">기기 내</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">$0</span>
+                <span class="stat-label" data-i18n="stats.toStart">시작하기</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- How it works -->
-<section class="section">
-    <div class="wrap">
-        <div class="glass steps fade-up">
-            <div class="step">
-                <span class="step-n">1</span>
-                <div><h3 data-i18n="steps.snapTitle">촬영</h3><p data-i18n="steps.snapDesc">사진, 공유 시트 또는 링크 붙여넣기 — 배경은 자동 제거.</p></div>
-            </div>
-            <span class="step-div"></span>
-            <div class="step">
-                <span class="step-n">2</span>
-                <div><h3 data-i18n="steps.categorizeTitle">분류</h3><p data-i18n="steps.categorizeDesc">AI가 유형, 색상, 패턴, 시즌, 소재를 즉시 인식.</p></div>
-            </div>
-            <span class="step-div"></span>
-            <div class="step">
-                <span class="step-n">3</span>
-                <div><h3 data-i18n="steps.styleTitle">스타일링</h3><p data-i18n="steps.styleDesc">옷장, 활동, 실시간 날씨를 기반으로 코디를 제안.</p></div>
-            </div>
-        </div>
-    </div>
-</section>
+<hr class="divider" aria-hidden="true">
 
 <!-- Features -->
-<section id="features" class="section">
+<section class="section">
     <div class="wrap">
         <h2 class="sec-title fade-up" data-i18n="features.sectionTitle">필요한 건 전부,<br>불필요한 건 제로</h2>
-        <div class="grid fade-up">
-            <div class="glass card">
-                <span class="card-ico" style="--c:#af52de;--bg:rgba(175,82,222,.12)" aria-hidden="true">✨</span>
-                <h3 data-i18n="features.aiStylist">AI 스타일리스트</h3>
-                <p data-i18n="features.aiStylistDesc">실제 옷장을 기반으로 날씨를 고려한 코디 제안. 온디바이스 AI로 작동.</p>
+        <div class="features-grid fade-up">
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.aiStylist">AI 스타일리스트</h3>
+                    <p data-i18n="features.aiStylistDesc">실제 옷장을 기반으로 날씨를 고려한 코디 제안. 온디바이스 AI로 작동.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#007aff;--bg:rgba(0,122,255,.12)" aria-hidden="true">👔</span>
-                <h3 data-i18n="features.outfitsTitle">코디</h3>
-                <p data-i18n="features.outfitsDesc">드래그 앤 드롭으로 룩을 만들고, 즐겨찾기를 저장하고, 아름다운 Pantone 스타일 카드를 공유.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#007aff;--bg:rgba(0,122,255,.14)" aria-hidden="true">👔</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.outfitsTitle">코디</h3>
+                    <p data-i18n="features.outfitsDesc">드래그 앤 드롭으로 룩을 만들고, 즐겨찾기를 저장하고, 아름다운 Pantone 스타일 카드를 공유.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)" aria-hidden="true">📅</span>
-                <h3 data-i18n="features.calendarTitle">캘린더</h3>
-                <p data-i18n="features.calendarDesc">매일 입은 옷을 기록하세요. 패턴이 보이고, 실수로 코디를 반복할 일이 없습니다.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#ff9500;--bg:rgba(255,149,0,.14)" aria-hidden="true">📅</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.calendarTitle">캘린더</h3>
+                    <p data-i18n="features.calendarDesc">매일 입은 옷을 기록하세요. 패턴이 보이고, 실수로 코디를 반복할 일이 없습니다.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#34c759;--bg:rgba(52,199,89,.12)" aria-hidden="true">🔐</span>
-                <h3 data-i18n="features.privacyTitle">프라이버시 설계</h3>
-                <p data-i18n="features.privacyDesc">모든 처리는 기기 내에서. 데이터는 나의 iCloud에만 동기화 — 누구와도 공유되지 않습니다.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#34c759;--bg:rgba(52,199,89,.14)" aria-hidden="true">🔐</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.privacyTitle">프라이버시 설계</h3>
+                    <p data-i18n="features.privacyDesc">모든 처리는 기기 내에서. 데이터는 나의 iCloud에만 동기화 — 누구와도 공유되지 않습니다.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#5ac8fa;--bg:rgba(90,200,250,.12)" aria-hidden="true">☁️</span>
-                <h3 data-i18n="features.syncTitle">어디서나 동기화</h3>
-                <p data-i18n="features.syncDesc">iCloud가 모든 Apple 기기에서 옷장을 즉시 자동으로 동기화.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#5ac8fa;--bg:rgba(90,200,250,.14)" aria-hidden="true">☁️</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.syncTitle">어디서나 동기화</h3>
+                    <p data-i18n="features.syncDesc">iCloud가 모든 Apple 기기에서 옷장을 즉시 자동으로 동기화.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#ff2d55;--bg:rgba(255,45,85,.12)" aria-hidden="true">🔍</span>
-                <h3 data-i18n="features.filtersTitle">스마트 필터</h3>
-                <p data-i18n="features.filtersDesc">시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#ff2d55;--bg:rgba(255,45,85,.14)" aria-hidden="true">🔍</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.filtersTitle">스마트 필터</h3>
+                    <p data-i18n="features.filtersDesc">시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Klosyt -->
-<section class="section">
-    <div class="wrap tc fade-up">
-        <h2 class="sec-title" data-i18n="whyKlosyt.title">당신의 옷장,<br>새롭게 상상하다</h2>
-        <p class="hero-sub" style="max-width:640px" data-i18n="whyKlosyt.desc">Klosyt은 모든 옷을 최대한 활용할 수 있도록 도와주는 AI 기반 옷장 정리 및 코디 플래너입니다. 내일의 코디를 고르든, 완벽한 캡슐 옷장을 만들든, Klosyt의 온디바이스 인텔리전스가 옷장을 스마트하고 지속 가능한 스타일 시스템으로 바꿔줍니다 — 완전히 프라이빗하며, 모든 Apple 기기에서 항상 동기화됩니다.</p>
-    </div>
-</section>
+<hr class="divider" aria-hidden="true">
 
 <!-- Pricing -->
 <section id="pricing" class="section">
@@ -234,8 +234,10 @@
     </div>
 </section>
 
+<hr class="divider" aria-hidden="true">
+
 <!-- Languages -->
-<section class="section">
+<section class="section languages-section">
     <div class="wrap tc fade-up">
         <p class="lang-label" data-i18n="index.languagesTitle">16개 언어로 이용 가능</p>
         <div class="lang-row">
@@ -244,6 +246,19 @@
             <span lang="ja">日本語</span><span lang="ko">한국어</span><span lang="nb">Norsk</span><span lang="pt-BR">Português</span>
             <span lang="es">Español</span><span lang="sv">Svenska</span><span lang="tr">Türkçe</span><span lang="vi">Tiếng Việt</span>
         </div>
+    </div>
+</section>
+
+<hr class="divider" aria-hidden="true">
+
+<!-- Bottom CTA -->
+<section class="bottom-cta" aria-label="Get Klosyt">
+    <div class="wrap tc fade-up">
+        <h2 data-i18n="cta.bottomTitle">옷장을 정리할 준비가 되셨나요?</h2>
+        <p data-i18n="cta.bottomDesc">무료로 시작하세요. 무제한 옷장 저장 공간. 항상 비공개.</p>
+        <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
+            <img src="/assets/app-store-badge.svg" alt="App Store에서 다운로드" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48">
+        </a>
     </div>
 </section>
 

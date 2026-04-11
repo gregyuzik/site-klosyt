@@ -16,18 +16,6 @@
     "mainSubtitle": "Fotografér dit tøj, lad AI organisere det, og få vejrtilpassede outfitforslag — alt på enheden og privat.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Fotografér",
-    "snapDesc": "Foto, delingspanel eller indsæt et link — baggrunden fjernes automatisk.",
-    "categorizeTitle": "Kategorisér",
-    "categorizeDesc": "AI genkender type, farve, mønster, sæson og materiale øjeblikkeligt.",
-    "styleTitle": "Style",
-    "styleDesc": "Få outfitforslag baseret på din klædeskab, aktivitet og vejret lige nu."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "10x hurtigere AI med farveteori, tryk på ethvert element for at generere outfits, lås og generer dele på ny, Siri-understøttelse, outfit-widgets, Instagram-deling, gratis temaer og 16 sprog."
-  },
   "features": {
     "sectionTitle": "Alt hvad du har brug for,<br>intet du ikke har",
     "aiStylist": "AI-stylist",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud holder din klædeskab synkroniseret på alle Apple-enheder, øjeblikkeligt og automatisk.",
     "filtersTitle": "Smarte filtre",
     "filtersDesc": "Find enhver genstand efter sæson, farve, kategori, materiale eller mønster på sekunder."
-  },
-  "whyKlosyt": {
-    "title": "Din garderobe,<br>gentænkt",
-    "desc": "Klosyt er den AI-drevne garderobeorganisator og outfitplanlægger, der hjælper dig med at få det bedste ud af hvert enkelt tøjstykke, du ejer. Uanset om du vælger morgendagens outfit eller bygger den perfekte kapselgarderobe, forvandler Klosyts on-device intelligens dit klædeskab til et smart, bæredygtigt stilsystem — helt privat, altid synkroniseret på tværs af alle dine Apple-enheder."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Fortsat app-udvikling"
   },
   "cta": {
-    "appStoreAlt": "Hent i App Store"
+    "appStoreAlt": "Hent i App Store",
+    "bottomTitle": "Klar til at organisere dit klædeskab?",
+    "bottomDesc": "Gratis at starte. Ubegrænset garderobelagring. Altid privat."
   },
   "footer": {
     "home": "Hjem",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Tilgængelig på 16 sprog"
+  },
+  "stats": {
+    "platforms": "Platforme",
+    "languages": "Sprog",
+    "private": "På enheden",
+    "toStart": "For at starte"
   }
 }
