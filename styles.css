@@ -17,45 +17,18 @@
     --ease:cubic-bezier(.16,1,.3,1);
 }
 
-/* Gradient strategy, after much cross-platform archaeology:
-
-   - background-attachment:fixed has never worked on iOS Safari (silently
-     treated as scroll). Old radial-gradient attempts on <html> had their
-     ellipse centers anchored to the full document box, so saturated
-     edges only showed near the top. Linear gradients have no centers,
-     so this concern is moot — they stretch cleanly across html.
-   - iOS 26 clips position:fixed elements at the inner viewport, stopping
-     short of the area under the status bar and the URL bar. So a fixed
-     bg layer leaves dark bars behind the Safari chrome.
-   - On macOS Tahoe (Safari 26), the toolbar and overlay scrollbar are
-     translucent and sample whatever the page paints behind them. A
-     pseudo-element inside <body> doesn't reach the canvas, so the
-     toolbar/scrollbar regions sampled the flat html fallback instead of
-     the gradient — leaving a hard seam at the toolbar edge.
-   - iOS Safari does NOT tile linear gradients into the rubber-band
-     overscroll region — it fills that region with html's
-     background-color. Without an explicit color, the CSS canvas default
-     (white) bled through at the top and bottom of the page. Setting
-     background-color to the dark mid-tone of the gradient makes
-     overscroll blend cleanly at both ends, and overscroll-behavior:none
-     suppresses the bounce entirely on iOS 16+.
-
-   Putting the linear gradient directly on <html> fixes both ends: the
-   root element's background propagates to the CSS canvas, which fills
-   the entire visible viewport on every platform — under iOS safe areas,
-   under the macOS translucent toolbar, and behind overlay scrollbars. */
+/* Background strategy: solid color matching <meta name="theme-color">.
+   A gradient is incompatible with iOS Safari's chrome: no single color
+   can tint Safari's top/bottom bars to blend with gradient stops at
+   both ends, and iOS does not tile gradients into the rubber-band
+   overscroll region. A solid color matches the chrome everywhere and
+   paints uniformly across the CSS canvas, safe areas, overscroll zones,
+   macOS Safari's translucent toolbar, and the iOS URL bar glass pill.
+   Visual interest comes from the animated .mesh-bg orb layer on top. */
 
 html{
     scroll-behavior:smooth;
-    background:linear-gradient(180deg,
-        #1e4aa8 0%,
-        #0e2566 8%,
-        #060c20 32%,
-        #050814 50%,
-        #060c20 68%,
-        #3a2d0a 92%,
-        #b08820 100%);
-    background-color:#050814;
+    background:#0a1838;
     overscroll-behavior:none;
 }
 
@@ -81,7 +54,7 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
-    min-height:100dvh;
+    min-height:100lvh;
     background:transparent;
     overscroll-behavior:none;
 }
@@ -537,15 +510,7 @@ body{
     }
 
     html{
-        background:linear-gradient(180deg,
-            #b5c8e8 0%,
-            #d6dfee 12%,
-            #eaedf4 36%,
-            #e6ebf3 50%,
-            #eaedf4 64%,
-            #f0e7c8 88%,
-            #e3c97f 100%);
-        background-color:#e6ebf3;
+        background:#e6ebf3;
     }
     body{
         color:var(--text-1);
