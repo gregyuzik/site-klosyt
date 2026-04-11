@@ -29,7 +29,6 @@
 html{
     scroll-behavior:smooth;
     background:#0a1838;
-    overscroll-behavior:none;
 }
 
 /* ── Skip to content ── */
@@ -54,9 +53,8 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
     color:var(--text-1);
-    min-height:100lvh;
+    min-height:100dvh;
     background:transparent;
-    overscroll-behavior:none;
 }
 
 /* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
