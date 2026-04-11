@@ -16,18 +16,6 @@
     "mainSubtitle": "Scatta una foto ai tuoi vestiti, lascia che l'IA li organizzi e ricevi suggerimenti outfit in base al meteo — tutto sul dispositivo e in totale privacy.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Scatta",
-    "snapDesc": "Foto, foglio di condivisione o incolla un link — lo sfondo viene rimosso automaticamente.",
-    "categorizeTitle": "Categorizza",
-    "categorizeDesc": "L'IA rileva tipo, colore, motivo, stagione e materiale all'istante.",
-    "styleTitle": "Stilizza",
-    "styleDesc": "Ricevi suggerimenti outfit basati sul tuo armadio, l'attività e il meteo in tempo reale."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "IA 10 volte più veloce con teoria del colore, tocca qualsiasi capo per generare outfit, blocca e rigenera pezzi, supporto Siri, widget outfit, condivisione su Instagram, temi gratuiti e 16 lingue."
-  },
   "features": {
     "sectionTitle": "Tutto quello che ti serve,<br>niente di superfluo",
     "aiStylist": "Stilista IA",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud mantiene il tuo armadio sincronizzato su ogni dispositivo Apple, all'istante e automaticamente.",
     "filtersTitle": "Filtri intelligenti",
     "filtersDesc": "Trova qualsiasi capo per stagione, colore, categoria, materiale o motivo in pochi secondi."
-  },
-  "whyKlosyt": {
-    "title": "Il tuo armadio,<br>reinventato",
-    "desc": "Klosyt è l'organizzatore di armadio e pianificatore di outfit con IA che ti aiuta a sfruttare al massimo ogni capo che possiedi. Che tu stia scegliendo l'outfit di domani o costruendo il guardaroba capsula perfetto, l'intelligenza integrata di Klosyt trasforma il tuo armadio in un sistema di stile intelligente e sostenibile — completamente privato, sempre sincronizzato su tutti i tuoi dispositivi Apple."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Sviluppo continuo dell'app"
   },
   "cta": {
-    "appStoreAlt": "Scarica dall'App Store"
+    "appStoreAlt": "Scarica dall'App Store",
+    "bottomTitle": "Pronto a organizzare il tuo armadio?",
+    "bottomDesc": "Gratis per iniziare. Archiviazione illimitata. Sempre privato."
   },
   "footer": {
     "home": "Home",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Disponibile in 16 lingue"
+  },
+  "stats": {
+    "platforms": "Piattaforme",
+    "languages": "Lingue",
+    "private": "Sul dispositivo",
+    "toStart": "Per iniziare"
   }
 }

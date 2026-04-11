@@ -48,7 +48,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=32">
+    <link rel="stylesheet" href="/styles.css?v=33">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -94,7 +94,7 @@
 <a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Animated gradient mesh background -->
-<div class="mesh-bg">
+<div class="mesh-bg" aria-hidden="true">
     <div class="mesh-orb orb-1"></div>
     <div class="mesh-orb orb-2"></div>
     <div class="mesh-orb orb-3"></div>
@@ -115,12 +115,11 @@
 </header>
 
 <main id="main">
+
 <!-- Hero -->
 <section class="hero">
     <div class="hero-inner fade-up">
-        <div class="hero-glow">
-            <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
-        </div>
+        <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
         <h1 data-i18n="hero.mainTitle">Ditt AI-drevne<br>digitale klesskap</h1>
         <p class="hero-sub" data-i18n="hero.mainSubtitle">Ta bilde av klærne dine, la AI organisere dem, og få værtilpassede antrekksforslag — alt på enheten og privat.</p>
         <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
@@ -130,85 +129,86 @@
     </div>
 </section>
 
-<!-- What's New -->
-<section class="section wn-section">
-    <div class="wrap tc">
-        <div class="glass card wn-card fade-up">
-            <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)" aria-hidden="true">🚀</span>
-            <h3 data-i18n="whatsNew.title">Klosyt 2.0</h3>
-            <p data-i18n="whatsNew.desc">10x raskere AI med fargeteori, trykk på et plagg for å generere antrekk, lås og generer deler på nytt, Siri-støtte, antrekk-widgeter, Instagram-deling, gratis temaer og 16 språk.</p>
+<hr class="divider" aria-hidden="true">
+
+<!-- Stats -->
+<section class="stats-section" aria-label="Key numbers">
+    <div class="wrap">
+        <div class="stats-grid fade-up">
+            <div class="stat">
+                <span class="stat-value">5</span>
+                <span class="stat-label" data-i18n="stats.platforms">Plattformer</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">16</span>
+                <span class="stat-label" data-i18n="stats.languages">Språk</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">100%</span>
+                <span class="stat-label" data-i18n="stats.private">På enheten</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">$0</span>
+                <span class="stat-label" data-i18n="stats.toStart">For å starte</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- How it works -->
-<section class="section">
-    <div class="wrap">
-        <div class="glass steps fade-up">
-            <div class="step">
-                <span class="step-n">1</span>
-                <div><h3 data-i18n="steps.snapTitle">Ta bilde</h3><p data-i18n="steps.snapDesc">Foto, delingsark eller lim inn en lenke — bakgrunnen fjernes automatisk.</p></div>
-            </div>
-            <span class="step-div"></span>
-            <div class="step">
-                <span class="step-n">2</span>
-                <div><h3 data-i18n="steps.categorizeTitle">Kategoriser</h3><p data-i18n="steps.categorizeDesc">AI gjenkjenner type, farge, mønster, sesong og materiale umiddelbart.</p></div>
-            </div>
-            <span class="step-div"></span>
-            <div class="step">
-                <span class="step-n">3</span>
-                <div><h3 data-i18n="steps.styleTitle">Style</h3><p data-i18n="steps.styleDesc">Få antrekksforslag basert på klesskapn din, aktivitet og sanntidsvær.</p></div>
-            </div>
-        </div>
-    </div>
-</section>
+<hr class="divider" aria-hidden="true">
 
 <!-- Features -->
-<section id="features" class="section">
+<section class="section">
     <div class="wrap">
         <h2 class="sec-title fade-up" data-i18n="features.sectionTitle">Alt du trenger,<br>ingenting du ikke trenger</h2>
-        <div class="grid fade-up">
-            <div class="glass card">
-                <span class="card-ico" style="--c:#af52de;--bg:rgba(175,82,222,.12)" aria-hidden="true">✨</span>
-                <h3 data-i18n="features.aiStylist">AI-stylist</h3>
-                <p data-i18n="features.aiStylistDesc">Værtilpassede antrekksforslag fra din faktiske klesskap. Drevet av AI på enheten.</p>
+        <div class="features-grid fade-up">
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.aiStylist">AI-stylist</h3>
+                    <p data-i18n="features.aiStylistDesc">Værtilpassede antrekksforslag fra din faktiske klesskap. Drevet av AI på enheten.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#007aff;--bg:rgba(0,122,255,.12)" aria-hidden="true">👔</span>
-                <h3 data-i18n="features.outfitsTitle">Antrekk</h3>
-                <p data-i18n="features.outfitsDesc">Dra og slipp plagg for å lage looks. Lagre favoritter og del vakre Pantone-stilkort.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#007aff;--bg:rgba(0,122,255,.14)" aria-hidden="true">👔</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.outfitsTitle">Antrekk</h3>
+                    <p data-i18n="features.outfitsDesc">Dra og slipp plagg for å lage looks. Lagre favoritter og del vakre Pantone-stilkort.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)" aria-hidden="true">📅</span>
-                <h3 data-i18n="features.calendarTitle">Kalender</h3>
-                <p data-i18n="features.calendarDesc">Logg hva du har på hver dag. Se mønstre dukke opp og unngå å gjenta et antrekk ved uhell.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#ff9500;--bg:rgba(255,149,0,.14)" aria-hidden="true">📅</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.calendarTitle">Kalender</h3>
+                    <p data-i18n="features.calendarDesc">Logg hva du har på hver dag. Se mønstre dukke opp og unngå å gjenta et antrekk ved uhell.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#34c759;--bg:rgba(52,199,89,.12)" aria-hidden="true">🔐</span>
-                <h3 data-i18n="features.privacyTitle">Privat fra grunnen av</h3>
-                <p data-i18n="features.privacyDesc">Alt kjører på enheten. Dataene dine synkroniseres kun til din iCloud — aldri delt med noen.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#34c759;--bg:rgba(52,199,89,.14)" aria-hidden="true">🔐</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.privacyTitle">Privat fra grunnen av</h3>
+                    <p data-i18n="features.privacyDesc">Alt kjører på enheten. Dataene dine synkroniseres kun til din iCloud — aldri delt med noen.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#5ac8fa;--bg:rgba(90,200,250,.12)" aria-hidden="true">☁️</span>
-                <h3 data-i18n="features.syncTitle">Synkronisert overalt</h3>
-                <p data-i18n="features.syncDesc">iCloud holder klesskapet ditt synkronisert på tvers av alle Apple-enheter, umiddelbart og automatisk.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#5ac8fa;--bg:rgba(90,200,250,.14)" aria-hidden="true">☁️</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.syncTitle">Synkronisert overalt</h3>
+                    <p data-i18n="features.syncDesc">iCloud holder klesskapet ditt synkronisert på tvers av alle Apple-enheter, umiddelbart og automatisk.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#ff2d55;--bg:rgba(255,45,85,.12)" aria-hidden="true">🔍</span>
-                <h3 data-i18n="features.filtersTitle">Smarte filtre</h3>
-                <p data-i18n="features.filtersDesc">Finn ethvert plagg etter sesong, farge, kategori, materiale eller mønster på sekunder.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#ff2d55;--bg:rgba(255,45,85,.14)" aria-hidden="true">🔍</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.filtersTitle">Smarte filtre</h3>
+                    <p data-i18n="features.filtersDesc">Finn ethvert plagg etter sesong, farge, kategori, materiale eller mønster på sekunder.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Klosyt -->
-<section class="section">
-    <div class="wrap tc fade-up">
-        <h2 class="sec-title" data-i18n="whyKlosyt.title">Garderoben din,<br>nytenkt</h2>
-        <p class="hero-sub" style="max-width:640px" data-i18n="whyKlosyt.desc">Klosyt er den AI-drevne garderobeorganisatoren og antrekksplanleggeren som hjelper deg å få mest mulig ut av hvert plagg du eier. Enten du velger morgendagens antrekk eller bygger den perfekte kapselgarderoben, gjør Klosyts intelligens på enheten klesskapet ditt om til et smart, bærekraftig stilsystem — helt privat, alltid synkronisert på tvers av alle Apple-enhetene dine.</p>
-    </div>
-</section>
+<hr class="divider" aria-hidden="true">
 
 <!-- Pricing -->
 <section id="pricing" class="section">
@@ -234,8 +234,10 @@
     </div>
 </section>
 
+<hr class="divider" aria-hidden="true">
+
 <!-- Languages -->
-<section class="section">
+<section class="section languages-section">
     <div class="wrap tc fade-up">
         <p class="lang-label" data-i18n="index.languagesTitle">Tilgjengelig på 16 språk</p>
         <div class="lang-row">
@@ -244,6 +246,19 @@
             <span lang="ja">日本語</span><span lang="ko">한국어</span><span lang="nb">Norsk</span><span lang="pt-BR">Português</span>
             <span lang="es">Español</span><span lang="sv">Svenska</span><span lang="tr">Türkçe</span><span lang="vi">Tiếng Việt</span>
         </div>
+    </div>
+</section>
+
+<hr class="divider" aria-hidden="true">
+
+<!-- Bottom CTA -->
+<section class="bottom-cta" aria-label="Get Klosyt">
+    <div class="wrap tc fade-up">
+        <h2 data-i18n="cta.bottomTitle">Klar til å organisere garderoben din?</h2>
+        <p data-i18n="cta.bottomDesc">Gratis å starte. Ubegrenset garderobelagring. Alltid privat.</p>
+        <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
+            <img src="/assets/app-store-badge.svg" alt="Last ned fra App Store" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48">
+        </a>
     </div>
 </section>
 

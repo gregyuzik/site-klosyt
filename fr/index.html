@@ -48,7 +48,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=32">
+    <link rel="stylesheet" href="/styles.css?v=33">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -94,7 +94,7 @@
 <a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Animated gradient mesh background -->
-<div class="mesh-bg">
+<div class="mesh-bg" aria-hidden="true">
     <div class="mesh-orb orb-1"></div>
     <div class="mesh-orb orb-2"></div>
     <div class="mesh-orb orb-3"></div>
@@ -115,12 +115,11 @@
 </header>
 
 <main id="main">
+
 <!-- Hero -->
 <section class="hero">
     <div class="hero-inner fade-up">
-        <div class="hero-glow">
-            <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
-        </div>
+        <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128">
         <h1 data-i18n="hero.mainTitle">Votre dressing numérique<br>propulsé par l'IA</h1>
         <p class="hero-sub" data-i18n="hero.mainSubtitle">Photographiez vos vêtements, laissez l'IA les organiser et recevez des suggestions de tenues adaptées à la météo — le tout sur l'appareil et en toute confidentialité.</p>
         <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
@@ -130,85 +129,86 @@
     </div>
 </section>
 
-<!-- What's New -->
-<section class="section wn-section">
-    <div class="wrap tc">
-        <div class="glass card wn-card fade-up">
-            <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)" aria-hidden="true">🚀</span>
-            <h3 data-i18n="whatsNew.title">Klosyt 2.0</h3>
-            <p data-i18n="whatsNew.desc">IA 10x plus rapide avec théorie des couleurs, touchez n'importe quel article pour générer des tenues, verrouillez et régénérez des pièces, support Siri, widgets de tenues, partage Instagram, thèmes gratuits et 16 langues.</p>
+<hr class="divider" aria-hidden="true">
+
+<!-- Stats -->
+<section class="stats-section" aria-label="Key numbers">
+    <div class="wrap">
+        <div class="stats-grid fade-up">
+            <div class="stat">
+                <span class="stat-value">5</span>
+                <span class="stat-label" data-i18n="stats.platforms">Plateformes</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">16</span>
+                <span class="stat-label" data-i18n="stats.languages">Langues</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">100%</span>
+                <span class="stat-label" data-i18n="stats.private">Sur l’appareil</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">$0</span>
+                <span class="stat-label" data-i18n="stats.toStart">Pour commencer</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- How it works -->
-<section class="section">
-    <div class="wrap">
-        <div class="glass steps fade-up">
-            <div class="step">
-                <span class="step-n">1</span>
-                <div><h3 data-i18n="steps.snapTitle">Photographiez</h3><p data-i18n="steps.snapDesc">Photo, feuille de partage ou collez un lien — le fond est supprimé automatiquement.</p></div>
-            </div>
-            <span class="step-div"></span>
-            <div class="step">
-                <span class="step-n">2</span>
-                <div><h3 data-i18n="steps.categorizeTitle">Catégorisez</h3><p data-i18n="steps.categorizeDesc">L'IA détecte le type, la couleur, le motif, la saison et la matière instantanément.</p></div>
-            </div>
-            <span class="step-div"></span>
-            <div class="step">
-                <span class="step-n">3</span>
-                <div><h3 data-i18n="steps.styleTitle">Stylisez</h3><p data-i18n="steps.styleDesc">Recevez des suggestions de tenues basées sur votre dressing, votre activité et la météo en temps réel.</p></div>
-            </div>
-        </div>
-    </div>
-</section>
+<hr class="divider" aria-hidden="true">
 
 <!-- Features -->
-<section id="features" class="section">
+<section class="section">
     <div class="wrap">
         <h2 class="sec-title fade-up" data-i18n="features.sectionTitle">Tout ce dont vous avez besoin,<br>rien de superflu</h2>
-        <div class="grid fade-up">
-            <div class="glass card">
-                <span class="card-ico" style="--c:#af52de;--bg:rgba(175,82,222,.12)" aria-hidden="true">✨</span>
-                <h3 data-i18n="features.aiStylist">Styliste IA</h3>
-                <p data-i18n="features.aiStylistDesc">Des suggestions de tenues adaptées à la météo, créées à partir de votre dressing. Propulsé par l'IA sur l'appareil.</p>
+        <div class="features-grid fade-up">
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.aiStylist">Styliste IA</h3>
+                    <p data-i18n="features.aiStylistDesc">Des suggestions de tenues adaptées à la météo, créées à partir de votre dressing. Propulsé par l'IA sur l'appareil.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#007aff;--bg:rgba(0,122,255,.12)" aria-hidden="true">👔</span>
-                <h3 data-i18n="features.outfitsTitle">Tenues</h3>
-                <p data-i18n="features.outfitsDesc">Glissez-déposez des articles pour créer des looks. Sauvegardez vos favoris et partagez de magnifiques cartes style Pantone.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#007aff;--bg:rgba(0,122,255,.14)" aria-hidden="true">👔</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.outfitsTitle">Tenues</h3>
+                    <p data-i18n="features.outfitsDesc">Glissez-déposez des articles pour créer des looks. Sauvegardez vos favoris et partagez de magnifiques cartes style Pantone.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#ff9500;--bg:rgba(255,149,0,.12)" aria-hidden="true">📅</span>
-                <h3 data-i18n="features.calendarTitle">Calendrier</h3>
-                <p data-i18n="features.calendarDesc">Notez ce que vous portez chaque jour. Repérez les tendances et ne répétez jamais une tenue par accident.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#ff9500;--bg:rgba(255,149,0,.14)" aria-hidden="true">📅</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.calendarTitle">Calendrier</h3>
+                    <p data-i18n="features.calendarDesc">Notez ce que vous portez chaque jour. Repérez les tendances et ne répétez jamais une tenue par accident.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#34c759;--bg:rgba(52,199,89,.12)" aria-hidden="true">🔐</span>
-                <h3 data-i18n="features.privacyTitle">Conçu pour la confidentialité</h3>
-                <p data-i18n="features.privacyDesc">Tout fonctionne sur l'appareil. Vos données se synchronisent uniquement avec votre iCloud — jamais partagées avec quiconque.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#34c759;--bg:rgba(52,199,89,.14)" aria-hidden="true">🔐</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.privacyTitle">Conçu pour la confidentialité</h3>
+                    <p data-i18n="features.privacyDesc">Tout fonctionne sur l'appareil. Vos données se synchronisent uniquement avec votre iCloud — jamais partagées avec quiconque.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#5ac8fa;--bg:rgba(90,200,250,.12)" aria-hidden="true">☁️</span>
-                <h3 data-i18n="features.syncTitle">Synchronisé partout</h3>
-                <p data-i18n="features.syncDesc">iCloud garde votre dressing synchronisé sur tous vos appareils Apple, instantanément et automatiquement.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#5ac8fa;--bg:rgba(90,200,250,.14)" aria-hidden="true">☁️</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.syncTitle">Synchronisé partout</h3>
+                    <p data-i18n="features.syncDesc">iCloud garde votre dressing synchronisé sur tous vos appareils Apple, instantanément et automatiquement.</p>
+                </div>
             </div>
-            <div class="glass card">
-                <span class="card-ico" style="--c:#ff2d55;--bg:rgba(255,45,85,.12)" aria-hidden="true">🔍</span>
-                <h3 data-i18n="features.filtersTitle">Filtres intelligents</h3>
-                <p data-i18n="features.filtersDesc">Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes.</p>
+            <div class="glass feature-card">
+                <span class="feature-icon" style="--c:#ff2d55;--bg:rgba(255,45,85,.14)" aria-hidden="true">🔍</span>
+                <div class="feature-text">
+                    <h3 data-i18n="features.filtersTitle">Filtres intelligents</h3>
+                    <p data-i18n="features.filtersDesc">Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Klosyt -->
-<section class="section">
-    <div class="wrap tc fade-up">
-        <h2 class="sec-title" data-i18n="whyKlosyt.title">Votre dressing,<br>réinventé</h2>
-        <p class="hero-sub" style="max-width:640px" data-i18n="whyKlosyt.desc">Klosyt est l'organisateur de dressing et planificateur de tenues propulsé par l'IA qui vous aide à tirer le meilleur parti de chaque article que vous possédez. Que vous choisissiez la tenue de demain ou que vous construisiez la garde-robe capsule parfaite, l'intelligence embarquée de Klosyt transforme votre placard en un système de style intelligent et durable — entièrement privé, toujours synchronisé sur tous vos appareils Apple.</p>
-    </div>
-</section>
+<hr class="divider" aria-hidden="true">
 
 <!-- Pricing -->
 <section id="pricing" class="section">
@@ -234,8 +234,10 @@
     </div>
 </section>
 
+<hr class="divider" aria-hidden="true">
+
 <!-- Languages -->
-<section class="section">
+<section class="section languages-section">
     <div class="wrap tc fade-up">
         <p class="lang-label" data-i18n="index.languagesTitle">Disponible en 16 langues</p>
         <div class="lang-row">
@@ -244,6 +246,19 @@
             <span lang="ja">日本語</span><span lang="ko">한국어</span><span lang="nb">Norsk</span><span lang="pt-BR">Português</span>
             <span lang="es">Español</span><span lang="sv">Svenska</span><span lang="tr">Türkçe</span><span lang="vi">Tiếng Việt</span>
         </div>
+    </div>
+</section>
+
+<hr class="divider" aria-hidden="true">
+
+<!-- Bottom CTA -->
+<section class="bottom-cta" aria-label="Get Klosyt">
+    <div class="wrap tc fade-up">
+        <h2 data-i18n="cta.bottomTitle">Prêt à organiser votre dressing ?</h2>
+        <p data-i18n="cta.bottomDesc">Gratuit au départ. Stockage illimité. Toujours privé.</p>
+        <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener" class="badge-link">
+            <img src="/assets/app-store-badge.svg" alt="Télécharger dans l'App Store" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48">
+        </a>
     </div>
 </section>
 

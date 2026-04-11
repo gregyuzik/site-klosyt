@@ -16,18 +16,6 @@
     "mainSubtitle": "옷을 촬영하면 AI가 자동으로 정리하고, 날씨에 맞는 코디를 제안합니다 — 모두 기기 내에서 프라이버시를 지키며.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "촬영",
-    "snapDesc": "사진, 공유 시트 또는 링크 붙여넣기 — 배경은 자동 제거.",
-    "categorizeTitle": "분류",
-    "categorizeDesc": "AI가 유형, 색상, 패턴, 시즌, 소재를 즉시 인식.",
-    "styleTitle": "스타일링",
-    "styleDesc": "옷장, 활동, 실시간 날씨를 기반으로 코디를 제안."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "색채 이론을 적용한 10배 빠른 AI, 아이템을 탭하여 코디 생성, 잠금 및 재생성, Siri 지원, 코디 위젯, Instagram 공유, 무료 테마, 16개 언어 지원."
-  },
   "features": {
     "sectionTitle": "필요한 건 전부,<br>불필요한 건 제로",
     "aiStylist": "AI 스타일리스트",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud가 모든 Apple 기기에서 옷장을 즉시 자동으로 동기화.",
     "filtersTitle": "스마트 필터",
     "filtersDesc": "시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색."
-  },
-  "whyKlosyt": {
-    "title": "당신의 옷장,<br>새롭게 상상하다",
-    "desc": "Klosyt은 모든 옷을 최대한 활용할 수 있도록 도와주는 AI 기반 옷장 정리 및 코디 플래너입니다. 내일의 코디를 고르든, 완벽한 캡슐 옷장을 만들든, Klosyt의 온디바이스 인텔리전스가 옷장을 스마트하고 지속 가능한 스타일 시스템으로 바꿔줍니다 — 완전히 프라이빗하며, 모든 Apple 기기에서 항상 동기화됩니다."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "지속적인 앱 개발"
   },
   "cta": {
-    "appStoreAlt": "App Store에서 다운로드"
+    "appStoreAlt": "App Store에서 다운로드",
+    "bottomTitle": "옷장을 정리할 준비가 되셨나요?",
+    "bottomDesc": "무료로 시작하세요. 무제한 옷장 저장 공간. 항상 비공개."
   },
   "footer": {
     "home": "홈",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "16개 언어로 이용 가능"
+  },
+  "stats": {
+    "platforms": "플랫폼",
+    "languages": "언어",
+    "private": "기기 내",
+    "toStart": "시작하기"
   }
 }

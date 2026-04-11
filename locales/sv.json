@@ -16,18 +16,6 @@
     "mainSubtitle": "Fota dina kläder, låt AI organisera dem och få vädersmart outfitförslag — allt på enheten och privat.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Fota",
-    "snapDesc": "Foto, delningsvy eller klistra in en länk — bakgrunden tas bort automatiskt.",
-    "categorizeTitle": "Kategorisera",
-    "categorizeDesc": "AI känner igen typ, färg, mönster, säsong och material direkt.",
-    "styleTitle": "Styla",
-    "styleDesc": "Få outfitförslag baserade på din garderob, aktivitet och realtidsväder."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "10x snabbare AI med färgteori, tryck på valfritt plagg för att generera outfits, lås och generera om delar, Siri-stöd, outfit-widgets, Instagram-delning, gratis teman och 16 språk."
-  },
   "features": {
     "sectionTitle": "Allt du behöver,<br>inget du inte behöver",
     "aiStylist": "AI-stylist",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud håller din garderob synkroniserad på alla Apple-enheter, direkt och automatiskt.",
     "filtersTitle": "Smarta filter",
     "filtersDesc": "Hitta alla plagg efter säsong, färg, kategori, material eller mönster på sekunder."
-  },
-  "whyKlosyt": {
-    "title": "Din garderob,<br>nytänkt",
-    "desc": "Klosyt är den AI-drivna garderobsorganisatören och outfitplaneraren som hjälper dig att få ut det mesta av varje plagg du äger. Oavsett om du väljer morgondagens outfit eller bygger den perfekta kapselgarderoben, förvandlar Klosyts on-device-intelligens din garderob till ett smart, hållbart stilsystem — helt privat, alltid synkroniserat på alla dina Apple-enheter."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Kontinuerlig apputveckling"
   },
   "cta": {
-    "appStoreAlt": "Hämta från App Store"
+    "appStoreAlt": "Hämta från App Store",
+    "bottomTitle": "Redo att organisera din garderob?",
+    "bottomDesc": "Gratis att börja. Obegränsad garderobslagring. Alltid privat."
   },
   "footer": {
     "home": "Hem",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Tillgänglig på 16 språk"
+  },
+  "stats": {
+    "platforms": "Plattformar",
+    "languages": "Språk",
+    "private": "På enheten",
+    "toStart": "För att börja"
   }
 }
