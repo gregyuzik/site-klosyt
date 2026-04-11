@@ -32,6 +32,13 @@
      pseudo-element inside <body> doesn't reach the canvas, so the
      toolbar/scrollbar regions sampled the flat html fallback instead of
      the gradient — leaving a hard seam at the toolbar edge.
+   - iOS Safari does NOT tile linear gradients into the rubber-band
+     overscroll region — it fills that region with html's
+     background-color. Without an explicit color, the CSS canvas default
+     (white) bled through at the top and bottom of the page. Setting
+     background-color to the dark mid-tone of the gradient makes
+     overscroll blend cleanly at both ends, and overscroll-behavior:none
+     suppresses the bounce entirely on iOS 16+.
 
    Putting the linear gradient directly on <html> fixes both ends: the
    root element's background propagates to the CSS canvas, which fills
@@ -48,6 +55,8 @@ html{
         #060c20 68%,
         #3a2d0a 92%,
         #b08820 100%);
+    background-color:#050814;
+    overscroll-behavior:none;
 }
 
 /* ── Skip to content ── */
@@ -74,6 +83,7 @@ body{
     color:var(--text-1);
     min-height:100dvh;
     background:transparent;
+    overscroll-behavior:none;
 }
 
 /* ── Animated Orbs (gradient lives on <html>, this layer is orbs only) ── */
@@ -535,6 +545,7 @@ body{
             #eaedf4 64%,
             #f0e7c8 88%,
             #e3c97f 100%);
+        background-color:#e6ebf3;
     }
     body{
         color:var(--text-1);
