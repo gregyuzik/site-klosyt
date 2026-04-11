@@ -16,18 +16,6 @@
     "mainSubtitle": "Maak een foto van je kleding, laat AI ze organiseren en ontvang weer-slimme outfitsuggesties — alles op je apparaat en privé.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Foto",
-    "snapDesc": "Foto, deelvenster of plak een link — achtergrond wordt automatisch verwijderd.",
-    "categorizeTitle": "Categoriseer",
-    "categorizeDesc": "AI herkent type, kleur, patroon, seizoen en materiaal in een oogwenk.",
-    "styleTitle": "Style",
-    "styleDesc": "Ontvang outfitsuggesties op basis van je kledingkast, activiteit en realtime weer."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "10x snellere AI met kleurentheorie, tik op een item om outfits te genereren, vergrendel en genereer stukken opnieuw, Siri-ondersteuning, outfit-widgets, Instagram-delen, gratis thema's en 16 talen."
-  },
   "features": {
     "sectionTitle": "Alles wat je nodig hebt,<br>niets wat je niet nodig hebt",
     "aiStylist": "AI-stylist",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud houdt je kledingkast gesynchroniseerd op elk Apple-apparaat, direct en automatisch.",
     "filtersTitle": "Slimme filters",
     "filtersDesc": "Vind elk item op seizoen, kleur, categorie, materiaal of patroon in seconden."
-  },
-  "whyKlosyt": {
-    "title": "Je kledingkast,<br>opnieuw bedacht",
-    "desc": "Klosyt is de AI-aangedreven kledingkastorganisator en outfitplanner die je helpt het maximale uit elk kledingstuk te halen. Of je nu de outfit van morgen kiest of de perfecte capsulegarderobe samenstelt, Klosyts on-device intelligentie verandert je kledingkast in een slim, duurzaam stijlsysteem — volledig privé, altijd gesynchroniseerd op al je Apple-apparaten."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Voortdurende app-ontwikkeling"
   },
   "cta": {
-    "appStoreAlt": "Download in de App Store"
+    "appStoreAlt": "Download in de App Store",
+    "bottomTitle": "Klaar om je kast te organiseren?",
+    "bottomDesc": "Gratis om te beginnen. Onbeperkte garderobeopslag. Altijd privé."
   },
   "footer": {
     "home": "Home",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Beschikbaar in 16 talen"
+  },
+  "stats": {
+    "platforms": "Platformen",
+    "languages": "Talen",
+    "private": "Op apparaat",
+    "toStart": "Om te starten"
   }
 }

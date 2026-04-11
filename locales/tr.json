@@ -16,18 +16,6 @@
     "mainSubtitle": "Kıyafetlerini fotoğrafla, AI'ın düzenlemesine izin ver ve hava durumuna uygun kombin önerileri al — hepsi cihazında ve gizli.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Çek",
-    "snapDesc": "Fotoğraf, paylaşım sayfası veya link yapıştır — arka plan otomatik kaldırılır.",
-    "categorizeTitle": "Kategorize Et",
-    "categorizeDesc": "AI türü, rengi, deseni, mevsimi ve kumaşı anında algılar.",
-    "styleTitle": "Stillen",
-    "styleDesc": "Gardırobuna, aktivitene ve anlık hava durumuna göre kombin önerileri al."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "Renk teorisiyle 10 kat daha hızlı AI, herhangi bir parçaya dokunarak kombin oluştur, kilitle ve yeniden oluştur, Siri desteği, kombin widget'ları, Instagram paylaşımı, ücretsiz temalar ve 16 dil."
-  },
   "features": {
     "sectionTitle": "İhtiyacın olan her şey,<br>gereksiz hiçbir şey",
     "aiStylist": "AI Stilist",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud gardırobunu tüm Apple cihazlarında senkronize tutar, anında ve otomatik olarak.",
     "filtersTitle": "Akıllı Filtreler",
     "filtersDesc": "Herhangi bir kıyafeti mevsim, renk, kategori, kumaş veya desene göre saniyeler içinde bul."
-  },
-  "whyKlosyt": {
-    "title": "Gardırobun,<br>yeniden hayal edildi",
-    "desc": "Klosyt, sahip olduğun her parçadan en iyi şekilde yararlanmanı sağlayan yapay zeka destekli gardırop düzenleyici ve kombin planlayıcıdır. İster yarınki kıyafetini seçiyor ol, ister mükemmel kapsül gardırobu oluşturuyor ol — Klosyt'un cihaz üzerindeki zekası dolabını akıllı, sürdürülebilir bir stil sistemine dönüştürür — tamamen gizli, tüm Apple cihazlarında her zaman senkronize."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Sürekli uygulama geliştirme"
   },
   "cta": {
-    "appStoreAlt": "App Store'dan indirin"
+    "appStoreAlt": "App Store'dan indirin",
+    "bottomTitle": "Gardırobunuzu düzenlemeye hazır mısınız?",
+    "bottomDesc": "Başlaması ücretsiz. Sınırsız gardırop depolama. Her zaman gizli."
   },
   "footer": {
     "home": "Ana Sayfa",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "16 dilde kullanılabilir"
+  },
+  "stats": {
+    "platforms": "Platformlar",
+    "languages": "Diller",
+    "private": "Cihazda",
+    "toStart": "Başlamak için"
   }
 }

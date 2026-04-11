@@ -16,18 +16,6 @@
     "mainSubtitle": "Fotografiere deine Kleidung, lass die KI sie organisieren und erhalte wetterangepasste Outfit-Vorschläge — alles auf dem Gerät und privat.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Fotografieren",
-    "snapDesc": "Foto, Teilen-Dialog oder Link einfügen — der Hintergrund wird automatisch entfernt.",
-    "categorizeTitle": "Kategorisieren",
-    "categorizeDesc": "KI erkennt Typ, Farbe, Muster, Saison und Material sofort.",
-    "styleTitle": "Stylen",
-    "styleDesc": "Erhalte Outfit-Vorschläge basierend auf deiner Kleiderschrank, Aktivität und dem aktuellen Wetter."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "10x schnellere KI mit Farbtheorie, tippe auf ein Kleidungsstück um Outfits zu generieren, Teile sperren und neu generieren, Siri-Unterstützung, Outfit-Widgets, Instagram-Teilen, kostenlose Themen und 16 Sprachen."
-  },
   "features": {
     "sectionTitle": "Alles was du brauchst,<br>nichts was du nicht brauchst",
     "aiStylist": "KI-Stylist",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud hält deinen Kleiderschrank auf allen Apple-Geräten synchron, sofort und automatisch.",
     "filtersTitle": "Intelligente Filter",
     "filtersDesc": "Finde jedes Teil nach Saison, Farbe, Kategorie, Material oder Muster in Sekunden."
-  },
-  "whyKlosyt": {
-    "title": "Dein Kleiderschrank,<br>neu gedacht",
-    "desc": "Klosyt ist der KI-gesteuerte Kleiderschrank-Organizer und Outfit-Planer, der dir hilft, das Beste aus jedem Teil zu machen, das du besitzt. Ob du das Outfit für morgen aussuchst oder die perfekte Capsule Wardrobe zusammenstellst — Klosyts On-Device-Intelligenz verwandelt deinen Kleiderschrank in ein smartes, nachhaltiges Stilsystem — komplett privat, immer synchron auf all deinen Apple-Geräten."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Kontinuierliche App-Weiterentwicklung"
   },
   "cta": {
-    "appStoreAlt": "Laden im App Store"
+    "appStoreAlt": "Laden im App Store",
+    "bottomTitle": "Bereit, deinen Kleiderschrank zu organisieren?",
+    "bottomDesc": "Kostenloser Einstieg. Unbegrenzter Kleiderschrank. Immer privat."
   },
   "footer": {
     "home": "Startseite",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Verfügbar in 16 Sprachen"
+  },
+  "stats": {
+    "platforms": "Plattformen",
+    "languages": "Sprachen",
+    "private": "Auf dem Gerät",
+    "toStart": "Zum Start"
   }
 }

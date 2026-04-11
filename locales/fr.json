@@ -16,18 +16,6 @@
     "mainSubtitle": "Photographiez vos vêtements, laissez l'IA les organiser et recevez des suggestions de tenues adaptées à la météo — le tout sur l'appareil et en toute confidentialité.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
-  "steps": {
-    "snapTitle": "Photographiez",
-    "snapDesc": "Photo, feuille de partage ou collez un lien — le fond est supprimé automatiquement.",
-    "categorizeTitle": "Catégorisez",
-    "categorizeDesc": "L'IA détecte le type, la couleur, le motif, la saison et la matière instantanément.",
-    "styleTitle": "Stylisez",
-    "styleDesc": "Recevez des suggestions de tenues basées sur votre dressing, votre activité et la météo en temps réel."
-  },
-  "whatsNew": {
-    "title": "Klosyt 2.0",
-    "desc": "IA 10x plus rapide avec théorie des couleurs, touchez n'importe quel article pour générer des tenues, verrouillez et régénérez des pièces, support Siri, widgets de tenues, partage Instagram, thèmes gratuits et 16 langues."
-  },
   "features": {
     "sectionTitle": "Tout ce dont vous avez besoin,<br>rien de superflu",
     "aiStylist": "Styliste IA",
@@ -42,10 +30,6 @@
     "syncDesc": "iCloud garde votre dressing synchronisé sur tous vos appareils Apple, instantanément et automatiquement.",
     "filtersTitle": "Filtres intelligents",
     "filtersDesc": "Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes."
-  },
-  "whyKlosyt": {
-    "title": "Votre dressing,<br>réinventé",
-    "desc": "Klosyt est l'organisateur de dressing et planificateur de tenues propulsé par l'IA qui vous aide à tirer le meilleur parti de chaque article que vous possédez. Que vous choisissiez la tenue de demain ou que vous construisiez la garde-robe capsule parfaite, l'intelligence embarquée de Klosyt transforme votre placard en un système de style intelligent et durable — entièrement privé, toujours synchronisé sur tous vos appareils Apple."
   },
   "pricing": {
     "klosytPlus": "Klosyt+",
@@ -69,7 +53,9 @@
     "supportsDevDesc": "Développement continu de l'app"
   },
   "cta": {
-    "appStoreAlt": "Télécharger dans l'App Store"
+    "appStoreAlt": "Télécharger dans l'App Store",
+    "bottomTitle": "Prêt à organiser votre dressing ?",
+    "bottomDesc": "Gratuit au départ. Stockage illimité. Toujours privé."
   },
   "footer": {
     "home": "Accueil",
@@ -256,5 +242,11 @@
   },
   "index": {
     "languagesTitle": "Disponible en 16 langues"
+  },
+  "stats": {
+    "platforms": "Plateformes",
+    "languages": "Langues",
+    "private": "Sur l’appareil",
+    "toStart": "Pour commencer"
   }
 }
