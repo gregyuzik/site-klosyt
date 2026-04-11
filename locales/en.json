@@ -69,7 +69,15 @@
     "supportsDevDesc": "Continued app development"
   },
   "cta": {
-    "appStoreAlt": "Download on the App Store"
+    "appStoreAlt": "Download on the App Store",
+    "bottomTitle": "Ready to organize your closet?",
+    "bottomDesc": "Free to start. Unlimited wardrobe storage. Always private."
+  },
+  "stats": {
+    "platforms": "Platforms",
+    "languages": "Languages",
+    "private": "On-Device",
+    "toStart": "To Start"
   },
   "footer": {
     "home": "Home",
