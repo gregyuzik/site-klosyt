@@ -21,13 +21,19 @@
    background propagates to the iOS viewport canvas — the area behind the
    notch, URL pill, home indicator, and rubber-band zones. A position:fixed
    layer on top of <html> cannot reach those areas, so moving the gradient
-   off <html> leaves solid-color bars at the top and bottom on iOS. */
+   off <html> leaves solid-color bars at the top and bottom on iOS.
+
+   The radial centers sit at 0%/100% (not 20%/80%) so the blue and gold are
+   fully saturated at the very top and bottom of the viewport. With the
+   centers pulled inward the edges only received ~30% opacity, which
+   composited to near-black and read as dark bars — especially on iPhone
+   where the status bar sits over y=0 and Safari's URL bar hugs y=100. */
 html{
     scroll-behavior:smooth;
     background:
-        radial-gradient(ellipse 160% 90% at 50% 20%,rgba(26,61,143,.9),transparent 70%),
-        radial-gradient(ellipse 160% 90% at 50% 80%,rgba(212,165,40,.8),transparent 70%),
-        #050508;
+        radial-gradient(ellipse 200% 100% at 50% 0%,rgba(36,80,179,.95),transparent 75%),
+        radial-gradient(ellipse 200% 100% at 50% 100%,rgba(212,165,40,.85),transparent 75%),
+        #050814;
     background-attachment:fixed;
     background-repeat:no-repeat;
 }
@@ -510,9 +516,9 @@ body{
 
     html{
         background:
-            radial-gradient(ellipse 160% 90% at 50% 20%,rgba(168,196,240,.75),transparent 70%),
-            radial-gradient(ellipse 160% 90% at 50% 80%,rgba(240,220,140,.7),transparent 70%),
-            #f2f2f7;
+            radial-gradient(ellipse 200% 100% at 50% 0%,rgba(168,196,240,.85),transparent 75%),
+            radial-gradient(ellipse 200% 100% at 50% 100%,rgba(240,220,140,.8),transparent 75%),
+            #e6ebf3;
         background-attachment:fixed;
         background-repeat:no-repeat;
     }
