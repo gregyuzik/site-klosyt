@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Korean",
-    "langNameNative": "한국어",
-    "dir": "ltr",
-    "changeLanguage": "언어 변경"
-  },
   "nav": {
-    "features": "기능",
     "klosytPlus": "Klosyt+",
-    "support": "지원",
-    "privacy": "개인정보"
+    "support": "지원"
   },
   "hero": {
     "mainTitle": "AI가 함께하는<br>디지털 옷장",
@@ -31,25 +23,14 @@
     "filtersDesc": "시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/월",
     "trial": "30일 무료 체험 · 언제든 취소 가능",
     "note": "옷장은 항상 무료입니다. Klosyt+로 프리미엄 기능을 잠금 해제하세요.",
-    "trialDesc": "30일간 모든 기능 무료 체험, 이후 월 $0.99. 언제든 취소 가능. 옷장 라이브러리 접근을 잃지 않습니다.",
     "aiStyleAssistant": "AI 스타일 어시스턴트",
-    "aiStyleAssistantDesc": "맞춤형 날씨 스마트 코디",
     "outfits": "코디",
-    "outfitsDesc": "코디 만들기, 저장, 공유",
     "calendarTracking": "캘린더 추적",
-    "calendarTrackingDesc": "입은 옷 기록하고 이력 쌓기",
     "themesWallpapers": "테마 & 배경화면 (무료)",
-    "themesWallpapersDesc": "좋아하는 테마로 앱 커스터마이즈 — 모든 사용자에게 무료",
-    "alwaysFree": "Klosyt은 항상 무료",
-    "alwaysFreeDesc": "나의 Klosyt은 영원히 내 것, 항상 무료",
-    "weatherData": "실시간 날씨 데이터",
-    "weatherDataDesc": "Apple Weather 기반 제공",
-    "supportsDev": "개발 지원",
-    "supportsDevDesc": "지속적인 앱 개발"
+    "weatherData": "실시간 날씨 데이터"
   },
   "cta": {
     "appStoreAlt": "App Store에서 다운로드",
@@ -215,7 +196,6 @@
     "tip5Desc": "아이템을 여름, 겨울, 또는 사계절로 표시하여 날씨에 맞는 코디를 받으세요.",
     "tip6Title": "iCloud 동기화 일찍 활성화",
     "tip6Desc": "지금 바로 iCloud 동기화를 켜서 옷장을 항상 백업하고 어디서나 동기화하세요.",
-    "manageSubTitle": "구독 관리",
     "manageSubTrialDesc": "30일간 모든 기능 무료 체험, 이후 월 $0.99. 언제든 취소 가능.",
     "manageSubFooter": "설정 → Apple ID → 구독에서 관리. Klosyt 설정에서 \"구매 복원\"을 탭하여 재활성화.",
     "troubleshootTitle": "문제 해결",
@@ -236,8 +216,7 @@
     "ts8Summary": "아이템을 삭제하려면?",
     "ts8Answer": "아이템 탭 → 상세 보기 → 삭제 버튼. 삭제된 아이템은 30일간 휴지통에 보관되며 복구할 수 있습니다. 설정에서 휴지통에 접근하세요.",
     "contactTitle": "추가 도움이 필요하신가요?",
-    "contactDesc": "도움이 필요하시면 연락주세요.",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "도움이 필요하시면 연락주세요."
   },
   "index": {
     "languagesTitle": "16개 언어로 이용 가능"

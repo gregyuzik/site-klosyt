@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Norwegian Bokmål",
-    "langNameNative": "Norsk Bokmål",
-    "dir": "ltr",
-    "changeLanguage": "Bytt språk"
-  },
   "nav": {
-    "features": "Funksjoner",
     "klosytPlus": "Klosyt+",
-    "support": "Støtte",
-    "privacy": "Personvern"
+    "support": "Støtte"
   },
   "hero": {
     "mainTitle": "Ditt AI-drevne<br>digitale klesskap",
@@ -31,25 +23,14 @@
     "filtersDesc": "Finn ethvert plagg etter sesong, farge, kategori, materiale eller mønster på sekunder."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/måned",
     "trial": "30 dagers gratis prøveperiode · Avbestill når som helst",
     "note": "Klesskapet ditt er alltid gratis. Klosyt+ låser opp premiumfunksjoner.",
-    "trialDesc": "Prøv alt gratis i 30 dager, deretter kun $0,99/md. Avbestill når som helst. Du mister aldri tilgangen til biblioteket ditt.",
     "aiStyleAssistant": "AI-stilassistent",
-    "aiStyleAssistantDesc": "Personlige, værtilpassede antrekk",
     "outfits": "Antrekk",
-    "outfitsDesc": "Lag, lagre og del dine antrekk",
     "calendarTracking": "Kalendersporing",
-    "calendarTrackingDesc": "Logg hva du har på og bygg opp historikk",
     "themesWallpapers": "Temaer & bakgrunner (Gratis)",
-    "themesWallpapersDesc": "Tilpass appen med dine favoritt-temaer — gratis for alle",
-    "alwaysFree": "Klosyt er alltid gratis",
-    "alwaysFreeDesc": "Din Klosyt er din for alltid, alltid gratis",
-    "weatherData": "Sanntids værdata",
-    "weatherDataDesc": "Drevet av Apple Weather",
-    "supportsDev": "Støtter utvikling",
-    "supportsDevDesc": "Kontinuerlig apputvikling"
+    "weatherData": "Sanntids værdata"
   },
   "cta": {
     "appStoreAlt": "Last ned fra App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Merk plagg som sommer, vinter eller helårlig for værtilpassede antrekk.",
     "tip6Title": "Aktiver iCloud tidlig",
     "tip6Desc": "Slå på iCloud-synkronisering fra starten, slik at klesskapn din alltid er sikkerhetskopiert og synkronisert.",
-    "manageSubTitle": "Administrer abonnementet ditt",
     "manageSubTrialDesc": "Prøv alt gratis i 30 dager, deretter kun $0,99/md. Avbestill når som helst.",
     "manageSubFooter": "Administrer i Innstillinger → Apple ID → Abonnementer. Trykk \"Gjenopprett kjøp\" i Klosyt-innstillinger for å reaktivere.",
     "troubleshootTitle": "Feilsøking",
@@ -236,8 +216,7 @@
     "ts8Summary": "Hvordan sletter jeg et plagg?",
     "ts8Answer": "Trykk på et plagg → detaljvisning → sletteknapp. Slettede plagg flyttes til papirkurven i 30 dager og kan gjenopprettes. Gå til papirkurven fra Innstillinger.",
     "contactTitle": "Trenger du fortsatt hjelp?",
-    "contactDesc": "Vi er her for å hjelpe. Kontakt oss på",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Vi er her for å hjelpe. Kontakt oss på"
   },
   "index": {
     "languagesTitle": "Tilgjengelig på 16 språk"

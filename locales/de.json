@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "German",
-    "langNameNative": "Deutsch",
-    "dir": "ltr",
-    "changeLanguage": "Sprache ändern"
-  },
   "nav": {
-    "features": "Funktionen",
     "klosytPlus": "Klosyt+",
-    "support": "Support",
-    "privacy": "Datenschutz"
+    "support": "Support"
   },
   "hero": {
     "mainTitle": "Dein KI-gesteuerter<br>digitaler Kleiderschrank",
@@ -31,25 +23,14 @@
     "filtersDesc": "Finde jedes Teil nach Saison, Farbe, Kategorie, Material oder Muster in Sekunden."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/Monat",
     "trial": "30 Tage kostenlos testen · Jederzeit kündbar",
     "note": "Dein Kleiderschrank ist immer kostenlos. Klosyt+ schaltet Premium-Funktionen frei.",
-    "trialDesc": "30 Tage alles kostenlos testen, dann nur 0,99 $/Monat. Jederzeit kündbar. Du verlierst nie den Zugriff auf deine Bibliothek.",
     "aiStyleAssistant": "KI-Stil-Assistent",
-    "aiStyleAssistantDesc": "Personalisierte, wetterangepasste Outfits",
     "outfits": "Outfits",
-    "outfitsDesc": "Erstelle, speichere und teile deine Outfits",
     "calendarTracking": "Kalender-Tracking",
-    "calendarTrackingDesc": "Notiere was du trägst und erstelle einen Verlauf",
     "themesWallpapers": "Themen & Hintergründe (Kostenlos)",
-    "themesWallpapersDesc": "Gestalte die App mit deinen Lieblingsthemen — kostenlos für alle",
-    "alwaysFree": "Klosyt ist immer kostenlos",
-    "alwaysFreeDesc": "Dein Klosyt bleibt immer kostenlos",
-    "weatherData": "Echtzeit-Wetterdaten",
-    "weatherDataDesc": "Unterstützt durch Apple Weather",
-    "supportsDev": "Unterstützt Entwicklung",
-    "supportsDevDesc": "Kontinuierliche App-Weiterentwicklung"
+    "weatherData": "Echtzeit-Wetterdaten"
   },
   "cta": {
     "appStoreAlt": "Laden im App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Markiere Artikel als Sommer, Winter oder Ganzjahres für wettergerechte Outfits.",
     "tip6Title": "iCloud früh aktivieren",
     "tip6Desc": "Schalte die iCloud-Synchronisierung von Anfang an ein, damit deine Kleiderschrank immer gesichert und überall synchronisiert ist.",
-    "manageSubTitle": "Abonnement verwalten",
     "manageSubTrialDesc": "30 Tage alles kostenlos testen, dann nur 0,99 $/Monat. Jederzeit kündbar.",
     "manageSubFooter": "Verwalte in Einstellungen → Apple-ID → Abonnements. Tippe in den Klosyt-Einstellungen auf \"Käufe wiederherstellen\" zum Reaktivieren.",
     "troubleshootTitle": "Fehlerbehebung",
@@ -236,8 +216,7 @@
     "ts8Summary": "Wie lösche ich einen Artikel?",
     "ts8Answer": "Tippe auf einen Artikel → Detailansicht → Löschen-Schaltfläche. Gelöschte Artikel verbleiben 30 Tage im Papierkorb und können wiederhergestellt werden. Zugriff auf den Papierkorb über die Einstellungen.",
     "contactTitle": "Noch Fragen?",
-    "contactDesc": "Wir sind für dich da. Kontaktiere uns unter",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Wir sind für dich da. Kontaktiere uns unter"
   },
   "index": {
     "languagesTitle": "Verfügbar in 16 Sprachen"

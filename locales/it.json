@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Italian",
-    "langNameNative": "Italiano",
-    "dir": "ltr",
-    "changeLanguage": "Cambia lingua"
-  },
   "nav": {
-    "features": "Funzionalità",
     "klosytPlus": "Klosyt+",
-    "support": "Assistenza",
-    "privacy": "Privacy"
+    "support": "Assistenza"
   },
   "hero": {
     "mainTitle": "Il tuo armadio digitale<br>con IA",
@@ -31,25 +23,14 @@
     "filtersDesc": "Trova qualsiasi capo per stagione, colore, categoria, materiale o motivo in pochi secondi."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/mese",
     "trial": "30 giorni di prova gratuita · Cancella quando vuoi",
     "note": "Il tuo armadio è sempre gratuito. Klosyt+ sblocca le funzionalità premium.",
-    "trialDesc": "Prova tutto gratis per 30 giorni, poi solo $0,99/mese. Cancella quando vuoi. Non perdere mai l'accesso alla tua libreria.",
     "aiStyleAssistant": "Assistente stile IA",
-    "aiStyleAssistantDesc": "Outfit personalizzati e intelligenti per il meteo",
     "outfits": "Outfit",
-    "outfitsDesc": "Crea, salva e condividi i tuoi outfit",
     "calendarTracking": "Calendario",
-    "calendarTrackingDesc": "Registra cosa indossi e costruisci la cronologia",
     "themesWallpapers": "Temi e sfondi (Gratuiti)",
-    "themesWallpapersDesc": "Personalizza l'app con i temi che ami — gratuiti per tutti",
-    "alwaysFree": "Klosyt è sempre gratuito",
-    "alwaysFreeDesc": "Il tuo Klosyt resta tuo, sempre gratuito",
-    "weatherData": "Dati meteo in tempo reale",
-    "weatherDataDesc": "Forniti da Apple Weather",
-    "supportsDev": "Supporta lo sviluppo",
-    "supportsDevDesc": "Sviluppo continuo dell'app"
+    "weatherData": "Dati meteo in tempo reale"
   },
   "cta": {
     "appStoreAlt": "Scarica dall'App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Segna gli articoli come estate, inverno o tutte le stagioni per outfit appropriati al meteo.",
     "tip6Title": "Attiva iCloud subito",
     "tip6Desc": "Attiva la sincronizzazione iCloud fin da subito per avere il armadio salvato e sincronizzato ovunque.",
-    "manageSubTitle": "Gestisci il tuo abbonamento",
     "manageSubTrialDesc": "Prova tutto gratis per 30 giorni, poi solo $0,99/mese. Cancella quando vuoi.",
     "manageSubFooter": "Gestisci in Impostazioni → Apple ID → Abbonamenti. Tocca \"Ripristina acquisti\" nelle Impostazioni di Klosyt per riattivare.",
     "troubleshootTitle": "Risoluzione problemi",
@@ -236,8 +216,7 @@
     "ts8Summary": "Come elimino un articolo?",
     "ts8Answer": "Tocca un articolo → vista dettagli → pulsante elimina. Gli articoli eliminati vanno nel Cestino per 30 giorni e possono essere recuperati. Accedi al Cestino dalle Impostazioni.",
     "contactTitle": "Hai ancora bisogno di aiuto?",
-    "contactDesc": "Siamo qui per aiutarti. Scrivici a",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "Siamo qui per aiutarti. Scrivici a"
   },
   "index": {
     "languagesTitle": "Disponibile in 16 lingue"

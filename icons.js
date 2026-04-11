@@ -119,13 +119,15 @@
     }
 
     function replaceEmoji() {
-        // Replace emoji in card-ico and pl-ico elements (skip if already has SVG)
-        const targets = document.querySelectorAll('.card-ico, .pl-ico');
+        // Replace emoji in feature-icon, card-ico, and pl-ico elements
+        const targets = document.querySelectorAll('.feature-icon, .card-ico, .pl-ico');
         targets.forEach(function (el) {
             if (el.querySelector('svg')) return;
             const text = el.textContent.trim();
             if (icons[text]) {
-                const size = el.classList.contains('pl-ico') ? 16 : 22;
+                let size = 22;
+                if (el.classList.contains('pl-ico')) size = 16;
+                else if (el.classList.contains('feature-icon')) size = 24;
                 el.innerHTML = makeSvg(icons[text], size);
             }
         });

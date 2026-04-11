@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Dutch",
-    "langNameNative": "Nederlands",
-    "dir": "ltr",
-    "changeLanguage": "Taal wijzigen"
-  },
   "nav": {
-    "features": "Functies",
     "klosytPlus": "Klosyt+",
-    "support": "Ondersteuning",
-    "privacy": "Privacy"
+    "support": "Ondersteuning"
   },
   "hero": {
     "mainTitle": "Je AI-aangedreven<br>digitale kledingkast",
@@ -31,25 +23,14 @@
     "filtersDesc": "Vind elk item op seizoen, kleur, categorie, materiaal of patroon in seconden."
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/maand",
     "trial": "30 dagen gratis proberen · Annuleer wanneer je wilt",
     "note": "Je kledingkast is altijd gratis. Klosyt+ ontgrendelt premiumfuncties.",
-    "trialDesc": "Probeer alles 30 dagen gratis, daarna slechts $0,99/maand. Annuleer wanneer je wilt. Je verliest nooit de toegang tot je bibliotheek.",
     "aiStyleAssistant": "AI-stijlassistent",
-    "aiStyleAssistantDesc": "Gepersonaliseerde, weer-slimme outfits",
     "outfits": "Outfits",
-    "outfitsDesc": "Maak, bewaar en deel je outfits",
     "calendarTracking": "Kalender-tracking",
-    "calendarTrackingDesc": "Log wat je draagt en bouw je geschiedenis op",
     "themesWallpapers": "Thema's & achtergronden (Gratis)",
-    "themesWallpapersDesc": "Pas de app aan met je favoriete thema's — gratis voor iedereen",
-    "alwaysFree": "Klosyt is altijd gratis",
-    "alwaysFreeDesc": "Jouw Klosyt is voor altijd van jou, altijd gratis",
-    "weatherData": "Realtime weerdata",
-    "weatherDataDesc": "Mogelijk gemaakt door Apple Weather",
-    "supportsDev": "Ondersteunt ontwikkeling",
-    "supportsDevDesc": "Voortdurende app-ontwikkeling"
+    "weatherData": "Realtime weerdata"
   },
   "cta": {
     "appStoreAlt": "Download in de App Store",
@@ -215,7 +196,6 @@
     "tip5Desc": "Markeer items als zomer, winter of het hele jaar voor weer-geschikte outfits.",
     "tip6Title": "Schakel iCloud vroeg in",
     "tip6Desc": "Zet iCloud-synchronisatie meteen aan zodat je kledingkast altijd back-upt en gesynchroniseerd is.",
-    "manageSubTitle": "Beheer je abonnement",
     "manageSubTrialDesc": "Probeer alles 30 dagen gratis, daarna slechts $0,99/maand. Annuleer wanneer je wilt.",
     "manageSubFooter": "Beheer in Instellingen → Apple ID → Abonnementen. Tik op \"Herstel aankopen\" in Klosyt-instellingen om opnieuw te activeren.",
     "troubleshootTitle": "Probleemoplossing",
@@ -236,8 +216,7 @@
     "ts8Summary": "Hoe verwijder ik een item?",
     "ts8Answer": "Tik op een item → detailweergave → verwijderknop. Verwijderde items blijven 30 dagen in de prullenbak en kunnen hersteld worden. Ga naar de prullenbak vanuit Instellingen.",
     "contactTitle": "Nog steeds hulp nodig?",
-    "contactDesc": "We zijn er om te helpen. Neem contact met ons op via",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "We zijn er om te helpen. Neem contact met ons op via"
   },
   "index": {
     "languagesTitle": "Beschikbaar in 16 talen"

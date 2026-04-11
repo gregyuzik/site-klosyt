@@ -1,15 +1,7 @@
 {
-  "meta": {
-    "langName": "Japanese",
-    "langNameNative": "日本語",
-    "dir": "ltr",
-    "changeLanguage": "言語を変更"
-  },
   "nav": {
-    "features": "機能",
     "klosytPlus": "Klosyt+",
-    "support": "サポート",
-    "privacy": "プライバシー"
+    "support": "サポート"
   },
   "hero": {
     "mainTitle": "AIが支える<br>デジタルクローゼット",
@@ -31,25 +23,14 @@
     "filtersDesc": "季節、色、カテゴリー、素材、柄で瞬時にアイテムを検索。"
   },
   "pricing": {
-    "klosytPlus": "Klosyt+",
     "period": "/月",
     "trial": "30日間無料体験 · いつでもキャンセル可能",
     "note": "クローゼットは常に無料。Klosyt+でプレミアム機能をアンロック。",
-    "trialDesc": "30日間すべて無料でお試し。その後月額わずか$0.99。いつでもキャンセル可能。ライブラリへのアクセスを失うことはありません。",
     "aiStyleAssistant": "AIスタイルアシスタント",
-    "aiStyleAssistantDesc": "パーソナライズされた天気スマートコーディネート",
     "outfits": "コーディネート",
-    "outfitsDesc": "コーディネートを作成、保存、共有",
     "calendarTracking": "カレンダー追跡",
-    "calendarTrackingDesc": "着用を記録して履歴を構築",
     "themesWallpapers": "テーマ＆壁紙（無料）",
-    "themesWallpapersDesc": "お気に入りのテーマでアプリをカスタマイズ — すべてのユーザーに無料",
-    "alwaysFree": "Klosytは常に無料",
-    "alwaysFreeDesc": "あなたのKlosytは永遠にあなたのもの、常に無料",
-    "weatherData": "リアルタイム天気データ",
-    "weatherDataDesc": "Apple Weather対応",
-    "supportsDev": "開発を支援",
-    "supportsDevDesc": "継続的なアプリ開発"
+    "weatherData": "リアルタイム天気データ"
   },
   "cta": {
     "appStoreAlt": "App Storeからダウンロード",
@@ -215,7 +196,6 @@
     "tip5Desc": "アイテムを夏、冬、またはオールシーズンとマークして、天気に適したコーディネートに。",
     "tip6Title": "早めにiCloud同期を有効化",
     "tip6Desc": "すぐにiCloud同期をオンにして、クローゼットを常にバックアップ＆同期。",
-    "manageSubTitle": "サブスクリプションの管理",
     "manageSubTrialDesc": "30日間すべて無料でお試し、その後月額わずか$0.99。いつでもキャンセル可能。",
     "manageSubFooter": "設定 → Apple ID → サブスクリプションで管理。Klosyt設定で「購入を復元」をタップして再有効化。",
     "troubleshootTitle": "トラブルシューティング",
@@ -236,8 +216,7 @@
     "ts8Summary": "アイテムを削除するには？",
     "ts8Answer": "アイテムをタップ → 詳細画面 → 削除ボタン。削除されたアイテムは30日間ゴミ箱に入り、復元できます。設定からゴミ箱にアクセスできます。",
     "contactTitle": "まだお困りですか？",
-    "contactDesc": "お手伝いします。お問い合わせは",
-    "contactEmail": "support@klosyt.com"
+    "contactDesc": "お手伝いします。お問い合わせは"
   },
   "index": {
     "languagesTitle": "16言語で利用可能"
