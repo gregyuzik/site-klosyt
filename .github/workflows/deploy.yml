@@ -19,12 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Inject secrets into HTML
-        run: |
-          for file in index.html privacy.html support.html; do
-            sed -i "s|__GA_MEASUREMENT_ID__|${{ secrets.GOOGLE_ANALYTICS_ID }}|g" "$file"
-          done
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
