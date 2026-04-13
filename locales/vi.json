@@ -16,7 +16,7 @@
     "calendarTitle": "Lịch",
     "calendarDesc": "Ghi lại bạn mặc gì mỗi ngày. Nhận ra xu hướng và không bao giờ vô tình lặp lại trang phục.",
     "privacyTitle": "Riêng tư từ thiết kế",
-    "privacyDesc": "Mọi thứ chạy trên thiết bị. Dữ liệu chỉ đồng bộ với iCloud của bạn — không bao giờ chia sẻ với ai.",
+    "privacyDesc": "Mọi thứ đều chạy trên thiết bị. Dữ liệu của bạn chỉ đồng bộ với iCloud của bạn và không bao giờ được chia sẻ với bất kỳ ai. Không phân tích trong ứng dụng, không theo dõi trong ứng dụng, không quảng cáo — tủ đồ ảo của bạn luôn hoàn toàn riêng tư.",
     "syncTitle": "Đồng bộ mọi nơi",
     "syncDesc": "iCloud giữ tủ đồ đồng bộ trên mọi thiết bị Apple, tức thì và tự động.",
     "filtersTitle": "Bộ lọc thông minh",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "Chúng tôi không theo dõi cách bạn sử dụng ứng dụng.",
     "tableAds": "Dữ liệu quảng cáo",
     "tableAdsDetail": "Không có quảng cáo trong Klosyt và không có SDK quảng cáo.",
-    "noTrackingTitle": "Không theo dõi. Không phân tích. Không ngoại lệ.",
-    "noTrackingText": "Klosyt chứa <strong>không</strong> framework phân tích, <strong>không</strong> SDK quảng cáo và <strong>không</strong> công nghệ theo dõi. Chúng tôi không theo dõi bạn qua các ứng dụng hoặc trang web. Chúng tôi không xây dựng hồ sơ. Chúng tôi không bán dữ liệu — vì chúng tôi không có.",
+    "noTrackingTitle": "Không theo dõi trong ứng dụng. Không phân tích trong ứng dụng.",
+    "noTrackingText": "Bản thân ứng dụng Klosyt chứa <strong>không</strong> khung phân tích, <strong>không</strong> SDK quảng cáo và <strong>không</strong> công nghệ theo dõi. Chúng tôi không theo dõi cách bạn sử dụng ứng dụng, không xây dựng hồ sơ quảng cáo và không bán dữ liệu — vì chúng tôi không có dữ liệu để bán.",
     "diagnosticsTitle": "Ngoại lệ duy nhất: Chẩn đoán tự nguyện",
     "diagnosticsText": "Nếu bạn gặp sự cố và chọn liên hệ với chúng tôi để hỗ trợ, bạn có thể sử dụng tính năng chia sẻ chẩn đoán trong ứng dụng để gửi cho chúng tôi một báo cáo. Báo cáo này có thể bao gồm mẫu thiết bị, phiên bản hệ điều hành, phiên bản ứng dụng và thống kê lưu trữ. <strong>Điều này chỉ xảy ra khi bạn rõ ràng chọn chia sẻ.</strong> Chúng tôi sử dụng thông tin này chỉ để giải quyết vấn đề của bạn và không giữ lại sau đó.",
     "dataYoursTitle": "Dữ liệu của bạn thuộc về bạn",
@@ -100,7 +100,7 @@
     "internationalGdpr": "Đối với người dùng trong Khu vực Kinh tế Châu Âu (EEA), các quyền này được đảm bảo bởi Quy định Bảo vệ Dữ liệu Chung (GDPR). Đối với người dùng tại Brazil, các quyền này được quy định bởi Lei Geral de Proteção de Dados (LGPD). Vì Klosyt không thu thập dữ liệu cá nhân, không cần thỏa thuận xử lý dữ liệu hoặc cơ sở pháp lý cho xử lý.",
     "internationalDpo": "Để hỏi về quyền riêng tư, liên hệ tại <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
     "websiteAnalyticsTitle": "Phân tích trang web",
-    "websiteAnalyticsText": "Trang web này (klosyt.com) sử dụng Google Analytics để thu thập dữ liệu sử dụng ẩn danh như lượt xem trang, nguồn giới thiệu và khu vực địa lý chung. Dữ liệu này giúp chúng tôi hiểu cách khách truy cập tìm và sử dụng trang web. Google Analytics có thể sử dụng cookie và thu thập thông tin theo <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Chính sách quyền riêng tư của Google</a>. Việc theo dõi này chỉ áp dụng cho trang web — ứng dụng Klosyt không chứa bất kỳ phân tích hoặc theo dõi nào.",
+    "websiteAnalyticsText": "Trang web này (klosyt.com) sử dụng Google Analytics 4 ở chế độ không dùng cookie và ẩn danh IP để đếm lượt xem trang tổng hợp. Chúng tôi cấu hình gtag.js với <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> và <code>allow_ad_personalization_signals: false</code>. Điều này có nghĩa là không có cookie <code>_ga</code> nào được đặt và không có mã định danh quảng cáo nào được thu thập. Bản thân ứng dụng Klosyt không bao gồm phân tích.",
     "changesTitle": "Thay đổi chính sách",
     "changesText": "Chúng tôi có thể cập nhật Chính sách quyền riêng tư này theo thời gian. Các thay đổi sẽ được phản ánh bằng cách cập nhật ngày \"Cập nhật lần cuối\" ở trên. Việc tiếp tục sử dụng ứng dụng sau các thay đổi đồng nghĩa với việc chấp nhận chính sách cập nhật.",
     "contactTitle": "Liên hệ với chúng tôi",
@@ -219,6 +219,12 @@
     "contactDesc": "Chúng tôi ở đây để giúp bạn. Liên hệ tại"
   },
   "index": {
-    "languagesTitle": "Có sẵn bằng 16 ngôn ngữ"
+    "languagesTitle": "Có sẵn bằng 16 ngôn ngữ",
+    "featuresTitle": "Tính năng",
+    "pricingTitle": "Giá Klosyt+",
+    "bottomAriaLabel": "Tải Klosyt"
+  },
+  "common": {
+    "skipToContent": "Chuyển đến nội dung"
   }
 }

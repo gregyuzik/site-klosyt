@@ -16,7 +16,7 @@
     "calendarTitle": "カレンダー",
     "calendarDesc": "毎日の着用を記録。パターンが見えてきて、うっかりコーデを繰り返す心配なし。",
     "privacyTitle": "プライバシー設計",
-    "privacyDesc": "すべてデバイス上で動作。データはあなたのiCloudにのみ同期 — 誰とも共有されません。",
+    "privacyDesc": "すべてはデバイス上で動作します。あなたのデータは iCloud にのみ同期され、他者と共有されることはありません。アプリ内分析なし、アプリ内追跡なし、広告なしで、あなたのクローゼットは完全にプライベートなままです。",
     "syncTitle": "どこでも同期",
     "syncDesc": "iCloudがすべてのAppleデバイス間でクローゼットを即座に自動同期。",
     "filtersTitle": "スマートフィルター",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "アプリの使用方法を追跡しません。",
     "tableAds": "広告データ",
     "tableAdsDetail": "Klosytに広告はなく、広告SDKもありません。",
-    "noTrackingTitle": "追跡なし。分析なし。例外なし。",
-    "noTrackingText": "Klosytには<strong>ゼロ</strong>の分析フレームワーク、<strong>ゼロ</strong>の広告SDK、<strong>ゼロ</strong>のトラッキング技術が含まれています。アプリやウェブサイト間で追跡しません。プロファイルを構築しません。データを販売しません — 販売するデータがないからです。",
+    "noTrackingTitle": "アプリ内追跡なし。アプリ内分析なし。",
+    "noTrackingText": "Klosyt アプリ自体には <strong>0</strong> 個の分析フレームワーク、<strong>0</strong> 個の広告 SDK、<strong>0</strong> 個の追跡技術しかありません。私たちはアプリの利用状況を追跡せず、広告プロフィールを作成せず、販売できるデータも持っていないためデータを販売しません。",
     "diagnosticsTitle": "唯一の例外：自発的な診断",
     "diagnosticsText": "問題が発生し、サポートのために連絡することを選択した場合、アプリ内の診断共有機能を使用してレポートを送信できます。このレポートには、デバイスモデル、OS バージョン、アプリバージョン、ストレージ統計が含まれる場合があります。<strong>これは明示的に共有を選択した場合にのみ発生します。</strong>この情報は問題のトラブルシューティングにのみ使用し、それ以上の目的で保持しません。",
     "dataYoursTitle": "あなたのデータはあなたのもの",
@@ -100,7 +100,7 @@
     "internationalGdpr": "欧州経済領域（EEA）のユーザーにとって、これらの権利は一般データ保護規則（GDPR）に基づいて保証されています。ブラジルのユーザーにとっては、Lei Geral de Proteção de Dados（LGPD）に基づいて提供されます。Klosytは個人データを収集しないため、データ処理契約や処理の法的根拠は不要です。",
     "internationalDpo": "プライバシーに関するお問い合わせは<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>までご連絡ください。",
     "websiteAnalyticsTitle": "ウェブサイト分析",
-    "websiteAnalyticsText": "本ウェブサイト（klosyt.com）は、ページビュー、参照元、おおまかな地域などの匿名の利用データを収集するためにGoogle Analyticsを使用しています。このデータは、訪問者がどのように当社のウェブサイトを見つけ、利用しているかを理解するのに役立ちます。Google AnalyticsはCookieを使用する場合があり、<a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Googleのプライバシーポリシー</a>に従って情報を収集します。このトラッキングはウェブサイトにのみ適用されます——Klosytアプリ自体にはいかなる分析やトラッキングも含まれていません。",
+    "websiteAnalyticsText": "このウェブサイト（klosyt.com）は、集計されたページビューを数えるために、Cookie を使用しない IP 匿名化モードの Google Analytics 4 を使用しています。gtag.js は <code>anonymize_ip: true</code>、<code>client_storage: 'none'</code>、<code>allow_google_signals: false</code>、<code>allow_ad_personalization_signals: false</code> で設定されています。つまり <code>_ga</code> Cookie は設定されず、広告識別子も収集されません。Klosyt アプリ自体には分析機能は含まれていません。",
     "changesTitle": "ポリシーの変更",
     "changesText": "このプライバシーポリシーを随時更新する場合があります。変更は上記の「最終更新」日の更新により反映されます。変更後もアプリの使用を続けることは、更新されたポリシーの受諾を意味します。",
     "contactTitle": "お問い合わせ",
@@ -219,6 +219,12 @@
     "contactDesc": "お手伝いします。お問い合わせは"
   },
   "index": {
-    "languagesTitle": "16言語で利用可能"
+    "languagesTitle": "16言語で利用可能",
+    "featuresTitle": "機能",
+    "pricingTitle": "Klosyt+の料金",
+    "bottomAriaLabel": "Klosytを入手"
+  },
+  "common": {
+    "skipToContent": "コンテンツへスキップ"
   }
 }

@@ -76,7 +76,7 @@ For any privacy-related inquiries, contact us at [support@klosyt.com](mailto:sup
 
 ## Website Analytics
 
-This website (klosyt.com) uses Google Analytics to collect anonymous usage data such as page views, referral sources, and general geographic region. This data helps us understand how visitors find and use our website. Google Analytics may use cookies and collects information in accordance with [Google's Privacy Policy](https://policies.google.com/privacy). This tracking applies only to the website — the Klosyt app itself contains no analytics or tracking of any kind.
+This website (klosyt.com) uses Google Analytics 4 in cookieless, IP-anonymized mode to count aggregate page views. We configure gtag.js with `anonymize_ip: true`, `client_storage: 'none'`, `allow_google_signals: false`, and `allow_ad_personalization_signals: false`. This means no `_ga` cookie is set and no advertising identifiers are collected. The Klosyt app itself does not include analytics.
 
 ## Changes to This Policy
 

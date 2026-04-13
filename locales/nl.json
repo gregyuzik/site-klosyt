@@ -16,7 +16,7 @@
     "calendarTitle": "Kalender",
     "calendarDesc": "Houd bij wat je elke dag draagt. Zie patronen ontstaan en herhaal nooit per ongeluk een outfit.",
     "privacyTitle": "Privé by design",
-    "privacyDesc": "Alles draait op je apparaat. Je data synchroniseert alleen naar jouw iCloud — nooit gedeeld met iemand.",
+    "privacyDesc": "Alles draait op je apparaat. Je gegevens synchroniseren alleen met je iCloud en worden nooit met anderen gedeeld. Geen app-analytics, geen app-tracking, geen advertenties — je virtuele kledingkast blijft volledig privé.",
     "syncTitle": "Overal gesynchroniseerd",
     "syncDesc": "iCloud houdt je kledingkast gesynchroniseerd op elk Apple-apparaat, direct en automatisch.",
     "filtersTitle": "Slimme filters",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "Wij volgen niet hoe je de app gebruikt.",
     "tableAds": "Advertentiegegevens",
     "tableAdsDetail": "Er zijn geen advertenties in Klosyt en geen advertentie-SDKs.",
-    "noTrackingTitle": "Geen tracking. Geen analyse. Geen uitzonderingen.",
-    "noTrackingText": "Klosyt bevat <strong>nul</strong> analyseframeworks, <strong>nul</strong> advertentie-SDKs en <strong>nul</strong> trackingtechnologieën. We volgen je niet over apps of websites. We bouwen geen profielen. We verkopen geen gegevens — want we hebben er geen.",
+    "noTrackingTitle": "Geen app-tracking. Geen app-analytics.",
+    "noTrackingText": "De Klosyt-app bevat <strong>nul</strong> analytics-frameworks, <strong>nul</strong> advertentie-SDK's en <strong>nul</strong> trackingtechnologieën. We volgen niet hoe je de app gebruikt, bouwen geen advertentieprofielen op en verkopen geen gegevens — omdat we niets hebben om te verkopen.",
     "diagnosticsTitle": "De enige uitzondering: vrijwillige diagnostiek",
     "diagnosticsText": "Als je een probleem tegenkomt en ervoor kiest om contact met ons op te nemen voor ondersteuning, kun je de diagnostische deelfunctie in de app gebruiken om ons een rapport te sturen. Dit rapport kan je apparaatmodel, OS-versie, app-versie en opslagstatistieken bevatten. <strong>Dit gebeurt alleen wanneer je er uitdrukkelijk voor kiest om te delen.</strong> We gebruiken deze informatie uitsluitend om je probleem op te lossen en bewaren het niet verder.",
     "dataYoursTitle": "Je gegevens zijn van jou",
@@ -100,7 +100,7 @@
     "internationalGdpr": "Voor gebruikers in de Europese Economische Ruimte (EER) worden deze rechten gegarandeerd door de Algemene Verordening Gegevensbescherming (AVG). Voor gebruikers in Brazilië worden deze rechten geboden door de Lei Geral de Proteção de Dados (LGPD). Aangezien Klosyt geen persoonsgegevens verzamelt, is er geen gegevensverwerkingsovereenkomst of rechtsgrondslag voor verwerking nodig.",
     "internationalDpo": "Voor privacy-gerelateerde vragen, neem contact met ons op via <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
     "websiteAnalyticsTitle": "Website-analyse",
-    "websiteAnalyticsText": "Deze website (klosyt.com) gebruikt Google Analytics om anonieme gebruiksgegevens te verzamelen, zoals paginaweergaven, verwijzingsbronnen en algemene geografische regio. Deze gegevens helpen ons te begrijpen hoe bezoekers onze website vinden en gebruiken. Google Analytics kan cookies gebruiken en verzamelt informatie in overeenstemming met het <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">privacybeleid van Google</a>. Deze tracking geldt alleen voor de website — de Klosyt-app zelf bevat geen analyse of tracking van welke aard dan ook.",
+    "websiteAnalyticsText": "Deze website (klosyt.com) gebruikt Google Analytics 4 in een cookieloze, IP-geanonimiseerde modus om geaggregeerde paginaweergaven te tellen. We configureren gtag.js met <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> en <code>allow_ad_personalization_signals: false</code>. Dit betekent dat er geen <code>_ga</code>-cookie wordt geplaatst en dat er geen advertentie-ID's worden verzameld. De Klosyt-app zelf bevat geen analytics.",
     "changesTitle": "Wijzigingen in dit beleid",
     "changesText": "We kunnen dit privacybeleid van tijd tot tijd bijwerken. Wijzigingen worden weergegeven door het bijwerken van de datum \"Laatst bijgewerkt\" hierboven. Voortgezet gebruik van de app na wijzigingen vormt aanvaarding van het bijgewerkte beleid.",
     "contactTitle": "Neem contact op",
@@ -219,6 +219,12 @@
     "contactDesc": "We zijn er om te helpen. Neem contact met ons op via"
   },
   "index": {
-    "languagesTitle": "Beschikbaar in 16 talen"
+    "languagesTitle": "Beschikbaar in 16 talen",
+    "featuresTitle": "Functies",
+    "pricingTitle": "Klosyt+-prijzen",
+    "bottomAriaLabel": "Download Klosyt"
+  },
+  "common": {
+    "skipToContent": "Ga naar inhoud"
   }
 }

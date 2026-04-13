@@ -7,19 +7,13 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Gizlilik Politikası — Klosyt</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — cookieless, anonymized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
-    </script>
+    <script defer src="/analytics.js"></script>
     <meta name="description" content="Gizliliğin Klosyt'un sadece bir özelliği değil — temelidir. Kişisel verilerinizi asla toplamaz, saklamaz, iletmez veya erişmeyiz. Nokta.">
     <link rel="canonical" href="https://klosyt.com/tr/privacy.html">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
@@ -57,9 +51,9 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Privacy Policy — Klosyt",
+        "name": "Gizlilik Politikası — Klosyt",
         "url": "https://klosyt.com/tr/privacy.html",
-        "description": "Klosyt's privacy policy. Klosyt collects no personal data — everything runs on-device and stays in your personal iCloud account.",
+        "description": "Gizliliğin Klosyt'un sadece bir özelliği değil — temelidir. Kişisel verilerinizi asla toplamaz, saklamaz, iletmez veya erişmeyiz. Nokta. Klosyt sıfırdan, gardırobunuzun, fotoğraflarınızın ve kişisel bilgilerinizin cihazınızdan veya kişisel iCloud hesabınızdan asla çıkmamasını sağlayacak şekilde inşa edilmiştir. Verilerinizi göremeyiz ve bunu kasıtlı olarak böyle tasarladık.",
         "inLanguage": "tr",
         "isPartOf": {
             "@type": "WebSite",
@@ -71,16 +65,16 @@
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="common.skipToContent">İçeriğe atla</a>
 
 <header class="nav-wrap">
     <nav class="glass nav-bar">
-        <a href="index.html" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="/assets/AppIcon.png?v=20260413" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
         <div class="nav-links">
-            <a href="index.html#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
+            <a href="./#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
             <a href="support.html" data-i18n="nav.support">Destek</a>
         </div>
     </nav>
@@ -122,8 +116,8 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.noTrackingTitle">Takip Yok. Analiz Yok. İstisna Yok.</h2>
-            <p data-i18n="privacy.noTrackingText">Klosyt <strong>sıfır</strong> analiz çerçevesi, <strong>sıfır</strong> reklam SDK'sı ve <strong>sıfır</strong> takip teknolojisi içerir. Sizi uygulamalar veya web siteleri arasında takip etmeyiz. Profil oluşturmayız. Veri satmayız — çünkü bizde veri yok.</p>
+            <h2 data-i18n="privacy.noTrackingTitle">Uygulamada izleme yok. Uygulamada analiz yok.</h2>
+            <p data-i18n="privacy.noTrackingText">Klosyt uygulamasının kendisi <strong>sıfır</strong> analiz çerçevesi, <strong>sıfır</strong> reklam SDK'sı ve <strong>sıfır</strong> izleme teknolojisi içerir. Uygulamayı nasıl kullandığınızı izlemeyiz, reklam profilleri oluşturmayız ve satacak verimiz olmadığı için veri satmayız.</p>
         </div>
 
         <div class="glass legal-card fade-up">
@@ -176,8 +170,8 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.websiteAnalyticsTitle">Web Sitesi Analitiği</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">Bu web sitesi (klosyt.com), sayfa görüntülemeleri, yönlendirme kaynakları ve genel coğrafi bölge gibi anonim kullanım verilerini toplamak için Google Analytics kullanmaktadır. Bu veriler, ziyaretçilerin web sitemizi nasıl bulduğunu ve kullandığını anlamamıza yardımcı olur. Google Analytics çerezler kullanabilir ve <a href="https://policies.google.com/privacy" style="color: var(--accent-color);">Google'ın Gizlilik Politikası</a>'na uygun olarak bilgi toplar. Bu takip yalnızca web sitesi için geçerlidir — Klosyt uygulamasının kendisi hiçbir analitik veya takip içermemektedir.</p>
+            <h2 data-i18n="privacy.websiteAnalyticsTitle">Web sitesi analitiği</h2>
+            <p data-i18n="privacy.websiteAnalyticsText">Bu web sitesi (klosyt.com), toplu sayfa görüntülemelerini saymak için çerezsiz ve IP anonimleştirilmiş modda Google Analytics 4 kullanır. gtag.js'i <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> ve <code>allow_ad_personalization_signals: false</code> ile yapılandırıyoruz. Bu, <code>_ga</code> çerezinin ayarlanmadığı ve reklam tanımlayıcılarının toplanmadığı anlamına gelir. Klosyt uygulamasının kendisi analitik içermez.</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">Politika Değişiklikleri</h2><p data-i18n="privacy.changesText">Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler yukarıdaki "Son güncelleme" tarihinin güncellenmesiyle yansıtılacaktır. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz güncellenen politikanın kabulünü oluşturur.</p></div>
@@ -250,7 +244,7 @@
 <footer class="foot">
     <div class="wrap tc">
         <div class="foot-links">
-            <a href="index.html" data-i18n="footer.home">Ana Sayfa</a>
+            <a href="./" data-i18n="footer.home">Ana Sayfa</a>
             <a href="support.html" data-i18n="footer.support">Destek</a>
             <a href="privacy.html" data-i18n="footer.privacy">Gizlilik</a>
             <a href="https://vultyr.app" target="_blank" rel="noopener noreferrer" data-i18n="footer.vultyr">Vultyr</a>

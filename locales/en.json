@@ -16,7 +16,7 @@
     "calendarTitle": "Calendar",
     "calendarDesc": "Log what you wear every day. See patterns emerge and never repeat an outfit by accident. Track your wardrobe history to make the most of every item you own.",
     "privacyTitle": "Private by Design",
-    "privacyDesc": "Everything runs on-device. Your data syncs only to your iCloud — never shared with anyone. No analytics, no tracking, no ads — your virtual wardrobe stays completely private.",
+    "privacyDesc": "Everything runs on-device. Your data syncs only to your iCloud — never shared with anyone. No app analytics, no app tracking, no ads — your virtual wardrobe stays completely private.",
     "syncTitle": "Synced Everywhere",
     "syncDesc": "iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically. One wardrobe across iPhone, iPad, Mac, Apple TV, and Vision Pro.",
     "filtersTitle": "Smart Filters",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "We do not track how you use the App.",
     "tableAds": "Advertising Data",
     "tableAdsDetail": "There are no ads in Klosyt and no advertising SDKs.",
-    "noTrackingTitle": "No Tracking. No Analytics. No Exceptions.",
-    "noTrackingText": "Klosyt contains <strong>zero</strong> analytics frameworks, <strong>zero</strong> advertising SDKs, and <strong>zero</strong> tracking technologies. We do not track you across apps or websites. We do not build profiles. We do not sell data — because we don't have any to sell.",
+    "noTrackingTitle": "No App Tracking. No App Analytics.",
+    "noTrackingText": "The Klosyt app contains <strong>zero</strong> analytics frameworks, <strong>zero</strong> advertising SDKs, and <strong>zero</strong> tracking technologies. We do not track how you use the app, build advertising profiles, or sell data — because we do not have any to sell.",
     "diagnosticsTitle": "The Only Exception: Voluntary Diagnostics",
     "diagnosticsText": "If you experience an issue and choose to contact us for support, you may use the in-app diagnostic sharing feature to send us a report. This report may include your device model, OS version, app version, and storage statistics. <strong>This only happens when you explicitly choose to share it.</strong> We use this information solely to troubleshoot your issue and do not retain it beyond that purpose.",
     "dataYoursTitle": "Your Data Stays Yours",
@@ -100,7 +100,7 @@
     "internationalGdpr": "For users in the European Economic Area (EEA), these rights are guaranteed under the General Data Protection Regulation (GDPR). For users in Brazil, these rights are provided under the Lei Geral de Proteção de Dados (LGPD). Since Klosyt collects no personal data, no data processing agreement or legal basis for processing is required.",
     "internationalDpo": "For any privacy-related inquiries, contact us at <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
     "websiteAnalyticsTitle": "Website Analytics",
-    "websiteAnalyticsText": "This website (klosyt.com) uses Google Analytics to collect anonymous usage data such as page views, referral sources, and general geographic region. This data helps us understand how visitors find and use our website. Google Analytics may use cookies and collects information in accordance with <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google's Privacy Policy</a>. This tracking applies only to the website — the Klosyt app itself contains no analytics or tracking of any kind.",
+    "websiteAnalyticsText": "This website (klosyt.com) uses Google Analytics 4 in cookieless, IP-anonymized mode to count aggregate page views. We configure gtag.js with <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code>, and <code>allow_ad_personalization_signals: false</code>. This means no <code>_ga</code> cookie is set and no advertising identifiers are collected. The Klosyt app itself does not include analytics.",
     "changesTitle": "Changes to This Policy",
     "changesText": "We may update this Privacy Policy from time to time. Changes will be reflected by updating the \"Last Updated\" date above. Continued use of the App after changes constitutes acceptance of the updated policy.",
     "contactTitle": "Contact Us",
@@ -219,6 +219,12 @@
     "contactDesc": "We're here to help. Reach out at"
   },
   "index": {
-    "languagesTitle": "Available in 16 languages"
+    "languagesTitle": "Available in 16 languages",
+    "featuresTitle": "Features",
+    "pricingTitle": "Klosyt+ Pricing",
+    "bottomAriaLabel": "Get Klosyt"
+  },
+  "common": {
+    "skipToContent": "Skip to content"
   }
 }

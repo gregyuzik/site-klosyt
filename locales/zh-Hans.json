@@ -16,7 +16,7 @@
     "calendarTitle": "日历",
     "calendarDesc": "记录每天穿了什么。发现穿搭规律，避免无意间重复搭配。",
     "privacyTitle": "从设计就注重隐私",
-    "privacyDesc": "一切在设备端运行。你的数据仅同步到你的iCloud——绝不与任何人共享。",
+    "privacyDesc": "一切都在设备端运行。你的数据只会同步到你的 iCloud，绝不会与任何人共享。没有应用分析、没有应用跟踪、没有广告，你的虚拟衣橱始终完全私密。",
     "syncTitle": "随处同步",
     "syncDesc": "iCloud让你的衣橱在所有Apple设备间保持同步，即时且自动。",
     "filtersTitle": "智能筛选",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "我们不追踪你如何使用本应用。",
     "tableAds": "广告数据",
     "tableAdsDetail": "Klosyt中没有广告，也没有广告SDK。",
-    "noTrackingTitle": "无跟踪。无分析。无例外。",
-    "noTrackingText": "Klosyt包含<strong>零</strong>分析框架、<strong>零</strong>广告SDK和<strong>零</strong>跟踪技术。我们不会跨应用或网站跟踪你。我们不建立用户画像。我们不出售数据——因为我们根本没有数据可以出售。",
+    "noTrackingTitle": "无应用跟踪，无应用分析。",
+    "noTrackingText": "Klosyt 应用本身包含<strong>零</strong>分析框架、<strong>零</strong>广告 SDK 和<strong>零</strong>跟踪技术。我们不会跟踪你如何使用应用、建立广告画像或出售数据，因为我们根本没有可出售的数据。",
     "diagnosticsTitle": "唯一例外：自愿诊断",
     "diagnosticsText": "如果你遇到问题并选择联系我们寻求支持，你可以使用应用内的诊断分享功能向我们发送报告。此报告可能包括你的设备型号、操作系统版本、应用版本和存储统计信息。<strong>这仅在你明确选择分享时才会发生。</strong>我们仅使用这些信息来解决你的问题，不会为其他目的保留它们。",
     "dataYoursTitle": "你的数据属于你",
@@ -100,7 +100,7 @@
     "internationalGdpr": "对于欧洲经济区（EEA）的用户，这些权利受到《通用数据保护条例》（GDPR）的保障。对于巴西的用户，这些权利由《通用数据保护法》（LGPD）提供。由于Klosyt不收集个人数据，因此不需要数据处理协议或处理的法律依据。",
     "internationalDpo": "如有任何隐私相关咨询，请联系我们<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。",
     "websiteAnalyticsTitle": "网站分析",
-    "websiteAnalyticsText": "本网站（klosyt.com）使用Google Analytics收集匿名使用数据，如页面浏览量、来源和大致地理区域。这些数据帮助我们了解访客如何发现和使用我们的网站。Google Analytics可能使用Cookie，并根据<a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google隐私政策</a>收集信息。此跟踪仅适用于网站——Klosyt应用本身不包含任何分析或跟踪。",
+    "websiteAnalyticsText": "本网站（klosyt.com）使用 Google Analytics 4 的无 Cookie、IP 匿名化模式来统计汇总页面浏览量。我们将 gtag.js 配置为 <code>anonymize_ip: true</code>、<code>client_storage: 'none'</code>、<code>allow_google_signals: false</code> 和 <code>allow_ad_personalization_signals: false</code>。这意味着不会设置 <code>_ga</code> Cookie，也不会收集广告标识符。Klosyt 应用本身不包含分析。",
     "changesTitle": "政策变更",
     "changesText": "我们可能会不时更新本隐私政策。更改将通过更新上方的“最后更新”日期来体现。在更改后继续使用本应用即表示接受更新后的政策。",
     "contactTitle": "联系我们",
@@ -219,6 +219,12 @@
     "contactDesc": "我们随时为你提供帮助。联系我们："
   },
   "index": {
-    "languagesTitle": "提供16种语言"
+    "languagesTitle": "提供16种语言",
+    "featuresTitle": "功能",
+    "pricingTitle": "Klosyt+ 价格",
+    "bottomAriaLabel": "获取 Klosyt"
+  },
+  "common": {
+    "skipToContent": "跳到内容"
   }
 }
