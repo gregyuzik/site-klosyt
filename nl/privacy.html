@@ -7,19 +7,13 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Privacybeleid — Klosyt</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — cookieless, anonymized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
-    </script>
+    <script defer src="/analytics.js"></script>
     <meta name="description" content="Je privacy is niet zomaar een functie van Klosyt — het is de basis. Wij verzamelen, bewaren, verzenden of openen geen enkele van je persoonlijke gegevens. Punt.">
     <link rel="canonical" href="https://klosyt.com/nl/privacy.html">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
@@ -57,9 +51,9 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Privacy Policy — Klosyt",
+        "name": "Privacybeleid — Klosyt",
         "url": "https://klosyt.com/nl/privacy.html",
-        "description": "Klosyt's privacy policy. Klosyt collects no personal data — everything runs on-device and stays in your personal iCloud account.",
+        "description": "Je privacy is niet zomaar een functie van Klosyt — het is de basis. Wij verzamelen, bewaren, verzenden of openen geen enkele van je persoonlijke gegevens. Punt. Klosyt is vanaf de grond af opgebouwd om ervoor te zorgen dat je kledingkast, foto's en persoonlijke informatie nooit je apparaat of je persoonlijke iCloud-account verlaten. Wij kunnen je gegevens niet zien, en dat is opzettelijk zo ontworpen.",
         "inLanguage": "nl",
         "isPartOf": {
             "@type": "WebSite",
@@ -71,16 +65,16 @@
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="common.skipToContent">Ga naar inhoud</a>
 
 <header class="nav-wrap">
     <nav class="glass nav-bar">
-        <a href="index.html" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="/assets/AppIcon.png?v=20260413" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
         <div class="nav-links">
-            <a href="index.html#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
+            <a href="./#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
             <a href="support.html" data-i18n="nav.support">Ondersteuning</a>
         </div>
     </nav>
@@ -122,8 +116,8 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.noTrackingTitle">Geen tracking. Geen analyse. Geen uitzonderingen.</h2>
-            <p data-i18n="privacy.noTrackingText">Klosyt bevat <strong>nul</strong> analyseframeworks, <strong>nul</strong> advertentie-SDKs en <strong>nul</strong> trackingtechnologieën. We volgen je niet over apps of websites. We bouwen geen profielen. We verkopen geen gegevens — want we hebben er geen.</p>
+            <h2 data-i18n="privacy.noTrackingTitle">Geen app-tracking. Geen app-analytics.</h2>
+            <p data-i18n="privacy.noTrackingText">De Klosyt-app bevat <strong>nul</strong> analytics-frameworks, <strong>nul</strong> advertentie-SDK's en <strong>nul</strong> trackingtechnologieën. We volgen niet hoe je de app gebruikt, bouwen geen advertentieprofielen op en verkopen geen gegevens — omdat we niets hebben om te verkopen.</p>
         </div>
 
         <div class="glass legal-card fade-up">
@@ -177,7 +171,7 @@
 
         <div class="glass legal-card fade-up">
             <h2 data-i18n="privacy.websiteAnalyticsTitle">Website-analyse</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">Deze website (klosyt.com) gebruikt Google Analytics om anonieme gebruiksgegevens te verzamelen, zoals paginaweergaven, verwijzingsbronnen en algemene geografische regio. Deze gegevens helpen ons te begrijpen hoe bezoekers onze website vinden en gebruiken. Google Analytics kan cookies gebruiken en verzamelt informatie in overeenstemming met het <a href="https://policies.google.com/privacy" style="color: var(--accent-color);">privacybeleid van Google</a>. Deze tracking geldt alleen voor de website — de Klosyt-app zelf bevat geen analyse of tracking van welke aard dan ook.</p>
+            <p data-i18n="privacy.websiteAnalyticsText">Deze website (klosyt.com) gebruikt Google Analytics 4 in een cookieloze, IP-geanonimiseerde modus om geaggregeerde paginaweergaven te tellen. We configureren gtag.js met <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> en <code>allow_ad_personalization_signals: false</code>. Dit betekent dat er geen <code>_ga</code>-cookie wordt geplaatst en dat er geen advertentie-ID's worden verzameld. De Klosyt-app zelf bevat geen analytics.</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">Wijzigingen in dit beleid</h2><p data-i18n="privacy.changesText">We kunnen dit privacybeleid van tijd tot tijd bijwerken. Wijzigingen worden weergegeven door het bijwerken van de datum "Laatst bijgewerkt" hierboven. Voortgezet gebruik van de app na wijzigingen vormt aanvaarding van het bijgewerkte beleid.</p></div>
@@ -250,7 +244,7 @@
 <footer class="foot">
     <div class="wrap tc">
         <div class="foot-links">
-            <a href="index.html" data-i18n="footer.home">Home</a>
+            <a href="./" data-i18n="footer.home">Home</a>
             <a href="support.html" data-i18n="footer.support">Ondersteuning</a>
             <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
             <a href="https://vultyr.app" target="_blank" rel="noopener noreferrer" data-i18n="footer.vultyr">Vultyr</a>

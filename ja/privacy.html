@@ -7,19 +7,13 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>プライバシーポリシー — Klosyt</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — cookieless, anonymized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
-    </script>
+    <script defer src="/analytics.js"></script>
     <meta name="description" content="あなたのプライバシーはKlosytの単なる機能ではなく、基盤です。私たちはあなたの個人データを収集、保存、送信、またはアクセスすることは一切ありません。以上。">
     <link rel="canonical" href="https://klosyt.com/ja/privacy.html">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
@@ -57,9 +51,9 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Privacy Policy — Klosyt",
+        "name": "プライバシーポリシー — Klosyt",
         "url": "https://klosyt.com/ja/privacy.html",
-        "description": "Klosyt's privacy policy. Klosyt collects no personal data — everything runs on-device and stays in your personal iCloud account.",
+        "description": "あなたのプライバシーはKlosytの単なる機能ではなく、基盤です。私たちはあなたの個人データを収集、保存、送信、またはアクセスすることは一切ありません。以上。 Klosytは最初から、あなたのクローゼット、写真、個人情報がデバイスや個人のiCloudアカウントの外に出ないように構築されています。私たちはあなたのデータを見ることができませんし、意図的にそう設計しました。",
         "inLanguage": "ja",
         "isPartOf": {
             "@type": "WebSite",
@@ -71,16 +65,16 @@
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="common.skipToContent">コンテンツへスキップ</a>
 
 <header class="nav-wrap">
     <nav class="glass nav-bar">
-        <a href="index.html" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="/assets/AppIcon.png?v=20260413" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
         <div class="nav-links">
-            <a href="index.html#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
+            <a href="./#pricing" data-i18n="nav.klosytPlus">Klosyt+</a>
             <a href="support.html" data-i18n="nav.support">サポート</a>
         </div>
     </nav>
@@ -122,8 +116,8 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.noTrackingTitle">追跡なし。分析なし。例外なし。</h2>
-            <p data-i18n="privacy.noTrackingText">Klosytには<strong>ゼロ</strong>の分析フレームワーク、<strong>ゼロ</strong>の広告SDK、<strong>ゼロ</strong>のトラッキング技術が含まれています。アプリやウェブサイト間で追跡しません。プロファイルを構築しません。データを販売しません — 販売するデータがないからです。</p>
+            <h2 data-i18n="privacy.noTrackingTitle">アプリ内追跡なし。アプリ内分析なし。</h2>
+            <p data-i18n="privacy.noTrackingText">Klosyt アプリ自体には <strong>0</strong> 個の分析フレームワーク、<strong>0</strong> 個の広告 SDK、<strong>0</strong> 個の追跡技術しかありません。私たちはアプリの利用状況を追跡せず、広告プロフィールを作成せず、販売できるデータも持っていないためデータを販売しません。</p>
         </div>
 
         <div class="glass legal-card fade-up">
@@ -177,7 +171,7 @@
 
         <div class="glass legal-card fade-up">
             <h2 data-i18n="privacy.websiteAnalyticsTitle">ウェブサイト分析</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">本ウェブサイト（klosyt.com）は、ページビュー、参照元、おおまかな地域などの匿名の利用データを収集するためにGoogle Analyticsを使用しています。このデータは、訪問者がどのように当社のウェブサイトを見つけ、利用しているかを理解するのに役立ちます。Google AnalyticsはCookieを使用する場合があり、<a href="https://policies.google.com/privacy" style="color: var(--accent-color);">Googleのプライバシーポリシー</a>に従って情報を収集します。このトラッキングはウェブサイトにのみ適用されます——Klosytアプリ自体にはいかなる分析やトラッキングも含まれていません。</p>
+            <p data-i18n="privacy.websiteAnalyticsText">このウェブサイト（klosyt.com）は、集計されたページビューを数えるために、Cookie を使用しない IP 匿名化モードの Google Analytics 4 を使用しています。gtag.js は <code>anonymize_ip: true</code>、<code>client_storage: 'none'</code>、<code>allow_google_signals: false</code>、<code>allow_ad_personalization_signals: false</code> で設定されています。つまり <code>_ga</code> Cookie は設定されず、広告識別子も収集されません。Klosyt アプリ自体には分析機能は含まれていません。</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">ポリシーの変更</h2><p data-i18n="privacy.changesText">このプライバシーポリシーを随時更新する場合があります。変更は上記の「最終更新」日の更新により反映されます。変更後もアプリの使用を続けることは、更新されたポリシーの受諾を意味します。</p></div>
@@ -250,7 +244,7 @@
 <footer class="foot">
     <div class="wrap tc">
         <div class="foot-links">
-            <a href="index.html" data-i18n="footer.home">ホーム</a>
+            <a href="./" data-i18n="footer.home">ホーム</a>
             <a href="support.html" data-i18n="footer.support">サポート</a>
             <a href="privacy.html" data-i18n="footer.privacy">プライバシー</a>
             <a href="https://vultyr.app" target="_blank" rel="noopener noreferrer" data-i18n="footer.vultyr">Vultyr</a>

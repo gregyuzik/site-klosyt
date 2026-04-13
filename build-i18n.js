@@ -13,6 +13,8 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname);
+const SITE_URL = 'https://klosyt.com';
+const LASTMOD = '2026-04-13';
 
 const LOCALES = [
     'zh-Hans', 'zh-Hant', 'da', 'nl', 'fr', 'de',
@@ -39,12 +41,28 @@ const PAGE_META = {
     }
 };
 
+const SUPPORT_FAQ_KEYS = [
+    ['support.photosTitle', 'support.photosDesc'],
+    ['support.importTitle', 'support.importDesc'],
+    ['support.outfitsTitle', 'support.outfitsDesc'],
+    ['support.aiTitle', 'support.aiDesc'],
+    ['support.backupTitle', 'support.backupDesc'],
+    ['support.multiPlatformTitle', 'support.multiPlatformDesc'],
+    ['support.ts1Summary', 'support.ts1Answer'],
+    ['support.ts3Summary', 'support.ts3Answer'],
+    ['support.ts8Summary', 'support.ts8Answer']
+];
+
 function loadJSON(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
 function getNestedValue(obj, keyPath) {
     return keyPath.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+}
+
+function getTranslation(translations, fallback, keyPath) {
+    return getNestedValue(translations, keyPath) || getNestedValue(fallback, keyPath) || '';
 }
 
 function stripHTML(str) {
@@ -59,6 +77,24 @@ function stripHTML(str) {
         .replace(/&#39;/g, "'")
         .replace(/\s+/g, ' ')
         .trim();
+}
+
+function escapeAttribute(str) {
+    return str.replace(/"/g, '&quot;');
+}
+
+function buildCanonicalUrl(locale, page) {
+    const canonicalPath = PAGE_META[page].canonicalPath;
+    const base = locale === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${locale}/`;
+
+    return canonicalPath ? base + canonicalPath : base;
+}
+
+function indentJson(obj) {
+    return JSON.stringify(obj, null, 4)
+        .split('\n')
+        .map(line => `    ${line}`)
+        .join('\n');
 }
 
 /**
@@ -77,27 +113,20 @@ function applyTranslations(html, translations, fallback) {
     });
 
     // Translate data-i18n-alt attributes
-    html = html.replace(/data-i18n-alt="([^"]+)"/g, (match, key) => {
-        const translated = getNestedValue(translations, key) || getNestedValue(fallback, key);
-        if (translated !== null) {
-            const escAttr = s => s.replace(/"/g, '&quot;');
-            return match.replace(
-                /data-i18n-alt="[^"]+"/,
-                `data-i18n-alt="${key}"`
-            );
-        }
-        return match;
-    });
+    const translateAttribute = (sourceAttr, targetAttr) => {
+        const pattern = new RegExp(`${targetAttr}="[^"]*"(\\s+${sourceAttr}="([^"]+)")`, 'g');
 
-    // Update alt attributes where data-i18n-alt is present
-    html = html.replace(/alt="[^"]*"(\s+data-i18n-alt="([^"]+)")/g, (match, suffix, key) => {
-        const translated = getNestedValue(translations, key) || getNestedValue(fallback, key);
-        if (translated !== null) {
-            const escAttr = s => s.replace(/"/g, '&quot;');
-            return `alt="${escAttr(translated)}"${suffix}`;
-        }
-        return match;
-    });
+        html = html.replace(pattern, (match, suffix, key) => {
+            const translated = getTranslation(translations, fallback, key);
+            if (translated) {
+                return `${targetAttr}="${escapeAttribute(translated)}"${suffix}`;
+            }
+            return match;
+        });
+    };
+
+    translateAttribute('data-i18n-alt', 'alt');
+    translateAttribute('data-i18n-aria-label', 'aria-label');
 
     return html;
 }
@@ -111,8 +140,103 @@ function fixPaths(html) {
         .replace(/href="assets\//g, 'href="/assets/')
         .replace(/src="assets\//g, 'src="/assets/')
         .replace(/href="styles\.css/g, 'href="/styles.css')
+        .replace(/src="analytics\.js/g, 'src="/analytics.js')
         .replace(/src="reveal\.js/g, 'src="/reveal.js')
         .replace(/src="icons\.js/g, 'src="/icons.js');
+}
+
+function buildStructuredData(page, locale, translations, fallback) {
+    const canonicalUrl = buildCanonicalUrl(locale, page);
+
+    if (page === 'index.html') {
+        const title = stripHTML(getTranslation(translations, fallback, 'hero.mainTitle'));
+        const description = stripHTML(getTranslation(translations, fallback, 'hero.mainSubtitle'));
+        const premiumFeatures = [
+            getTranslation(translations, fallback, 'pricing.aiStyleAssistant'),
+            getTranslation(translations, fallback, 'pricing.outfits'),
+            getTranslation(translations, fallback, 'pricing.calendarTracking')
+        ].map(stripHTML).join(', ');
+
+        return {
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Klosyt',
+            applicationCategory: 'LifestyleApplication',
+            applicationSubCategory: 'Fashion',
+            operatingSystem: 'iOS 26, macOS 26, tvOS 26, visionOS 26',
+            offers: [
+                {
+                    '@type': 'Offer',
+                    price: '0',
+                    priceCurrency: 'USD',
+                    description: stripHTML(getTranslation(translations, fallback, 'cta.bottomDesc'))
+                },
+                {
+                    '@type': 'Offer',
+                    price: '0.99',
+                    priceCurrency: 'USD',
+                    priceSpecification: {
+                        '@type': 'UnitPriceSpecification',
+                        billingDuration: 'P1M'
+                    },
+                    description: premiumFeatures
+                }
+            ],
+            description,
+            url: canonicalUrl,
+            downloadUrl: 'https://apps.apple.com/app/klosyt/id6758277603',
+            image: `${SITE_URL}/assets/AppIcon.png`,
+            softwareVersion: '2.0',
+            datePublished: '2025-03-13',
+            author: {
+                '@type': 'Person',
+                name: 'Gregory Yuzik'
+            },
+            inLanguage: locale
+        };
+    }
+
+    if (page === 'support.html') {
+        return {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            url: canonicalUrl,
+            inLanguage: locale,
+            mainEntity: SUPPORT_FAQ_KEYS.map(([titleKey, answerKey]) => ({
+                '@type': 'Question',
+                name: stripHTML(getTranslation(translations, fallback, titleKey)),
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: stripHTML(getTranslation(translations, fallback, answerKey))
+                }
+            }))
+        };
+    }
+
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: `${stripHTML(getTranslation(translations, fallback, 'privacy.title'))} — Klosyt`,
+        url: canonicalUrl,
+        description: stripHTML(
+            `${getTranslation(translations, fallback, 'privacy.promiseText')} ${getTranslation(translations, fallback, 'privacy.promiseDetail')}`
+        ),
+        inLanguage: locale,
+        isPartOf: {
+            '@type': 'WebSite',
+            name: 'Klosyt',
+            url: `${SITE_URL}/`
+        }
+    };
+}
+
+function updateStructuredData(html, page, locale, translations, fallback) {
+    const json = indentJson(buildStructuredData(page, locale, translations, fallback));
+
+    return html.replace(
+        /<script type="application\/ld\+json">[\s\S]*?<\/script>/,
+        `<script type="application/ld+json">\n${json}\n    </script>`
+    );
 }
 
 /**
@@ -135,28 +259,18 @@ function updateMeta(html, locale, page, translations, fallback) {
         descText = descText.substring(0, 157) + '...';
     }
 
-    // Escape for HTML attributes
-    const escAttr = s => s.replace(/"/g, '&quot;');
-
     // Build page title
     const pageTitle = page === 'index.html'
         ? `Klosyt \u2014 ${titleText}`
         : `${titleText} \u2014 Klosyt`;
 
-    // Build canonical URL and the English source URL we're replacing
-    const canonicalBase = `https://klosyt.com/${locale}/`;
-    const canonicalUrl = meta.canonicalPath
-        ? canonicalBase + meta.canonicalPath
-        : canonicalBase;
-    const enCanonical = meta.canonicalPath
-        ? `https://klosyt.com/${meta.canonicalPath}`
-        : `https://klosyt.com/`;
+    const canonicalUrl = buildCanonicalUrl(locale, page);
 
     html = html.replace(/<html lang="[^"]*"/, `<html lang="${locale}"`);
     html = html.replace(/<title>[^<]*<\/title>/, `<title>${pageTitle}</title>`);
     html = html.replace(
         /<meta name="description" content="[^"]*"/,
-        `<meta name="description" content="${escAttr(descText)}"`
+        `<meta name="description" content="${escapeAttribute(descText)}"`
     );
     html = html.replace(
         /<link rel="canonical" href="[^"]*"/,
@@ -168,30 +282,87 @@ function updateMeta(html, locale, page, translations, fallback) {
     );
     html = html.replace(
         /<meta property="og:title" content="[^"]*"/,
-        `<meta property="og:title" content="${escAttr(pageTitle)}"`
+        `<meta property="og:title" content="${escapeAttribute(pageTitle)}"`
     );
     html = html.replace(
         /<meta property="og:description" content="[^"]*"/,
-        `<meta property="og:description" content="${escAttr(descText)}"`
+        `<meta property="og:description" content="${escapeAttribute(descText)}"`
     );
     html = html.replace(
         /<meta name="twitter:title" content="[^"]*"/,
-        `<meta name="twitter:title" content="${escAttr(pageTitle)}"`
+        `<meta name="twitter:title" content="${escapeAttribute(pageTitle)}"`
     );
     html = html.replace(
         /<meta name="twitter:description" content="[^"]*"/,
-        `<meta name="twitter:description" content="${escAttr(descText)}"`
+        `<meta name="twitter:description" content="${escapeAttribute(descText)}"`
     );
 
-    // Rewrite LD-JSON "url" and "inLanguage" for the target locale. Only
-    // rewrites the exact en-source URL so we don't touch downloadUrl, image,
-    // or any URL that should stay global.
-    const escapedEn = enCanonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const ldUrlRegex = new RegExp(`"url":\\s*"${escapedEn}"`);
-    html = html.replace(ldUrlRegex, `"url": "${canonicalUrl}"`);
-    html = html.replace(/"inLanguage":\s*"en"/, `"inLanguage": "${locale}"`);
-
     return html;
+}
+
+function buildSitemap() {
+    const canonicalPages = [
+        { path: '', priority: '1.0', label: 'Homepage' },
+        { path: 'support.html', priority: '0.8', label: 'Support' },
+        { path: 'privacy.html', priority: '0.6', label: 'Privacy' }
+    ];
+    const localizedPriorities = {
+        'index.html': '0.9',
+        'support.html': '0.7',
+        'privacy.html': '0.5'
+    };
+    const lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+        ''
+    ];
+
+    canonicalPages.forEach(({ path: pagePath, priority, label }, index) => {
+        const pageUrl = pagePath ? `${SITE_URL}/${pagePath}` : `${SITE_URL}/`;
+
+        lines.push(`  <!-- ${label} -->`);
+        lines.push('  <url>');
+        lines.push(`    <loc>${pageUrl}</loc>`);
+        lines.push(`    <lastmod>${LASTMOD}</lastmod>`);
+        lines.push(`    <priority>${priority}</priority>`);
+        lines.push(`    <xhtml:link rel="alternate" hreflang="en" href="${pageUrl}"/>`);
+
+        LOCALES.forEach(locale => {
+            const localizedUrl = buildCanonicalUrl(locale, pagePath || 'index.html');
+            lines.push(`    <xhtml:link rel="alternate" hreflang="${locale}" href="${localizedUrl}"/>`);
+        });
+
+        lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${pageUrl}"/>`);
+        lines.push('  </url>');
+
+        if (index < canonicalPages.length - 1) {
+            lines.push('');
+        }
+    });
+
+    lines.push('');
+    lines.push('  <!-- Localized homepages -->');
+    LOCALES.forEach(locale => {
+        lines.push(`  <url><loc>${buildCanonicalUrl(locale, 'index.html')}</loc><lastmod>${LASTMOD}</lastmod><priority>${localizedPriorities['index.html']}</priority></url>`);
+    });
+
+    lines.push('');
+    lines.push('  <!-- Localized support pages -->');
+    LOCALES.forEach(locale => {
+        lines.push(`  <url><loc>${buildCanonicalUrl(locale, 'support.html')}</loc><lastmod>${LASTMOD}</lastmod><priority>${localizedPriorities['support.html']}</priority></url>`);
+    });
+
+    lines.push('');
+    lines.push('  <!-- Localized privacy pages -->');
+    LOCALES.forEach(locale => {
+        lines.push(`  <url><loc>${buildCanonicalUrl(locale, 'privacy.html')}</loc><lastmod>${LASTMOD}</lastmod><priority>${localizedPriorities['privacy.html']}</priority></url>`);
+    });
+
+    lines.push('');
+    lines.push('</urlset>');
+
+    fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), `${lines.join('\n')}\n`, 'utf8');
 }
 
 function build() {
@@ -214,6 +385,7 @@ function build() {
             html = applyTranslations(html, translations, fallback);
             html = fixPaths(html);
             html = updateMeta(html, locale, page, translations, fallback);
+            html = updateStructuredData(html, page, locale, translations, fallback);
 
             fs.writeFileSync(path.join(outDir, page), html, 'utf8');
             totalPages++;
@@ -222,7 +394,9 @@ function build() {
         console.log(`  \u2713 ${locale}/ (${PAGES.length} pages)`);
     }
 
-    console.log(`\nDone! Generated ${totalPages} pages across ${LOCALES.length} locales.`);
+    buildSitemap();
+
+    console.log(`\nDone! Generated ${totalPages} pages across ${LOCALES.length} locales and refreshed sitemap.xml.`);
 }
 
 build();

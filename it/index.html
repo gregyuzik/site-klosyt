@@ -7,14 +7,9 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Klosyt — Il tuo armadio digitale con IA</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — cookieless, anonymized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
-    </script>
+    <script defer src="/analytics.js"></script>
     <meta name="description" content="Scatta una foto ai tuoi vestiti, lascia che l'IA li organizzi e ricevi suggerimenti outfit in base al meteo — tutto sul dispositivo e in totale privacy.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/it/">
@@ -28,7 +23,6 @@
     <link rel="canonical" href="https://klosyt.com/it/">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
@@ -66,7 +60,7 @@
                 "@type": "Offer",
                 "price": "0",
                 "priceCurrency": "USD",
-                "description": "Free tier with unlimited wardrobe storage"
+                "description": "Gratis per iniziare. Archiviazione illimitata. Sempre privato."
             },
             {
                 "@type": "Offer",
@@ -76,10 +70,10 @@
                     "@type": "UnitPriceSpecification",
                     "billingDuration": "P1M"
                 },
-                "description": "Klosyt+ with AI Stylist, Outfits, and Calendar"
+                "description": "Assistente stile IA, Outfit, Calendario"
             }
         ],
-        "description": "AI-powered digital closet and outfit planner. Organize your wardrobe, get weather-smart outfit suggestions, and track what you wear — all on-device and completely private.",
+        "description": "Scatta una foto ai tuoi vestiti, lascia che l'IA li organizzi e ricevi suggerimenti outfit in base al meteo — tutto sul dispositivo e in totale privacy.",
         "url": "https://klosyt.com/it/",
         "downloadUrl": "https://apps.apple.com/app/klosyt/id6758277603",
         "image": "https://klosyt.com/assets/AppIcon.png",
@@ -89,18 +83,18 @@
             "@type": "Person",
             "name": "Gregory Yuzik"
         },
-        "inLanguage": ["en", "zh-Hans", "zh-Hant", "da", "nl", "fr", "de", "it", "ja", "ko", "nb", "pt-BR", "es", "sv", "tr", "vi"]
+        "inLanguage": "it"
     }
     </script>
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="common.skipToContent">Vai al contenuto</a>
 
 <!-- Nav -->
 <header class="nav-wrap">
     <nav class="glass nav-bar">
-        <a href="index.html" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="/assets/AppIcon.png?v=20260413" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
@@ -131,7 +125,7 @@
 <!-- Features -->
 <section class="section" aria-labelledby="features-title">
     <div class="wrap">
-        <h2 id="features-title" class="sr-only">Features</h2>
+        <h2 id="features-title" class="sr-only" data-i18n="index.featuresTitle">Funzionalità</h2>
         <div class="features-grid fade-up">
             <div class="glass feature-card">
                 <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
@@ -158,7 +152,7 @@
                 <span class="feature-icon" style="--c:#34c759;--bg:rgba(52,199,89,.14)" aria-hidden="true">🔐</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.privacyTitle">Privato per natura</h3>
-                    <p data-i18n="features.privacyDesc">Tutto funziona sul dispositivo. I tuoi dati si sincronizzano solo con il tuo iCloud — mai condivisi con nessuno.</p>
+                    <p data-i18n="features.privacyDesc">Tutto avviene sul dispositivo. I tuoi dati si sincronizzano solo con il tuo iCloud e non vengono mai condivisi con nessuno. Nessuna analisi nell'app, nessun tracciamento nell'app, nessuna pubblicità: il tuo armadio virtuale resta completamente privato.</p>
                 </div>
             </div>
             <div class="glass feature-card">
@@ -184,7 +178,7 @@
 <!-- Pricing -->
 <section id="pricing" class="section" aria-labelledby="pricing-title">
     <div class="wrap tc">
-        <h2 id="pricing-title" class="sr-only">Klosyt+ Pricing</h2>
+        <h2 id="pricing-title" class="sr-only" data-i18n="index.pricingTitle">Prezzi Klosyt+</h2>
         <div class="glass price-card fade-up">
             <div class="price-head">
                 <span class="price-badge">Klosyt+</span>
@@ -224,7 +218,7 @@
 <hr class="divider" aria-hidden="true">
 
 <!-- Bottom CTA -->
-<section class="bottom-cta" aria-label="Get Klosyt">
+<section class="bottom-cta" aria-label="Scarica Klosyt" data-i18n-aria-label="index.bottomAriaLabel">
     <div class="wrap tc fade-up">
         <h2 data-i18n="cta.bottomTitle">Pronto a organizzare il tuo armadio?</h2>
         <p data-i18n="cta.bottomDesc">Gratis per iniziare. Archiviazione illimitata. Sempre privato.</p>
@@ -240,7 +234,7 @@
 <footer class="foot">
     <div class="wrap tc">
         <div class="foot-links">
-            <a href="index.html" data-i18n="footer.home">Home</a>
+            <a href="./" data-i18n="footer.home">Home</a>
             <a href="support.html" data-i18n="footer.support">Assistenza</a>
             <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
             <a href="https://vultyr.app" target="_blank" rel="noopener noreferrer" data-i18n="footer.vultyr">Vultyr</a>

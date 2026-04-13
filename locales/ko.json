@@ -16,7 +16,7 @@
     "calendarTitle": "캘린더",
     "calendarDesc": "매일 입은 옷을 기록하세요. 패턴이 보이고, 실수로 코디를 반복할 일이 없습니다.",
     "privacyTitle": "프라이버시 설계",
-    "privacyDesc": "모든 처리는 기기 내에서. 데이터는 나의 iCloud에만 동기화 — 누구와도 공유되지 않습니다.",
+    "privacyDesc": "모든 것은 기기에서 실행됩니다. 데이터는 사용자의 iCloud에만 동기화되며 누구와도 공유되지 않습니다. 앱 분석 없음, 앱 추적 없음, 광고 없음으로 가상 옷장은 완전히 비공개로 유지됩니다.",
     "syncTitle": "어디서나 동기화",
     "syncDesc": "iCloud가 모든 Apple 기기에서 옷장을 즉시 자동으로 동기화.",
     "filtersTitle": "스마트 필터",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "앱 사용 방식을 추적하지 않습니다.",
     "tableAds": "광고 데이터",
     "tableAdsDetail": "Klosyt에는 광고가 없고 광고 SDK도 없습니다.",
-    "noTrackingTitle": "추적 없음. 분석 없음. 예외 없음.",
-    "noTrackingText": "Klosyt에는 <strong>제로</strong> 분석 프레임워크, <strong>제로</strong> 광고 SDK, <strong>제로</strong> 트래킹 기술이 포함되어 있습니다. 앱이나 웹사이트 간에 추적하지 않습니다. 프로필을 만들지 않습니다. 데이터를 판매하지 않습니다 — 판매할 데이터가 없으니까요.",
+    "noTrackingTitle": "앱 추적 없음. 앱 분석 없음.",
+    "noTrackingText": "Klosyt 앱 자체에는 <strong>0</strong>개의 분석 프레임워크, <strong>0</strong>개의 광고 SDK, <strong>0</strong>개의 추적 기술이 포함됩니다. 우리는 앱 사용 방식을 추적하지 않고, 광고 프로필을 만들지 않으며, 판매할 데이터도 없기 때문에 데이터를 판매하지 않습니다.",
     "diagnosticsTitle": "유일한 예외: 자발적 진단",
     "diagnosticsText": "문제가 발생하여 지원을 요청하기로 선택한 경우, 앱 내 진단 공유 기능을 사용하여 보고서를 보낼 수 있습니다. 이 보고서에는 기기 모델, OS 버전, 앱 버전, 저장 통계가 포함될 수 있습니다. <strong>이는 명시적으로 공유를 선택한 경우에만 발생합니다.</strong> 이 정보는 문제 해결에만 사용하며 그 이상 보관하지 않습니다.",
     "dataYoursTitle": "데이터는 당신의 것",
@@ -100,7 +100,7 @@
     "internationalGdpr": "유럽 경제 지역(EEA) 사용자의 경우 이러한 권리는 일반 데이터 보호 규정(GDPR)에 의해 보장됩니다. 브라질 사용자의 경우 Lei Geral de Proteção de Dados(LGPD)에 의해 제공됩니다. Klosyt은 개인 데이터를 수집하지 않으므로 데이터 처리 계약이나 처리의 법적 근거가 필요하지 않습니다.",
     "internationalDpo": "개인정보 관련 문의는 <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>으로 연락하세요.",
     "websiteAnalyticsTitle": "웹사이트 분석",
-    "websiteAnalyticsText": "본 웹사이트(klosyt.com)는 페이지 조회수, 유입 경로, 대략적인 지역 등의 익명 사용 데이터를 수집하기 위해 Google Analytics를 사용합니다. 이 데이터는 방문자가 웹사이트를 어떻게 찾고 사용하는지 이해하는 데 도움이 됩니다. Google Analytics는 쿠키를 사용할 수 있으며 <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google 개인정보 보호정책</a>에 따라 정보를 수집합니다. 이 추적은 웹사이트에만 적용됩니다 — Klosyt 앱 자체에는 어떠한 분석이나 추적도 포함되어 있지 않습니다.",
+    "websiteAnalyticsText": "이 웹사이트(klosyt.com)는 집계된 페이지 조회 수를 계산하기 위해 쿠키 없는 IP 익명화 모드의 Google Analytics 4를 사용합니다. gtag.js는 <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code>, <code>allow_ad_personalization_signals: false</code>로 설정됩니다. 즉 <code>_ga</code> 쿠키가 설정되지 않고 광고 식별자도 수집되지 않습니다. Klosyt 앱 자체에는 분석 기능이 없습니다.",
     "changesTitle": "정책 변경",
     "changesText": "본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 위의 \"최종 업데이트\" 날짜 업데이트로 반영됩니다. 변경 후 앱을 계속 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다.",
     "contactTitle": "문의하기",
@@ -219,6 +219,12 @@
     "contactDesc": "도움이 필요하시면 연락주세요."
   },
   "index": {
-    "languagesTitle": "16개 언어로 이용 가능"
+    "languagesTitle": "16개 언어로 이용 가능",
+    "featuresTitle": "기능",
+    "pricingTitle": "Klosyt+ 요금",
+    "bottomAriaLabel": "Klosyt 받기"
+  },
+  "common": {
+    "skipToContent": "본문으로 건너뛰기"
   }
 }

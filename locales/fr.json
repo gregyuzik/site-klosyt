@@ -16,7 +16,7 @@
     "calendarTitle": "Calendrier",
     "calendarDesc": "Notez ce que vous portez chaque jour. Repérez les tendances et ne répétez jamais une tenue par accident.",
     "privacyTitle": "Conçu pour la confidentialité",
-    "privacyDesc": "Tout fonctionne sur l'appareil. Vos données se synchronisent uniquement avec votre iCloud — jamais partagées avec quiconque.",
+    "privacyDesc": "Tout fonctionne sur l'appareil. Vos données se synchronisent uniquement avec votre iCloud et ne sont jamais partagées avec qui que ce soit. Aucune analyse dans l'app, aucun suivi dans l'app, aucune publicité — votre dressing virtuel reste totalement privé.",
     "syncTitle": "Synchronisé partout",
     "syncDesc": "iCloud garde votre dressing synchronisé sur tous vos appareils Apple, instantanément et automatiquement.",
     "filtersTitle": "Filtres intelligents",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "Nous ne suivons pas la façon dont vous utilisez l'app.",
     "tableAds": "Données publicitaires",
     "tableAdsDetail": "Il n'y a aucune publicité dans Klosyt et aucun SDK publicitaire.",
-    "noTrackingTitle": "Pas de suivi. Pas d'analyse. Pas d'exception.",
-    "noTrackingText": "Klosyt contient <strong>zéro</strong> framework d'analyse, <strong>zéro</strong> SDK publicitaire et <strong>zéro</strong> technologie de suivi. Nous ne vous suivons pas entre les apps ou les sites web. Nous ne construisons pas de profils. Nous ne vendons pas de données — car nous n'en avons aucune.",
+    "noTrackingTitle": "Aucun suivi dans l'app. Aucune analyse dans l'app.",
+    "noTrackingText": "L'application Klosyt contient <strong>zéro</strong> framework d'analyse, <strong>zéro</strong> SDK publicitaire et <strong>zéro</strong> technologie de suivi. Nous ne suivons pas votre usage de l'app, ne construisons pas de profils publicitaires et ne vendons pas de données — car nous n'en avons aucune à vendre.",
     "diagnosticsTitle": "La seule exception : les diagnostics volontaires",
     "diagnosticsText": "Si vous rencontrez un problème et choisissez de nous contacter pour obtenir de l'aide, vous pouvez utiliser la fonction de partage de diagnostics intégrée à l'app pour nous envoyer un rapport. Ce rapport peut inclure votre modèle d'appareil, la version du système d'exploitation, la version de l'app et des statistiques de stockage. <strong>Cela ne se produit que lorsque vous choisissez explicitement de le partager.</strong> Nous utilisons ces informations uniquement pour résoudre votre problème et ne les conservons pas au-delà.",
     "dataYoursTitle": "Vos données vous appartiennent",
@@ -100,7 +100,7 @@
     "internationalGdpr": "Pour les utilisateurs de l'Espace économique européen (EEE), ces droits sont garantis par le Règlement général sur la protection des données (RGPD). Pour les utilisateurs au Brésil, ces droits sont prévus par la Lei Geral de Proteção de Dados (LGPD). Klosyt ne collectant aucune donnée personnelle, aucun accord de traitement des données ni aucune base juridique pour le traitement n'est requis.",
     "internationalDpo": "Pour toute question relative à la confidentialité, contactez-nous à <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
     "websiteAnalyticsTitle": "Analyse du site web",
-    "websiteAnalyticsText": "Ce site web (klosyt.com) utilise Google Analytics pour collecter des données d'utilisation anonymes telles que les pages vues, les sources de référencement et la région géographique générale. Ces données nous aident à comprendre comment les visiteurs trouvent et utilisent notre site. Google Analytics peut utiliser des cookies et collecte des informations conformément à la <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Politique de confidentialité de Google</a>. Ce suivi s'applique uniquement au site web — l'application Klosyt elle-même ne contient aucune analyse ni aucun suivi d'aucune sorte.",
+    "websiteAnalyticsText": "Ce site web (klosyt.com) utilise Google Analytics 4 dans un mode sans cookie et avec anonymisation de l'IP pour compter les pages vues agrégées. Nous configurons gtag.js avec <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> et <code>allow_ad_personalization_signals: false</code>. Cela signifie qu'aucun cookie <code>_ga</code> n'est défini et qu'aucun identifiant publicitaire n'est collecté. L'application Klosyt elle-même ne contient aucune analyse.",
     "changesTitle": "Modifications de cette politique",
     "changesText": "Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. Les modifications seront indiquées par la mise à jour de la date « Dernière mise à jour » ci-dessus. L'utilisation continue de l'app après les modifications constitue l'acceptation de la politique mise à jour.",
     "contactTitle": "Nous contacter",
@@ -219,6 +219,12 @@
     "contactDesc": "Nous sommes là pour vous aider. Contactez-nous à"
   },
   "index": {
-    "languagesTitle": "Disponible en 16 langues"
+    "languagesTitle": "Disponible en 16 langues",
+    "featuresTitle": "Fonctionnalités",
+    "pricingTitle": "Tarifs Klosyt+",
+    "bottomAriaLabel": "Télécharger Klosyt"
+  },
+  "common": {
+    "skipToContent": "Aller au contenu"
   }
 }

@@ -7,14 +7,9 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Klosyt — AIが支える デジタルクローゼット</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — cookieless, anonymized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
-    </script>
+    <script defer src="/analytics.js"></script>
     <meta name="description" content="服を撮影するだけでAIが自動整理。天気に合わせたコーディネート提案まで、すべてデバイス上で完結。プライバシーも安心。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/ja/">
@@ -28,7 +23,6 @@
     <link rel="canonical" href="https://klosyt.com/ja/">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
@@ -66,7 +60,7 @@
                 "@type": "Offer",
                 "price": "0",
                 "priceCurrency": "USD",
-                "description": "Free tier with unlimited wardrobe storage"
+                "description": "無料で始められます。無制限のワードローブ容量。常にプライベート。"
             },
             {
                 "@type": "Offer",
@@ -76,10 +70,10 @@
                     "@type": "UnitPriceSpecification",
                     "billingDuration": "P1M"
                 },
-                "description": "Klosyt+ with AI Stylist, Outfits, and Calendar"
+                "description": "AIスタイルアシスタント, コーディネート, カレンダー追跡"
             }
         ],
-        "description": "AI-powered digital closet and outfit planner. Organize your wardrobe, get weather-smart outfit suggestions, and track what you wear — all on-device and completely private.",
+        "description": "服を撮影するだけでAIが自動整理。天気に合わせたコーディネート提案まで、すべてデバイス上で完結。プライバシーも安心。",
         "url": "https://klosyt.com/ja/",
         "downloadUrl": "https://apps.apple.com/app/klosyt/id6758277603",
         "image": "https://klosyt.com/assets/AppIcon.png",
@@ -89,18 +83,18 @@
             "@type": "Person",
             "name": "Gregory Yuzik"
         },
-        "inLanguage": ["en", "zh-Hans", "zh-Hant", "da", "nl", "fr", "de", "it", "ja", "ko", "nb", "pt-BR", "es", "sv", "tr", "vi"]
+        "inLanguage": "ja"
     }
     </script>
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="common.skipToContent">コンテンツへスキップ</a>
 
 <!-- Nav -->
 <header class="nav-wrap">
     <nav class="glass nav-bar">
-        <a href="index.html" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="/assets/AppIcon.png?v=20260413" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
@@ -131,7 +125,7 @@
 <!-- Features -->
 <section class="section" aria-labelledby="features-title">
     <div class="wrap">
-        <h2 id="features-title" class="sr-only">Features</h2>
+        <h2 id="features-title" class="sr-only" data-i18n="index.featuresTitle">機能</h2>
         <div class="features-grid fade-up">
             <div class="glass feature-card">
                 <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
@@ -158,7 +152,7 @@
                 <span class="feature-icon" style="--c:#34c759;--bg:rgba(52,199,89,.14)" aria-hidden="true">🔐</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.privacyTitle">プライバシー設計</h3>
-                    <p data-i18n="features.privacyDesc">すべてデバイス上で動作。データはあなたのiCloudにのみ同期 — 誰とも共有されません。</p>
+                    <p data-i18n="features.privacyDesc">すべてはデバイス上で動作します。あなたのデータは iCloud にのみ同期され、他者と共有されることはありません。アプリ内分析なし、アプリ内追跡なし、広告なしで、あなたのクローゼットは完全にプライベートなままです。</p>
                 </div>
             </div>
             <div class="glass feature-card">
@@ -184,7 +178,7 @@
 <!-- Pricing -->
 <section id="pricing" class="section" aria-labelledby="pricing-title">
     <div class="wrap tc">
-        <h2 id="pricing-title" class="sr-only">Klosyt+ Pricing</h2>
+        <h2 id="pricing-title" class="sr-only" data-i18n="index.pricingTitle">Klosyt+の料金</h2>
         <div class="glass price-card fade-up">
             <div class="price-head">
                 <span class="price-badge">Klosyt+</span>
@@ -224,7 +218,7 @@
 <hr class="divider" aria-hidden="true">
 
 <!-- Bottom CTA -->
-<section class="bottom-cta" aria-label="Get Klosyt">
+<section class="bottom-cta" aria-label="Klosytを入手" data-i18n-aria-label="index.bottomAriaLabel">
     <div class="wrap tc fade-up">
         <h2 data-i18n="cta.bottomTitle">クローゼットを整理する準備はできましたか？</h2>
         <p data-i18n="cta.bottomDesc">無料で始められます。無制限のワードローブ容量。常にプライベート。</p>
@@ -240,7 +234,7 @@
 <footer class="foot">
     <div class="wrap tc">
         <div class="foot-links">
-            <a href="index.html" data-i18n="footer.home">ホーム</a>
+            <a href="./" data-i18n="footer.home">ホーム</a>
             <a href="support.html" data-i18n="footer.support">サポート</a>
             <a href="privacy.html" data-i18n="footer.privacy">プライバシー</a>
             <a href="https://vultyr.app" target="_blank" rel="noopener noreferrer" data-i18n="footer.vultyr">Vultyr</a>

@@ -7,14 +7,9 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Klosyt — Your AI Closet</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — cookieless, anonymized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BV6VFZR2YM');
-    </script>
+    <script defer src="analytics.js"></script>
     <meta name="description" content="Klosyt is the ultimate AI closet app. Organize, style, and track your clothing seamlessly.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/">
@@ -28,7 +23,6 @@
     <link rel="canonical" href="https://klosyt.com/">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="icon" type="image/png" href="assets/AppIcon.png?v=20260413">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="assets/AppIcon.png?v=20260413">
@@ -89,18 +83,18 @@
             "@type": "Person",
             "name": "Gregory Yuzik"
         },
-        "inLanguage": ["en", "zh-Hans", "zh-Hant", "da", "nl", "fr", "de", "it", "ja", "ko", "nb", "pt-BR", "es", "sv", "tr", "vi"]
+        "inLanguage": "en"
     }
     </script>
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="common.skipToContent">Skip to content</a>
 
 <!-- Nav -->
 <header class="nav-wrap">
     <nav class="glass nav-bar">
-        <a href="index.html" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="assets/AppIcon.png?v=20260413" alt="Klosyt" class="nav-icon" width="28" height="28">
             <span>Klosyt</span>
         </a>
@@ -131,7 +125,7 @@
 <!-- Features -->
 <section class="section" aria-labelledby="features-title">
     <div class="wrap">
-        <h2 id="features-title" class="sr-only">Features</h2>
+        <h2 id="features-title" class="sr-only" data-i18n="index.featuresTitle">Features</h2>
         <div class="features-grid fade-up">
             <div class="glass feature-card">
                 <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
@@ -184,7 +178,7 @@
 <!-- Pricing -->
 <section id="pricing" class="section" aria-labelledby="pricing-title">
     <div class="wrap tc">
-        <h2 id="pricing-title" class="sr-only">Klosyt+ Pricing</h2>
+        <h2 id="pricing-title" class="sr-only" data-i18n="index.pricingTitle">Klosyt+ Pricing</h2>
         <div class="glass price-card fade-up">
             <div class="price-head">
                 <span class="price-badge">Klosyt+</span>
@@ -224,7 +218,7 @@
 <hr class="divider" aria-hidden="true">
 
 <!-- Bottom CTA -->
-<section class="bottom-cta" aria-label="Get Klosyt">
+<section class="bottom-cta" aria-label="Get Klosyt" data-i18n-aria-label="index.bottomAriaLabel">
     <div class="wrap tc fade-up">
         <h2 data-i18n="cta.bottomTitle">Ready to organize your closet?</h2>
         <p data-i18n="cta.bottomDesc">Free to start. Unlimited wardrobe storage. Always private.</p>
@@ -240,7 +234,7 @@
 <footer class="foot">
     <div class="wrap tc">
         <div class="foot-links">
-            <a href="index.html" data-i18n="footer.home">Home</a>
+            <a href="./" data-i18n="footer.home">Home</a>
             <a href="support.html" data-i18n="footer.support">Support</a>
             <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
             <a href="https://vultyr.app" target="_blank" rel="noopener noreferrer" data-i18n="footer.vultyr">Vultyr</a>

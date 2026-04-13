@@ -16,7 +16,7 @@
     "calendarTitle": "Takvim",
     "calendarDesc": "Her gün ne giydiğini kaydet. Kalıpların ortaya çıkmasını izle ve bir kombini yanlışlıkla tekrarlama.",
     "privacyTitle": "Tasarımdan Gizli",
-    "privacyDesc": "Her şey cihazında çalışır. Verilerin yalnızca senin iCloud'una senkronize olur — kimseyle paylaşılmaz.",
+    "privacyDesc": "Her şey cihaz üzerinde çalışır. Verileriniz yalnızca iCloud hesabınızla eşitlenir ve asla kimseyle paylaşılmaz. Uygulama içi analiz yok, uygulama içi izleme yok, reklam yok — sanal dolabınız tamamen özel kalır.",
     "syncTitle": "Her Yerde Senkronize",
     "syncDesc": "iCloud gardırobunu tüm Apple cihazlarında senkronize tutar, anında ve otomatik olarak.",
     "filtersTitle": "Akıllı Filtreler",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "Uygulamayı nasıl kullandığınızı takip etmeyiz.",
     "tableAds": "Reklam Verileri",
     "tableAdsDetail": "Klosyt'ta reklam yoktur ve reklam SDK'ları yoktur.",
-    "noTrackingTitle": "Takip Yok. Analiz Yok. İstisna Yok.",
-    "noTrackingText": "Klosyt <strong>sıfır</strong> analiz çerçevesi, <strong>sıfır</strong> reklam SDK'sı ve <strong>sıfır</strong> takip teknolojisi içerir. Sizi uygulamalar veya web siteleri arasında takip etmeyiz. Profil oluşturmayız. Veri satmayız — çünkü bizde veri yok.",
+    "noTrackingTitle": "Uygulamada izleme yok. Uygulamada analiz yok.",
+    "noTrackingText": "Klosyt uygulamasının kendisi <strong>sıfır</strong> analiz çerçevesi, <strong>sıfır</strong> reklam SDK'sı ve <strong>sıfır</strong> izleme teknolojisi içerir. Uygulamayı nasıl kullandığınızı izlemeyiz, reklam profilleri oluşturmayız ve satacak verimiz olmadığı için veri satmayız.",
     "diagnosticsTitle": "Tek İstisna: Gönüllü Tanılama",
     "diagnosticsText": "Bir sorunla karşılaşır ve destek için bizimle iletişime geçmeyi seçerseniz, uygulama içi tanılama paylaşım özelliğini kullanarak bize bir rapor gönderebilirsiniz. Bu rapor cihaz modelinizi, işletim sistemi sürümünüzü, uygulama sürümünüzü ve depolama istatistiklerinizi içerebilir. <strong>Bu sadece açıkça paylaşmayı seçtiğinizde gerçekleşir.</strong> Bu bilgileri yalnızca sorunuzu gidermek için kullanırız ve bunun ötesinde saklamayız.",
     "dataYoursTitle": "Verileriniz Sizindir",
@@ -99,8 +99,8 @@
     "internationalObjection": "<strong>İtiraz Hakkı</strong> — Verileriniz üzerinde herhangi bir işlem yapmadığımız için itiraz edilecek bir şey yoktur.",
     "internationalGdpr": "Avrupa Ekonomik Alanı'ndaki (AEA) kullanıcılar için bu haklar Genel Veri Koruma Tüzüğü (GDPR) tarafından garanti edilir. Brezilya'daki kullanıcılar için bu haklar Lei Geral de Proteção de Dados (LGPD) tarafından sağlanır. Klosyt kişisel veri toplamadığı için veri işleme anlaşması veya işleme için yasal dayanak gerekmez.",
     "internationalDpo": "Gizlilikle ilgili sorularınız için <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a> adresinden bize ulaşın.",
-    "websiteAnalyticsTitle": "Web Sitesi Analitiği",
-    "websiteAnalyticsText": "Bu web sitesi (klosyt.com), sayfa görüntülemeleri, yönlendirme kaynakları ve genel coğrafi bölge gibi anonim kullanım verilerini toplamak için Google Analytics kullanmaktadır. Bu veriler, ziyaretçilerin web sitemizi nasıl bulduğunu ve kullandığını anlamamıza yardımcı olur. Google Analytics çerezler kullanabilir ve <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Google'ın Gizlilik Politikası</a>'na uygun olarak bilgi toplar. Bu takip yalnızca web sitesi için geçerlidir — Klosyt uygulamasının kendisi hiçbir analitik veya takip içermemektedir.",
+    "websiteAnalyticsTitle": "Web sitesi analitiği",
+    "websiteAnalyticsText": "Bu web sitesi (klosyt.com), toplu sayfa görüntülemelerini saymak için çerezsiz ve IP anonimleştirilmiş modda Google Analytics 4 kullanır. gtag.js'i <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> ve <code>allow_ad_personalization_signals: false</code> ile yapılandırıyoruz. Bu, <code>_ga</code> çerezinin ayarlanmadığı ve reklam tanımlayıcılarının toplanmadığı anlamına gelir. Klosyt uygulamasının kendisi analitik içermez.",
     "changesTitle": "Politika Değişiklikleri",
     "changesText": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler yukarıdaki \"Son güncelleme\" tarihinin güncellenmesiyle yansıtılacaktır. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz güncellenen politikanın kabulünü oluşturur.",
     "contactTitle": "Bize Ulaşın",
@@ -219,6 +219,12 @@
     "contactDesc": "Yardımcı olmak için buradayız. Bize ulaşın:"
   },
   "index": {
-    "languagesTitle": "16 dilde kullanılabilir"
+    "languagesTitle": "16 dilde kullanılabilir",
+    "featuresTitle": "Özellikler",
+    "pricingTitle": "Klosyt+ Fiyatlandırması",
+    "bottomAriaLabel": "Klosyt'yi indirin"
+  },
+  "common": {
+    "skipToContent": "İçeriğe atla"
   }
 }

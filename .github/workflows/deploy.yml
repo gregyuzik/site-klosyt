@@ -19,6 +19,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Regenerate localized pages and sitemap
+        run: node build-i18n.js
+
+      - name: Validate site output
+        run: node scripts/validate-site.js
+
+      - name: Ensure generated files are committed
+        run: git diff --exit-code
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

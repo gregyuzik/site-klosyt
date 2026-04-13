@@ -16,7 +16,7 @@
     "calendarTitle": "Kalender",
     "calendarDesc": "Logga vad du bär varje dag. Se mönster växa fram och undvik att upprepa en outfit av misstag.",
     "privacyTitle": "Privat från grunden",
-    "privacyDesc": "Allt körs på enheten. Din data synkroniseras bara till din iCloud — delas aldrig med någon.",
+    "privacyDesc": "Allt körs på enheten. Dina data synkas bara till ditt iCloud och delas aldrig med någon annan. Ingen appanalys, ingen appspårning, inga annonser — din virtuella garderob förblir helt privat.",
     "syncTitle": "Synkroniserad överallt",
     "syncDesc": "iCloud håller din garderob synkroniserad på alla Apple-enheter, direkt och automatiskt.",
     "filtersTitle": "Smarta filter",
@@ -69,8 +69,8 @@
     "tableAnalyticsDetail": "Vi spårar inte hur du använder appen.",
     "tableAds": "Annonsdata",
     "tableAdsDetail": "Det finns inga annonser i Klosyt och inga annons-SDKer.",
-    "noTrackingTitle": "Ingen spårning. Ingen analys. Inga undantag.",
-    "noTrackingText": "Klosyt innehåller <strong>noll</strong> analysramverk, <strong>noll</strong> annons-SDKer och <strong>noll</strong> spårningsteknologier. Vi spårar dig inte över appar eller webbplatser. Vi bygger inte profiler. Vi säljer inte data — för vi har inga.",
+    "noTrackingTitle": "Ingen appspårning. Ingen appanalys.",
+    "noTrackingText": "Klosyt-appen innehåller <strong>noll</strong> analysramverk, <strong>noll</strong> annons-SDK:er och <strong>noll</strong> spårningstekniker. Vi spårar inte hur du använder appen, bygger inga annonsprofiler och säljer inga data — eftersom vi inte har några att sälja.",
     "diagnosticsTitle": "Det enda undantaget: Frivillig diagnostik",
     "diagnosticsText": "Om du stöter på ett problem och väljer att kontakta oss för support kan du använda diagnostikdelningsfunktionen i appen för att skicka oss en rapport. Denna rapport kan inkludera enhetsmodell, OS-version, appversion och lagringsstatistik. <strong>Detta sker bara när du uttryckligen väljer att dela.</strong> Vi använder denna information uteslutande för felsökning och behåller den inte utöver det.",
     "dataYoursTitle": "Dina data tillhör dig",
@@ -100,7 +100,7 @@
     "internationalGdpr": "För användare inom Europeiska ekonomiska samarbetsområdet (EES) garanteras dessa rättigheter av dataskyddsförordningen (GDPR). För användare i Brasilien tillhandahålls dessa rättigheter av Lei Geral de Proteção de Dados (LGPD). Eftersom Klosyt inte samlar in personuppgifter behövs inget personuppgiftsbiträdesavtal eller rättslig grund för bearbetning.",
     "internationalDpo": "För integritetsrelaterade förfrågningar, kontakta oss på <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>.",
     "websiteAnalyticsTitle": "Webbplatsanalys",
-    "websiteAnalyticsText": "Denna webbplats (klosyt.com) använder Google Analytics för att samla in anonym användningsdata som sidvisningar, hänvisningskällor och allmän geografisk region. Dessa data hjälper oss att förstå hur besökare hittar och använder vår webbplats. Google Analytics kan använda cookies och samlar in information i enlighet med <a href=\"https://policies.google.com/privacy\" style=\"color: var(--accent-color);\">Googles integritetspolicy</a>. Denna spårning gäller bara för webbplatsen — själva Klosyt-appen innehåller ingen analys eller spårning av något slag.",
+    "websiteAnalyticsText": "Den här webbplatsen (klosyt.com) använder Google Analytics 4 i ett cookiefritt, IP-anonymiserat läge för att räkna aggregerade sidvisningar. Vi konfigurerar gtag.js med <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> och <code>allow_ad_personalization_signals: false</code>. Det betyder att ingen <code>_ga</code>-cookie sätts och att inga annonseringsidentifierare samlas in. Själva Klosyt-appen innehåller ingen analys.",
     "changesTitle": "Ändringar av denna policy",
     "changesText": "Vi kan uppdatera denna integritetspolicy från tid till annan. Ändringar kommer att återspeglas genom att uppdatera datumet \"Senast uppdaterad\" ovan. Fortsatt användning av appen efter ändringar utgör godkännande av den uppdaterade policyn.",
     "contactTitle": "Kontakta oss",
@@ -219,6 +219,12 @@
     "contactDesc": "Vi är här för att hjälpa. Kontakta oss på"
   },
   "index": {
-    "languagesTitle": "Tillgänglig på 16 språk"
+    "languagesTitle": "Tillgänglig på 16 språk",
+    "featuresTitle": "Funktioner",
+    "pricingTitle": "Klosyt+-priser",
+    "bottomAriaLabel": "Hämta Klosyt"
+  },
+  "common": {
+    "skipToContent": "Hoppa till innehållet"
   }
 }
