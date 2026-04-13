@@ -10,12 +10,8 @@
     {
       "src": "/assets/AppIcon.png",
       "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/favicon.png",
-      "sizes": "256x256",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
