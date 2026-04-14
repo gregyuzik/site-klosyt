@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
     <title>プライバシーポリシー — Klosyt</title>
-    <!-- Google tag (gtag.js) — cookieless, anonymized -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
     <script defer src="/analytics.js"></script>
     <meta name="description" content="あなたのプライバシーはKlosytの単なる機能ではなく、基盤です。私たちはあなたの個人データを収集、保存、送信、またはアクセスすることは一切ありません。以上。">
@@ -15,7 +14,6 @@
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/ja/privacy.html">
@@ -46,7 +44,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/privacy.html">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=46">
+    <link rel="stylesheet" href="/styles.css?v=47">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -171,7 +169,7 @@
 
         <div class="glass legal-card fade-up">
             <h2 data-i18n="privacy.websiteAnalyticsTitle">ウェブサイト分析</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">このウェブサイト（klosyt.com）は、集計されたページビューを数えるために、Cookie を使用しない IP 匿名化モードの Google Analytics 4 を使用しています。gtag.js は <code>anonymize_ip: true</code>、<code>client_storage: 'none'</code>、<code>allow_google_signals: false</code>、<code>allow_ad_personalization_signals: false</code> で設定されています。つまり <code>_ga</code> Cookie は設定されず、広告識別子も収集されません。Klosyt アプリ自体には分析機能は含まれていません。</p>
+            <p data-i18n="privacy.websiteAnalyticsText">このウェブサイト（klosyt.com）は、集計されたページビューを数えるために、Cookie を使用しない IP 匿名化モードの Google Analytics 4 を使用しています。gtag.js は <code>client_storage: 'none'</code>、<code>allow_google_signals: false</code>、<code>allow_ad_personalization_signals: false</code> で設定されています。つまり <code>_ga</code> Cookie は設定されず、広告識別子も収集されません。Klosyt アプリ自体には分析機能は含まれていません。</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">ポリシーの変更</h2><p data-i18n="privacy.changesText">このプライバシーポリシーを随時更新する場合があります。変更は上記の「最終更新」日の更新により反映されます。変更後もアプリの使用を続けることは、更新されたポリシーの受諾を意味します。</p></div>

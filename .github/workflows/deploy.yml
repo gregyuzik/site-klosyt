@@ -28,10 +28,27 @@ jobs:
       - name: Ensure generated files are committed
         run: git diff --exit-code
 
+      - name: Stage served files into _site
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='_site/' \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.claude/' \
+            --exclude='.gitignore' \
+            --exclude='.DS_Store' \
+            --exclude='build-i18n.js' \
+            --exclude='scripts/' \
+            --exclude='locales/' \
+            --exclude='node_modules/' \
+            --exclude='*.md' \
+            ./ _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     environment:
