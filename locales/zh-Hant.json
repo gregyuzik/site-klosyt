@@ -100,7 +100,7 @@
     "internationalGdpr": "對於歐洲經濟區（EEA）的使用者，這些權利受到《一般資料保護規範》（GDPR）的保障。對於巴西的使用者，這些權利由《一般資料保護法》（LGPD）提供。由於Klosyt不收集個人資料，因此不需要資料處理協議或處理的法律依據。",
     "internationalDpo": "如有任何隱私相關諮詢，請聯繫我們<a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>。",
     "websiteAnalyticsTitle": "網站分析",
-    "websiteAnalyticsText": "本網站（klosyt.com）使用 Google Analytics 4 的無 Cookie、IP 匿名化模式來統計彙總頁面瀏覽量。我們將 gtag.js 設定為 <code>anonymize_ip: true</code>、<code>client_storage: 'none'</code>、<code>allow_google_signals: false</code> 與 <code>allow_ad_personalization_signals: false</code>。這表示不會設定 <code>_ga</code> Cookie，也不會收集廣告識別資料。Klosyt App 本身不包含分析功能。",
+    "websiteAnalyticsText": "本網站（klosyt.com）使用 Google Analytics 4 的無 Cookie、IP 匿名化模式來統計彙總頁面瀏覽量。我們將 gtag.js 設定為 <code>client_storage: 'none'</code>、<code>allow_google_signals: false</code> 與 <code>allow_ad_personalization_signals: false</code>。這表示不會設定 <code>_ga</code> Cookie，也不會收集廣告識別資料。Klosyt App 本身不包含分析功能。",
     "changesTitle": "政策變更",
     "changesText": "我們可能會不時更新本隱私權政策。變更將透過更新上方的「最後更新」日期來體現。在變更後繼續使用本應用程式即表示接受更新後的政策。",
     "contactTitle": "聯絡我們",

@@ -36,6 +36,7 @@ npm-debug.log*
 # Claude Code
 .claude/
 CLAUDE.md
+.playwright-mcp/
 
 # Build artifacts
 dist/

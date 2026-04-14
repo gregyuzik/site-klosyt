@@ -76,7 +76,7 @@ For any privacy-related inquiries, contact us at [support@klosyt.com](mailto:sup
 
 ## Website Analytics
 
-This website (klosyt.com) uses Google Analytics 4 in cookieless, IP-anonymized mode to count aggregate page views. We configure gtag.js with `anonymize_ip: true`, `client_storage: 'none'`, `allow_google_signals: false`, and `allow_ad_personalization_signals: false`. This means no `_ga` cookie is set and no advertising identifiers are collected. The Klosyt app itself does not include analytics.
+This website (klosyt.com) uses Google Analytics 4 in cookieless mode to count aggregate page views. We configure gtag.js with `client_storage: 'none'`, `allow_google_signals: false`, and `allow_ad_personalization_signals: false`. GA4 anonymizes IP addresses automatically, so no `_ga` cookie is set and no advertising identifiers are collected. The Klosyt app itself does not include analytics.
 
 ## Changes to This Policy
 

@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+const SITE_URL = 'https://klosyt.com';
 const LOCALES = [
     'zh-Hans', 'zh-Hant', 'da', 'nl', 'fr', 'de',
     'it', 'ja', 'ko', 'nb', 'pt-BR', 'es', 'sv', 'tr', 'vi'
@@ -23,6 +24,19 @@ const ENGLISH_A11Y_MARKERS = [
     '>Klosyt+ Pricing<',
     'aria-label="Get Klosyt"'
 ];
+
+function expectedCanonical(relPath) {
+    if (relPath === '404.html') return null;
+
+    if (!relPath.includes('/')) {
+        return relPath === 'index.html' ? `${SITE_URL}/` : `${SITE_URL}/${relPath}`;
+    }
+
+    const [locale, page] = relPath.split('/');
+    return page === 'index.html'
+        ? `${SITE_URL}/${locale}/`
+        : `${SITE_URL}/${locale}/${page}`;
+}
 
 const errors = [];
 
@@ -95,6 +109,25 @@ for (const relPath of ALL_HTML) {
         if (schema && schema.inLanguage !== locale) {
             fail(`${relPath}: JSON-LD inLanguage should be ${locale}, found ${schema.inLanguage}`);
         }
+    }
+
+    const expected = expectedCanonical(relPath);
+    if (expected !== null) {
+        const canonicalMatch = html.match(/<link rel="canonical" href="([^"]+)"/);
+        if (!canonicalMatch) {
+            fail(`${relPath}: missing <link rel="canonical">`);
+        } else if (canonicalMatch[1] !== expected) {
+            fail(`${relPath}: canonical should be ${expected}, found ${canonicalMatch[1]}`);
+        }
+    }
+
+    const langMatch = html.match(/<html lang="([^"]+)"/);
+    if (!langMatch) {
+        fail(`${relPath}: missing <html lang="...">`);
+    } else if (locale !== 'en' && langMatch[1] !== locale) {
+        fail(`${relPath}: <html lang> should be ${locale}, found ${langMatch[1]}`);
+    } else if (locale === 'en' && langMatch[1] !== 'en') {
+        fail(`${relPath}: <html lang> should be en, found ${langMatch[1]}`);
     }
 }
 

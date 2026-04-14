@@ -100,7 +100,7 @@
     "internationalGdpr": "유럽 경제 지역(EEA) 사용자의 경우 이러한 권리는 일반 데이터 보호 규정(GDPR)에 의해 보장됩니다. 브라질 사용자의 경우 Lei Geral de Proteção de Dados(LGPD)에 의해 제공됩니다. Klosyt은 개인 데이터를 수집하지 않으므로 데이터 처리 계약이나 처리의 법적 근거가 필요하지 않습니다.",
     "internationalDpo": "개인정보 관련 문의는 <a href=\"mailto:support@klosyt.com\" style=\"color: var(--accent-color);\">support@klosyt.com</a>으로 연락하세요.",
     "websiteAnalyticsTitle": "웹사이트 분석",
-    "websiteAnalyticsText": "이 웹사이트(klosyt.com)는 집계된 페이지 조회 수를 계산하기 위해 쿠키 없는 IP 익명화 모드의 Google Analytics 4를 사용합니다. gtag.js는 <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code>, <code>allow_ad_personalization_signals: false</code>로 설정됩니다. 즉 <code>_ga</code> 쿠키가 설정되지 않고 광고 식별자도 수집되지 않습니다. Klosyt 앱 자체에는 분석 기능이 없습니다.",
+    "websiteAnalyticsText": "이 웹사이트(klosyt.com)는 집계된 페이지 조회 수를 계산하기 위해 쿠키 없는 IP 익명화 모드의 Google Analytics 4를 사용합니다. gtag.js는 <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code>, <code>allow_ad_personalization_signals: false</code>로 설정됩니다. 즉 <code>_ga</code> 쿠키가 설정되지 않고 광고 식별자도 수집되지 않습니다. Klosyt 앱 자체에는 분석 기능이 없습니다.",
     "changesTitle": "정책 변경",
     "changesText": "본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 위의 \"최종 업데이트\" 날짜 업데이트로 반영됩니다. 변경 후 앱을 계속 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다.",
     "contactTitle": "문의하기",

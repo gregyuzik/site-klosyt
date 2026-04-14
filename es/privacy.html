@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
     <title>Política de privacidad — Klosyt</title>
-    <!-- Google tag (gtag.js) — cookieless, anonymized -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
     <script defer src="/analytics.js"></script>
     <meta name="description" content="Tu privacidad no es solo una función de Klosyt — es la base. No recopilamos, almacenamos, transmitimos ni accedemos a ninguno de tus datos personales. Punto.">
@@ -15,7 +14,6 @@
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/es/privacy.html">
@@ -46,7 +44,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/privacy.html">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=46">
+    <link rel="stylesheet" href="/styles.css?v=47">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -171,7 +169,7 @@
 
         <div class="glass legal-card fade-up">
             <h2 data-i18n="privacy.websiteAnalyticsTitle">Analítica del sitio web</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">Este sitio web (klosyt.com) usa Google Analytics 4 en modo sin cookies y con IP anonimizada para contar visitas agregadas de página. Configuramos gtag.js con <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> y <code>allow_ad_personalization_signals: false</code>. Esto significa que no se establece ninguna cookie <code>_ga</code> y que no se recopilan identificadores publicitarios. La app Klosyt no incluye analítica.</p>
+            <p data-i18n="privacy.websiteAnalyticsText">Este sitio web (klosyt.com) usa Google Analytics 4 en modo sin cookies y con IP anonimizada para contar visitas agregadas de página. Configuramos gtag.js con <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> y <code>allow_ad_personalization_signals: false</code>. Esto significa que no se establece ninguna cookie <code>_ga</code> y que no se recopilan identificadores publicitarios. La app Klosyt no incluye analítica.</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">Cambios a esta política</h2><p data-i18n="privacy.changesText">Podemos actualizar esta Política de Privacidad de vez en cuando. Los cambios se reflejarán actualizando la fecha de "Última actualización" arriba. El uso continuado de la app después de los cambios constituye la aceptación de la política actualizada.</p></div>
