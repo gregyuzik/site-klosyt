@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
     <title>Gizlilik Politikası — Klosyt</title>
-    <!-- Google tag (gtag.js) — cookieless, anonymized -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
     <script defer src="/analytics.js"></script>
     <meta name="description" content="Gizliliğin Klosyt'un sadece bir özelliği değil — temelidir. Kişisel verilerinizi asla toplamaz, saklamaz, iletmez veya erişmeyiz. Nokta.">
@@ -15,7 +14,6 @@
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/tr/privacy.html">
@@ -46,7 +44,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/privacy.html">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=46">
+    <link rel="stylesheet" href="/styles.css?v=47">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -171,7 +169,7 @@
 
         <div class="glass legal-card fade-up">
             <h2 data-i18n="privacy.websiteAnalyticsTitle">Web sitesi analitiği</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">Bu web sitesi (klosyt.com), toplu sayfa görüntülemelerini saymak için çerezsiz ve IP anonimleştirilmiş modda Google Analytics 4 kullanır. gtag.js'i <code>anonymize_ip: true</code>, <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> ve <code>allow_ad_personalization_signals: false</code> ile yapılandırıyoruz. Bu, <code>_ga</code> çerezinin ayarlanmadığı ve reklam tanımlayıcılarının toplanmadığı anlamına gelir. Klosyt uygulamasının kendisi analitik içermez.</p>
+            <p data-i18n="privacy.websiteAnalyticsText">Bu web sitesi (klosyt.com), toplu sayfa görüntülemelerini saymak için çerezsiz ve IP anonimleştirilmiş modda Google Analytics 4 kullanır. gtag.js'i <code>client_storage: 'none'</code>, <code>allow_google_signals: false</code> ve <code>allow_ad_personalization_signals: false</code> ile yapılandırıyoruz. Bu, <code>_ga</code> çerezinin ayarlanmadığı ve reklam tanımlayıcılarının toplanmadığı anlamına gelir. Klosyt uygulamasının kendisi analitik içermez.</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">Politika Değişiklikleri</h2><p data-i18n="privacy.changesText">Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler yukarıdaki "Son güncelleme" tarihinin güncellenmesiyle yansıtılacaktır. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz güncellenen politikanın kabulünü oluşturur.</p></div>

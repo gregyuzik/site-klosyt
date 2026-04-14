@@ -80,7 +80,25 @@ function stripHTML(str) {
 }
 
 function escapeAttribute(str) {
-    return str.replace(/"/g, '&quot;');
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;');
+}
+
+const META_DESCRIPTION_LIMIT = 160;
+
+// Truncate at the last whitespace before the limit so meta descriptions never
+// end mid-word. Falls through to a hard cut only when there is no whitespace
+// at all in the prefix (effectively never for natural language).
+function truncateForMeta(str) {
+    if (str.length <= META_DESCRIPTION_LIMIT) {
+        return str;
+    }
+    const head = str.slice(0, META_DESCRIPTION_LIMIT - 1);
+    const lastBreak = head.search(/\s\S*$/);
+    const cut = lastBreak > 0 ? head.slice(0, lastBreak) : head;
+    return cut.replace(/[\s\u3000,，、;；:：—–-]+$/u, '') + '…';
 }
 
 function buildCanonicalUrl(locale, page) {
@@ -255,9 +273,7 @@ function updateMeta(html, locale, page, translations, fallback) {
     let descText = getNestedValue(translations, meta.descKey)
         || getNestedValue(fallback, meta.descKey) || '';
     descText = stripHTML(descText);
-    if (descText.length > 160) {
-        descText = descText.substring(0, 157) + '...';
-    }
+    descText = truncateForMeta(descText);
 
     // Build page title
     const pageTitle = page === 'index.html'
@@ -300,17 +316,31 @@ function updateMeta(html, locale, page, translations, fallback) {
     return html;
 }
 
+// Per Google's hreflang sitemap spec, every URL in a hreflang group must
+// self-reference all alternates including itself. We emit a single block per
+// language version with the same alternates list.
+function emitUrlBlock(lines, pageUrl, pagePath, priority) {
+    const canonicalEnglishUrl = pagePath ? `${SITE_URL}/${pagePath}` : `${SITE_URL}/`;
+
+    lines.push('  <url>');
+    lines.push(`    <loc>${pageUrl}</loc>`);
+    lines.push(`    <lastmod>${LASTMOD}</lastmod>`);
+    lines.push(`    <priority>${priority}</priority>`);
+    lines.push(`    <xhtml:link rel="alternate" hreflang="en" href="${canonicalEnglishUrl}"/>`);
+    LOCALES.forEach(locale => {
+        const localizedUrl = buildCanonicalUrl(locale, pagePath || 'index.html');
+        lines.push(`    <xhtml:link rel="alternate" hreflang="${locale}" href="${localizedUrl}"/>`);
+    });
+    lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${canonicalEnglishUrl}"/>`);
+    lines.push('  </url>');
+}
+
 function buildSitemap() {
     const canonicalPages = [
-        { path: '', priority: '1.0', label: 'Homepage' },
-        { path: 'support.html', priority: '0.8', label: 'Support' },
-        { path: 'privacy.html', priority: '0.6', label: 'Privacy' }
+        { path: '', priority: '1.0', label: 'Homepage', localizedPriority: '0.9' },
+        { path: 'support.html', priority: '0.8', label: 'Support', localizedPriority: '0.7' },
+        { path: 'privacy.html', priority: '0.6', label: 'Privacy', localizedPriority: '0.5' }
     ];
-    const localizedPriorities = {
-        'index.html': '0.9',
-        'support.html': '0.7',
-        'privacy.html': '0.5'
-    };
     const lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
@@ -318,45 +348,20 @@ function buildSitemap() {
         ''
     ];
 
-    canonicalPages.forEach(({ path: pagePath, priority, label }, index) => {
-        const pageUrl = pagePath ? `${SITE_URL}/${pagePath}` : `${SITE_URL}/`;
+    canonicalPages.forEach(({ path: pagePath, priority, label, localizedPriority }, index) => {
+        const englishUrl = pagePath ? `${SITE_URL}/${pagePath}` : `${SITE_URL}/`;
 
         lines.push(`  <!-- ${label} -->`);
-        lines.push('  <url>');
-        lines.push(`    <loc>${pageUrl}</loc>`);
-        lines.push(`    <lastmod>${LASTMOD}</lastmod>`);
-        lines.push(`    <priority>${priority}</priority>`);
-        lines.push(`    <xhtml:link rel="alternate" hreflang="en" href="${pageUrl}"/>`);
+        emitUrlBlock(lines, englishUrl, pagePath, priority);
 
         LOCALES.forEach(locale => {
             const localizedUrl = buildCanonicalUrl(locale, pagePath || 'index.html');
-            lines.push(`    <xhtml:link rel="alternate" hreflang="${locale}" href="${localizedUrl}"/>`);
+            emitUrlBlock(lines, localizedUrl, pagePath, localizedPriority);
         });
-
-        lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${pageUrl}"/>`);
-        lines.push('  </url>');
 
         if (index < canonicalPages.length - 1) {
             lines.push('');
         }
-    });
-
-    lines.push('');
-    lines.push('  <!-- Localized homepages -->');
-    LOCALES.forEach(locale => {
-        lines.push(`  <url><loc>${buildCanonicalUrl(locale, 'index.html')}</loc><lastmod>${LASTMOD}</lastmod><priority>${localizedPriorities['index.html']}</priority></url>`);
-    });
-
-    lines.push('');
-    lines.push('  <!-- Localized support pages -->');
-    LOCALES.forEach(locale => {
-        lines.push(`  <url><loc>${buildCanonicalUrl(locale, 'support.html')}</loc><lastmod>${LASTMOD}</lastmod><priority>${localizedPriorities['support.html']}</priority></url>`);
-    });
-
-    lines.push('');
-    lines.push('  <!-- Localized privacy pages -->');
-    LOCALES.forEach(locale => {
-        lines.push(`  <url><loc>${buildCanonicalUrl(locale, 'privacy.html')}</loc><lastmod>${LASTMOD}</lastmod><priority>${localizedPriorities['privacy.html']}</priority></url>`);
     });
 
     lines.push('');

@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
     <title>隱私權政策 — Klosyt</title>
-    <!-- Google tag (gtag.js) — cookieless, anonymized -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV6VFZR2YM"></script>
     <script defer src="/analytics.js"></script>
     <meta name="description" content="你的隱私不僅僅是Klosyt的一項功能——它是基礎。我們不收集、儲存、傳輸或存取你的任何個人資料。就這樣。">
@@ -15,7 +14,6 @@
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://klosyt.com/zh-Hant/privacy.html">
@@ -46,7 +44,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/privacy.html">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="/styles.css?v=46">
+    <link rel="stylesheet" href="/styles.css?v=47">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -171,7 +169,7 @@
 
         <div class="glass legal-card fade-up">
             <h2 data-i18n="privacy.websiteAnalyticsTitle">網站分析</h2>
-            <p data-i18n="privacy.websiteAnalyticsText">本網站（klosyt.com）使用 Google Analytics 4 的無 Cookie、IP 匿名化模式來統計彙總頁面瀏覽量。我們將 gtag.js 設定為 <code>anonymize_ip: true</code>、<code>client_storage: 'none'</code>、<code>allow_google_signals: false</code> 與 <code>allow_ad_personalization_signals: false</code>。這表示不會設定 <code>_ga</code> Cookie，也不會收集廣告識別資料。Klosyt App 本身不包含分析功能。</p>
+            <p data-i18n="privacy.websiteAnalyticsText">本網站（klosyt.com）使用 Google Analytics 4 的無 Cookie、IP 匿名化模式來統計彙總頁面瀏覽量。我們將 gtag.js 設定為 <code>client_storage: 'none'</code>、<code>allow_google_signals: false</code> 與 <code>allow_ad_personalization_signals: false</code>。這表示不會設定 <code>_ga</code> Cookie，也不會收集廣告識別資料。Klosyt App 本身不包含分析功能。</p>
         </div>
 
         <div class="glass legal-card fade-up"><h2 data-i18n="privacy.changesTitle">政策變更</h2><p data-i18n="privacy.changesText">我們可能會不時更新本隱私權政策。變更將透過更新上方的「最後更新」日期來體現。在變更後繼續使用本應用程式即表示接受更新後的政策。</p></div>
