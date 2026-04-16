@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'none'">
     <title>Datenschutzrichtlinie — Klosyt</title>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -20,6 +20,23 @@
     <meta property="og:title" content="Datenschutzrichtlinie — Klosyt">
     <meta property="og:description" content="Deine Privatsphäre ist nicht nur ein Feature von Klosyt — sie ist das Fundament. Wir sammeln, speichern, übertragen oder greifen auf keine deiner persönlichen…">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="vi_VN">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Datenschutzrichtlinie — Klosyt">
     <meta name="twitter:description" content="Deine Privatsphäre ist nicht nur ein Feature von Klosyt — sie ist das Fundament. Wir sammeln, speichern, übertragen oder greifen auf keine deiner persönlichen…">
@@ -98,9 +115,9 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.zeroTitle">Null Datenerfassung</h2>
-            <p data-i18n="privacy.zeroIntro">Wir möchten vollkommen transparent sein: <strong>Klosyt sammelt nichts.</strong></p>
-            <table class="legal-table">
+            <h2 id="privacy-zero-title" data-i18n="privacy.zeroTitle">Null Datenerfassung</h2>
+            <p id="privacy-zero-intro" data-i18n="privacy.zeroIntro">Wir möchten vollkommen transparent sein: <strong>Klosyt sammelt nichts.</strong></p>
+            <table class="legal-table" aria-labelledby="privacy-zero-title" aria-describedby="privacy-zero-intro">
                 <thead><tr><th scope="col" data-i18n="privacy.tableHeaderType">Datentyp</th><th scope="col" data-i18n="privacy.tableHeaderCollected">Gesammelt?</th><th scope="col" data-i18n="privacy.tableHeaderDetails">Details</th></tr></thead>
                 <tbody>
                     <tr><td data-i18n="privacy.tablePhotos">Fotos & Bilder</td><td data-i18n="privacy.tableNo">Nein</td><td data-i18n="privacy.tablePhotosDetail">Ausschließlich auf deinem Gerät und in deinem persönlichen iCloud-Konto gespeichert. Wir empfangen oder greifen niemals darauf zu.</td></tr>
