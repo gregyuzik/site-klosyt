@@ -21,6 +21,27 @@ const LOCALES = [
     'it', 'ja', 'ko', 'nb', 'pt-BR', 'es', 'sv', 'tr', 'vi'
 ];
 
+// BCP-47 → Open Graph locale (language_TERRITORY). Used for og:locale and
+// og:locale:alternate so Facebook/LinkedIn/Slack disambiguate multilingual cards.
+const OG_LOCALE = {
+    'en': 'en_US',
+    'zh-Hans': 'zh_CN',
+    'zh-Hant': 'zh_TW',
+    'da': 'da_DK',
+    'nl': 'nl_NL',
+    'fr': 'fr_FR',
+    'de': 'de_DE',
+    'it': 'it_IT',
+    'ja': 'ja_JP',
+    'ko': 'ko_KR',
+    'nb': 'nb_NO',
+    'pt-BR': 'pt_BR',
+    'es': 'es_ES',
+    'sv': 'sv_SE',
+    'tr': 'tr_TR',
+    'vi': 'vi_VN'
+};
+
 const PAGES = ['index.html', 'support.html', 'privacy.html'];
 
 const PAGE_META = {
@@ -130,16 +151,24 @@ function applyTranslations(html, translations, fallback) {
         return match;
     });
 
-    // Translate data-i18n-alt attributes
+    // Translate attributes paired with a data-i18n-* key. Matches both orders
+    // (`alt="…" data-i18n-alt="…"` and `data-i18n-alt="…" alt="…"`) so author
+    // order in HTML is not load-bearing.
     const translateAttribute = (sourceAttr, targetAttr) => {
-        const pattern = new RegExp(`${targetAttr}="[^"]*"(\\s+${sourceAttr}="([^"]+)")`, 'g');
-
-        html = html.replace(pattern, (match, suffix, key) => {
+        const targetAfter = new RegExp(`${targetAttr}="[^"]*"(\\s+${sourceAttr}="([^"]+)")`, 'g');
+        html = html.replace(targetAfter, (_match, suffix, key) => {
             const translated = getTranslation(translations, fallback, key);
-            if (translated) {
-                return `${targetAttr}="${escapeAttribute(translated)}"${suffix}`;
-            }
-            return match;
+            return translated
+                ? `${targetAttr}="${escapeAttribute(translated)}"${suffix}`
+                : _match;
+        });
+
+        const targetBefore = new RegExp(`(${sourceAttr}="([^"]+)"\\s+)${targetAttr}="[^"]*"`, 'g');
+        html = html.replace(targetBefore, (_match, prefix, key) => {
+            const translated = getTranslation(translations, fallback, key);
+            return translated
+                ? `${prefix}${targetAttr}="${escapeAttribute(translated)}"`
+                : _match;
         });
     };
 
@@ -149,18 +178,21 @@ function applyTranslations(html, translations, fallback) {
     return html;
 }
 
+// Top-level assets served from the repo root. Any bare (href|src) reference
+// to one of these gets rewritten to an absolute path so subdirectory pages
+// (e.g. /fr/index.html) resolve them correctly. Add new top-level assets here.
+const ROOT_ASSET_PREFIXES = ['assets/', 'styles.css', 'analytics.js', 'reveal.js', 'icons.js'];
+
 /**
  * Convert relative asset/script paths to absolute so they resolve
  * correctly from subdirectory pages (e.g. /fr/index.html).
  */
 function fixPaths(html) {
-    return html
-        .replace(/href="assets\//g, 'href="/assets/')
-        .replace(/src="assets\//g, 'src="/assets/')
-        .replace(/href="styles\.css/g, 'href="/styles.css')
-        .replace(/src="analytics\.js/g, 'src="/analytics.js')
-        .replace(/src="reveal\.js/g, 'src="/reveal.js')
-        .replace(/src="icons\.js/g, 'src="/icons.js');
+    const alt = ROOT_ASSET_PREFIXES
+        .map(p => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+        .join('|');
+    const pattern = new RegExp(`\\b(href|src)="(${alt})`, 'g');
+    return html.replace(pattern, '$1="/$2');
 }
 
 function buildStructuredData(page, locale, translations, fallback) {
@@ -312,6 +344,22 @@ function updateMeta(html, locale, page, translations, fallback) {
         /<meta name="twitter:description" content="[^"]*"/,
         `<meta name="twitter:description" content="${escapeAttribute(descText)}"`
     );
+
+    // Rewrite og:locale for the target language and emit og:locale:alternate
+    // entries for every other supported locale (English + 15 translations).
+    const ogPrimary = OG_LOCALE[locale];
+    if (ogPrimary) {
+        const alternates = ['en']
+            .concat(LOCALES)
+            .filter(l => l !== locale)
+            .map(l => `    <meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`)
+            .join('\n');
+        html = html.replace(
+            /([ \t]*)<meta property="og:locale" content="[^"]*">[\s\S]*?(?=\s*<meta name="twitter:card")/,
+            (_match, indent) =>
+                `${indent}<meta property="og:locale" content="${ogPrimary}">\n${alternates}\n`
+        );
+    }
 
     return html;
 }
