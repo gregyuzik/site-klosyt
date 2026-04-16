@@ -88,7 +88,7 @@
             g: ['#ff9500', '#ffcc00']
         },
         '👑': {
-            svg: '<circle cx="128" cy="52" r="20" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="220" cy="80" r="20" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="36" cy="80" r="20" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="120.02 70.35 88 144 48.61 95.52" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="207.39 95.52 168 144 135.98 70.35" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M39.29,99.73l15.6,93.59A8,8,0,0,0,62.78,200H193.22a8,8,0,0,0,7.89-6.68l15.6-93.59" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
+            svg: '<path d="M248,80a28,28,0,1,0-51.12,15.77l-26.79,33L146.28,77.42a28,28,0,1,0-36.56,0L86.91,128.74l-26.79-33a28,28,0,1,0-31.14,10.18l16.18,97.11A16,16,0,0,0,60.94,216H195.06a16,16,0,0,0,15.78-13L227,105.95A28,28,0,0,0,248,80ZM128,40a12,12,0,1,1-12,12A12,12,0,0,1,128,40ZM24,80A12,12,0,1,1,36,92,12,12,0,0,1,24,80Zm196,12a12,12,0,1,1,12-12A12,12,0,0,1,220,92Z"/>',
             g: ['#FFD700', '#FFB300']
         },
         '❌': {
