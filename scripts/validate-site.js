@@ -80,6 +80,24 @@ function extractJsonLd(html, relPath) {
     }
 }
 
+// Guard against nested same-tag content inside a data-i18n element. The
+// build-i18n regex assumes the opening and closing tag of a data-i18n node
+// surround content without a nested *same* tag. A nested same-tag would make
+// that regex match too greedily or too shortly. Detect at validation time so
+// a future template change can't silently break i18n output.
+const DATA_I18N_BLOCK = /<(\w+)\s[^>]*?data-i18n="[^"]+"[^>]*>([\s\S]*?)<\/\1>/g;
+
+function hasNestedSameTag(html) {
+    for (const match of html.matchAll(DATA_I18N_BLOCK)) {
+        const [fullMatch, tag, inner] = match;
+        const nested = new RegExp(`<${tag}(\\s|>)`, 'i');
+        if (nested.test(inner)) {
+            return { tag, snippet: fullMatch.slice(0, 120) };
+        }
+    }
+    return null;
+}
+
 for (const relPath of ALL_HTML) {
     const html = readFile(relPath);
 
@@ -88,6 +106,11 @@ for (const relPath of ALL_HTML) {
             fail(`${relPath}: explicit index.html home link should be canonicalized`);
         }
     });
+
+    const nested = hasNestedSameTag(html);
+    if (nested) {
+        fail(`${relPath}: data-i18n <${nested.tag}> contains a nested <${nested.tag}> — build regex cannot handle this (${nested.snippet}…)`);
+    }
 
     const assetMatches = html.matchAll(/(?:href|src)="([^"#?]+)(?:\?[^"]*)?"/g);
     for (const [, target] of assetMatches) {

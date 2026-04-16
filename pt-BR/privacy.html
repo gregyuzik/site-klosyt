@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'none'">
     <title>Política de Privacidade — Klosyt</title>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -20,6 +20,23 @@
     <meta property="og:title" content="Política de Privacidade — Klosyt">
     <meta property="og:description" content="Sua privacidade não é apenas um recurso do Klosyt — é a base. Não coletamos, armazenamos, transmitimos ou acessamos nenhum dos seus dados pessoais. Ponto.">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="vi_VN">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Política de Privacidade — Klosyt">
     <meta name="twitter:description" content="Sua privacidade não é apenas um recurso do Klosyt — é a base. Não coletamos, armazenamos, transmitimos ou acessamos nenhum dos seus dados pessoais. Ponto.">
@@ -98,9 +115,9 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.zeroTitle">Zero coleta de dados</h2>
-            <p data-i18n="privacy.zeroIntro">Queremos ser completamente transparentes: <strong>O Klosyt não coleta nada.</strong></p>
-            <table class="legal-table">
+            <h2 id="privacy-zero-title" data-i18n="privacy.zeroTitle">Zero coleta de dados</h2>
+            <p id="privacy-zero-intro" data-i18n="privacy.zeroIntro">Queremos ser completamente transparentes: <strong>O Klosyt não coleta nada.</strong></p>
+            <table class="legal-table" aria-labelledby="privacy-zero-title" aria-describedby="privacy-zero-intro">
                 <thead><tr><th scope="col" data-i18n="privacy.tableHeaderType">Tipo de dado</th><th scope="col" data-i18n="privacy.tableHeaderCollected">Coletado?</th><th scope="col" data-i18n="privacy.tableHeaderDetails">Detalhes</th></tr></thead>
                 <tbody>
                     <tr><td data-i18n="privacy.tablePhotos">Fotos e imagens</td><td data-i18n="privacy.tableNo">Não</td><td data-i18n="privacy.tablePhotosDetail">Armazenadas apenas no seu dispositivo e na sua conta pessoal do iCloud. Nunca as recebemos ou acessamos.</td></tr>

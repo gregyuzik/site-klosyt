@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'none'">
     <title>Privacybeleid — Klosyt</title>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -20,6 +20,23 @@
     <meta property="og:title" content="Privacybeleid — Klosyt">
     <meta property="og:description" content="Je privacy is niet zomaar een functie van Klosyt — het is de basis. Wij verzamelen, bewaren, verzenden of openen geen enkele van je persoonlijke gegevens. Punt.">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="vi_VN">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Privacybeleid — Klosyt">
     <meta name="twitter:description" content="Je privacy is niet zomaar een functie van Klosyt — het is de basis. Wij verzamelen, bewaren, verzenden of openen geen enkele van je persoonlijke gegevens. Punt.">
@@ -98,9 +115,9 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.zeroTitle">Nul gegevensverzameling</h2>
-            <p data-i18n="privacy.zeroIntro">We willen volledig transparant zijn: <strong>Klosyt verzamelt niets.</strong></p>
-            <table class="legal-table">
+            <h2 id="privacy-zero-title" data-i18n="privacy.zeroTitle">Nul gegevensverzameling</h2>
+            <p id="privacy-zero-intro" data-i18n="privacy.zeroIntro">We willen volledig transparant zijn: <strong>Klosyt verzamelt niets.</strong></p>
+            <table class="legal-table" aria-labelledby="privacy-zero-title" aria-describedby="privacy-zero-intro">
                 <thead><tr><th scope="col" data-i18n="privacy.tableHeaderType">Gegevenstype</th><th scope="col" data-i18n="privacy.tableHeaderCollected">Verzameld?</th><th scope="col" data-i18n="privacy.tableHeaderDetails">Details</th></tr></thead>
                 <tbody>
                     <tr><td data-i18n="privacy.tablePhotos">Foto's & afbeeldingen</td><td data-i18n="privacy.tableNo">Nee</td><td data-i18n="privacy.tablePhotosDetail">Alleen opgeslagen op je apparaat en je persoonlijke iCloud-account. Wij ontvangen of openen ze nooit.</td></tr>

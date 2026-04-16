@@ -3,15 +3,22 @@
   "short_name": "Klosyt",
   "description": "AI-powered digital closet and outfit planner. Organize your wardrobe, get weather-smart outfit suggestions, and track what you wear.",
   "start_url": "/",
-  "display": "browser",
+  "scope": "/",
+  "display": "standalone",
   "background_color": "#0a1838",
   "theme_color": "#0a1838",
   "icons": [
     {
       "src": "/assets/AppIcon.png",
-      "sizes": "256x256",
+      "sizes": "192x192 256x256 512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/assets/AppIcon.png",
+      "sizes": "192x192 256x256 512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

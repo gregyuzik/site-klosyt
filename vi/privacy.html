@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'none'">
     <title>Chính sách quyền riêng tư — Klosyt</title>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -20,6 +20,23 @@
     <meta property="og:title" content="Chính sách quyền riêng tư — Klosyt">
     <meta property="og:description" content="Quyền riêng tư của bạn không chỉ là một tính năng của Klosyt — đó là nền tảng. Chúng tôi không thu thập, lưu trữ, truyền tải hoặc truy cập bất kỳ dữ liệu cá…">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="tr_TR">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Chính sách quyền riêng tư — Klosyt">
     <meta name="twitter:description" content="Quyền riêng tư của bạn không chỉ là một tính năng của Klosyt — đó là nền tảng. Chúng tôi không thu thập, lưu trữ, truyền tải hoặc truy cập bất kỳ dữ liệu cá…">
@@ -98,9 +115,9 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.zeroTitle">Thu thập dữ liệu bằng không</h2>
-            <p data-i18n="privacy.zeroIntro">Chúng tôi muốn hoàn toàn minh bạch: <strong>Klosyt không thu thập bất cứ thứ gì.</strong></p>
-            <table class="legal-table">
+            <h2 id="privacy-zero-title" data-i18n="privacy.zeroTitle">Thu thập dữ liệu bằng không</h2>
+            <p id="privacy-zero-intro" data-i18n="privacy.zeroIntro">Chúng tôi muốn hoàn toàn minh bạch: <strong>Klosyt không thu thập bất cứ thứ gì.</strong></p>
+            <table class="legal-table" aria-labelledby="privacy-zero-title" aria-describedby="privacy-zero-intro">
                 <thead><tr><th scope="col" data-i18n="privacy.tableHeaderType">Loại dữ liệu</th><th scope="col" data-i18n="privacy.tableHeaderCollected">Thu thập?</th><th scope="col" data-i18n="privacy.tableHeaderDetails">Chi tiết</th></tr></thead>
                 <tbody>
                     <tr><td data-i18n="privacy.tablePhotos">Ảnh & hình ảnh</td><td data-i18n="privacy.tableNo">Không</td><td data-i18n="privacy.tablePhotosDetail">Chỉ được lưu trữ trên thiết bị và tài khoản iCloud cá nhân của bạn. Chúng tôi không bao giờ nhận hoặc truy cập chúng.</td></tr>

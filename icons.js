@@ -135,19 +135,24 @@
         // Replace crown in nav links (skip if already has SVG).
         // Preserve the translated label ("Klosyt+" is identical across locales
         // today, but reading the live text keeps the replacement locale-safe).
+        // Label is written via textContent so a poisoned translation cannot
+        // inject HTML; only the known-good SVG string is inserted as markup.
         document.querySelectorAll('[data-i18n="nav.klosytPlus"]').forEach(function (el) {
             if (el.querySelector('svg')) return;
             var label = el.textContent.replace(/^[\s👑]+/, '').trim();
-            el.innerHTML = makeSvg(icons['👑'], 14) + ' ' + label;
+            el.textContent = ' ' + label;
+            el.insertAdjacentHTML('afterbegin', makeSvg(icons['👑'], 14));
         });
 
         // Replace ❌ in privacy table (skip if already has SVG).
         // Preserve the translated word ("No"/"Non"/"否"/…) — previously this
         // hardcoded " No" and overwrote every localized cell with English.
+        // Label is written via textContent (see rationale above).
         document.querySelectorAll('[data-i18n="privacy.tableNo"]').forEach(function (el) {
             if (el.querySelector('svg')) return;
             var label = el.textContent.replace(/^[\s❌]+/, '').trim();
-            el.innerHTML = makeSvg(icons['❌'], 14) + ' ' + label;
+            el.textContent = ' ' + label;
+            el.insertAdjacentHTML('afterbegin', makeSvg(icons['❌'], 14));
         });
     }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'none'">
     <title>隱私權政策 — Klosyt</title>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -20,6 +20,23 @@
     <meta property="og:title" content="隱私權政策 — Klosyt">
     <meta property="og:description" content="你的隱私不僅僅是Klosyt的一項功能——它是基礎。我們不收集、儲存、傳輸或存取你的任何個人資料。就這樣。">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="vi_VN">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="隱私權政策 — Klosyt">
     <meta name="twitter:description" content="你的隱私不僅僅是Klosyt的一項功能——它是基礎。我們不收集、儲存、傳輸或存取你的任何個人資料。就這樣。">
@@ -98,9 +115,9 @@
         </div>
 
         <div class="glass legal-card fade-up">
-            <h2 data-i18n="privacy.zeroTitle">零資料收集</h2>
-            <p data-i18n="privacy.zeroIntro">我們想要完全透明：<strong>Klosyt不收集任何東西。</strong></p>
-            <table class="legal-table">
+            <h2 id="privacy-zero-title" data-i18n="privacy.zeroTitle">零資料收集</h2>
+            <p id="privacy-zero-intro" data-i18n="privacy.zeroIntro">我們想要完全透明：<strong>Klosyt不收集任何東西。</strong></p>
+            <table class="legal-table" aria-labelledby="privacy-zero-title" aria-describedby="privacy-zero-intro">
                 <thead><tr><th scope="col" data-i18n="privacy.tableHeaderType">資料類型</th><th scope="col" data-i18n="privacy.tableHeaderCollected">是否收集？</th><th scope="col" data-i18n="privacy.tableHeaderDetails">詳情</th></tr></thead>
                 <tbody>
                     <tr><td data-i18n="privacy.tablePhotos">照片和圖片</td><td data-i18n="privacy.tableNo">否</td><td data-i18n="privacy.tablePhotosDetail">僅儲存在你的裝置和你的個人iCloud帳號中。我們永遠不會接收或存取它們。</td></tr>

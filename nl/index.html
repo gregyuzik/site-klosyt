@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'none'">
     <title>Klosyt — Je AI-aangedreven digitale kledingkast</title>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -15,6 +15,23 @@
     <meta property="og:title" content="Klosyt — Je AI-aangedreven digitale kledingkast">
     <meta property="og:description" content="Maak een foto van je kleding, laat AI ze organiseren en ontvang weer-slimme outfitsuggesties — alles op je apparaat en privé.">
     <meta property="og:image" content="https://klosyt.com/assets/AppIcon.png">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="vi_VN">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Klosyt — Je AI-aangedreven digitale kledingkast">
     <meta name="twitter:description" content="Maak een foto van je kleding, laat AI ze organiseren en ontvang weer-slimme outfitsuggesties — alles op je apparaat en privé.">
@@ -24,6 +41,7 @@
     <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/AppIcon.png?v=20260413">
     <link rel="apple-touch-icon" href="/assets/AppIcon.png?v=20260413">
+    <link rel="preload" as="image" href="/assets/AppIcon-blue.png" fetchpriority="high">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" hreflang="en" href="https://klosyt.com/">
     <link rel="alternate" hreflang="zh-Hans" href="https://klosyt.com/zh-Hans/">
@@ -108,8 +126,8 @@
 <!-- Hero -->
 <section class="hero" aria-labelledby="hero-title">
     <div class="hero-inner fade-up">
-        <img src="/assets/AppIcon-blue.png" alt="Klosyt" class="hero-icon" width="128" height="128" fetchpriority="high">
-        <h1 id="hero-title" data-i18n="hero.mainTitle">Je AI-aangedreven<br>digitale kledingkast</h1>
+        <img src="/assets/AppIcon-blue.png" alt="" class="hero-icon" width="128" height="128" fetchpriority="high">
+        <h1 id="hero-title" data-i18n="hero.mainTitle">Je AI-aangedreven digitale kledingkast</h1>
         <p class="hero-sub" data-i18n="hero.mainSubtitle">Maak een foto van je kleding, laat AI ze organiseren en ontvang weer-slimme outfitsuggesties — alles op je apparaat en privé.</p>
         <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener noreferrer" class="badge-link">
             <img src="/assets/app-store-badge.svg" alt="Download in de App Store" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48">
@@ -204,12 +222,14 @@
 <section class="section" aria-labelledby="lang-title">
     <div class="wrap tc fade-up">
         <h2 id="lang-title" class="lang-label" data-i18n="index.languagesTitle">Beschikbaar in 16 talen</h2>
-        <div class="lang-row">
-            <a href="/" lang="en" data-locale="en">English</a><a href="/zh-Hans/" lang="zh-Hans" data-locale="zh-Hans">简体中文</a><a href="/zh-Hant/" lang="zh-Hant" data-locale="zh-Hant">繁體中文</a><a href="/da/" lang="da" data-locale="da">Dansk</a>
-            <a href="/nl/" lang="nl" data-locale="nl">Nederlands</a><a href="/fr/" lang="fr" data-locale="fr">Français</a><a href="/de/" lang="de" data-locale="de">Deutsch</a><a href="/it/" lang="it" data-locale="it">Italiano</a>
-            <a href="/ja/" lang="ja" data-locale="ja">日本語</a><a href="/ko/" lang="ko" data-locale="ko">한국어</a><a href="/nb/" lang="nb" data-locale="nb">Norsk</a><a href="/pt-BR/" lang="pt-BR" data-locale="pt-BR">Português</a>
-            <a href="/es/" lang="es" data-locale="es">Español</a><a href="/sv/" lang="sv" data-locale="sv">Svenska</a><a href="/tr/" lang="tr" data-locale="tr">Türkçe</a><a href="/vi/" lang="vi" data-locale="vi">Tiếng Việt</a>
-        </div>
+        <nav aria-labelledby="lang-title">
+            <ul class="lang-row" role="list">
+                <li><a href="/" lang="en" data-locale="en">English</a></li><li><a href="/zh-Hans/" lang="zh-Hans" data-locale="zh-Hans">简体中文</a></li><li><a href="/zh-Hant/" lang="zh-Hant" data-locale="zh-Hant">繁體中文</a></li><li><a href="/da/" lang="da" data-locale="da">Dansk</a></li>
+                <li><a href="/nl/" lang="nl" data-locale="nl">Nederlands</a></li><li><a href="/fr/" lang="fr" data-locale="fr">Français</a></li><li><a href="/de/" lang="de" data-locale="de">Deutsch</a></li><li><a href="/it/" lang="it" data-locale="it">Italiano</a></li>
+                <li><a href="/ja/" lang="ja" data-locale="ja">日本語</a></li><li><a href="/ko/" lang="ko" data-locale="ko">한국어</a></li><li><a href="/nb/" lang="nb" data-locale="nb">Norsk</a></li><li><a href="/pt-BR/" lang="pt-BR" data-locale="pt-BR">Português</a></li>
+                <li><a href="/es/" lang="es" data-locale="es">Español</a></li><li><a href="/sv/" lang="sv" data-locale="sv">Svenska</a></li><li><a href="/tr/" lang="tr" data-locale="tr">Türkçe</a></li><li><a href="/vi/" lang="vi" data-locale="vi">Tiếng Việt</a></li>
+            </ul>
+        </nav>
     </div>
 </section>
 
