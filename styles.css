@@ -65,6 +65,21 @@ body::before{
         radial-gradient(circle 500px at 88% 36%, rgba(212,165,40,.05) 0%, transparent 70%);
     z-index:0;
 }
+/* Noise overlay — breaks 8-bit gradient banding in the radial washes. Inline
+   SVG data URI, no extra request. Kept pointer-events:none and z-index:0 so
+   it never blocks interaction; very low opacity so it reads as atmospheric
+   texture rather than grain. */
+body::after{
+    content:'';
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    opacity:.04;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-size:160px 160px;
+}
 body > *{position:relative;z-index:1}
 
 /* ── Skip to content ── */
@@ -174,9 +189,12 @@ body > *{position:relative;z-index:1}
 .hero h1{
     font-family:var(--font-display);
     font-size:clamp(2.8rem,7vw,5rem);
-    font-weight:500;letter-spacing:-.025em;line-height:1.15;
+    font-weight:500;letter-spacing:-.025em;line-height:1.2;
     margin-bottom:1.25rem;
-    padding-bottom:.12em;
+    /* `background-clip:text` clips to the line box, not the glyph ink — serif
+       descenders (g/y/p/q) sit below the baseline and get cut off if the box
+       is tight. .22em of padding guarantees ink stays inside the clip mask. */
+    padding-bottom:.22em;
     text-wrap:balance;
     font-feature-settings:"kern","liga";
     /* Gradient text wash — cooler at top, warmer at bottom for the gold tie-in. */
@@ -263,12 +281,12 @@ body > *{position:relative;z-index:1}
 .sec-title{
     font-family:var(--font-display);
     font-size:clamp(2rem,4.5vw,3.2rem);
-    font-weight:500;letter-spacing:-.02em;line-height:1.18;
+    font-weight:500;letter-spacing:-.02em;line-height:1.22;
     text-wrap:balance;
     color:var(--text-1);
     text-align:center;
     margin:0 auto 2.5rem;
-    padding-bottom:.1em;
+    padding-bottom:.2em;
     font-feature-settings:"kern","liga";
 }
 .sec-title em{font-style:italic;font-weight:400;color:var(--accent-color)}
@@ -308,9 +326,9 @@ h1.sec-title{
 .bottom-cta h2{
     font-family:var(--font-display);
     font-size:clamp(2rem,4.6vw,3rem);
-    font-weight:500;letter-spacing:-.02em;line-height:1.18;
+    font-weight:500;letter-spacing:-.02em;line-height:1.22;
     margin-bottom:.85rem;
-    padding-bottom:.1em;
+    padding-bottom:.2em;
     text-wrap:balance;
 }
 .bottom-cta h2 em{font-style:italic;font-weight:400;color:var(--accent-color)}
