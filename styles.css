@@ -1,36 +1,65 @@
 /* ═══════════════════════════════════════════
-   KLOSYT — Flat Navy
-   Solid background, native scroll, no GPU tricks.
-
-   History: the previous "glass runway" style stacked 12+ backdrop-filter
-   elements over animated blurred orbs. On iOS Safari this thrashed the
-   compositor so badly scroll would freeze mid-page, and the animated
-   orbs made the background look non-uniform against Safari's solid
-   chrome (tinted from <meta name="theme-color">). Solid colors and zero
-   filters eliminate both classes of bug at the source.
+   KLOSYT — Aurora Glass
+   Dark navy base + one static gradient halo at the top and a single
+   fixed aurora wash behind content. Pure gradients (no filter:blur,
+   no animation) — GPU-cheap and safe for iOS Safari scroll. Only the
+   nav uses backdrop-filter; stacking many was what broke iOS
+   compositor in PR #62/#63.
    ═══════════════════════════════════════════ */
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
 :root{
-    --panel:rgba(255,255,255,.05);
+    --panel:rgba(255,255,255,.045);
     --panel-hover:rgba(255,255,255,.085);
-    --border:rgba(255,255,255,.12);
-    --border-hover:rgba(255,255,255,.2);
+    --border:rgba(255,255,255,.1);
+    --border-hover:rgba(255,255,255,.22);
     --text-1:#fff;
-    --text-2:rgba(255,255,255,.75);
+    --text-2:rgba(255,255,255,.78);
     --text-3:rgba(255,255,255,.55);
-    --radius:20px;
     --accent-color:#5ac8fa;
+    --radius:20px;
+    --radius-lg:28px;
     --ease:cubic-bezier(.16,1,.3,1);
     color-scheme:dark light;
 }
 
-/* Solid background painted on <html>: fills Safari's chrome, the
-   rubber-band overscroll zone, safe-area insets, and the CSS canvas
-   uniformly — matches <meta name="theme-color"> exactly. */
-html{background:#0a1838}
+/* Base painted on <html>: fills Safari's chrome, overscroll zone, and
+   safe-area insets uniformly. Layered gradient gives the hero a soft
+   sky halo that fades into flat navy by ~70vh. */
+html{
+    background:#0a1838;
+    background:
+        radial-gradient(ellipse 1100px 720px at 50% -10%, #1a2f6e 0%, transparent 60%),
+        #0a1838;
+}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color:var(--text-1);
+    background:transparent;
+    min-height:100svh;
+    position:relative;
+    overflow-x:hidden;
+}
+
+/* Aurora layer: two soft color washes as pure radial gradients.
+   No filter:blur anywhere — the browser rasterizes these once.
+   position:fixed keeps it behind scrolling content without inflating
+   page height, and pointer-events:none keeps it out of hit-testing. */
+body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+        radial-gradient(circle 600px at 18% 88%, rgba(90,200,250,.08) 0%, transparent 70%),
+        radial-gradient(circle 500px at 88% 36%, rgba(212,165,40,.05) 0%, transparent 70%);
+    z-index:0;
+}
+body > *{position:relative;z-index:1}
 
 /* ── Skip to content ── */
 .skip-link{
@@ -50,17 +79,9 @@ html{background:#0a1838}
 :focus-visible{outline:2px solid rgba(255,255,255,.85);outline-offset:2px;border-radius:8px}
 @media(prefers-color-scheme:light){:focus-visible{outline-color:rgba(0,0,0,.85)}}
 
-body{
-    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
-    -webkit-font-smoothing:antialiased;
-    color:var(--text-1);
-    background:#0a1838;
-    min-height:100svh;
-}
-
 /* ── Panel utility (was .glass) ──
-   Solid translucent fill + hairline border. No backdrop-filter anywhere:
-   native scroll stays smooth. */
+   Solid translucent fill + hairline border. No backdrop-filter here:
+   native scroll stays smooth even with many panels. */
 .glass{
     background:var(--panel);
     border:1px solid var(--border);
@@ -75,7 +96,11 @@ body{
 .section{padding:5rem 0}
 .tc{text-align:center}
 
-/* ── Nav ── */
+/* ── Nav ──
+   The only backdrop-filter element on the page. A single glass layer
+   is cheap on the compositor; the 12-element version in PR #62 was
+   what broke iOS scroll. @supports fallback keeps a solid navy tint
+   for browsers without backdrop-filter. */
 .nav-wrap{
     position:fixed;top:calc(env(safe-area-inset-top) + 16px);left:0;width:100%;
     display:flex;justify-content:center;z-index:100;
@@ -83,26 +108,21 @@ body{
     padding-right:env(safe-area-inset-right);
     pointer-events:none;
 }
-/* Liquid Glass restored on the nav only — one element, safe for the
-   compositor. The 12-element version was what broke iOS scroll, not
-   this single instance. @supports fallback keeps a solid navy tint
-   for browsers without backdrop-filter. */
 .nav-bar{
     pointer-events:auto;
     width:90%;max-width:720px;height:52px;
     border-radius:100px;
-    background:rgba(255,255,255,.08);
-    /* saturate(1.4) was chosen to mirror Apple's own nav treatments.
-       1.6 could oversaturate warm content scrolling behind the bar. */
-    backdrop-filter:blur(40px) saturate(1.4);
-    -webkit-backdrop-filter:blur(40px) saturate(1.4);
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(40px) saturate(1.6);
+    -webkit-backdrop-filter:blur(40px) saturate(1.6);
     border:1px solid rgba(255,255,255,.14);
+    box-shadow:0 10px 40px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.08);
     display:flex;justify-content:space-between;align-items:center;
     padding:0 1.25rem;
-    transition:background .3s var(--ease);
+    transition:background .3s var(--ease),border-color .3s var(--ease);
     overflow:visible;
 }
-.nav-bar:hover{background:rgba(255,255,255,.12)}
+.nav-bar:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
     .nav-bar{background:rgba(10,24,56,.92)}
     .nav-bar:hover{background:rgba(14,32,72,.98)}
@@ -133,29 +153,38 @@ body{
     text-align:center;
     padding:calc(120px + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) calc(80px + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
 }
-.hero-inner{max-width:640px}
+.hero-inner{max-width:680px}
 .hero-icon{
     width:128px;height:128px;border-radius:30px;
-    /* Combined: a soft colored bloom so the icon reads on solid navy,
-       plus a traditional shadow anchoring it to the page. */
-    box-shadow:0 24px 64px rgba(0,0,0,.35),0 0 80px rgba(90,200,250,.22);
+    /* Richer bloom: inner ring + colored halo + anchoring shadow. */
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45),
+        0 0 100px rgba(90,200,250,.32),
+        0 0 0 1px rgba(255,255,255,.06);
     margin-bottom:2rem;
 }
 .hero h1{
-    font-size:clamp(2.5rem,6vw,4rem);
-    font-weight:800;letter-spacing:-.04em;line-height:1.08;
+    font-size:clamp(2.6rem,6.5vw,4.4rem);
+    font-weight:800;letter-spacing:-.04em;line-height:1.05;
     margin-bottom:1.25rem;
     text-wrap:balance;
+    /* Gradient text wash — modern display treatment. Fallback below. */
+    background:linear-gradient(180deg,#fff 0%,#bcd9ff 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){
+    .hero h1{color:#fff;-webkit-text-fill-color:initial}
 }
 .hero-sub{
     font-size:clamp(1rem,2.2vw,1.2rem);
     color:var(--text-2);line-height:1.65;
     margin-bottom:2.5rem;
-    /* 44ch wraps copy at natural reading length, closer to Apple's
-       hero subhead cadence than a fixed pixel cap. */
     max-width:44ch;margin-left:auto;margin-right:auto;
 }
-.badge-link{display:inline-block;transition:transform .2s,opacity .2s;opacity:.92}
+.badge-link{display:inline-block;transition:transform .2s,opacity .2s;opacity:.95}
 .badge-link:hover{opacity:1;transform:translateY(-2px)}
 .badge-img{height:48px}
 .hero-devices{margin-top:1.25rem;font-size:.85rem;color:var(--text-3);font-weight:500;letter-spacing:.02em}
@@ -169,21 +198,44 @@ body{
     width:36px;height:36px;border-radius:50%;flex-shrink:0;
     display:flex;align-items:center;justify-content:center;
     font-weight:700;font-size:.95rem;
-    background:rgba(0,122,255,.15);color:#4d9fff;
-    border:1px solid rgba(0,122,255,.25);
+    background:rgba(0,122,255,.18);color:#7fb6ff;
+    border:1px solid rgba(0,122,255,.3);
+    box-shadow:0 0 24px rgba(0,122,255,.18);
 }
 .step-div{width:1px;height:56px;flex-shrink:0;align-self:center;background:var(--border)}
 
-/* ── Section divider ── */
+/* ── Section divider — a small centered glint, not a long line ── */
 .divider,hr.divider{
-    width:100%;max-width:320px;height:1px;
+    width:100%;max-width:120px;height:1px;
     margin:0 auto;border:0;
-    background:linear-gradient(90deg,transparent,rgba(90,200,250,.6),rgba(212,165,40,.45),transparent);
+    background:linear-gradient(90deg,transparent,rgba(90,200,250,.55),rgba(212,165,40,.4),transparent);
     opacity:.8;
+    position:relative;
+}
+.divider::after{
+    content:'';
+    position:absolute;left:50%;top:50%;
+    width:4px;height:4px;border-radius:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(90,200,250,.75);
+    box-shadow:0 0 10px rgba(90,200,250,.6);
 }
 
-/* ── Bottom CTA ── */
+/* ── Bottom CTA — framed panel, differentiated from hero ── */
 .bottom-cta{padding:5rem 0 6rem}
+.cta-panel{
+    max-width:640px;margin:0 auto;
+    padding:3.5rem 2.5rem;
+    border-radius:var(--radius-lg);
+    text-align:center;
+    /* Dual background-clip paints a subtle gradient frame: a translucent
+       fill over padding-box, a blue→gold sheen over border-box. */
+    background:
+        linear-gradient(rgba(255,255,255,.05),rgba(255,255,255,.02)) padding-box,
+        linear-gradient(135deg,rgba(90,200,250,.45),rgba(255,255,255,.06) 35%,rgba(255,255,255,.06) 65%,rgba(212,165,40,.4)) border-box;
+    border:1px solid transparent;
+    box-shadow:0 30px 80px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.06);
+}
 .bottom-cta h2{
     font-size:clamp(1.75rem,4vw,2.5rem);
     font-weight:800;letter-spacing:-.03em;line-height:1.1;
@@ -206,30 +258,32 @@ body{
     display:grid;grid-template-columns:repeat(2,1fr);
     gap:1rem;max-width:960px;margin:0 auto;
 }
-/* Above ~1100px there's enough horizontal room for a 3-column layout,
-   which gets all six features above the fold on laptops. */
 @media(min-width:1100px){
     .features-grid{grid-template-columns:repeat(3,1fr);max-width:1200px}
 }
 .feature-card{
     display:flex;gap:1.1rem;align-items:flex-start;
     padding:1.5rem;border-radius:var(--radius);
-    transition:background .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease);
+    /* Per-card accent pulled from the inline `--c` the card already sets
+       on its icon span; falls back to neutral if absent. */
+    --card-accent:var(--c, rgba(255,255,255,.22));
+    transition:background .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease);
 }
 .feature-card:hover{
     background:var(--panel-hover);
     border-color:var(--border-hover);
-    transform:translateY(-3px);
+    transform:translateY(-4px);
+    /* Colored halo matches the icon hue on each card. */
+    box-shadow:0 20px 50px rgba(0,0,0,.3), 0 0 60px -20px var(--card-accent);
 }
 .feature-icon{
-    width:44px;height:44px;border-radius:12px;flex-shrink:0;
+    width:48px;height:48px;border-radius:14px;flex-shrink:0;
     display:flex;align-items:center;justify-content:center;
     font-size:1.3rem;
     background:var(--bg);color:var(--c);
-    /* Subtle inner highlight for depth without reintroducing backdrop-filter. */
-    box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.1), 0 8px 20px -8px var(--c);
 }
-.feature-icon svg,.pl-ico svg{display:block}
+.feature-icon svg,.pl-ico svg,.card-ico svg{display:block}
 .feature-text{min-width:0}
 .feature-text h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem;letter-spacing:-.01em}
 .feature-text p{font-size:.88rem;color:var(--text-2);line-height:1.55}
@@ -237,41 +291,66 @@ body{
 /* Legacy .card (support page FAQ cards) */
 .card{
     padding:2rem;border-radius:var(--radius);
-    transition:background .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease);
+    --card-accent:var(--c, rgba(255,255,255,.22));
+    transition:background .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease);
 }
 .card:hover{
     background:var(--panel-hover);
     border-color:var(--border-hover);
-    transform:translateY(-3px);
+    transform:translateY(-4px);
+    box-shadow:0 20px 50px rgba(0,0,0,.3), 0 0 60px -20px var(--card-accent);
 }
 .card-ico{
-    width:44px;height:44px;border-radius:12px;
+    width:48px;height:48px;border-radius:14px;
     display:flex;align-items:center;justify-content:center;
     font-size:1.25rem;margin-bottom:1.25rem;
     background:var(--bg);color:var(--c);
-    box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.1), 0 8px 20px -8px var(--c);
 }
-.card-ico svg{display:block}
 .card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em}
 .card p{font-size:.88rem;color:var(--text-2);line-height:1.55}
 
-/* ── Pricing ── */
+/* ── Pricing — promoted to a premium card with gold gradient frame ── */
 .price-card{
-    max-width:420px;width:100%;margin:0 auto;
-    border-radius:var(--radius);overflow:hidden;
-    transition:border-color .3s var(--ease),transform .3s var(--ease);
+    max-width:440px;width:100%;margin:0 auto;
+    border-radius:var(--radius-lg);overflow:hidden;
+    background:
+        linear-gradient(rgba(255,255,255,.06),rgba(255,255,255,.03)) padding-box,
+        linear-gradient(135deg,rgba(255,204,0,.7),rgba(255,149,0,.25) 30%,rgba(255,255,255,.1) 60%,rgba(255,204,0,.5)) border-box;
+    border:1px solid transparent;
+    /* Second shadow acts as a wide amber halo without needing a wrapper. */
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.35),
+        0 0 120px -20px rgba(255,204,0,.28);
+    transition:transform .3s var(--ease),box-shadow .3s var(--ease);
 }
-.price-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+.price-card:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 40px 100px rgba(0,0,0,.45),
+        0 0 140px -20px rgba(255,204,0,.4);
+}
 .price-head{padding:2.5rem 2rem 2rem;text-align:center;border-bottom:1px solid var(--border)}
 .price-badge{
-    display:inline-block;padding:6px 20px;
-    background:linear-gradient(135deg,rgba(255,204,0,.15),rgba(255,149,0,.15));
-    border:1px solid rgba(255,204,0,.25);
-    border-radius:100px;font-size:.9rem;font-weight:700;
-    color:#ffcc00;letter-spacing:.02em;margin-bottom:1.25rem;
+    display:inline-flex;align-items:center;gap:6px;
+    padding:6px 16px;
+    background:linear-gradient(135deg,rgba(255,204,0,.22),rgba(255,149,0,.18));
+    border:1px solid rgba(255,204,0,.4);
+    border-radius:100px;font-size:.85rem;font-weight:700;
+    color:#ffd84a;letter-spacing:.04em;margin-bottom:1.25rem;
+    box-shadow:0 4px 16px rgba(255,204,0,.18);
 }
-.price-amt{display:flex;align-items:baseline;justify-content:center;gap:4px;margin-bottom:.5rem}
-.price-num{font-size:3rem;font-weight:800;letter-spacing:-.04em}
+.price-amt{display:flex;align-items:baseline;justify-content:center;gap:6px;margin-bottom:.5rem}
+.price-num{
+    font-size:3.5rem;font-weight:800;letter-spacing:-.04em;
+    background:linear-gradient(180deg,#ffe27a 0%,#ffb000 100%);
+    -webkit-background-clip:text;background-clip:text;
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){
+    .price-num{color:#ffcc00;-webkit-text-fill-color:initial}
+}
 .price-per{font-size:1rem;color:var(--text-2);font-weight:500}
 .price-trial{font-size:.88rem;color:var(--text-3)}
 .price-list{list-style:none;padding:1.5rem 2rem;display:flex;flex-direction:column;gap:4px}
@@ -288,25 +367,19 @@ body{
 }
 .price-list li span:last-child{font-size:.92rem;font-weight:500}
 .price-foot{padding:1.5rem 2rem 2rem;text-align:center;border-top:1px solid var(--border)}
-/* Promoted from muted helper text to a green-accent free-tier reminder.
-   The App Store always shows the monthly price first, so the card has
-   to carry the "unlimited wardrobe is free forever" message clearly. */
 .price-note{
     margin-top:.85rem;font-size:.88rem;font-weight:600;
-    color:rgba(52,199,89,.95);
+    color:rgba(72,219,109,.95);
     letter-spacing:.01em;
 }
 
 /* ── Languages ── */
 .lang-label{
-    font-size:.8rem;color:var(--text-3);font-weight:600;
-    text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem;
+    font-size:.78rem;color:var(--text-3);font-weight:700;
+    text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.25rem;
 }
 .lang-row{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:680px;margin:0 auto;padding:0;list-style:none}
 .lang-row li{display:contents}
-/* Pills stay 44px tall (tap target) but feel less prominent via
-   tighter horizontal padding and smaller type — the row was dominating
-   the page between Pricing and the bottom CTA. */
 .lang-row a{
     display:inline-flex;align-items:center;
     min-height:44px;padding:0 14px;
@@ -315,8 +388,13 @@ body{
     text-decoration:none;
     transition:background .15s,color .15s,border-color .15s,transform .15s;
 }
-.lang-row a:hover{background:var(--panel-hover);color:var(--text-1);transform:translateY(-1px)}
-.lang-row a.active{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.24);color:var(--text-1);font-weight:700}
+.lang-row a:hover{background:var(--panel-hover);color:var(--text-1);transform:translateY(-1px);border-color:var(--border-hover)}
+.lang-row a.active{
+    background:linear-gradient(135deg,rgba(90,200,250,.22),rgba(0,122,255,.18));
+    border-color:rgba(90,200,250,.4);
+    color:#fff;font-weight:700;
+    box-shadow:0 4px 16px rgba(90,200,250,.18);
+}
 
 /* ── Legal / Support ── */
 .legal-content{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:1.25rem}
@@ -383,13 +461,14 @@ body{
     .faq-grid-2{grid-template-columns:1fr}
     .legal-card{padding:1.5rem}
     .bottom-cta{padding:4rem 0 5rem}
+    .cta-panel{padding:2.5rem 1.75rem}
     .nav-bar{width:94%;padding:0 1rem;height:48px}
     .nav-links{gap:.6rem}
     .nav-links a{font-size:.82rem}
 }
 @media(max-width:480px){
-    .hero h1{font-size:2.2rem}
-    .hero-icon{width:100px;height:100px;border-radius:24px;margin-bottom:1.5rem}
+    .hero h1{font-size:2.4rem}
+    .hero-icon{width:104px;height:104px;border-radius:24px;margin-bottom:1.5rem}
     .nav-brand span{font-size:.9rem}
     .nav-icon{height:24px;width:24px}
     .nav-bar{border-radius:22px;height:48px}
@@ -397,51 +476,92 @@ body{
     .nav-links a{padding:0 8px}
     .wrap{padding-left:max(1rem,env(safe-area-inset-left));padding-right:max(1rem,env(safe-area-inset-right))}
     .feature-card{padding:1.25rem;gap:.9rem}
-    .feature-icon{width:40px;height:40px}
+    .feature-icon{width:42px;height:42px}
     .card{padding:1.5rem}
     .section{padding:2.5rem 0}
-    .price-card{border-radius:16px}
-    .divider{max-width:160px}
+    .price-card{border-radius:20px}
+    .price-num{font-size:2.8rem}
+    .cta-panel{padding:2rem 1.25rem;border-radius:20px}
+    .divider{max-width:80px}
 }
 
 /* ── Light mode ── */
 @media(prefers-color-scheme:light){
     :root{
         --panel:rgba(255,255,255,.7);
-        --panel-hover:rgba(255,255,255,.9);
+        --panel-hover:rgba(255,255,255,.92);
         --border:rgba(0,0,0,.08);
-        --border-hover:rgba(0,0,0,.14);
+        --border-hover:rgba(0,0,0,.16);
         --text-1:#1d1d1f;
         --text-2:rgba(0,0,0,.72);
-        --text-3:rgba(0,0,0,.62);
+        --text-3:rgba(0,0,0,.52);
         --accent-color:#007aff;
     }
-    html{background:#e6ebf3}
-    body{background:#e6ebf3}
-    .hero-icon{box-shadow:0 24px 64px rgba(0,0,0,.12)}
-    .nav-bar{background:rgba(255,255,255,.5);border:1px solid rgba(0,0,0,.08)}
-    .nav-bar:hover{background:rgba(255,255,255,.65)}
+    html{
+        background:#e6ebf3;
+        background:
+            radial-gradient(ellipse 1100px 720px at 50% -10%, #cfdaee 0%, transparent 65%),
+            #e6ebf3;
+    }
+    body::before{
+        background:
+            radial-gradient(circle 600px at 18% 88%, rgba(0,122,255,.07) 0%, transparent 70%),
+            radial-gradient(circle 500px at 88% 36%, rgba(255,159,10,.06) 0%, transparent 70%);
+    }
+    .hero h1{background:linear-gradient(180deg,#1d1d1f 0%,#34508f 100%);-webkit-background-clip:text;background-clip:text}
+    .hero-icon{
+        box-shadow:
+            0 24px 64px rgba(0,40,120,.18),
+            0 0 80px rgba(0,122,255,.18),
+            0 0 0 1px rgba(0,0,0,.04);
+    }
+    .nav-bar{background:rgba(255,255,255,.55);border:1px solid rgba(0,0,0,.08);box-shadow:0 10px 40px rgba(0,40,120,.08), inset 0 1px 0 rgba(255,255,255,.6)}
+    .nav-bar:hover{background:rgba(255,255,255,.7)}
     @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
         .nav-bar{background:rgba(230,235,243,.95)}
         .nav-bar:hover{background:rgba(230,235,243,.98)}
     }
-    .price-badge{color:#5c3700;background:linear-gradient(135deg,rgba(255,204,0,.32),rgba(255,149,0,.32));border:1px solid rgba(255,149,0,.5)}
-    .divider,hr.divider{background:linear-gradient(90deg,transparent,rgba(26,61,143,.4),rgba(180,140,30,.35),transparent);opacity:.7}
-    .step-n{background:rgba(0,122,255,.1);color:#007aff;border:1px solid rgba(0,122,255,.2)}
+    .price-badge{color:#5c3700;background:linear-gradient(135deg,rgba(255,204,0,.32),rgba(255,149,0,.32));border:1px solid rgba(255,149,0,.5);box-shadow:0 4px 16px rgba(255,149,0,.15)}
+    .price-num{background:linear-gradient(180deg,#cb8400 0%,#965d00 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+    .price-card{
+        background:
+            linear-gradient(rgba(255,255,255,.85),rgba(255,255,255,.7)) padding-box,
+            linear-gradient(135deg,rgba(255,149,0,.7),rgba(255,204,0,.3) 30%,rgba(0,0,0,.04) 60%,rgba(255,149,0,.5)) border-box;
+        box-shadow:0 30px 80px rgba(0,40,120,.12), 0 0 120px -20px rgba(255,149,0,.25);
+    }
+    .price-card:hover{box-shadow:0 40px 100px rgba(0,40,120,.18), 0 0 140px -20px rgba(255,149,0,.35)}
+    .cta-panel{
+        background:
+            linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.5)) padding-box,
+            linear-gradient(135deg,rgba(0,122,255,.4),rgba(0,0,0,.06) 35%,rgba(0,0,0,.06) 65%,rgba(255,149,0,.35)) border-box;
+        box-shadow:0 30px 80px rgba(0,40,120,.1), inset 0 1px 0 rgba(255,255,255,.6);
+    }
+    .feature-card:hover, .card:hover{
+        box-shadow:0 16px 40px rgba(0,40,120,.1), 0 0 60px -20px var(--card-accent);
+    }
+    .divider,hr.divider{background:linear-gradient(90deg,transparent,rgba(0,122,255,.4),rgba(255,149,0,.35),transparent);opacity:.7}
+    .divider::after{background:rgba(0,122,255,.7);box-shadow:0 0 10px rgba(0,122,255,.5)}
+    .step-n{background:rgba(0,122,255,.12);color:#007aff;border:1px solid rgba(0,122,255,.25);box-shadow:0 0 24px rgba(0,122,255,.12)}
     .glass-btn{background:var(--text-1);color:#fff}
-    .glass-btn:hover{box-shadow:0 8px 30px rgba(0,0,0,.1)}
+    .glass-btn:hover{box-shadow:0 8px 30px rgba(0,0,0,.12)}
     .troubleshoot-item summary{border-bottom:1px solid rgba(0,0,0,.08)}
     .troubleshoot-item summary:hover{color:rgba(0,0,0,.85)}
     .price-list li:hover{background:rgba(0,0,0,.03)}
     .lang-row a{background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.08)}
-    .lang-row a:hover{background:rgba(255,255,255,.9);color:var(--text-1)}
-    .lang-row a.active{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.2);color:var(--text-1);font-weight:700}
+    .lang-row a:hover{background:rgba(255,255,255,.92);color:var(--text-1);border-color:rgba(0,0,0,.16)}
+    .lang-row a.active{
+        background:linear-gradient(135deg,rgba(0,122,255,.18),rgba(90,200,250,.14));
+        border-color:rgba(0,122,255,.32);
+        color:#003d8f;font-weight:700;
+        box-shadow:0 4px 16px rgba(0,122,255,.12);
+    }
     .price-note{color:rgba(0,108,56,.95)}
-    .feature-icon,.card-ico{box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+    .feature-icon,.card-ico{box-shadow:inset 0 0 0 1px rgba(0,0,0,.06), 0 6px 16px -8px var(--c)}
+    .price-foot,.price-head{border-color:rgba(0,0,0,.08)}
 }
 
 /* ── Reduced motion ── */
 @media(prefers-reduced-motion:reduce){
     .fade-up{opacity:1;transform:none;transition:none}
-    .feature-card,.card,.price-card,.badge-link,.glass-btn,.nav-bar{transition:none}
+    .feature-card,.card,.price-card,.badge-link,.glass-btn,.nav-bar,.cta-panel{transition:none}
 }
