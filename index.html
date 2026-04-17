@@ -38,7 +38,7 @@
     <meta name="twitter:image" content="https://klosyt.com/assets/AppIcon.png">
     <link rel="canonical" href="https://klosyt.com/">
     <meta name="theme-color" content="#0a1838" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#e6ebf3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#f3ecde" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="assets/AppIcon.png?v=20260413">
     <link rel="apple-touch-icon" href="assets/AppIcon.png?v=20260413">
     <link rel="preload" as="image" href="assets/AppIcon-blue.png" fetchpriority="high">
@@ -63,7 +63,7 @@
     <link rel="alternate" hreflang="x-default" href="https://klosyt.com/">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <link rel="stylesheet" href="styles.css?v=49">
+    <link rel="stylesheet" href="styles.css?v=51">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -126,14 +126,14 @@
 
 <!-- Hero -->
 <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-inner fade-up">
-        <img src="assets/AppIcon-blue.png" alt="" class="hero-icon" width="128" height="128" fetchpriority="high">
-        <h1 id="hero-title" data-i18n="hero.mainTitle">Your AI-Powered Digital Closet</h1>
-        <p class="hero-sub" data-i18n="hero.mainSubtitle">Snap your clothes, let AI organize them, and get weather-smart outfit suggestions&nbsp;&mdash; all on-device.</p>
-        <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener noreferrer" class="badge-link">
+    <div class="hero-inner">
+        <img src="assets/AppIcon-blue.png" alt="" class="hero-icon fade-up" style="--i:0" width="128" height="128" fetchpriority="high">
+        <h1 id="hero-title" class="fade-up" style="--i:1" data-i18n="hero.mainTitle">Your AI-Powered Digital Closet</h1>
+        <p class="hero-sub fade-up" style="--i:2" data-i18n="hero.mainSubtitle">Snap your clothes, let AI organize them, and get weather-smart outfit suggestions&nbsp;&mdash; all on-device.</p>
+        <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener noreferrer" class="badge-link fade-up" style="--i:3">
             <img src="assets/app-store-badge.svg" alt="Download on the App Store" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48">
         </a>
-        <p class="hero-devices" data-i18n="hero.platforms">iPhone &middot; iPad &middot; Mac &middot; Apple&nbsp;TV &middot; Vision&nbsp;Pro</p>
+        <p class="hero-devices fade-up" style="--i:4" data-i18n="hero.platforms">iPhone &middot; iPad &middot; Mac &middot; Apple&nbsp;TV &middot; Vision&nbsp;Pro</p>
     </div>
 </section>
 
@@ -142,44 +142,47 @@
 <!-- Features -->
 <section class="section" aria-labelledby="features-title">
     <div class="wrap">
-        <h2 id="features-title" class="sr-only" data-i18n="index.featuresTitle">Features</h2>
-        <div class="features-grid fade-up">
-            <div class="glass feature-card">
+        <div class="sec-head fade-up">
+            <span class="sec-eyebrow"><span class="num">01</span></span>
+            <h2 id="features-title" class="sec-title" data-i18n="index.featuresTitle">Features</h2>
+        </div>
+        <div class="features-grid">
+            <div class="glass feature-card fade-up" style="--i:0">
                 <span class="feature-icon" style="--c:#af52de;--bg:rgba(175,82,222,.14)" aria-hidden="true">✨</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.aiStylist">AI Stylist</h3>
                     <p data-i18n="features.aiStylistDesc">Weather-aware outfit suggestions built from your Klosyt. Powered by on-device AI that uses color theory and seasonal awareness to help you look your best in any weather.</p>
                 </div>
             </div>
-            <div class="glass feature-card">
+            <div class="glass feature-card fade-up" style="--i:1">
                 <span class="feature-icon" style="--c:#007aff;--bg:rgba(0,122,255,.14)" aria-hidden="true">👔</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.outfitsTitle">Outfits</h3>
                     <p data-i18n="features.outfitsDesc">Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards. Build a personal lookbook of capsule wardrobe combinations you can revisit anytime.</p>
                 </div>
             </div>
-            <div class="glass feature-card">
+            <div class="glass feature-card fade-up" style="--i:2">
                 <span class="feature-icon" style="--c:#ff9500;--bg:rgba(255,149,0,.14)" aria-hidden="true">📅</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.calendarTitle">Calendar</h3>
                     <p data-i18n="features.calendarDesc">Log what you wear every day. See patterns emerge and never repeat an outfit by accident. Track your wardrobe history to make the most of every item you own.</p>
                 </div>
             </div>
-            <div class="glass feature-card">
+            <div class="glass feature-card fade-up" style="--i:3">
                 <span class="feature-icon" style="--c:#34c759;--bg:rgba(52,199,89,.14)" aria-hidden="true">🔐</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.privacyTitle">Private by Design</h3>
                     <p data-i18n="features.privacyDesc">Everything runs on-device. Your data syncs only to your iCloud&nbsp;&mdash; never shared with anyone. No app analytics, no app tracking, no ads&nbsp;&mdash; your virtual wardrobe stays completely private.</p>
                 </div>
             </div>
-            <div class="glass feature-card">
+            <div class="glass feature-card fade-up" style="--i:4">
                 <span class="feature-icon" style="--c:#5ac8fa;--bg:rgba(90,200,250,.14)" aria-hidden="true">☁️</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.syncTitle">Synced Everywhere</h3>
                     <p data-i18n="features.syncDesc">iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically. One wardrobe across iPhone, iPad, Mac, Apple&nbsp;TV, and Vision&nbsp;Pro.</p>
                 </div>
             </div>
-            <div class="glass feature-card">
+            <div class="glass feature-card fade-up" style="--i:5">
                 <span class="feature-icon" style="--c:#ff2d55;--bg:rgba(255,45,85,.14)" aria-hidden="true">🔍</span>
                 <div class="feature-text">
                     <h3 data-i18n="features.filtersTitle">Smart Filters</h3>
@@ -195,7 +198,10 @@
 <!-- Pricing -->
 <section id="pricing" class="section" aria-labelledby="pricing-title">
     <div class="wrap tc">
-        <h2 id="pricing-title" class="sr-only" data-i18n="index.pricingTitle">Klosyt+ Pricing</h2>
+        <div class="sec-head fade-up">
+            <span class="sec-eyebrow"><span class="num">02</span></span>
+            <h2 id="pricing-title" class="sec-title" data-i18n="index.pricingTitle">Klosyt+ Pricing</h2>
+        </div>
         <div class="glass price-card fade-up">
             <div class="price-head">
                 <span class="price-badge">Klosyt+</span>
@@ -203,11 +209,11 @@
                 <p class="price-trial" data-i18n="pricing.trial">30-day free trial &middot; Cancel anytime</p>
             </div>
             <ul class="price-list">
-                <li><span class="pl-ico" style="--c:#c073ff;--bg:rgba(192,115,255,.15)" aria-hidden="true">✨</span><span data-i18n="pricing.aiStyleAssistant">AI Style Assistant</span></li>
-                <li><span class="pl-ico" style="--c:#007aff;--bg:rgba(0,122,255,.15)" aria-hidden="true">👔</span><span data-i18n="pricing.outfits">Outfits</span></li>
-                <li><span class="pl-ico" style="--c:#34c759;--bg:rgba(52,199,89,.15)" aria-hidden="true">📅</span><span data-i18n="pricing.calendarTracking">Calendar Tracking</span></li>
-                <li><span class="pl-ico" style="--c:#ff9940;--bg:rgba(255,153,64,.15)" aria-hidden="true">🎨</span><span data-i18n="pricing.themesWallpapers">Themes &amp; Wallpapers (Free)</span></li>
-                <li><span class="pl-ico" style="--c:#ffcc00;--bg:rgba(255,204,0,.15)" aria-hidden="true">🌤️</span><span data-i18n="pricing.weatherData">Real-Time Weather</span></li>
+                <li style="--i:0"><span class="pl-ico" style="--c:#c073ff;--bg:rgba(192,115,255,.15)" aria-hidden="true">✨</span><span data-i18n="pricing.aiStyleAssistant">AI Style Assistant</span></li>
+                <li style="--i:1"><span class="pl-ico" style="--c:#007aff;--bg:rgba(0,122,255,.15)" aria-hidden="true">👔</span><span data-i18n="pricing.outfits">Outfits</span></li>
+                <li style="--i:2"><span class="pl-ico" style="--c:#34c759;--bg:rgba(52,199,89,.15)" aria-hidden="true">📅</span><span data-i18n="pricing.calendarTracking">Calendar Tracking</span></li>
+                <li style="--i:3"><span class="pl-ico" style="--c:#ff9940;--bg:rgba(255,153,64,.15)" aria-hidden="true">🎨</span><span data-i18n="pricing.themesWallpapers">Themes &amp; Wallpapers (Free)</span></li>
+                <li style="--i:4"><span class="pl-ico" style="--c:#ffcc00;--bg:rgba(255,204,0,.15)" aria-hidden="true">🌤️</span><span data-i18n="pricing.weatherData">Real-Time Weather</span></li>
             </ul>
             <div class="price-foot">
                 <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener noreferrer" class="badge-link"><img src="assets/app-store-badge.svg" alt="Download on the App Store" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48" loading="lazy" decoding="async"></a>
@@ -222,6 +228,7 @@
 <!-- Languages -->
 <section class="section" aria-labelledby="lang-title">
     <div class="wrap tc fade-up">
+        <span class="sec-eyebrow"><span class="num">03</span></span>
         <h2 id="lang-title" class="lang-label" data-i18n="index.languagesTitle">Available in 17 languages</h2>
         <nav aria-labelledby="lang-title">
             <ul class="lang-row" role="list">
@@ -240,6 +247,7 @@
 <section class="bottom-cta" aria-label="Get Klosyt" data-i18n-aria-label="index.bottomAriaLabel">
     <div class="wrap">
         <div class="cta-panel fade-up">
+            <span class="sec-eyebrow"><span class="num">04</span></span>
             <h2 data-i18n="cta.bottomTitle">Ready to organize your closet?</h2>
             <p data-i18n="cta.bottomDesc">Free to start. Unlimited wardrobe storage. Always private.</p>
             <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener noreferrer" class="badge-link">
