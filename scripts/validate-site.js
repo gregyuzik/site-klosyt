@@ -7,7 +7,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://klosyt.com';
 const LOCALES = [
     'zh-Hans', 'zh-Hant', 'da', 'nl', 'fr', 'de',
-    'it', 'ja', 'ko', 'nb', 'pt-BR', 'es', 'sv', 'tr', 'vi'
+    'it', 'ja', 'ko', 'nb', 'pt-BR', 'ru', 'es', 'sv', 'tr', 'vi'
 ];
 const PAGES = ['index.html', 'support.html', 'privacy.html'];
 const ALL_HTML = ['index.html', 'support.html', 'privacy.html', '404.html']
