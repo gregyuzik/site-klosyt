@@ -18,7 +18,7 @@ const LASTMOD = '2026-04-13';
 
 const LOCALES = [
     'zh-Hans', 'zh-Hant', 'da', 'nl', 'fr', 'de',
-    'it', 'ja', 'ko', 'nb', 'pt-BR', 'es', 'sv', 'tr', 'vi'
+    'it', 'ja', 'ko', 'nb', 'pt-BR', 'ru', 'es', 'sv', 'tr', 'vi'
 ];
 
 // BCP-47 → Open Graph locale (language_TERRITORY). Used for og:locale and
@@ -36,6 +36,7 @@ const OG_LOCALE = {
     'ko': 'ko_KR',
     'nb': 'nb_NO',
     'pt-BR': 'pt_BR',
+    'ru': 'ru_RU',
     'es': 'es_ES',
     'sv': 'sv_SE',
     'tr': 'tr_TR',
