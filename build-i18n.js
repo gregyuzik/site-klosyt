@@ -203,9 +203,10 @@ function buildStructuredData(page, locale, translations, fallback) {
         const title = stripHTML(getTranslation(translations, fallback, 'hero.mainTitle'));
         const description = stripHTML(getTranslation(translations, fallback, 'hero.mainSubtitle'));
         const premiumFeatures = [
+            getTranslation(translations, fallback, 'pricing.weatherData'),
             getTranslation(translations, fallback, 'pricing.aiStyleAssistant'),
-            getTranslation(translations, fallback, 'pricing.outfits'),
-            getTranslation(translations, fallback, 'pricing.calendarTracking')
+            getTranslation(translations, fallback, 'pricing.shareCards'),
+            getTranslation(translations, fallback, 'pricing.smartShare')
         ].map(stripHTML).join(', ');
 
         return {
