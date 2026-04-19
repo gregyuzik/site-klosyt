@@ -8,9 +8,20 @@
     "mainSubtitle": "Fotografér dit tøj, lad AI organisere det, og få vejrtilpassede outfitforslag — alt på enheden og privat.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Nyt i 3.0",
+    "shareTabTitle": "Delefane",
+    "shareTabDesc": "Post- og Story-kort i Pantone-stil med vejr, placering og en scanbar App Store-QR-kode.",
+    "dressAdviceTitle": "Klæderåd",
+    "dressAdviceDesc": "Vejret oversat til påklædning — »Let jakke«, »Tag en paraply« — med tidsfarvede ikoner.",
+    "smartShareTitle": "Smart deling",
+    "smartShareDesc": "En premium »I dag«-stribe løfter tøj frem, der matcher dagens vejr, før du deler.",
+    "freshLookTitle": "Nyt udseende",
+    "freshLookDesc": "Ny introduktionstur, opdaterede baggrunde til Mørk tilstand og en skarpere Liquid Glass-finish hele vejen igennem."
+  },
   "features": {
     "aiStylist": "AI-stylist",
-    "aiStylistDesc": "Vejrtilpassede outfitforslag skabt ud fra din klædeskab. Drevet af AI på enheden.",
+    "aiStylistDesc": "Vejrtilpassede outfitforslag og klæderåd — »Let jakke«, »Tag en paraply« — skabt ud fra din klædeskab. AI på enheden bruger farvelære og sæsonbevidsthed, så du ser bedst ud i alt vejr.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Træk og slip tøj for at skabe looks. Gem favoritter og del smukke Pantone-stilkort.",
     "calendarTitle": "Kalender",
@@ -20,7 +31,11 @@
     "syncTitle": "Synkroniseret overalt",
     "syncDesc": "iCloud holder din klædeskab synkroniseret på alle Apple-enheder, øjeblikkeligt og automatisk.",
     "filtersTitle": "Smarte filtre",
-    "filtersDesc": "Find enhver genstand efter sæson, farve, kategori, materiale eller mønster på sekunder."
+    "filtersDesc": "Find enhver genstand efter sæson, farve, kategori, materiale eller mønster på sekunder.",
+    "shareCardsTitle": "Delekort",
+    "shareCardsDesc": "Post- og Story-kort i Pantone-stil mærket med vejr i realtid, placering, mønster og materiale — plus en scanbar App Store-QR-kode. Hver deling ser redaktionel ud.",
+    "smartShareTitle": "Smart deling",
+    "smartShareDesc": "»I dag«-striben fremhæver tøj, der matcher dagens vejr, så dine delekort altid passer til prognosen. Inkluderet i Klosyt+."
   },
   "pricing": {
     "period": "/md.",
@@ -28,6 +43,8 @@
     "note": "Dit klædeskab er altid gratis. Klosyt+ låser premiumfunktioner op.",
     "aiStyleAssistant": "AI-stilassistent",
     "outfits": "Outfits",
+    "shareCards": "Delekort i Pantone-stil",
+    "smartShare": "Smart deling — I dag",
     "calendarTracking": "Kalendersporing",
     "themesWallpapers": "Temaer & baggrunde (Gratis)",
     "weatherData": "Realtidsvejrdata"

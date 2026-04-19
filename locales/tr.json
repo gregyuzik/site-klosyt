@@ -8,9 +8,20 @@
     "mainSubtitle": "Kıyafetlerini fotoğrafla, AI'ın düzenlemesine izin ver ve hava durumuna uygun kombin önerileri al — hepsi cihazında ve gizli.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "3.0'daki Yenilikler",
+    "shareTabTitle": "Paylaş Sekmesi",
+    "shareTabDesc": "Hava durumu, konum ve taranabilir App Store QR koduyla Pantone tarzı Post ve Story kartları.",
+    "dressAdviceTitle": "Giyim Önerisi",
+    "dressAdviceDesc": "Hava durumu giyim önerisine çevrilir — “Hafif ceket”, “Şemsiyeni al” — ve günün saatine göre renklenen simgelerle gelir.",
+    "smartShareTitle": "Akıllı Paylaşım",
+    "smartShareDesc": "Premium “Bugün” şeridi, paylaşmadan önce günün havasına uyan parçaları öne çıkarır.",
+    "freshLookTitle": "Taze Görünüm",
+    "freshLookDesc": "Yeni tanıtım turu, Karanlık Mod için yenilenmiş duvar kâğıtları ve her yerde daha keskin bir Liquid Glass dokunuşu."
+  },
   "features": {
     "aiStylist": "AI Stilist",
-    "aiStylistDesc": "Gerçek gardırobundan hava durumuna uygun kombin önerileri. Cihaz üzerinde AI ile çalışır.",
+    "aiStylistDesc": "Gardırobundan hava durumuna uygun kombin önerileri ve giyim tavsiyeleri — “Hafif ceket”, “Şemsiyeni al” — bir arada. Cihazda çalışan AI, renk teorisi ve mevsim duyarlılığıyla her havada en iyi görünmeni sağlar.",
     "outfitsTitle": "Kombinler",
     "outfitsDesc": "Kıyafetleri sürükleyip bırakarak stiller oluştur. Favorilerini kaydet ve güzel Pantone tarzı kartlar paylaş.",
     "calendarTitle": "Takvim",
@@ -20,7 +31,11 @@
     "syncTitle": "Her Yerde Senkronize",
     "syncDesc": "iCloud gardırobunu tüm Apple cihazlarında senkronize tutar, anında ve otomatik olarak.",
     "filtersTitle": "Akıllı Filtreler",
-    "filtersDesc": "Herhangi bir kıyafeti mevsim, renk, kategori, kumaş veya desene göre saniyeler içinde bul."
+    "filtersDesc": "Herhangi bir kıyafeti mevsim, renk, kategori, kumaş veya desene göre saniyeler içinde bul.",
+    "shareCardsTitle": "Paylaşım Kartları",
+    "shareCardsDesc": "Gerçek zamanlı hava durumu, konum, desen ve kumaş etiketleriyle Pantone tarzı Post ve Story kartları — taranabilir App Store QR koduyla birlikte. Her paylaşım moda editoryalı gibi görünür.",
+    "smartShareTitle": "Akıllı Paylaşım",
+    "smartShareDesc": "“Bugün” şeridi, günün havasına uyan parçaları öne çıkarır; paylaşım kartların hep tahminle uyumlu kalır. Klosyt+ ile birlikte gelir."
   },
   "pricing": {
     "period": "/ay",
@@ -28,6 +43,8 @@
     "note": "Gardırobun her zaman ücretsiz. Klosyt+ premium özelliklerin kilidini açar.",
     "aiStyleAssistant": "Yapay Zeka Stil Asistanı",
     "outfits": "Kombinler",
+    "shareCards": "Pantone Tarzı Paylaşım Kartları",
+    "smartShare": "Akıllı Paylaşım — Bugün",
     "calendarTracking": "Takvim Takibi",
     "themesWallpapers": "Temalar & Duvar Kağıtları (Ücretsiz)",
     "weatherData": "Anlık Hava Durumu Verileri"

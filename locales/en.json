@@ -8,9 +8,20 @@
     "mainSubtitle": "Snap your clothes, let AI organize them, and get weather-smart outfit suggestions — all on-device.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "What's new in 3.0",
+    "shareTabTitle": "Share Tab",
+    "shareTabDesc": "Pantone-style Post and Story cards with weather, location, and a scannable App Store QR.",
+    "dressAdviceTitle": "Dress Advice",
+    "dressAdviceDesc": "Weather translated into what to wear — “Light jacket,” “Bring an umbrella” — with time-of-day-tinted icons.",
+    "smartShareTitle": "Smart Share",
+    "smartShareDesc": "A premium For-Today strip surfaces items matched to today's weather before you share.",
+    "freshLookTitle": "Fresh Look",
+    "freshLookDesc": "New onboarding tour, refreshed Dark-Mode wallpapers, and a sharper Liquid Glass finish throughout."
+  },
   "features": {
     "aiStylist": "AI Stylist",
-    "aiStylistDesc": "Weather-aware outfit suggestions built from your Klosyt. Powered by on-device AI that uses color theory and seasonal awareness to help you look your best in any weather.",
+    "aiStylistDesc": "Weather-aware outfit suggestions and dress advice — “Light jacket,” “Bring an umbrella” — built from your Klosyt. On-device AI uses color theory and seasonal awareness to help you look your best in any weather.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards. Build a personal lookbook of capsule wardrobe combinations you can revisit anytime.",
     "calendarTitle": "Calendar",
@@ -20,7 +31,11 @@
     "syncTitle": "Synced Everywhere",
     "syncDesc": "iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically. One wardrobe across iPhone, iPad, Mac, Apple TV, and Vision Pro.",
     "filtersTitle": "Smart Filters",
-    "filtersDesc": "Find any item by season, color, category, material, or pattern in seconds. Quickly narrow down your digital closet to find exactly what you need."
+    "filtersDesc": "Find any item by season, color, category, material, or pattern in seconds. Quickly narrow down your digital closet to find exactly what you need.",
+    "shareCardsTitle": "Share Cards",
+    "shareCardsDesc": "Pantone-style Post and Story cards tagged with real-time weather, location, pattern, and material — plus a scannable App Store QR. Every share looks fashion-editorial.",
+    "smartShareTitle": "Smart Share",
+    "smartShareDesc": "The For-Today strip surfaces items matched to today's weather, so your shareable cards always fit the forecast. Included with Klosyt+."
   },
   "pricing": {
     "period": "/month",
@@ -28,6 +43,8 @@
     "note": "Klosyt is always free. Klosyt+ unlocks premium features.",
     "aiStyleAssistant": "AI Style Assistant",
     "outfits": "Outfits",
+    "shareCards": "Pantone-Style Share Cards",
+    "smartShare": "Smart Share — For Today",
     "calendarTracking": "Calendar Tracking",
     "themesWallpapers": "Themes & Wallpapers (Free)",
     "weatherData": "Real-Time Weather Data"

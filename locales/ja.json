@@ -8,9 +8,20 @@
     "mainSubtitle": "服を撮影するだけでAIが自動整理。天気に合わせたコーディネート提案まで、すべてデバイス上で完結。プライバシーも安心。",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "3.0 の新機能",
+    "shareTabTitle": "シェアタブ",
+    "shareTabDesc": "Pantone 風の Post・Story カードに天気、位置情報、スキャン可能な App Store QR コードを添えて。",
+    "dressAdviceTitle": "服装アドバイス",
+    "dressAdviceDesc": "天気を服装アドバイスに翻訳——「薄手のジャケット」「傘を持って」——時間帯で色を変えるアイコン付き。",
+    "smartShareTitle": "スマートシェア",
+    "smartShareDesc": "プレミアム限定「今日のおすすめ」が、シェアの前に当日の天気に合うアイテムを先に提案。",
+    "freshLookTitle": "新しいルック",
+    "freshLookDesc": "新しいオンボーディングツアー、ダークモード向けに刷新された壁紙、そして全体的によりシャープな Liquid Glass 仕上げ。"
+  },
   "features": {
     "aiStylist": "AIスタイリスト",
-    "aiStylistDesc": "あなたのクローゼットから天気を考慮したコーディネート提案。オンデバイスAIで動作。",
+    "aiStylistDesc": "あなたのクローゼットから天気に合わせたコーディネート提案と服装アドバイス——「薄手のジャケット」「傘を持って」——まで。オンデバイスAIが色彩理論と季節感をふまえ、どんな天気でもあなたを輝かせます。",
     "outfitsTitle": "コーディネート",
     "outfitsDesc": "ドラッグ＆ドロップでルックを作成。お気に入りを保存して、美しいPantoneスタイルのカードをシェア。",
     "calendarTitle": "カレンダー",
@@ -20,7 +31,11 @@
     "syncTitle": "どこでも同期",
     "syncDesc": "iCloudがすべてのAppleデバイス間でクローゼットを即座に自動同期。",
     "filtersTitle": "スマートフィルター",
-    "filtersDesc": "季節、色、カテゴリー、素材、柄で瞬時にアイテムを検索。"
+    "filtersDesc": "季節、色、カテゴリー、素材、柄で瞬時にアイテムを検索。",
+    "shareCardsTitle": "シェアカード",
+    "shareCardsDesc": "Pantone 風の Post・Story カードに、リアルタイムの天気、場所、柄、素材をラベル付け。スキャン可能な App Store QR コード付きで、シェアのたびに雑誌の一コマに。",
+    "smartShareTitle": "スマートシェア",
+    "smartShareDesc": "「今日のおすすめ」が当日の天気に合うアイテムを提案するので、シェアカードはいつでも予報にマッチ。Klosyt+ に含まれます。"
   },
   "pricing": {
     "period": "/月",
@@ -28,6 +43,8 @@
     "note": "クローゼットは常に無料。Klosyt+でプレミアム機能をアンロック。",
     "aiStyleAssistant": "AIスタイルアシスタント",
     "outfits": "コーディネート",
+    "shareCards": "Pantone 風シェアカード",
+    "smartShare": "スマートシェア — 今日のおすすめ",
     "calendarTracking": "カレンダー追跡",
     "themesWallpapers": "テーマ＆壁紙（無料）",
     "weatherData": "リアルタイム天気データ"

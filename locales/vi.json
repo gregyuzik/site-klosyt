@@ -8,9 +8,20 @@
     "mainSubtitle": "Chụp ảnh quần áo, để AI sắp xếp và nhận gợi ý trang phục thông minh theo thời tiết — tất cả trên thiết bị và riêng tư.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Có gì mới trong 3.0",
+    "shareTabTitle": "Tab Chia sẻ",
+    "shareTabDesc": "Thẻ Post và Story kiểu Pantone kèm thời tiết, vị trí và mã QR App Store quét được.",
+    "dressAdviceTitle": "Tư vấn trang phục",
+    "dressAdviceDesc": "Thời tiết được dịch thành gợi ý mặc — “Áo khoác mỏng”, “Mang ô” — kèm biểu tượng nhuốm màu theo thời điểm trong ngày.",
+    "smartShareTitle": "Chia sẻ thông minh",
+    "smartShareDesc": "Dải cao cấp “Hôm nay” nổi bật những món hợp với thời tiết hôm nay trước khi bạn chia sẻ.",
+    "freshLookTitle": "Diện mạo mới",
+    "freshLookDesc": "Tour làm quen mới, hình nền tối ưu cho Chế độ Tối và lớp hoàn thiện Liquid Glass sắc nét hơn trên toàn ứng dụng."
+  },
   "features": {
     "aiStylist": "AI Stylist",
-    "aiStylistDesc": "Gợi ý trang phục phù hợp thời tiết từ tủ đồ thực của bạn. Chạy bằng AI trên thiết bị.",
+    "aiStylistDesc": "Gợi ý trang phục theo thời tiết và tư vấn mặc gì — “Áo khoác mỏng”, “Mang ô” — lấy từ tủ đồ thực của bạn. AI trên thiết bị dùng lý thuyết màu sắc và cảm quan mùa để bạn luôn đẹp trong mọi thời tiết.",
     "outfitsTitle": "Trang phục",
     "outfitsDesc": "Kéo thả món đồ để tạo phong cách. Lưu yêu thích và chia sẻ thẻ Pantone tuyệt đẹp.",
     "calendarTitle": "Lịch",
@@ -20,7 +31,11 @@
     "syncTitle": "Đồng bộ mọi nơi",
     "syncDesc": "iCloud giữ tủ đồ đồng bộ trên mọi thiết bị Apple, tức thì và tự động.",
     "filtersTitle": "Bộ lọc thông minh",
-    "filtersDesc": "Tìm bất kỳ món đồ nào theo mùa, màu sắc, danh mục, chất liệu hoặc họa tiết trong vài giây."
+    "filtersDesc": "Tìm bất kỳ món đồ nào theo mùa, màu sắc, danh mục, chất liệu hoặc họa tiết trong vài giây.",
+    "shareCardsTitle": "Thẻ chia sẻ",
+    "shareCardsDesc": "Thẻ Post và Story kiểu Pantone gắn thẻ thời tiết theo thời gian thực, vị trí, họa tiết và chất liệu — kèm mã QR App Store quét được. Mỗi lần chia sẻ như một trang tạp chí thời trang.",
+    "smartShareTitle": "Chia sẻ thông minh",
+    "smartShareDesc": "Dải “Hôm nay” nổi bật những món hợp với thời tiết hôm nay, giúp thẻ chia sẻ luôn khớp dự báo. Đi kèm Klosyt+."
   },
   "pricing": {
     "period": "/tháng",
@@ -28,6 +43,8 @@
     "note": "Tủ đồ luôn miễn phí. Klosyt+ mở khóa tính năng cao cấp.",
     "aiStyleAssistant": "Trợ lý phong cách AI",
     "outfits": "Trang phục",
+    "shareCards": "Thẻ kiểu Pantone",
+    "smartShare": "Chia sẻ thông minh — Hôm nay",
     "calendarTracking": "Theo dõi lịch",
     "themesWallpapers": "Chủ đề & hình nền (Miễn phí)",
     "weatherData": "Dữ liệu thời tiết thực tế"

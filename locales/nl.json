@@ -8,9 +8,20 @@
     "mainSubtitle": "Maak een foto van je kleding, laat AI ze organiseren en ontvang weer-slimme outfitsuggesties — alles op je apparaat en privé.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Nieuw in 3.0",
+    "shareTabTitle": "Deel-tabblad",
+    "shareTabDesc": "Post- en Story-kaarten in Pantone-stijl met weer, locatie en een scanbare App Store-QR.",
+    "dressAdviceTitle": "Kledingadvies",
+    "dressAdviceDesc": "Het weer vertaald naar kledingtips — „Licht jasje”, „Neem een paraplu” — met tijdgekleurde iconen.",
+    "smartShareTitle": "Slim delen",
+    "smartShareDesc": "Een premium Voor vandaag-strook laat items zien die bij het weer van vandaag passen voordat je deelt.",
+    "freshLookTitle": "Nieuwe look",
+    "freshLookDesc": "Nieuwe onboarding-tour, opgefriste Donkere-modus-wallpapers en een scherpere Liquid Glass-afwerking overal."
+  },
   "features": {
     "aiStylist": "AI-stylist",
-    "aiStylistDesc": "Weer-bewuste outfitsuggesties uit je echte kledingkast. Aangedreven door on-device AI.",
+    "aiStylistDesc": "Weer-bewuste outfitsuggesties én kledingadvies — „Licht jasje”, „Neem een paraplu” — uit je echte kledingkast. On-device AI gebruikt kleurtheorie en seizoensbesef zodat je er bij elk weer op je best uitziet.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Sleep items om looks te maken. Bewaar favorieten en deel prachtige Pantone-stijlkaarten.",
     "calendarTitle": "Kalender",
@@ -20,7 +31,11 @@
     "syncTitle": "Overal gesynchroniseerd",
     "syncDesc": "iCloud houdt je kledingkast gesynchroniseerd op elk Apple-apparaat, direct en automatisch.",
     "filtersTitle": "Slimme filters",
-    "filtersDesc": "Vind elk item op seizoen, kleur, categorie, materiaal of patroon in seconden."
+    "filtersDesc": "Vind elk item op seizoen, kleur, categorie, materiaal of patroon in seconden.",
+    "shareCardsTitle": "Deelkaarten",
+    "shareCardsDesc": "Post- en Story-kaarten in Pantone-stijl, voorzien van realtime weer, locatie, patroon en materiaal — plus een scanbare App Store-QR. Elke deling oogt als een modemagazine.",
+    "smartShareTitle": "Slim delen",
+    "smartShareDesc": "De Voor vandaag-strook laat items zien die bij het weer van vandaag passen, zodat je deelkaarten altijd kloppen met de voorspelling. Inbegrepen bij Klosyt+."
   },
   "pricing": {
     "period": "/maand",
@@ -28,6 +43,8 @@
     "note": "Je kledingkast is altijd gratis. Klosyt+ ontgrendelt premiumfuncties.",
     "aiStyleAssistant": "AI-stijlassistent",
     "outfits": "Outfits",
+    "shareCards": "Deelkaarten in Pantone-stijl",
+    "smartShare": "Slim delen — Voor vandaag",
     "calendarTracking": "Kalender-tracking",
     "themesWallpapers": "Thema's & achtergronden (Gratis)",
     "weatherData": "Realtime weerdata"

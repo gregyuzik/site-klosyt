@@ -8,9 +8,20 @@
     "mainSubtitle": "Fota dina kläder, låt AI organisera dem och få vädersmart outfitförslag — allt på enheten och privat.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Nyheter i 3.0",
+    "shareTabTitle": "Delningsflik",
+    "shareTabDesc": "Post- och Story-kort i Pantone-stil med väder, plats och en skannbar App Store-QR.",
+    "dressAdviceTitle": "Klädråd",
+    "dressAdviceDesc": "Vädret översatt till klädråd — ”Lätt jacka”, ”Ta med paraply” — med tidsfärgade ikoner.",
+    "smartShareTitle": "Smart delning",
+    "smartShareDesc": "En premium ”Idag”-rad lyfter fram plagg som matchar dagens väder innan du delar.",
+    "freshLookTitle": "Nytt utseende",
+    "freshLookDesc": "Ny introduktionstur, uppdaterade bakgrunder för mörkt läge och en skarpare Liquid Glass-yta överallt."
+  },
   "features": {
     "aiStylist": "AI-stylist",
-    "aiStylistDesc": "Väderanpassade outfitförslag från din riktiga garderob. Drivs av AI på enheten.",
+    "aiStylistDesc": "Väderanpassade outfitförslag och klädråd — ”Lätt jacka”, ”Ta med paraply” — från din riktiga garderob. AI på enheten använder färglära och säsongskänsla så att du ser bäst ut i alla väder.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Dra och släpp plagg för att skapa looks. Spara favoriter och dela vackra Pantone-stilkort.",
     "calendarTitle": "Kalender",
@@ -20,7 +31,11 @@
     "syncTitle": "Synkroniserad överallt",
     "syncDesc": "iCloud håller din garderob synkroniserad på alla Apple-enheter, direkt och automatiskt.",
     "filtersTitle": "Smarta filter",
-    "filtersDesc": "Hitta alla plagg efter säsong, färg, kategori, material eller mönster på sekunder."
+    "filtersDesc": "Hitta alla plagg efter säsong, färg, kategori, material eller mönster på sekunder.",
+    "shareCardsTitle": "Delningskort",
+    "shareCardsDesc": "Post- och Story-kort i Pantone-stil märkta med realtidsväder, plats, mönster och material — plus en skannbar App Store-QR. Varje delning ser redaktionell ut.",
+    "smartShareTitle": "Smart delning",
+    "smartShareDesc": "”Idag”-raden lyfter fram plagg som matchar dagens väder, så dina delningskort alltid stämmer med prognosen. Ingår i Klosyt+."
   },
   "pricing": {
     "period": "/månad",
@@ -28,6 +43,8 @@
     "note": "Din garderob är alltid gratis. Klosyt+ låser upp premiumfunktioner.",
     "aiStyleAssistant": "AI-stilassistent",
     "outfits": "Outfits",
+    "shareCards": "Delningskort i Pantone-stil",
+    "smartShare": "Smart delning — Idag",
     "calendarTracking": "Kalenderspårning",
     "themesWallpapers": "Teman & bakgrunder (Gratis)",
     "weatherData": "Realtidsväderdata"

@@ -8,9 +8,20 @@
     "mainSubtitle": "Fotografiere deine Kleidung, lass die KI sie organisieren und erhalte wetterangepasste Outfit-Vorschläge — alles auf dem Gerät und privat.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Neu in 3.0",
+    "shareTabTitle": "Teilen-Tab",
+    "shareTabDesc": "Post- und Story-Karten im Pantone-Stil mit Wetter, Ort und scanbarem App-Store-QR.",
+    "dressAdviceTitle": "Kleidungs-Tipp",
+    "dressAdviceDesc": "Wetter in Kleidungstipps übersetzt — „Leichte Jacke“, „Regenschirm mitnehmen“ — mit tageszeitlich getönten Symbolen.",
+    "smartShareTitle": "Smart Teilen",
+    "smartShareDesc": "Eine Premium-„Für heute“-Leiste zeigt vor dem Teilen Teile, die zum heutigen Wetter passen.",
+    "freshLookTitle": "Frischer Look",
+    "freshLookDesc": "Neuer Onboarding-Tour, überarbeitete Dark-Mode-Hintergründe und ein schärferes Liquid-Glass-Finish überall."
+  },
   "features": {
     "aiStylist": "KI-Stylist",
-    "aiStylistDesc": "Wetterangepasste Outfit-Vorschläge aus deiner Kleiderschrank. Angetrieben von On-Device-KI.",
+    "aiStylistDesc": "Wetterangepasste Outfit-Vorschläge und Kleidungstipps — „Leichte Jacke“, „Regenschirm mitnehmen“ — aus deinem Kleiderschrank. On-Device-KI nutzt Farblehre und Saison-Bewusstsein, damit du bei jedem Wetter gut aussiehst.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Ziehe Kleidungsstücke per Drag & Drop zu Looks zusammen. Speichere Favoriten und teile schöne Pantone-Stilkarten.",
     "calendarTitle": "Kalender",
@@ -20,7 +31,11 @@
     "syncTitle": "Überall synchronisiert",
     "syncDesc": "iCloud hält deinen Kleiderschrank auf allen Apple-Geräten synchron, sofort und automatisch.",
     "filtersTitle": "Intelligente Filter",
-    "filtersDesc": "Finde jedes Teil nach Saison, Farbe, Kategorie, Material oder Muster in Sekunden."
+    "filtersDesc": "Finde jedes Teil nach Saison, Farbe, Kategorie, Material oder Muster in Sekunden.",
+    "shareCardsTitle": "Share-Karten",
+    "shareCardsDesc": "Post- und Story-Karten im Pantone-Stil, beschriftet mit Echtzeit-Wetter, Ort, Muster und Material — plus scanbarem App-Store-QR. Jede Freigabe sieht aus wie ein Mode-Editorial.",
+    "smartShareTitle": "Smart Teilen",
+    "smartShareDesc": "Die „Für heute“-Leiste zeigt Teile, die zum heutigen Wetter passen — damit deine Karten immer zur Vorhersage passen. In Klosyt+ enthalten."
   },
   "pricing": {
     "period": "/Monat",
@@ -28,6 +43,8 @@
     "note": "Dein Kleiderschrank ist immer kostenlos. Klosyt+ schaltet Premium-Funktionen frei.",
     "aiStyleAssistant": "KI-Stil-Assistent",
     "outfits": "Outfits",
+    "shareCards": "Share-Karten im Pantone-Stil",
+    "smartShare": "Smart Teilen — Für heute",
     "calendarTracking": "Kalender-Tracking",
     "themesWallpapers": "Themen & Hintergründe (Kostenlos)",
     "weatherData": "Echtzeit-Wetterdaten"
