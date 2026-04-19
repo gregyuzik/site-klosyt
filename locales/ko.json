@@ -8,9 +8,20 @@
     "mainSubtitle": "옷을 촬영하면 AI가 자동으로 정리하고, 날씨에 맞는 코디를 제안합니다 — 모두 기기 내에서 프라이버시를 지키며.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "3.0의 새로운 기능",
+    "shareTabTitle": "공유 탭",
+    "shareTabDesc": "날씨·위치 정보와 스캔 가능한 App Store QR이 담긴 팬톤 스타일 Post·Story 카드.",
+    "dressAdviceTitle": "옷차림 조언",
+    "dressAdviceDesc": "날씨를 옷차림으로 번역 — ‘가벼운 재킷,’ ‘우산 챙기기’ — 시간대별 색상 아이콘까지.",
+    "smartShareTitle": "스마트 공유",
+    "smartShareDesc": "프리미엄 ‘오늘의 추천’ 스트립이 공유 전에 오늘 날씨에 어울리는 아이템을 먼저 보여 줍니다.",
+    "freshLookTitle": "새로운 디자인",
+    "freshLookDesc": "새로운 온보딩 투어, 다크 모드 전용 새 월페이퍼, 전반적으로 더 날카로워진 Liquid Glass 마감."
+  },
   "features": {
     "aiStylist": "AI 스타일리스트",
-    "aiStylistDesc": "실제 옷장을 기반으로 날씨를 고려한 코디 제안. 온디바이스 AI로 작동.",
+    "aiStylistDesc": "실제 옷장을 기반으로 날씨에 맞춘 코디 제안과 옷차림 조언 — ‘가벼운 재킷,’ ‘우산 챙기기’ — 까지. 온디바이스 AI가 색채 이론과 계절감을 활용해 어떤 날씨에도 돋보이게 도와줍니다.",
     "outfitsTitle": "코디",
     "outfitsDesc": "드래그 앤 드롭으로 룩을 만들고, 즐겨찾기를 저장하고, 아름다운 Pantone 스타일 카드를 공유.",
     "calendarTitle": "캘린더",
@@ -20,7 +31,11 @@
     "syncTitle": "어디서나 동기화",
     "syncDesc": "iCloud가 모든 Apple 기기에서 옷장을 즉시 자동으로 동기화.",
     "filtersTitle": "스마트 필터",
-    "filtersDesc": "시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색."
+    "filtersDesc": "시즌, 색상, 카테고리, 소재, 패턴으로 순식간에 아이템 검색.",
+    "shareCardsTitle": "공유 카드",
+    "shareCardsDesc": "실시간 날씨·위치·패턴·소재 태그가 담긴 팬톤 스타일 Post·Story 카드. 스캔 가능한 App Store QR까지 — 모든 공유가 에디토리얼처럼 보입니다.",
+    "smartShareTitle": "스마트 공유",
+    "smartShareDesc": "‘오늘의 추천’ 스트립이 오늘 날씨에 어울리는 아이템을 추려 주어 공유 카드가 언제나 예보와 맞아떨어집니다. Klosyt+ 포함."
   },
   "pricing": {
     "period": "/월",
@@ -28,6 +43,8 @@
     "note": "옷장은 항상 무료입니다. Klosyt+로 프리미엄 기능을 잠금 해제하세요.",
     "aiStyleAssistant": "AI 스타일 어시스턴트",
     "outfits": "코디",
+    "shareCards": "팬톤 스타일 공유 카드",
+    "smartShare": "스마트 공유 — 오늘의 추천",
     "calendarTracking": "캘린더 추적",
     "themesWallpapers": "테마 & 배경화면 (무료)",
     "weatherData": "실시간 날씨 데이터"

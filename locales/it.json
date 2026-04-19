@@ -8,9 +8,20 @@
     "mainSubtitle": "Scatta una foto ai tuoi vestiti, lascia che l'IA li organizzi e ricevi suggerimenti outfit in base al meteo — tutto sul dispositivo e in totale privacy.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Novità della 3.0",
+    "shareTabTitle": "Scheda Condivisione",
+    "shareTabDesc": "Card Post e Story in stile Pantone con meteo, posizione e un QR dell’App Store scansionabile.",
+    "dressAdviceTitle": "Consigli sul look",
+    "dressAdviceDesc": "Il meteo tradotto in suggerimenti — «Giacca leggera», «Porta l’ombrello» — con icone tinte in base all’ora.",
+    "smartShareTitle": "Condivisione intelligente",
+    "smartShareDesc": "Una striscia premium «Per Oggi» mette in evidenza i capi adatti al meteo della giornata prima di condividere.",
+    "freshLookTitle": "Nuovo look",
+    "freshLookDesc": "Nuovo tour di benvenuto, sfondi per la modalità scura rinnovati e una finitura Liquid Glass più nitida ovunque."
+  },
   "features": {
     "aiStylist": "Stilista IA",
-    "aiStylistDesc": "Suggerimenti outfit in base al meteo, creati dal tuo armadio. Con IA direttamente sul dispositivo.",
+    "aiStylistDesc": "Suggerimenti outfit basati sul meteo e consigli sul look — «Giacca leggera», «Porta l’ombrello» — creati dal tuo armadio reale. L’IA sul dispositivo usa teoria del colore e stagionalità per farti stare bene con qualsiasi tempo.",
     "outfitsTitle": "Outfit",
     "outfitsDesc": "Trascina e rilascia capi per creare look. Salva i preferiti e condividi eleganti schede stile Pantone.",
     "calendarTitle": "Calendario",
@@ -20,7 +31,11 @@
     "syncTitle": "Sincronizzato ovunque",
     "syncDesc": "iCloud mantiene il tuo armadio sincronizzato su ogni dispositivo Apple, all'istante e automaticamente.",
     "filtersTitle": "Filtri intelligenti",
-    "filtersDesc": "Trova qualsiasi capo per stagione, colore, categoria, materiale o motivo in pochi secondi."
+    "filtersDesc": "Trova qualsiasi capo per stagione, colore, categoria, materiale o motivo in pochi secondi.",
+    "shareCardsTitle": "Card da condividere",
+    "shareCardsDesc": "Card Post e Story in stile Pantone con meteo in tempo reale, posizione, fantasia e materiale — più un QR dell’App Store scansionabile. Ogni condivisione sembra un editoriale di moda.",
+    "smartShareTitle": "Condivisione intelligente",
+    "smartShareDesc": "La striscia «Per Oggi» evidenzia i capi adatti al meteo del giorno, così le tue card rispecchiano sempre le previsioni. Incluso in Klosyt+."
   },
   "pricing": {
     "period": "/mese",
@@ -28,6 +43,8 @@
     "note": "Il tuo armadio è sempre gratuito. Klosyt+ sblocca le funzionalità premium.",
     "aiStyleAssistant": "Assistente stile IA",
     "outfits": "Outfit",
+    "shareCards": "Card stile Pantone",
+    "smartShare": "Condivisione intelligente — Per Oggi",
     "calendarTracking": "Calendario",
     "themesWallpapers": "Temi e sfondi (Gratuiti)",
     "weatherData": "Dati meteo in tempo reale"

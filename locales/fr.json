@@ -8,9 +8,20 @@
     "mainSubtitle": "Photographiez vos vêtements, laissez l'IA les organiser et recevez des suggestions de tenues adaptées à la météo — le tout sur l'appareil et en toute confidentialité.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "Nouveautés de la 3.0",
+    "shareTabTitle": "Onglet Partage",
+    "shareTabDesc": "Cartes Post et Story façon Pantone avec météo, localisation et un QR App Store scannable.",
+    "dressAdviceTitle": "Conseils vestimentaires",
+    "dressAdviceDesc": "La météo traduite en tenue — « Veste légère », « Prends un parapluie » — avec des icônes teintées selon l’heure.",
+    "smartShareTitle": "Partage intelligent",
+    "smartShareDesc": "Une bande premium « Aujourd’hui » met en avant les pièces adaptées à la météo du jour avant le partage.",
+    "freshLookTitle": "Look rafraîchi",
+    "freshLookDesc": "Nouvelle visite guidée, fonds d’écran Mode Sombre retravaillés et une finition Liquid Glass plus nette partout."
+  },
   "features": {
     "aiStylist": "Styliste IA",
-    "aiStylistDesc": "Des suggestions de tenues adaptées à la météo, créées à partir de votre dressing. Propulsé par l'IA sur l'appareil.",
+    "aiStylistDesc": "Des suggestions de tenues adaptées à la météo et des conseils vestimentaires — « Veste légère », « Prends un parapluie » — créés à partir de votre dressing. L’IA embarquée s’appuie sur la théorie des couleurs et les saisons pour vous mettre en valeur par tous les temps.",
     "outfitsTitle": "Tenues",
     "outfitsDesc": "Glissez-déposez des articles pour créer des looks. Sauvegardez vos favoris et partagez de magnifiques cartes style Pantone.",
     "calendarTitle": "Calendrier",
@@ -20,7 +31,11 @@
     "syncTitle": "Synchronisé partout",
     "syncDesc": "iCloud garde votre dressing synchronisé sur tous vos appareils Apple, instantanément et automatiquement.",
     "filtersTitle": "Filtres intelligents",
-    "filtersDesc": "Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes."
+    "filtersDesc": "Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes.",
+    "shareCardsTitle": "Cartes à partager",
+    "shareCardsDesc": "Cartes Post et Story façon Pantone étiquetées avec météo en temps réel, lieu, motif et matière — plus un QR App Store scannable. Chaque partage est digne d’un éditorial mode.",
+    "smartShareTitle": "Partage intelligent",
+    "smartShareDesc": "La bande « Aujourd’hui » met en avant les pièces adaptées à la météo du jour, pour que vos cartes collent toujours aux prévisions. Inclus dans Klosyt+."
   },
   "pricing": {
     "period": "/mois",
@@ -28,6 +43,8 @@
     "note": "Votre dressing est toujours gratuit. Klosyt+ débloque les fonctionnalités premium.",
     "aiStyleAssistant": "Assistant de style IA",
     "outfits": "Tenues",
+    "shareCards": "Cartes à partager façon Pantone",
+    "smartShare": "Partage intelligent — Aujourd’hui",
     "calendarTracking": "Suivi calendrier",
     "themesWallpapers": "Thèmes et fonds d'écran (Gratuit)",
     "weatherData": "Données météo en temps réel"
