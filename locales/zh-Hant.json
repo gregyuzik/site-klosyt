@@ -8,9 +8,20 @@
     "mainSubtitle": "拍下你的衣物，讓AI自動整理，取得天氣智慧穿搭建議——一切都在裝置端完成，隱私無虞。",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
+  "whatsNew": {
+    "title": "3.0 新功能",
+    "shareTabTitle": "分享標籤頁",
+    "shareTabDesc": "Pantone 風格的 Post 和 Story 卡片，附帶天氣、位置資訊和可掃描的 App Store QR 碼。",
+    "dressAdviceTitle": "穿搭建議",
+    "dressAdviceDesc": "把天氣翻譯成穿搭建議——「薄夾克」「帶把傘」——搭配隨時段變色的圖示。",
+    "smartShareTitle": "智慧分享",
+    "smartShareDesc": "高級版「今日推薦」橫欄會在你分享前先挑出與當日天氣相配的單品。",
+    "freshLookTitle": "全新外觀",
+    "freshLookDesc": "全新的引導教學、為深色模式優化的桌布，以及整體更清晰的 Liquid Glass 質感。"
+  },
   "features": {
     "aiStylist": "AI造型師",
-    "aiStylistDesc": "基於天氣的穿搭建議，來自你的真實衣櫥。由裝置端AI驅動。",
+    "aiStylistDesc": "基於天氣的穿搭建議與穿搭提示——「薄夾克」「帶把傘」——來自你的真實衣櫥。裝置端 AI 運用色彩理論與季節感知，讓你在任何天氣都穿得好看。",
     "outfitsTitle": "搭配",
     "outfitsDesc": "拖放物品建立造型。儲存喜愛的搭配，分享精美的Pantone風格卡片。",
     "calendarTitle": "行事曆",
@@ -20,7 +31,11 @@
     "syncTitle": "隨處同步",
     "syncDesc": "iCloud讓你的衣櫥在所有Apple裝置間保持同步，即時且自動。",
     "filtersTitle": "智慧篩選",
-    "filtersDesc": "按季節、顏色、類別、面料或圖案，幾秒鐘找到任何物品。"
+    "filtersDesc": "按季節、顏色、類別、面料或圖案，幾秒鐘找到任何物品。",
+    "shareCardsTitle": "分享卡片",
+    "shareCardsDesc": "Pantone 風格的 Post 和 Story 卡片，標註即時天氣、位置、花紋與面料，還附帶可掃描的 App Store QR 碼。每次分享都像時尚大片。",
+    "smartShareTitle": "智慧分享",
+    "smartShareDesc": "「今日推薦」橫欄會挑選與當日天氣相符的單品，讓你每張分享卡都貼合天氣。Klosyt+ 訂閱包含。"
   },
   "pricing": {
     "period": "/月",
@@ -28,6 +43,8 @@
     "note": "你的衣櫥永遠免費。Klosyt+解鎖進階功能。",
     "aiStyleAssistant": "AI風格助手",
     "outfits": "搭配",
+    "shareCards": "Pantone 風格分享卡片",
+    "smartShare": "智慧分享 — 今日推薦",
     "calendarTracking": "行事曆追蹤",
     "themesWallpapers": "主題和桌布（免費）",
     "weatherData": "即時天氣資料"
