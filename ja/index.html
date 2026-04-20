@@ -88,7 +88,7 @@
                     "@type": "UnitPriceSpecification",
                     "billingDuration": "P1M"
                 },
-                "description": "リアルタイム天気データ, AIスタイルアシスタント, Pantone 風シェアカード, スマートシェア — 今日のおすすめ"
+                "description": "リアルタイム天気データ · Apple Weather, AIスタイルアシスタント, Pantone 風シェアカード, スマートシェア — 今日のおすすめ"
             }
         ],
         "description": "服を撮影するだけでAIが自動整理。天気に合わせたコーディネート提案まで、すべてデバイス上で完結。プライバシーも安心。",
@@ -256,11 +256,10 @@
                 <p class="price-trial" data-i18n="pricing.trial">30日間無料体験 · いつでもキャンセル可能</p>
             </div>
             <ul class="price-list">
-                <li style="--i:0"><span class="pl-ico" style="--c:#ffb347;--bg:rgba(255,179,71,.15)" aria-hidden="true">🌤️</span><span data-i18n="pricing.weatherData">リアルタイム天気データ</span></li>
+                <li style="--i:0"><span class="pl-ico" style="--c:#ffb347;--bg:rgba(255,179,71,.15)" aria-hidden="true">🌤️</span><span data-i18n="pricing.weatherData">リアルタイム天気データ · Apple Weather</span></li>
                 <li style="--i:1"><span class="pl-ico" style="--c:#c073ff;--bg:rgba(192,115,255,.15)" aria-hidden="true">✨</span><span data-i18n="pricing.aiStyleAssistant">AIスタイルアシスタント</span></li>
                 <li style="--i:2"><span class="pl-ico" style="--c:#5be0c0;--bg:rgba(91,224,192,.15)" aria-hidden="true">📤</span><span data-i18n="pricing.shareCards">Pantone 風シェアカード</span></li>
                 <li style="--i:3"><span class="pl-ico" style="--c:#ffcc00;--bg:rgba(255,204,0,.15)" aria-hidden="true">⚡</span><span data-i18n="pricing.smartShare">スマートシェア — 今日のおすすめ</span></li>
-                <li style="--i:4"><span class="pl-ico" style="--c:#ff9940;--bg:rgba(255,153,64,.15)" aria-hidden="true">🎨</span><span data-i18n="pricing.themesWallpapers">テーマ＆壁紙（無料）</span></li>
             </ul>
             <div class="price-foot">
                 <a href="https://apps.apple.com/app/klosyt/id6758277603" target="_blank" rel="noopener noreferrer" class="badge-link"><img src="/assets/app-store-badge.svg" alt="App Storeからダウンロード" data-i18n-alt="cta.appStoreAlt" class="badge-img" width="180" height="48" loading="lazy" decoding="async"></a>
@@ -278,10 +277,23 @@
         <h2 id="lang-title" class="lang-label" data-i18n="index.languagesTitle">17言語で利用可能</h2>
         <nav aria-labelledby="lang-title">
             <ul class="lang-row" role="list">
-                <li><a href="/" lang="en" data-locale="en">English</a></li><li><a href="/zh-Hans/" lang="zh-Hans" data-locale="zh-Hans">简体中文</a></li><li><a href="/zh-Hant/" lang="zh-Hant" data-locale="zh-Hant">繁體中文</a></li><li><a href="/da/" lang="da" data-locale="da">Dansk</a></li>
-                <li><a href="/nl/" lang="nl" data-locale="nl">Nederlands</a></li><li><a href="/fr/" lang="fr" data-locale="fr">Français</a></li><li><a href="/de/" lang="de" data-locale="de">Deutsch</a></li><li><a href="/it/" lang="it" data-locale="it">Italiano</a></li>
-                <li><a href="/ja/" lang="ja" data-locale="ja">日本語</a></li><li><a href="/ko/" lang="ko" data-locale="ko">한국어</a></li><li><a href="/nb/" lang="nb" data-locale="nb">Norsk</a></li><li><a href="/pt-BR/" lang="pt-BR" data-locale="pt-BR">Português</a></li>
-                <li><a href="/ru/" lang="ru" data-locale="ru">Русский</a></li><li><a href="/es/" lang="es" data-locale="es">Español</a></li><li><a href="/sv/" lang="sv" data-locale="sv">Svenska</a></li><li><a href="/tr/" lang="tr" data-locale="tr">Türkçe</a></li><li><a href="/vi/" lang="vi" data-locale="vi">Tiếng Việt</a></li>
+                <li><a href="/da/" lang="da" data-locale="da">Dansk</a></li>
+                <li><a href="/de/" lang="de" data-locale="de">Deutsch</a></li>
+                <li><a href="/" lang="en" data-locale="en">English</a></li>
+                <li><a href="/es/" lang="es" data-locale="es">Español</a></li>
+                <li><a href="/fr/" lang="fr" data-locale="fr">Français</a></li>
+                <li><a href="/it/" lang="it" data-locale="it">Italiano</a></li>
+                <li><a href="/nl/" lang="nl" data-locale="nl">Nederlands</a></li>
+                <li><a href="/nb/" lang="nb" data-locale="nb">Norsk</a></li>
+                <li><a href="/pt-BR/" lang="pt-BR" data-locale="pt-BR">Português</a></li>
+                <li><a href="/sv/" lang="sv" data-locale="sv">Svenska</a></li>
+                <li><a href="/vi/" lang="vi" data-locale="vi">Tiếng Việt</a></li>
+                <li><a href="/tr/" lang="tr" data-locale="tr">Türkçe</a></li>
+                <li><a href="/ru/" lang="ru" data-locale="ru">Русский</a></li>
+                <li><a href="/ja/" lang="ja" data-locale="ja">日本語</a></li>
+                <li><a href="/zh-Hans/" lang="zh-Hans" data-locale="zh-Hans">简体中文</a></li>
+                <li><a href="/zh-Hant/" lang="zh-Hant" data-locale="zh-Hant">繁體中文</a></li>
+                <li><a href="/ko/" lang="ko" data-locale="ko">한국어</a></li>
             </ul>
         </nav>
     </div>
@@ -318,6 +330,6 @@
 </footer>
 
 <script src="/reveal.js?v=1"></script>
-<script src="/icons.js?v=11"></script>
+<script src="/icons.js?v=12"></script>
 </body>
 </html>
