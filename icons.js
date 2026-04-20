@@ -162,7 +162,9 @@
         // Apple Weather attribution: inline Apple logo before the brand name.
         // Each locale's weatherData ends with " · Apple Weather" (brand kept in
         // English); we split on that and inject the logo between separator and
-        // brand to match Apple's own in-app attribution style.
+        // brand to match Apple's own in-app attribution style. The logo + brand
+        // go inside a nowrap span so they never split across lines (the natural
+        // break point becomes " · " instead, keeping "Apple Weather" together).
         document.querySelectorAll('[data-i18n="pricing.weatherData"]').forEach(function (el) {
             if (el.querySelector('svg')) return;
             var text = el.textContent;
@@ -170,8 +172,11 @@
             var idx = text.lastIndexOf(marker);
             if (idx === -1) return;
             el.textContent = text.slice(0, idx);
-            el.insertAdjacentHTML('beforeend', makeSvg(icons['apple'], 11));
-            el.appendChild(document.createTextNode(' ' + marker));
+            var badge = document.createElement('span');
+            badge.style.whiteSpace = 'nowrap';
+            badge.insertAdjacentHTML('beforeend', makeSvg(icons['apple'], 11));
+            badge.appendChild(document.createTextNode(' ' + marker));
+            el.appendChild(badge);
         });
     }
 
