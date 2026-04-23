@@ -483,7 +483,8 @@ h1.sec-title{
     .price-num{color:#ffcc00;-webkit-text-fill-color:initial}
 }
 .price-per{font-size:1rem;color:var(--text-2);font-weight:500}
-.price-trial{font-size:.88rem;color:var(--text-3)}
+.price-trial{font-size:1rem;font-weight:600;color:var(--text-1);letter-spacing:-.01em}
+.price-trial-sub{margin-top:.2rem;font-size:.84rem;color:var(--text-3)}
 .price-list{list-style:none;padding:1.5rem 2rem;display:flex;flex-direction:column;gap:4px}
 .price-list li{
     display:flex;align-items:center;gap:12px;
@@ -502,6 +503,10 @@ h1.sec-title{
     margin-top:.85rem;font-size:.88rem;font-weight:600;
     color:rgba(72,219,109,.95);
     letter-spacing:.01em;
+}
+.price-fineprint{
+    margin-top:.55rem;font-size:.76rem;color:var(--text-3);
+    line-height:1.45;letter-spacing:.01em;
 }
 
 /* ── Languages ── */
