@@ -5,7 +5,7 @@
   },
   "hero": {
     "mainTitle": "Your AI-Powered Digital Closet",
-    "mainSubtitle": "Snap your clothes, let AI organize them, and get weather-smart outfit suggestions — all on-device.",
+    "mainSubtitle": "Snap your closet — backgrounds drop automatically — and get weather-smart outfits, widgets, and Siri answers, all on-device.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
   "whatsNew": {
@@ -16,16 +16,16 @@
     "dressAdviceDesc": "Weather translated into what to wear — “Light jacket,” “Bring an umbrella” — with time-of-day-tinted icons.",
     "smartShareTitle": "Smart Share",
     "smartShareDesc": "A premium For-Today strip surfaces items matched to today's weather before you share.",
-    "freshLookTitle": "Fresh Look",
-    "freshLookDesc": "New onboarding tour, refreshed Dark-Mode wallpapers, and a sharper Liquid Glass finish throughout."
+    "todayChipTitle": "Today Chip",
+    "todayChipDesc": "Holidays, full moons, season changes, and severe-weather alerts surface as a Today chip that flavors every AI Stylist suggestion."
   },
   "features": {
     "aiStylist": "AI Stylist",
     "aiStylistDesc": "Weather-aware outfit suggestions and dress advice — “Light jacket,” “Bring an umbrella” — built from your Klosyt. On-device AI uses color theory and seasonal awareness to help you look your best in any weather.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards. Build a personal lookbook of capsule wardrobe combinations you can revisit anytime.",
-    "calendarTitle": "Calendar",
-    "calendarDesc": "Log what you wear every day. See patterns emerge and never repeat an outfit by accident. Track your wardrobe history to make the most of every item you own.",
+    "calendarTitle": "Plan & Track",
+    "calendarDesc": "Schedule planned outfits to your Apple Calendar, or log what you wore each day. Patterns emerge so you never repeat an outfit by accident, and every item in your closet pulls its weight.",
     "privacyTitle": "Private by Design",
     "privacyDesc": "Everything runs on-device. Your data syncs only to your iCloud — never shared with anyone. No app analytics, no app tracking, no ads — your virtual wardrobe stays completely private.",
     "syncTitle": "Synced Everywhere",
@@ -35,16 +35,25 @@
     "shareCardsTitle": "Share Cards",
     "shareCardsDesc": "Pantone-style Post and Story cards tagged with real-time weather, location, pattern, and material — plus a scannable App Store QR. Every share looks fashion-editorial.",
     "smartShareTitle": "Smart Share",
-    "smartShareDesc": "The For-Today strip surfaces items matched to today's weather, so your shareable cards always fit the forecast. Included with Klosyt+."
+    "smartShareDesc": "The For-Today strip surfaces items matched to today's weather, so your shareable cards always fit the forecast. Included with Klosyt+.",
+    "widgetsTitle": "Widgets",
+    "widgetsDesc": "Lock Screen and Home Screen widgets show today's weather-matched outfit without opening the app. They refresh automatically as the forecast changes. Included with Klosyt+.",
+    "siriTitle": "Siri & Apple Intelligence",
+    "siriDesc": "Ask Siri \"What should I wear today?\" and get a full outfit pulled from your closet — delivered as a Siri card, not a web search. Powered by on-device Apple Intelligence so nothing leaves your iPhone.",
+    "importTitle": "Add Anywhere",
+    "importDesc": "Snap a photo, import from your camera roll, paste a store URL, or share straight from Safari, Instagram, or any app. Backgrounds drop automatically. iPhone Pro LiDAR captures true 3D models alongside the standard photo."
   },
   "pricing": {
     "period": "/month",
-    "trial": "30-day free trial · Cancel anytime",
-    "note": "Klosyt is always free. Klosyt+ unlocks premium features.",
+    "trialHeadline": "7 days free — no sign-up",
+    "trialSub": "Then 30 more days free from Apple. Cancel anytime.",
+    "note": "Klosyt is always free, including themes, wallpapers, and unlimited closet storage. Klosyt+ unlocks weather, AI, Share Cards, and widgets.",
+    "aiRequirement": "AI styling requires iPhone 15 Pro or later with Apple Intelligence enabled.",
     "aiStyleAssistant": "AI Style Assistant",
     "shareCards": "Pantone-Style Share Cards",
     "smartShare": "Smart Share — For Today",
-    "weatherData": "Real-Time Apple Weather"
+    "weatherData": "Real-Time Apple Weather",
+    "widgets": "Lock Screen & Home Screen Widgets"
   },
   "cta": {
     "appStoreAlt": "Download on the App Store",
