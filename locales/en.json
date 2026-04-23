@@ -5,7 +5,7 @@
   },
   "hero": {
     "mainTitle": "Your AI-Powered Digital Closet",
-    "mainSubtitle": "Snap your closet — backgrounds drop automatically — and get weather-smart outfits, widgets, and Siri answers, all on-device.",
+    "mainSubtitle": "Snap your closet — backgrounds drop automatically — and get weather-smart outfits, widgets, and Siri answers, all on‑device.",
     "platforms": "iPhone · iPad · Mac · Apple TV · Vision Pro"
   },
   "whatsNew": {
@@ -41,7 +41,9 @@
     "siriTitle": "Siri & Apple Intelligence",
     "siriDesc": "Ask Siri \"What should I wear today?\" and get a full outfit pulled from your closet — delivered as a Siri card, not a web search. Powered by on-device Apple Intelligence so nothing leaves your iPhone.",
     "importTitle": "Add Anywhere",
-    "importDesc": "Snap a photo, import from your camera roll, paste a store URL, or share straight from Safari, Instagram, or any app. Backgrounds drop automatically. iPhone Pro LiDAR captures true 3D models alongside the standard photo."
+    "importDesc": "Snap a photo, import from your camera roll, paste a store URL, or share straight from Safari, Instagram, or any app. Backgrounds drop automatically, and the AI classifies category, colors, material, and pattern on the spot.",
+    "captureTitle": "3D Capture",
+    "captureDesc": "iPhone Pro with LiDAR scans your garment in the round, producing a true 3D model alongside the standard photo. Walk around the piece and Klosyt stitches the angles into a wardrobe-ready asset."
   },
   "pricing": {
     "period": "/month",
@@ -219,7 +221,7 @@
     "tip5Desc": "Mark items as summer, winter, or all-season for weather-appropriate outfits.",
     "tip6Title": "Enable iCloud sync early",
     "tip6Desc": "Turn on iCloud sync right away so your Klosyt is backed up and synced everywhere.",
-    "manageSubTrialDesc": "Try everything free for 30 days, then just $0.99/month. Cancel anytime.",
+    "manageSubTrialDesc": "Try everything free for 7 days — no sign-up — then 30 more days on Apple's trial. After that, $0.99/month. Cancel anytime.",
     "manageSubFooter": "Manage in Settings → Apple ID → Subscriptions. Tap \"Restore Purchases\" in Klosyt Settings to reactivate.",
     "troubleshootTitle": "Troubleshooting",
     "ts1Summary": "iCloud sync isn't working",
