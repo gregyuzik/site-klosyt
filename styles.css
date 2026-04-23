@@ -22,10 +22,13 @@
     --radius:20px;
     --radius-lg:28px;
     --ease:cubic-bezier(.16,1,.3,1);
-    /* Editorial serif stack. `ui-serif` resolves to Apple's New York on
-       macOS/iOS — a first-party fashion-editorial face. Georgia is the
-       fallback for Windows/Linux; both Bodoni/Didot cover older Apple. */
-    --font-display:ui-serif,"New York","Didot","Bodoni 72",Georgia,"Times New Roman",serif;
+    /* SF Pro Display for marketing-scale titles so the site reads as a
+       first-party extension of the app (which uses San Francisco throughout).
+       `-apple-system` and `BlinkMacSystemFont` resolve to SF on every Apple
+       device; `system-ui` catches Linux/Windows system UIs; generic sans-serif
+       is the final fallback. Display gets heavier weights and tighter
+       tracking applied at the rule level. */
+    --font-display:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,"Segoe UI",sans-serif;
     --font-body:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
     color-scheme:dark light;
 }
@@ -189,14 +192,14 @@ body > *{position:relative;z-index:1}
 .hero h1{
     font-family:var(--font-display);
     font-size:clamp(2.8rem,7vw,5rem);
-    font-weight:500;letter-spacing:-.025em;line-height:1.2;
+    /* Heavy weight + tight tracking is the Apple.com hero recipe. SF Pro
+       Display has optical sizing baked in at these sizes, so heavy weights
+       render crisply without going shouty. */
+    font-weight:700;letter-spacing:-.035em;line-height:1.08;
     margin-bottom:1.25rem;
-    /* `background-clip:text` clips to the line box, not the glyph ink — serif
-       descenders (g/y/p/q) sit below the baseline and get cut off if the box
-       is tight. .22em of padding guarantees ink stays inside the clip mask. */
-    padding-bottom:.22em;
+    padding-bottom:.1em;
     text-wrap:balance;
-    font-feature-settings:"kern","liga";
+    font-feature-settings:"kern","liga","ss01";
     /* Gradient text wash — cooler at top, warmer at bottom for the gold tie-in. */
     background:linear-gradient(170deg,#fff 0%,#cfe2ff 55%,#ffe8a8 100%);
     -webkit-background-clip:text;
@@ -204,7 +207,7 @@ body > *{position:relative;z-index:1}
     color:transparent;
     -webkit-text-fill-color:transparent;
 }
-.hero h1 em{font-style:italic;font-weight:400}
+.hero h1 em{font-style:italic;font-weight:600}
 @supports not ((-webkit-background-clip:text) or (background-clip:text)){
     .hero h1{color:#fff;-webkit-text-fill-color:initial}
 }
@@ -273,23 +276,23 @@ body > *{position:relative;z-index:1}
 }
 .sec-eyebrow .num{
     font-family:var(--font-display);
-    font-style:italic;font-weight:500;
-    font-size:1rem;letter-spacing:0;
+    font-style:italic;font-weight:600;
+    font-size:1rem;letter-spacing:-.01em;
     color:var(--accent-color);
     text-transform:none;
 }
 .sec-title{
     font-family:var(--font-display);
     font-size:clamp(2rem,4.5vw,3.2rem);
-    font-weight:500;letter-spacing:-.02em;line-height:1.22;
+    font-weight:700;letter-spacing:-.035em;line-height:1.1;
     text-wrap:balance;
     color:var(--text-1);
     text-align:center;
     margin:0 auto 2.5rem;
-    padding-bottom:.2em;
-    font-feature-settings:"kern","liga";
+    padding-bottom:.08em;
+    font-feature-settings:"kern","liga","ss01";
 }
-.sec-title em{font-style:italic;font-weight:400;color:var(--accent-color)}
+.sec-title em{font-style:italic;font-weight:600;color:var(--accent-color)}
 /* Inside .sec-head the eyebrow+title are spaced together — drop the default
    bottom margin so the pairing is tight. */
 .sec-head .sec-title{margin-bottom:0}
@@ -326,22 +329,24 @@ h1.sec-title{
 .bottom-cta h2{
     font-family:var(--font-display);
     font-size:clamp(2rem,4.6vw,3rem);
-    font-weight:500;letter-spacing:-.02em;line-height:1.22;
+    font-weight:700;letter-spacing:-.035em;line-height:1.1;
     margin-bottom:.85rem;
-    padding-bottom:.2em;
+    padding-bottom:.08em;
     text-wrap:balance;
 }
-.bottom-cta h2 em{font-style:italic;font-weight:400;color:var(--accent-color)}
+.bottom-cta h2 em{font-style:italic;font-weight:600;color:var(--accent-color)}
 .bottom-cta p{
     color:var(--text-2);font-size:1rem;line-height:1.55;
     margin:0 auto 2rem;max-width:480px;
 }
 
-/* ── Section title ── */
+/* ── Section title (layout override — sizing + tracking come from the
+   detailed rule above; this block just re-centers and restates size so
+   cascade order is predictable) ── */
 .sec-title{
     text-align:center;margin-bottom:3.5rem;
     font-size:clamp(2rem,4.5vw,3rem);
-    font-weight:800;letter-spacing:-.04em;line-height:1.1;
+    font-weight:700;letter-spacing:-.035em;line-height:1.1;
 }
 
 /* ── What's New ribbon (4-up strip under the hero) ── */
@@ -367,13 +372,20 @@ h1.sec-title{
 .wn-card{
     padding:1.3rem 1.15rem;border-radius:var(--radius);
     display:flex;flex-direction:column;gap:.55rem;
+    /* justify-content:center so a short description (e.g. "Share Tab" at
+       15 words) doesn't leave empty space below while its row neighbors
+       — which stretch the card to match row height — run twice as long. */
+    justify-content:center;
     --card-accent:var(--c, rgba(255,255,255,.22));
     transition:background .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease);
 }
 .wn-card:hover{
     background:var(--panel-hover);
     border-color:var(--border-hover);
-    transform:translateY(-3px);
+    /* Matches .feature-card:hover translateY(-4px) — consistency when the
+       eye travels between the two card grids stacked directly above and
+       below each other. */
+    transform:translateY(-4px);
     box-shadow:0 16px 40px rgba(0,0,0,.28), 0 0 50px -20px var(--card-accent);
 }
 .wn-icon{font-size:1.55rem;line-height:1;color:var(--c)}
@@ -411,6 +423,11 @@ h1.sec-title{
     box-shadow:inset 0 0 0 1px rgba(255,255,255,.1), 0 8px 20px -8px var(--c);
 }
 .feature-icon svg,.pl-ico svg,.card-ico svg{display:block}
+/* Inline Apple logo in "Real-Time Apple Weather" inherits the parent text
+   color via currentColor so it reads in both light (dark brown on cream)
+   and dark (white on navy) modes. The JS builds the logo with a gradient
+   fallback; this rule overrides the gradient stops to track text color. */
+[data-i18n="pricing.weatherData"] svg stop{stop-color:currentColor}
 .feature-text{min-width:0}
 .feature-text h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem;letter-spacing:-.01em}
 .feature-text p{font-size:.88rem;color:var(--text-2);line-height:1.55}
@@ -440,7 +457,7 @@ h1.sec-title{
 /* ── Pricing — premium card. Halo softened so the hero stays dominant,
    per-section gold-cyan balance now shared with hero icon bloom. ── */
 .price-card{
-    max-width:440px;width:100%;margin:0 auto;
+    max-width:520px;width:100%;margin:0 auto;
     border-radius:var(--radius-lg);overflow:hidden;
     background:
         linear-gradient(rgba(255,255,255,.06),rgba(255,255,255,.03)) padding-box,
@@ -471,8 +488,8 @@ h1.sec-title{
 .price-amt{display:flex;align-items:baseline;justify-content:center;gap:6px;margin-bottom:.5rem}
 .price-num{
     font-family:var(--font-display);
-    font-size:3.8rem;font-weight:500;letter-spacing:-.02em;line-height:1.1;
-    padding-bottom:.06em;
+    font-size:3.8rem;font-weight:700;letter-spacing:-.035em;line-height:1.1;
+    padding-bottom:.04em;
     font-feature-settings:"kern","liga","lnum","tnum";
     background:linear-gradient(180deg,#ffe27a 0%,#ffb000 100%);
     -webkit-background-clip:text;background-clip:text;

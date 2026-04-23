@@ -83,6 +83,10 @@
             svg: '<line x1="87.66" y1="56.73" x2="83.5" y2="33.09" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="56.69" y1="76.46" x2="37.03" y2="62.69" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="48.73" y1="112.31" x2="25.09" y2="116.48" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="123.52" y1="64.69" x2="137.28" y2="45.03" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M96,144a68.06,68.06,0,1,1,68,72H84a44,44,0,1,1,14.2-85.66" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M59.65,135.35a48,48,0,1,1,80.19-50.94" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
             g: ['#ffcc00', '#5ac8fa']
         },
+        '⚡': {
+            svg: '<polygon points="96 240 112 160 48 136 160 16 144 96 208 120 96 240" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
+            g: ['#ffcc00', '#ff9500']
+        },
         '🚀': {
             svg: '<path d="M191.11,112.89c24-24,25.5-52.55,24.75-65.28a8,8,0,0,0-7.47-7.47c-12.73-.75-41.26.73-65.28,24.75L80,128l48,48Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M136,72H74.35a8,8,0,0,0-5.65,2.34L34.35,108.69a8,8,0,0,0,4.53,13.57L80,128" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M184,120v61.65a8,8,0,0,1-2.34,5.65l-34.35,34.35a8,8,0,0,1-13.57-4.53L128,176" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M94.56,187.82C90.69,196.31,77.65,216,40,216c0-37.65,19.69-50.69,28.18-54.56" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
             g: ['#ff9500', '#ffcc00']
@@ -101,7 +105,12 @@
         },
         'apple': {
             svg: '<path d="M216,73.52C204.53,62.66,185,56,168,56a63.72,63.72,0,0,0-40,14h0A63.71,63.71,0,0,0,88.88,56C52,55.5,23.06,86.3,24,123.19a119.62,119.62,0,0,0,37.65,84.12A31.92,31.92,0,0,0,83.6,216h87.7a31.75,31.75,0,0,0,23.26-10c15.85-17,21.44-33.2,21.44-33.2h0c-16.79-11.53-24-30.87-24-52.78,0-18.3,11.68-34.81,24-46.48Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,8h-1a32,32,0,0,0-31,24" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
-            g: ['#a1a1a6', '#6e6e73']
+            // Gradient stops get overridden to `currentColor` by a CSS rule
+            // scoped to the pricing weatherData span (styles.css), so the
+            // Apple logo inherits the parent text color and reads in both
+            // light (dark brown on cream) and dark (white on navy) modes.
+            // These fallback values only render if the CSS override fails.
+            g: ['#8e8e93', '#6e6e73']
         }
     };
 
@@ -123,8 +132,11 @@
     }
 
     function replaceEmoji() {
-        // Replace emoji in feature-icon, card-ico, and pl-ico elements
-        const targets = document.querySelectorAll('.feature-icon, .card-ico, .pl-ico');
+        // Replace emoji in feature-icon, card-ico, pl-ico, and wn-icon elements.
+        // wn-icon is the What's-New ribbon icon; without it, the What's New
+        // section rendered OS emoji while every other section used the
+        // Phosphor gradient style — jarring when sections sit back-to-back.
+        const targets = document.querySelectorAll('.feature-icon, .card-ico, .pl-ico, .wn-icon');
         targets.forEach(function (el) {
             if (el.querySelector('svg')) return;
             const text = el.textContent.trim();
@@ -132,6 +144,7 @@
                 let size = 22;
                 if (el.classList.contains('pl-ico')) size = 16;
                 else if (el.classList.contains('feature-icon')) size = 24;
+                else if (el.classList.contains('wn-icon')) size = 26;
                 el.innerHTML = makeSvg(icons[text], size);
             }
         });
@@ -174,7 +187,7 @@
             el.textContent = text.slice(0, idx);
             var badge = document.createElement('span');
             badge.style.whiteSpace = 'nowrap';
-            badge.insertAdjacentHTML('beforeend', makeSvg(icons['apple'], 11));
+            badge.insertAdjacentHTML('beforeend', makeSvg(icons['apple'], 13));
             badge.appendChild(document.createTextNode(' ' + marker));
             el.appendChild(badge);
         });
