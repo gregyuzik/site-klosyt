@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI-stylist",
     "aiStylistDesc": "Værtilpassede antrekksforslag og klesråd — «Lett jakke», «Ta med paraply» — fra ditt faktiske klesskap. AI på enheten bruker fargeteori og sesongforståelse slik at du ser best ut i alt vær.",
+    "skyVibesTitle": "Himmelstemning",
+    "skyVibesDesc": "Prosedurelle månefaser, himmel tonet etter tid på dagen og sesongdetaljer — vårblomster, høstløv, sommerens ildfluer og nordlys når forholdene tillater det. Hver time bringer en ny himmel.",
     "outfitsTitle": "Antrekk",
     "outfitsDesc": "Dra og slipp plagg for å lage looks. Lagre favoritter og del vakre Pantone-stilkort.",
     "calendarTitle": "Kalender",
@@ -30,6 +32,8 @@
     "privacyDesc": "Alt kjører på enheten. Dataene dine synkroniseres bare til iCloud-kontoen din og deles aldri med andre. Ingen app-analyse, ingen app-sporing, ingen annonser — det virtuelle klesskapet ditt forblir helt privat.",
     "syncTitle": "Synkronisert overalt",
     "syncDesc": "iCloud holder klesskapet ditt synkronisert på tvers av alle Apple-enheter, umiddelbart og automatisk.",
+    "themesTitle": "Temaer & bakgrunner",
+    "themesDesc": "Kuraterte temaer og bakgrunner tilpasset Mørk modus. Gratis for alle — ingen abonnement nødvendig — og synkronisert på tvers av alle Apple-enheter via iCloud.",
     "filtersTitle": "Smarte filtre",
     "filtersDesc": "Finn ethvert plagg etter sesong, farge, kategori, materiale eller mønster på sekunder.",
     "shareCardsTitle": "Delekort",

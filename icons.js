@@ -63,6 +63,10 @@
             svg: '<path d="M128,192a24,24,0,0,1,24-24h46.21a24,24,0,0,0,23.4-18.65A96.48,96.48,0,0,0,224,127.17c-.45-52.82-44.16-95.7-97-95.17a96,96,0,0,0-95,96c0,41.81,26.73,73.44,64,86.61A24,24,0,0,0,128,192Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="76" r="12"/><circle cx="84" cy="100" r="12"/><circle cx="84" cy="156" r="12"/><circle cx="172" cy="100" r="12"/>',
             g: ['#ff9500', '#ffcc00']
         },
+        '🌌': {
+            svg: '<line x1="208" y1="120" x2="208" y2="72" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="232" y1="96" x2="184" y2="96" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="160" y1="32" x2="160" y2="64" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="176" y1="48" x2="144" y2="48" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M210.69,158.18A96.78,96.78,0,0,1,192,160,96.08,96.08,0,0,1,97.82,45.31,88,88,0,1,0,210.69,158.18Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
+            g: ['#b8a8ff', '#8e7df6']
+        },
         '📦': {
             svg: '<polyline points="32.7 76.92 128 129.08 223.3 76.92" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M131.84,25l88,48.18a8,8,0,0,1,4.16,7v95.64a8,8,0,0,1-4.16,7l-88,48.18a8,8,0,0,1-7.68,0l-88-48.18a8,8,0,0,1-4.16-7V80.18a8,8,0,0,1,4.16-7l88-48.18A8,8,0,0,1,131.84,25Z" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="129.09" x2="128" y2="232" fill="none" stroke="cC" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>',
             g: ['#a2845e', '#c89b3c']

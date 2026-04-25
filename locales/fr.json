@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "Styliste IA",
     "aiStylistDesc": "Des suggestions de tenues adaptées à la météo et des conseils vestimentaires — « Veste légère », « Prends un parapluie » — créés à partir de votre dressing. L’IA embarquée s’appuie sur la théorie des couleurs et les saisons pour vous mettre en valeur par tous les temps.",
+    "skyVibesTitle": "Ambiance céleste",
+    "skyVibesDesc": "Phases de lune procédurales, ciels teintés selon l’heure du jour et touches saisonnières — fleurs au printemps, feuilles à l’automne, lucioles l’été et aurores quand les conditions s’alignent. Chaque heure apporte un nouveau ciel.",
     "outfitsTitle": "Tenues",
     "outfitsDesc": "Glissez-déposez des articles pour créer des looks. Sauvegardez vos favoris et partagez de magnifiques cartes style Pantone.",
     "calendarTitle": "Calendrier",
@@ -30,6 +32,8 @@
     "privacyDesc": "Tout fonctionne sur l'appareil. Vos données se synchronisent uniquement avec votre iCloud et ne sont jamais partagées avec qui que ce soit. Aucune analyse dans l'app, aucun suivi dans l'app, aucune publicité — votre dressing virtuel reste totalement privé.",
     "syncTitle": "Synchronisé partout",
     "syncDesc": "iCloud garde votre dressing synchronisé sur tous vos appareils Apple, instantanément et automatiquement.",
+    "themesTitle": "Thèmes et fonds d’écran",
+    "themesDesc": "Thèmes et fonds d’écran soignés, adaptés au mode sombre. Gratuit pour tout le monde — aucun abonnement requis — et synchronisé sur tous vos appareils Apple via iCloud.",
     "filtersTitle": "Filtres intelligents",
     "filtersDesc": "Trouvez n'importe quel article par saison, couleur, catégorie, matière ou motif en quelques secondes.",
     "shareCardsTitle": "Cartes à partager",

@@ -14,7 +14,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname);
 const SITE_URL = 'https://klosyt.com';
-const LASTMOD = '2026-04-24';
+const LASTMOD = '2026-04-25';
 
 const LOCALES = [
     'zh-Hans', 'zh-Hant', 'da', 'nl', 'fr', 'de',

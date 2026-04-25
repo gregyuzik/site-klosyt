@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI Stilist",
     "aiStylistDesc": "Gardırobundan hava durumuna uygun kombin önerileri ve giyim tavsiyeleri — “Hafif ceket”, “Şemsiyeni al” — bir arada. Cihazda çalışan AI, renk teorisi ve mevsim duyarlılığıyla her havada en iyi görünmeni sağlar.",
+    "skyVibesTitle": "Gök atmosferi",
+    "skyVibesDesc": "Prosedürel ay evreleri, günün saatine göre tonlanan gökyüzü ve mevsimsel dokunuşlar — bahar çiçekleri, sonbahar yaprakları, yaz ateşböcekleri ve koşullar uyduğunda kuzey ışıkları. Her saat farklı bir gökyüzü.",
     "outfitsTitle": "Kombinler",
     "outfitsDesc": "Kıyafetleri sürükleyip bırakarak stiller oluştur. Favorilerini kaydet ve güzel Pantone tarzı kartlar paylaş.",
     "calendarTitle": "Takvim",
@@ -30,6 +32,8 @@
     "privacyDesc": "Her şey cihaz üzerinde çalışır. Verileriniz yalnızca iCloud hesabınızla eşitlenir ve asla kimseyle paylaşılmaz. Uygulama içi analiz yok, uygulama içi izleme yok, reklam yok — sanal dolabınız tamamen özel kalır.",
     "syncTitle": "Her Yerde Senkronize",
     "syncDesc": "iCloud gardırobunu tüm Apple cihazlarında senkronize tutar, anında ve otomatik olarak.",
+    "themesTitle": "Temalar & Duvar Kağıtları",
+    "themesDesc": "Karanlık Mod için ayarlanmış özenle seçilmiş temalar ve duvar kağıtları. Herkes için ücretsiz — abonelik gerekmez — ve iCloud üzerinden tüm Apple cihazlarında senkronize.",
     "filtersTitle": "Akıllı Filtreler",
     "filtersDesc": "Herhangi bir kıyafeti mevsim, renk, kategori, kumaş veya desene göre saniyeler içinde bul.",
     "shareCardsTitle": "Paylaşım Kartları",

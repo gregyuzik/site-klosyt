@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "KI-Stylist",
     "aiStylistDesc": "Wetterangepasste Outfit-Vorschläge und Kleidungstipps — „Leichte Jacke“, „Regenschirm mitnehmen“ — aus deinem Kleiderschrank. On-Device-KI nutzt Farblehre und Saison-Bewusstsein, damit du bei jedem Wetter gut aussiehst.",
+    "skyVibesTitle": "Himmelsstimmung",
+    "skyVibesDesc": "Prozedurale Mondphasen, tageszeitlich getönte Himmel und saisonale Akzente — Frühlingsblüten, Herbstlaub, Glühwürmchen im Sommer und Polarlichter, wenn die Bedingungen stimmen. Jede Stunde bringt einen neuen Himmel.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Ziehe Kleidungsstücke per Drag & Drop zu Looks zusammen. Speichere Favoriten und teile schöne Pantone-Stilkarten.",
     "calendarTitle": "Kalender",
@@ -30,6 +32,8 @@
     "privacyDesc": "Alles läuft auf dem Gerät. Deine Daten werden nur mit deiner iCloud synchronisiert und niemals mit anderen geteilt. Keine App-Analysen, kein App-Tracking, keine Werbung — dein virtueller Kleiderschrank bleibt vollständig privat.",
     "syncTitle": "Überall synchronisiert",
     "syncDesc": "iCloud hält deinen Kleiderschrank auf allen Apple-Geräten synchron, sofort und automatisch.",
+    "themesTitle": "Themen & Hintergründe",
+    "themesDesc": "Kuratierte Themes und Hintergründe, abgestimmt auf den Dunkelmodus. Für alle kostenlos — kein Abonnement nötig — und über iCloud auf allen Apple-Geräten synchronisiert.",
     "filtersTitle": "Intelligente Filter",
     "filtersDesc": "Finde jedes Teil nach Saison, Farbe, Kategorie, Material oder Muster in Sekunden.",
     "shareCardsTitle": "Share-Karten",

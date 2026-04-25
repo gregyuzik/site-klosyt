@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "Stilista IA",
     "aiStylistDesc": "Suggerimenti outfit basati sul meteo e consigli sul look — «Giacca leggera», «Porta l’ombrello» — creati dal tuo armadio reale. L’IA sul dispositivo usa teoria del colore e stagionalità per farti stare bene con qualsiasi tempo.",
+    "skyVibesTitle": "Atmosfera celeste",
+    "skyVibesDesc": "Fasi lunari procedurali, cieli tinti in base all’ora del giorno e tocchi stagionali — fiori in primavera, foglie in autunno, lucciole d’estate e aurore quando le condizioni si allineano. Ogni ora porta un cielo diverso.",
     "outfitsTitle": "Outfit",
     "outfitsDesc": "Trascina e rilascia capi per creare look. Salva i preferiti e condividi eleganti schede stile Pantone.",
     "calendarTitle": "Calendario",
@@ -30,6 +32,8 @@
     "privacyDesc": "Tutto avviene sul dispositivo. I tuoi dati si sincronizzano solo con il tuo iCloud e non vengono mai condivisi con nessuno. Nessuna analisi nell'app, nessun tracciamento nell'app, nessuna pubblicità: il tuo armadio virtuale resta completamente privato.",
     "syncTitle": "Sincronizzato ovunque",
     "syncDesc": "iCloud mantiene il tuo armadio sincronizzato su ogni dispositivo Apple, all'istante e automaticamente.",
+    "themesTitle": "Temi e sfondi",
+    "themesDesc": "Temi e sfondi curati, ottimizzati per la modalità scura. Gratis per tutti — nessun abbonamento richiesto — e sincronizzati su ogni dispositivo Apple tramite iCloud.",
     "filtersTitle": "Filtri intelligenti",
     "filtersDesc": "Trova qualsiasi capo per stagione, colore, categoria, materiale o motivo in pochi secondi.",
     "shareCardsTitle": "Card da condividere",
