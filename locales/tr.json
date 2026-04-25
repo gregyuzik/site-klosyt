@@ -16,8 +16,8 @@
     "dressAdviceDesc": "Hava durumu giyim önerisine çevrilir — “Hafif ceket”, “Şemsiyeni al” — ve günün saatine göre renklenen simgelerle gelir.",
     "smartShareTitle": "Akıllı Paylaşım",
     "smartShareDesc": "Premium “Bugün” şeridi, paylaşmadan önce günün havasına uyan parçaları öne çıkarır.",
-    "freshLookTitle": "Taze Görünüm",
-    "freshLookDesc": "Yeni tanıtım turu, Karanlık Mod için yenilenmiş duvar kâğıtları ve her yerde daha keskin bir Liquid Glass dokunuşu."
+    "todayChipTitle": "Bugün Çipi",
+    "todayChipDesc": "Resmi tatiller, dolunaylar, mevsim geçişleri ve şiddetli hava uyarıları, AI Stylist'in her önerisine tat katan bir Bugün çipi olarak görünür."
   },
   "features": {
     "aiStylist": "AI Stilist",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "Paylaşım Kartları",
     "shareCardsDesc": "Gerçek zamanlı hava durumu, konum, desen ve kumaş etiketleriyle Pantone tarzı Post ve Story kartları — taranabilir App Store QR koduyla birlikte. Her paylaşım moda editoryalı gibi görünür.",
     "smartShareTitle": "Akıllı Paylaşım",
-    "smartShareDesc": "“Bugün” şeridi, günün havasına uyan parçaları öne çıkarır; paylaşım kartların hep tahminle uyumlu kalır. Klosyt+ ile birlikte gelir."
+    "smartShareDesc": "“Bugün” şeridi, günün havasına uyan parçaları öne çıkarır; paylaşım kartların hep tahminle uyumlu kalır. Klosyt+ ile birlikte gelir.",
+    "widgetsTitle": "Widget'lar",
+    "widgetsDesc": "Kilit ekranı ve Ana ekran widget'ları, uygulamayı açmadan bugünün hava durumuna uygun kombinini gösterir. Tahmin değiştikçe otomatik güncellenir. Klosyt+ ile dahildir.",
+    "siriTitle": "Siri ve Apple Intelligence",
+    "siriDesc": "Siri'ye \"Bugün ne giysem?\" diye sorun ve gardırobunuzdan tam bir kombin alın — web aramayla değil, Siri kartıyla. Cihazda Apple Intelligence ile çalışır, hiçbir şey iPhone'unuzdan çıkmaz.",
+    "importTitle": "Her yerden ekleyin",
+    "importDesc": "Fotoğraf çekin, kamera rulosundan içe aktarın, bir mağaza URL'si yapıştırın veya Safari, Instagram ya da herhangi bir uygulamadan doğrudan paylaşın. Arka planlar otomatik kaldırılır, YZ kategori, renk, kumaş ve deseni anında sınıflandırır.",
+    "captureTitle": "3D Yakalama",
+    "captureDesc": "LiDAR'lı iPhone Pro kıyafetinizi her açıdan tarar ve standart fotoğrafın yanı sıra gerçek bir 3D model üretir. Parçanın etrafında dolaşın, Klosyt açıları gardıroba hazır bir varlığa dönüştürür."
   },
   "pricing": {
     "period": "/ay",
-    "trial": "30 gün ücretsiz deneme · İstediğin zaman iptal et",
+    "trialHeadline": "7 gün ücretsiz — kayıt yok",
+    "trialSub": "Ardından Apple'dan 30 gün daha ücretsiz. İstediğiniz zaman iptal edin.",
     "note": "Gardırobun her zaman ücretsiz. Klosyt+ premium özelliklerin kilidini açar.",
+    "aiRequirement": "YZ stillemek için Apple Intelligence etkin iPhone 15 Pro veya üzeri gerekir.",
     "aiStyleAssistant": "Yapay Zeka Stil Asistanı",
     "shareCards": "Pantone Tarzı Paylaşım Kartları",
     "smartShare": "Akıllı Paylaşım — Bugün",
-    "weatherData": "Anlık Apple Weather"
+    "weatherData": "Anlık Apple Weather",
+    "widgets": "Kilit ekranı ve Ana ekran widget'ları"
   },
   "cta": {
     "appStoreAlt": "App Store'dan indirin",

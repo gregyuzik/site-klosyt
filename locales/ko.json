@@ -16,8 +16,8 @@
     "dressAdviceDesc": "날씨를 옷차림으로 번역 — ‘가벼운 재킷,’ ‘우산 챙기기’ — 시간대별 색상 아이콘까지.",
     "smartShareTitle": "스마트 공유",
     "smartShareDesc": "프리미엄 ‘오늘의 추천’ 스트립이 공유 전에 오늘 날씨에 어울리는 아이템을 먼저 보여 줍니다.",
-    "freshLookTitle": "새로운 디자인",
-    "freshLookDesc": "새로운 온보딩 투어, 다크 모드 전용 새 월페이퍼, 전반적으로 더 날카로워진 Liquid Glass 마감."
+    "todayChipTitle": "오늘 칩",
+    "todayChipDesc": "휴일, 보름달, 계절 변화, 악천후 경보가 오늘 칩으로 표시되어 모든 AI Stylist 제안에 풍미를 더합니다."
   },
   "features": {
     "aiStylist": "AI 스타일리스트",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "공유 카드",
     "shareCardsDesc": "실시간 날씨·위치·패턴·소재 태그가 담긴 팬톤 스타일 Post·Story 카드. 스캔 가능한 App Store QR까지 — 모든 공유가 에디토리얼처럼 보입니다.",
     "smartShareTitle": "스마트 공유",
-    "smartShareDesc": "‘오늘의 추천’ 스트립이 오늘 날씨에 어울리는 아이템을 추려 주어 공유 카드가 언제나 예보와 맞아떨어집니다. Klosyt+ 포함."
+    "smartShareDesc": "‘오늘의 추천’ 스트립이 오늘 날씨에 어울리는 아이템을 추려 주어 공유 카드가 언제나 예보와 맞아떨어집니다. Klosyt+ 포함.",
+    "widgetsTitle": "위젯",
+    "widgetsDesc": "잠금 화면과 홈 화면 위젯이 앱을 열지 않고도 오늘 날씨에 맞는 코디를 보여줍니다. 일기예보가 바뀔 때마다 자동으로 업데이트됩니다. Klosyt+에 포함.",
+    "siriTitle": "Siri 및 Apple Intelligence",
+    "siriDesc": "Siri에게 \"오늘 뭐 입지?\"라고 물으면 옷장에서 완성된 코디를 가져옵니다 — 웹 검색이 아닌 Siri 카드로. 기기 내 Apple Intelligence로 작동해 어떤 것도 iPhone을 떠나지 않습니다.",
+    "importTitle": "어디서든 추가",
+    "importDesc": "사진 찍기, 카메라 롤에서 가져오기, 스토어 URL 붙여넣기 또는 Safari, Instagram, 모든 앱에서 직접 공유. 배경은 자동 제거되고, AI가 카테고리, 색상, 소재, 패턴을 즉시 분류합니다.",
+    "captureTitle": "3D 캡처",
+    "captureDesc": "LiDAR이 탑재된 iPhone Pro가 옷을 360°로 스캔해 일반 사진과 함께 진짜 3D 모델을 생성합니다. 옷 주위를 한 바퀴 돌면 Klosyt가 각도를 옷장에 바로 쓸 수 있는 에셋으로 엮습니다."
   },
   "pricing": {
     "period": "/월",
-    "trial": "30일 무료 체험 · 언제든 취소 가능",
+    "trialHeadline": "7일 무료 — 가입 없이",
+    "trialSub": "이후 Apple에서 30일 추가 무료. 언제든지 취소 가능.",
     "note": "옷장은 항상 무료입니다. Klosyt+로 프리미엄 기능을 잠금 해제하세요.",
+    "aiRequirement": "AI 스타일링은 Apple Intelligence가 활성화된 iPhone 15 Pro 이상이 필요합니다.",
     "aiStyleAssistant": "AI 스타일 어시스턴트",
     "shareCards": "팬톤 스타일 공유 카드",
     "smartShare": "스마트 공유 — 오늘의 추천",
-    "weatherData": "실시간 Apple Weather"
+    "weatherData": "실시간 Apple Weather",
+    "widgets": "잠금 화면 및 홈 화면 위젯"
   },
   "cta": {
     "appStoreAlt": "App Store에서 다운로드",

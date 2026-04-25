@@ -16,8 +16,8 @@
     "dressAdviceDesc": "Thời tiết được dịch thành gợi ý mặc — “Áo khoác mỏng”, “Mang ô” — kèm biểu tượng nhuốm màu theo thời điểm trong ngày.",
     "smartShareTitle": "Chia sẻ thông minh",
     "smartShareDesc": "Dải cao cấp “Hôm nay” nổi bật những món hợp với thời tiết hôm nay trước khi bạn chia sẻ.",
-    "freshLookTitle": "Diện mạo mới",
-    "freshLookDesc": "Tour làm quen mới, hình nền tối ưu cho Chế độ Tối và lớp hoàn thiện Liquid Glass sắc nét hơn trên toàn ứng dụng."
+    "todayChipTitle": "Chip Hôm nay",
+    "todayChipDesc": "Ngày lễ, trăng tròn, chuyển mùa và cảnh báo thời tiết khắc nghiệt xuất hiện dưới dạng chip Hôm nay, tô điểm cho mọi gợi ý của AI Stylist."
   },
   "features": {
     "aiStylist": "AI Stylist",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "Thẻ chia sẻ",
     "shareCardsDesc": "Thẻ Post và Story kiểu Pantone gắn thẻ thời tiết theo thời gian thực, vị trí, họa tiết và chất liệu — kèm mã QR App Store quét được. Mỗi lần chia sẻ như một trang tạp chí thời trang.",
     "smartShareTitle": "Chia sẻ thông minh",
-    "smartShareDesc": "Dải “Hôm nay” nổi bật những món hợp với thời tiết hôm nay, giúp thẻ chia sẻ luôn khớp dự báo. Đi kèm Klosyt+."
+    "smartShareDesc": "Dải “Hôm nay” nổi bật những món hợp với thời tiết hôm nay, giúp thẻ chia sẻ luôn khớp dự báo. Đi kèm Klosyt+.",
+    "widgetsTitle": "Widget",
+    "widgetsDesc": "Widget màn hình khóa và màn hình chính hiển thị bộ trang phục hợp thời tiết hôm nay mà không cần mở ứng dụng. Tự động cập nhật khi dự báo thay đổi. Bao gồm trong Klosyt+.",
+    "siriTitle": "Siri & Apple Intelligence",
+    "siriDesc": "Hỏi Siri \"Hôm nay tôi nên mặc gì?\" và nhận một bộ trang phục đầy đủ từ tủ đồ của bạn — dưới dạng thẻ Siri, không phải tìm kiếm web. Sử dụng Apple Intelligence trên thiết bị, không có gì rời khỏi iPhone.",
+    "importTitle": "Thêm từ bất kỳ đâu",
+    "importDesc": "Chụp ảnh, nhập từ thư viện ảnh, dán URL cửa hàng hoặc chia sẻ trực tiếp từ Safari, Instagram hay bất kỳ ứng dụng nào. Phông nền tự động bị xóa, AI phân loại danh mục, màu sắc, chất liệu và họa tiết tức thì.",
+    "captureTitle": "Chụp 3D",
+    "captureDesc": "iPhone Pro có LiDAR quét trang phục của bạn xung quanh, tạo một mô hình 3D thực bên cạnh ảnh tiêu chuẩn. Đi vòng quanh món đồ và Klosyt ghép các góc thành một tài sản sẵn sàng cho tủ đồ."
   },
   "pricing": {
     "period": "/tháng",
-    "trial": "Dùng thử miễn phí 30 ngày · Hủy bất cứ lúc nào",
+    "trialHeadline": "7 ngày miễn phí — không cần đăng ký",
+    "trialSub": "Sau đó thêm 30 ngày miễn phí từ Apple. Hủy bất kỳ lúc nào.",
     "note": "Tủ đồ luôn miễn phí. Klosyt+ mở khóa tính năng cao cấp.",
+    "aiRequirement": "Tạo phong cách bằng AI yêu cầu iPhone 15 Pro hoặc mới hơn có Apple Intelligence được bật.",
     "aiStyleAssistant": "Trợ lý phong cách AI",
     "shareCards": "Thẻ kiểu Pantone",
     "smartShare": "Chia sẻ thông minh — Hôm nay",
-    "weatherData": "Apple Weather thời gian thực"
+    "weatherData": "Apple Weather thời gian thực",
+    "widgets": "Widget màn hình khóa và màn hình chính"
   },
   "cta": {
     "appStoreAlt": "Tải về trên App Store",

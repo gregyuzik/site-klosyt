@@ -16,8 +16,8 @@
     "dressAdviceDesc": "天気を服装アドバイスに翻訳——「薄手のジャケット」「傘を持って」——時間帯で色を変えるアイコン付き。",
     "smartShareTitle": "スマートシェア",
     "smartShareDesc": "プレミアム限定「今日のおすすめ」が、シェアの前に当日の天気に合うアイテムを先に提案。",
-    "freshLookTitle": "新しいルック",
-    "freshLookDesc": "新しいオンボーディングツアー、ダークモード向けに刷新された壁紙、そして全体的によりシャープな Liquid Glass 仕上げ。"
+    "todayChipTitle": "Todayチップ",
+    "todayChipDesc": "祝日、満月、季節の変わり目、悪天候アラートがTodayチップとして表示され、AI Stylistの提案にニュアンスを加えます。"
   },
   "features": {
     "aiStylist": "AIスタイリスト",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "シェアカード",
     "shareCardsDesc": "Pantone 風の Post・Story カードに、リアルタイムの天気、場所、柄、素材をラベル付け。スキャン可能な App Store QR コード付きで、シェアのたびに雑誌の一コマに。",
     "smartShareTitle": "スマートシェア",
-    "smartShareDesc": "「今日のおすすめ」が当日の天気に合うアイテムを提案するので、シェアカードはいつでも予報にマッチ。Klosyt+ に含まれます。"
+    "smartShareDesc": "「今日のおすすめ」が当日の天気に合うアイテムを提案するので、シェアカードはいつでも予報にマッチ。Klosyt+ に含まれます。",
+    "widgetsTitle": "ウィジェット",
+    "widgetsDesc": "ロック画面とホーム画面のウィジェットが、アプリを開かずに今日の天気に合わせたコーデを表示します。予報の変化に応じて自動更新。Klosyt+に含まれます。",
+    "siriTitle": "Siri & Apple Intelligence",
+    "siriDesc": "Siriに「今日は何を着ればいい？」と聞くと、クローゼットから完成コーデが届きます — Web検索ではなく、Siriカードで。端末内のApple Intelligenceで動作するため、データはiPhoneから出ません。",
+    "importTitle": "どこからでも追加",
+    "importDesc": "写真を撮る、カメラロールから取り込む、ストアのURLを貼り付ける、またはSafari、Instagram、その他のアプリから直接共有。背景は自動で除去され、AIがカテゴリ、色、素材、柄をその場で分類します。",
+    "captureTitle": "3Dキャプチャ",
+    "captureDesc": "LiDAR搭載iPhone Proが衣服を全周スキャンし、通常の写真と並んで本格的な3Dモデルを生成。アイテムの周りを歩くだけで、Klosytが各アングルをクローゼット用のアセットに仕上げます。"
   },
   "pricing": {
     "period": "/月",
-    "trial": "30日間無料体験 · いつでもキャンセル可能",
+    "trialHeadline": "7日間無料 — 登録不要",
+    "trialSub": "さらにAppleからの30日間無料。いつでもキャンセル可能。",
     "note": "クローゼットは常に無料。Klosyt+でプレミアム機能をアンロック。",
+    "aiRequirement": "AIスタイリングには、Apple Intelligence対応のiPhone 15 Pro以降が必要です。",
     "aiStyleAssistant": "AIスタイルアシスタント",
     "shareCards": "Pantone 風シェアカード",
     "smartShare": "スマートシェア — 今日のおすすめ",
-    "weatherData": "リアルタイム Apple Weather"
+    "weatherData": "リアルタイム Apple Weather",
+    "widgets": "ロック画面・ホーム画面ウィジェット"
   },
   "cta": {
     "appStoreAlt": "App Storeからダウンロード",

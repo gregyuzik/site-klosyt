@@ -16,8 +16,8 @@
     "dressAdviceDesc": "El clima traducido a consejos — «Chaqueta ligera», «Llévate paraguas» — con iconos teñidos según la hora del día.",
     "smartShareTitle": "Compartir inteligente",
     "smartShareDesc": "Una tira premium «Para hoy» destaca prendas acordes al clima del día antes de que compartas.",
-    "freshLookTitle": "Aire renovado",
-    "freshLookDesc": "Nuevo tour de bienvenida, fondos para Modo Oscuro renovados y un acabado Liquid Glass más nítido en todas partes."
+    "todayChipTitle": "Chip Hoy",
+    "todayChipDesc": "Festivos, lunas llenas, cambios de estación y alertas meteorológicas aparecen como un chip Hoy que da estilo a cada sugerencia del AI Stylist."
   },
   "features": {
     "aiStylist": "Estilista IA",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "Tarjetas para compartir",
     "shareCardsDesc": "Tarjetas Post y Story al estilo Pantone con clima en tiempo real, ubicación, estampado y material — más un QR de App Store escaneable. Cada publicación parece editorial de moda.",
     "smartShareTitle": "Compartir inteligente",
-    "smartShareDesc": "La tira «Para hoy» destaca prendas acordes al clima del día, para que tus tarjetas encajen siempre con la previsión. Incluido en Klosyt+."
+    "smartShareDesc": "La tira «Para hoy» destaca prendas acordes al clima del día, para que tus tarjetas encajen siempre con la previsión. Incluido en Klosyt+.",
+    "widgetsTitle": "Widgets",
+    "widgetsDesc": "Los widgets de la pantalla bloqueada y la pantalla de inicio muestran el outfit del día según el clima, sin abrir la app. Se actualizan automáticamente con el pronóstico. Incluido con Klosyt+.",
+    "siriTitle": "Siri y Apple Intelligence",
+    "siriDesc": "Pregunta a Siri \"¿Qué debo ponerme hoy?\" y obtén un outfit completo de tu armario — entregado como tarjeta Siri, no como búsqueda web. Funciona con Apple Intelligence en el dispositivo, así nada sale de tu iPhone.",
+    "importTitle": "Añade desde cualquier sitio",
+    "importDesc": "Haz una foto, importa desde el carrete, pega una URL de tienda o comparte directamente desde Safari, Instagram o cualquier app. Los fondos se eliminan automáticamente y la IA clasifica categoría, colores, material y patrón al momento.",
+    "captureTitle": "Captura 3D",
+    "captureDesc": "iPhone Pro con LiDAR escanea tu prenda desde todos los ángulos, creando un verdadero modelo 3D junto a la foto estándar. Da la vuelta a la prenda y Klosyt une los ángulos en un elemento listo para tu armario."
   },
   "pricing": {
     "period": "/mes",
-    "trial": "30 días de prueba gratis · Cancela cuando quieras",
+    "trialHeadline": "7 días gratis — sin registro",
+    "trialSub": "Después, 30 días más gratis de Apple. Cancela cuando quieras.",
     "note": "Tu armario es siempre gratis. Klosyt+ desbloquea funciones premium.",
+    "aiRequirement": "El estilismo con IA requiere iPhone 15 Pro o posterior con Apple Intelligence activado.",
     "aiStyleAssistant": "Asistente de estilo IA",
     "shareCards": "Tarjetas estilo Pantone",
     "smartShare": "Compartir inteligente — Para hoy",
-    "weatherData": "Apple Weather en tiempo real"
+    "weatherData": "Apple Weather en tiempo real",
+    "widgets": "Widgets de pantalla bloqueada y de inicio"
   },
   "cta": {
     "appStoreAlt": "Descargar en el App Store",
