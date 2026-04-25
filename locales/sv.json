@@ -16,8 +16,8 @@
     "dressAdviceDesc": "Vädret översatt till klädråd — ”Lätt jacka”, ”Ta med paraply” — med tidsfärgade ikoner.",
     "smartShareTitle": "Smart delning",
     "smartShareDesc": "En premium ”Idag”-rad lyfter fram plagg som matchar dagens väder innan du delar.",
-    "freshLookTitle": "Nytt utseende",
-    "freshLookDesc": "Ny introduktionstur, uppdaterade bakgrunder för mörkt läge och en skarpare Liquid Glass-yta överallt."
+    "todayChipTitle": "Idag-chip",
+    "todayChipDesc": "Helgdagar, fullmånar, säsongsskiften och oväderalarm visas som en Idag-chip som kryddar varje förslag från AI Stylist."
   },
   "features": {
     "aiStylist": "AI-stylist",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "Delningskort",
     "shareCardsDesc": "Post- och Story-kort i Pantone-stil märkta med realtidsväder, plats, mönster och material — plus en skannbar App Store-QR. Varje delning ser redaktionell ut.",
     "smartShareTitle": "Smart delning",
-    "smartShareDesc": "”Idag”-raden lyfter fram plagg som matchar dagens väder, så dina delningskort alltid stämmer med prognosen. Ingår i Klosyt+."
+    "smartShareDesc": "”Idag”-raden lyfter fram plagg som matchar dagens väder, så dina delningskort alltid stämmer med prognosen. Ingår i Klosyt+.",
+    "widgetsTitle": "Widgets",
+    "widgetsDesc": "Widgets på låsskärm och hemskärm visar dagens väderanpassade outfit utan att öppna appen. De uppdateras automatiskt när prognosen ändras. Ingår i Klosyt+.",
+    "siriTitle": "Siri och Apple Intelligence",
+    "siriDesc": "Fråga Siri \"Vad ska jag ha på mig idag?\" och få en komplett outfit från din garderob — levererad som ett Siri-kort, inte en webbsökning. Drivs av Apple Intelligence på enheten, så inget lämnar din iPhone.",
+    "importTitle": "Lägg till varifrån som helst",
+    "importDesc": "Ta ett foto, importera från kamerarullen, klistra in en butiks-URL eller dela direkt från Safari, Instagram eller vilken app som helst. Bakgrunder tas bort automatiskt och AI:n klassificerar kategori, färger, material och mönster på direkten.",
+    "captureTitle": "3D-fångst",
+    "captureDesc": "iPhone Pro med LiDAR skannar plagget från alla vinklar och skapar en riktig 3D-modell vid sidan av standardfotot. Gå runt plagget så syr Klosyt ihop vinklarna till en garderobsklar tillgång."
   },
   "pricing": {
     "period": "/månad",
-    "trial": "30 dagars gratis provperiod · Avbryt när som helst",
+    "trialHeadline": "7 dagar gratis — ingen registrering",
+    "trialSub": "Sedan 30 dagar till gratis från Apple. Avsluta när som helst.",
     "note": "Din garderob är alltid gratis. Klosyt+ låser upp premiumfunktioner.",
+    "aiRequirement": "AI-styling kräver iPhone 15 Pro eller senare med Apple Intelligence aktiverat.",
     "aiStyleAssistant": "AI-stilassistent",
     "shareCards": "Delningskort i Pantone-stil",
     "smartShare": "Smart delning — Idag",
-    "weatherData": "Realtids Apple Weather"
+    "weatherData": "Realtids Apple Weather",
+    "widgets": "Widgets för låsskärm och hemskärm"
   },
   "cta": {
     "appStoreAlt": "Hämta från App Store",

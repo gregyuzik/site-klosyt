@@ -16,8 +16,8 @@
     "dressAdviceDesc": "把天氣翻譯成穿搭建議——「薄夾克」「帶把傘」——搭配隨時段變色的圖示。",
     "smartShareTitle": "智慧分享",
     "smartShareDesc": "高級版「今日推薦」橫欄會在你分享前先挑出與當日天氣相配的單品。",
-    "freshLookTitle": "全新外觀",
-    "freshLookDesc": "全新的引導教學、為深色模式優化的桌布，以及整體更清晰的 Liquid Glass 質感。"
+    "todayChipTitle": "今日標籤",
+    "todayChipDesc": "節假日、滿月、季節更替和惡劣天氣警報會以今日標籤形式顯示，為每個 AI Stylist 建議增添風味。"
   },
   "features": {
     "aiStylist": "AI造型師",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "分享卡片",
     "shareCardsDesc": "Pantone 風格的 Post 和 Story 卡片，標註即時天氣、位置、花紋與面料，還附帶可掃描的 App Store QR 碼。每次分享都像時尚大片。",
     "smartShareTitle": "智慧分享",
-    "smartShareDesc": "「今日推薦」橫欄會挑選與當日天氣相符的單品，讓你每張分享卡都貼合天氣。Klosyt+ 訂閱包含。"
+    "smartShareDesc": "「今日推薦」橫欄會挑選與當日天氣相符的單品，讓你每張分享卡都貼合天氣。Klosyt+ 訂閱包含。",
+    "widgetsTitle": "小工具",
+    "widgetsDesc": "鎖定畫面和主畫面小工具無需開啟 App 即可顯示今天的天氣適配穿搭，並隨天氣預報自動刷新。包含於 Klosyt+ 中。",
+    "siriTitle": "Siri 與 Apple Intelligence",
+    "siriDesc": "對 Siri 說「今天穿什麼？」，從你的衣櫃中獲得一套完整搭配——以 Siri 卡片形式呈現，而非網頁搜尋。由裝置端 Apple Intelligence 提供支援，所有資料不離開 iPhone。",
+    "importTitle": "隨時隨地新增",
+    "importDesc": "拍照、從相機膠卷匯入、貼上商店 URL，或直接從 Safari、Instagram 或任何 App 分享。背景自動移除，AI 即時辨識類別、顏色、材質與圖案。",
+    "captureTitle": "3D 擷取",
+    "captureDesc": "搭載 LiDAR 的 iPhone Pro 全方位掃描你的衣物，在標準照片之外生成真正的 3D 模型。繞著衣物走一圈，Klosyt 便能將各個角度拼接成衣櫃可用的資產。"
   },
   "pricing": {
     "period": "/月",
-    "trial": "30天免費試用 · 隨時取消",
+    "trialHeadline": "7 天免費 — 無需註冊",
+    "trialSub": "接著再享 Apple 提供的 30 天免費。隨時可取消。",
     "note": "你的衣櫥永遠免費。Klosyt+解鎖進階功能。",
+    "aiRequirement": "AI 造型需要啟用 Apple Intelligence 的 iPhone 15 Pro 或更新機型。",
     "aiStyleAssistant": "AI風格助手",
     "shareCards": "Pantone 風格分享卡片",
     "smartShare": "智慧分享 — 今日推薦",
-    "weatherData": "即時 Apple Weather"
+    "weatherData": "即時 Apple Weather",
+    "widgets": "鎖定畫面與主畫面小工具"
   },
   "cta": {
     "appStoreAlt": "從 App Store 下載",

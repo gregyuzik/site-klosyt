@@ -16,8 +16,8 @@
     "dressAdviceDesc": "Het weer vertaald naar kledingtips — „Licht jasje”, „Neem een paraplu” — met tijdgekleurde iconen.",
     "smartShareTitle": "Slim delen",
     "smartShareDesc": "Een premium Voor vandaag-strook laat items zien die bij het weer van vandaag passen voordat je deelt.",
-    "freshLookTitle": "Nieuwe look",
-    "freshLookDesc": "Nieuwe onboarding-tour, opgefriste Donkere-modus-wallpapers en een scherpere Liquid Glass-afwerking overal."
+    "todayChipTitle": "Vandaag-chip",
+    "todayChipDesc": "Feestdagen, volle manen, seizoenswisselingen en weeralerts verschijnen als een Vandaag-chip die elke AI Stylist-suggestie kleurt."
   },
   "features": {
     "aiStylist": "AI-stylist",
@@ -35,16 +35,27 @@
     "shareCardsTitle": "Deelkaarten",
     "shareCardsDesc": "Post- en Story-kaarten in Pantone-stijl, voorzien van realtime weer, locatie, patroon en materiaal — plus een scanbare App Store-QR. Elke deling oogt als een modemagazine.",
     "smartShareTitle": "Slim delen",
-    "smartShareDesc": "De Voor vandaag-strook laat items zien die bij het weer van vandaag passen, zodat je deelkaarten altijd kloppen met de voorspelling. Inbegrepen bij Klosyt+."
+    "smartShareDesc": "De Voor vandaag-strook laat items zien die bij het weer van vandaag passen, zodat je deelkaarten altijd kloppen met de voorspelling. Inbegrepen bij Klosyt+.",
+    "widgetsTitle": "Widgets",
+    "widgetsDesc": "Widgets op het toegangsscherm en beginscherm tonen de outfit van vandaag op basis van het weer, zonder dat je de app opent. Ze verversen automatisch wanneer de voorspelling verandert. Inbegrepen bij Klosyt+.",
+    "siriTitle": "Siri & Apple Intelligence",
+    "siriDesc": "Vraag Siri \"Wat moet ik vandaag dragen?\" en ontvang een volledige outfit uit je kledingkast — geleverd als Siri-kaart, geen websearch. Aangedreven door Apple Intelligence op het toestel, zodat niets je iPhone verlaat.",
+    "importTitle": "Voeg overal toe",
+    "importDesc": "Maak een foto, importeer uit je filmrol, plak een winkel-URL of deel direct vanuit Safari, Instagram of welke app dan ook. Achtergronden worden automatisch verwijderd en de AI classificeert categorie, kleuren, materiaal en patroon meteen.",
+    "captureTitle": "3D-vastlegging",
+    "captureDesc": "iPhone Pro met LiDAR scant je kledingstuk in de rondte en maakt een echt 3D-model naast de standaardfoto. Loop om het stuk heen en Klosyt naait de hoeken samen tot een kastklare asset."
   },
   "pricing": {
     "period": "/maand",
-    "trial": "30 dagen gratis proberen · Annuleer wanneer je wilt",
+    "trialHeadline": "7 dagen gratis — geen aanmelding",
+    "trialSub": "Daarna nog 30 dagen gratis van Apple. Op elk moment opzegbaar.",
     "note": "Je kledingkast is altijd gratis. Klosyt+ ontgrendelt premiumfuncties.",
+    "aiRequirement": "AI-styling vereist iPhone 15 Pro of nieuwer met Apple Intelligence ingeschakeld.",
     "aiStyleAssistant": "AI-stijlassistent",
     "shareCards": "Deelkaarten in Pantone-stijl",
     "smartShare": "Slim delen — Voor vandaag",
-    "weatherData": "Realtime Apple Weather"
+    "weatherData": "Realtime Apple Weather",
+    "widgets": "Toegangsscherm- en beginscherm-widgets"
   },
   "cta": {
     "appStoreAlt": "Download in de App Store",
