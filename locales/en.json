@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI Stylist",
     "aiStylistDesc": "Weather-aware outfit suggestions and dress advice — “Light jacket,” “Bring an umbrella” — built from your Klosyt. On-device AI uses color theory and seasonal awareness to help you look your best in any weather.",
+    "skyVibesTitle": "Sky Vibes",
+    "skyVibesDesc": "Procedural moon phases, time-of-day skies, and seasonal touches — spring blossoms, autumn leaves, summer fireflies, aurora when conditions align. Every hour brings a different sky.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Drag and drop items to create looks. Save favorites and share beautiful Pantone-style cards. Build a personal lookbook of capsule wardrobe combinations you can revisit anytime.",
     "calendarTitle": "Plan & Track",
@@ -30,6 +32,8 @@
     "privacyDesc": "Everything runs on-device. Your data syncs only to your iCloud — never shared with anyone. No app analytics, no app tracking, no ads — your virtual wardrobe stays completely private.",
     "syncTitle": "Synced Everywhere",
     "syncDesc": "iCloud keeps your Klosyt in sync across every Apple device, instantly and automatically. One wardrobe across iPhone, iPad, Mac, Apple TV, and Vision Pro.",
+    "themesTitle": "Themes & Wallpapers",
+    "themesDesc": "Curated themes and wallpapers tuned for Dark Mode. Free for everyone — no subscription required — and synced across every Apple device through iCloud.",
     "filtersTitle": "Smart Filters",
     "filtersDesc": "Find any item by season, color, category, material, or pattern in seconds. Quickly narrow down your digital closet to find exactly what you need.",
     "shareCardsTitle": "Share Cards",

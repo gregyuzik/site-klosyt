@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI造型师",
     "aiStylistDesc": "基于天气的穿搭建议与着装提示——「薄夹克」「带把伞」——来自你的真实衣橱。设备端 AI 运用色彩理论和季节感知，让你在任何天气都穿得好看。",
+    "skyVibesTitle": "天空氛围",
+    "skyVibesDesc": "程序化月相、随时间变化的天空色调，以及四季细节——春日花瓣、秋日落叶、夏夜萤火，条件合适时还有极光。每一小时，天空都不一样。",
     "outfitsTitle": "搭配",
     "outfitsDesc": "拖放物品创建造型。收藏喜爱的搭配，分享精美的Pantone风格卡片。",
     "calendarTitle": "日历",
@@ -30,6 +32,8 @@
     "privacyDesc": "一切都在设备端运行。你的数据只会同步到你的 iCloud，绝不会与任何人共享。没有应用分析、没有应用跟踪、没有广告，你的虚拟衣橱始终完全私密。",
     "syncTitle": "随处同步",
     "syncDesc": "iCloud让你的衣橱在所有Apple设备间保持同步，即时且自动。",
+    "themesTitle": "主题与壁纸",
+    "themesDesc": "为深色模式精心调校的主题与壁纸。所有人免费——无需订阅——并通过iCloud在所有Apple设备间同步。",
     "filtersTitle": "智能筛选",
     "filtersDesc": "按季节、颜色、类别、面料或图案，几秒钟找到任何物品。",
     "shareCardsTitle": "分享卡片",

@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI-stylist",
     "aiStylistDesc": "Weer-bewuste outfitsuggesties én kledingadvies — „Licht jasje”, „Neem een paraplu” — uit je echte kledingkast. On-device AI gebruikt kleurtheorie en seizoensbesef zodat je er bij elk weer op je best uitziet.",
+    "skyVibesTitle": "Hemelsfeer",
+    "skyVibesDesc": "Procedurele maanfases, luchten getint naar het tijdstip van de dag en seizoensaccenten — voorjaarsbloesem, herfstbladeren, vuurvliegjes in de zomer en noorderlicht als de omstandigheden kloppen. Elk uur brengt een andere lucht.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Sleep items om looks te maken. Bewaar favorieten en deel prachtige Pantone-stijlkaarten.",
     "calendarTitle": "Kalender",
@@ -30,6 +32,8 @@
     "privacyDesc": "Alles draait op je apparaat. Je gegevens synchroniseren alleen met je iCloud en worden nooit met anderen gedeeld. Geen app-analytics, geen app-tracking, geen advertenties — je virtuele kledingkast blijft volledig privé.",
     "syncTitle": "Overal gesynchroniseerd",
     "syncDesc": "iCloud houdt je kledingkast gesynchroniseerd op elk Apple-apparaat, direct en automatisch.",
+    "themesTitle": "Thema’s & achtergronden",
+    "themesDesc": "Zorgvuldig samengestelde thema’s en achtergronden, afgestemd op de donkere modus. Gratis voor iedereen — geen abonnement vereist — en gesynchroniseerd over al je Apple-apparaten via iCloud.",
     "filtersTitle": "Slimme filters",
     "filtersDesc": "Vind elk item op seizoen, kleur, categorie, materiaal of patroon in seconden.",
     "shareCardsTitle": "Deelkaarten",

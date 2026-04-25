@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI-stylist",
     "aiStylistDesc": "Väderanpassade outfitförslag och klädråd — ”Lätt jacka”, ”Ta med paraply” — från din riktiga garderob. AI på enheten använder färglära och säsongskänsla så att du ser bäst ut i alla väder.",
+    "skyVibesTitle": "Himlastämning",
+    "skyVibesDesc": "Procedurella månfaser, himlar tonade efter tid på dagen och säsongsdetaljer — vårblom, höstlöv, eldflugor på sommaren och norrsken när förhållandena stämmer. Varje timme ger en ny himmel.",
     "outfitsTitle": "Outfits",
     "outfitsDesc": "Dra och släpp plagg för att skapa looks. Spara favoriter och dela vackra Pantone-stilkort.",
     "calendarTitle": "Kalender",
@@ -30,6 +32,8 @@
     "privacyDesc": "Allt körs på enheten. Dina data synkas bara till ditt iCloud och delas aldrig med någon annan. Ingen appanalys, ingen appspårning, inga annonser — din virtuella garderob förblir helt privat.",
     "syncTitle": "Synkroniserad överallt",
     "syncDesc": "iCloud håller din garderob synkroniserad på alla Apple-enheter, direkt och automatiskt.",
+    "themesTitle": "Teman & bakgrunder",
+    "themesDesc": "Utvalda teman och bakgrunder anpassade för mörkt läge. Gratis för alla — ingen prenumeration krävs — och synkroniserade över alla Apple-enheter via iCloud.",
     "filtersTitle": "Smarta filter",
     "filtersDesc": "Hitta alla plagg efter säsong, färg, kategori, material eller mönster på sekunder.",
     "shareCardsTitle": "Delningskort",

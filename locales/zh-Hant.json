@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI造型師",
     "aiStylistDesc": "基於天氣的穿搭建議與穿搭提示——「薄夾克」「帶把傘」——來自你的真實衣櫥。裝置端 AI 運用色彩理論與季節感知，讓你在任何天氣都穿得好看。",
+    "skyVibesTitle": "天空氛圍",
+    "skyVibesDesc": "程序化月相、隨時間變化的天空色調，以及四季細節——春日花瓣、秋日落葉、夏夜螢火，條件合適時還有極光。每一小時，天空都不一樣。",
     "outfitsTitle": "搭配",
     "outfitsDesc": "拖放物品建立造型。儲存喜愛的搭配，分享精美的Pantone風格卡片。",
     "calendarTitle": "行事曆",
@@ -30,6 +32,8 @@
     "privacyDesc": "一切都在裝置端運作。你的資料只會同步到你的 iCloud，絕不會與任何人分享。沒有 App 分析、沒有 App 追蹤、沒有廣告，你的虛擬衣櫥始終完全私密。",
     "syncTitle": "隨處同步",
     "syncDesc": "iCloud讓你的衣櫥在所有Apple裝置間保持同步，即時且自動。",
+    "themesTitle": "主題與桌布",
+    "themesDesc": "為深色模式精心調校的主題與桌布。所有人免費——無需訂閱——並透過iCloud在所有Apple裝置間同步。",
     "filtersTitle": "智慧篩選",
     "filtersDesc": "按季節、顏色、類別、面料或圖案，幾秒鐘找到任何物品。",
     "shareCardsTitle": "分享卡片",

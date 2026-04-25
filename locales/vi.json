@@ -22,6 +22,8 @@
   "features": {
     "aiStylist": "AI Stylist",
     "aiStylistDesc": "Gợi ý trang phục theo thời tiết và tư vấn mặc gì — “Áo khoác mỏng”, “Mang ô” — lấy từ tủ đồ thực của bạn. AI trên thiết bị dùng lý thuyết màu sắc và cảm quan mùa để bạn luôn đẹp trong mọi thời tiết.",
+    "skyVibesTitle": "Bầu trời sống động",
+    "skyVibesDesc": "Pha mặt trăng dạng quy trình, bầu trời được tô màu theo thời điểm trong ngày và các chi tiết theo mùa — hoa xuân, lá thu, đom đóm hè và cực quang khi điều kiện cho phép. Mỗi giờ mang đến một bầu trời khác.",
     "outfitsTitle": "Trang phục",
     "outfitsDesc": "Kéo thả món đồ để tạo phong cách. Lưu yêu thích và chia sẻ thẻ Pantone tuyệt đẹp.",
     "calendarTitle": "Lịch",
@@ -30,6 +32,8 @@
     "privacyDesc": "Mọi thứ đều chạy trên thiết bị. Dữ liệu của bạn chỉ đồng bộ với iCloud của bạn và không bao giờ được chia sẻ với bất kỳ ai. Không phân tích trong ứng dụng, không theo dõi trong ứng dụng, không quảng cáo — tủ đồ ảo của bạn luôn hoàn toàn riêng tư.",
     "syncTitle": "Đồng bộ mọi nơi",
     "syncDesc": "iCloud giữ tủ đồ đồng bộ trên mọi thiết bị Apple, tức thì và tự động.",
+    "themesTitle": "Chủ đề & hình nền",
+    "themesDesc": "Bộ chủ đề và hình nền tuyển chọn, tinh chỉnh cho Chế độ Tối. Miễn phí cho mọi người — không cần đăng ký — và đồng bộ qua iCloud trên mọi thiết bị Apple.",
     "filtersTitle": "Bộ lọc thông minh",
     "filtersDesc": "Tìm bất kỳ món đồ nào theo mùa, màu sắc, danh mục, chất liệu hoặc họa tiết trong vài giây.",
     "shareCardsTitle": "Thẻ chia sẻ",
