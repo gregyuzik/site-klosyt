@@ -172,10 +172,9 @@ body > *{position:relative;z-index:1}
 
 /* ── Hero ── */
 .hero{
-    min-height:100lvh;
     display:flex;align-items:center;justify-content:center;
     text-align:center;
-    padding:calc(120px + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) calc(80px + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
+    padding:calc(112px + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
 }
 .hero-inner{max-width:680px}
 .hero-icon{
