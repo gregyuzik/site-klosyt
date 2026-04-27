@@ -16,8 +16,10 @@
     "dressAdviceDesc": "天気を服装アドバイスに翻訳——「薄手のジャケット」「傘を持って」——時間帯で色を変えるアイコン付き。",
     "smartShareTitle": "スマートシェア",
     "smartShareDesc": "プレミアム限定「今日のおすすめ」が、シェアの前に当日の天気に合うアイテムを先に提案。",
-    "todayChipTitle": "Todayチップ",
-    "todayChipDesc": "祝日、満月、季節の変わり目、悪天候アラートがTodayチップとして表示され、AI Stylistの提案にニュアンスを加えます。"
+    "todayChipTitle": "新生 Today",
+    "todayChipDesc": "完全に再設計された Today タブ — 天気のヒーローカード、AI スタイリストの提案、そして祝日・満月・季節の変化・荒天警報を伝える Today チップを搭載。",
+    "freshLookTitle": "刷新されたデザイン",
+    "freshLookDesc": "SF Pro Display のタイポグラフィ、よりシャープな Liquid Glass、ダークモード向けに調整された壁紙、そして新しいオンボーディングツアー。"
   },
   "features": {
     "aiStylist": "AIスタイリスト",

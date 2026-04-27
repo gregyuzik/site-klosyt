@@ -16,8 +16,10 @@
     "dressAdviceDesc": "Thời tiết được dịch thành gợi ý mặc — “Áo khoác mỏng”, “Mang ô” — kèm biểu tượng nhuốm màu theo thời điểm trong ngày.",
     "smartShareTitle": "Chia sẻ thông minh",
     "smartShareDesc": "Dải cao cấp “Hôm nay” nổi bật những món hợp với thời tiết hôm nay trước khi bạn chia sẻ.",
-    "todayChipTitle": "Chip Hôm nay",
-    "todayChipDesc": "Ngày lễ, trăng tròn, chuyển mùa và cảnh báo thời tiết khắc nghiệt xuất hiện dưới dạng chip Hôm nay, tô điểm cho mọi gợi ý của AI Stylist."
+    "todayChipTitle": "Today hoàn toàn mới",
+    "todayChipDesc": "Tab Today được thiết kế lại hoàn toàn — phần hero thời tiết, gợi ý AI Stylist, cùng chip Today hiển thị ngày lễ, trăng tròn, chuyển mùa và cảnh báo thời tiết khắc nghiệt.",
+    "freshLookTitle": "Giao diện làm mới",
+    "freshLookDesc": "Kiểu chữ SF Pro Display, Liquid Glass sắc nét hơn ở khắp nơi, bộ hình nền điều chỉnh lại cho Chế độ tối, và phần giới thiệu hoàn toàn mới."
   },
   "features": {
     "aiStylist": "AI Stylist",

@@ -16,8 +16,10 @@
     "dressAdviceDesc": "La météo traduite en tenue — « Veste légère », « Prends un parapluie » — avec des icônes teintées selon l’heure.",
     "smartShareTitle": "Partage intelligent",
     "smartShareDesc": "Une bande premium « Aujourd’hui » met en avant les pièces adaptées à la météo du jour avant le partage.",
-    "todayChipTitle": "Puce Aujourd'hui",
-    "todayChipDesc": "Jours fériés, pleines lunes, changements de saison et alertes météo apparaissent comme une puce Aujourd'hui qui parfume chaque suggestion de l'AI Stylist."
+    "todayChipTitle": "Today repensé",
+    "todayChipDesc": "Un onglet Today entièrement repensé — en-tête météo, suggestions de l’AI Stylist et une puce Today avec fêtes, pleines lunes, changements de saison et alertes météo.",
+    "freshLookTitle": "Interface rafraîchie",
+    "freshLookDesc": "Typographie SF Pro Display, Liquid Glass plus net partout, fonds d’écran Mode sombre revus et un nouveau parcours d’accueil."
   },
   "features": {
     "aiStylist": "Styliste IA",

@@ -16,8 +16,10 @@
     "dressAdviceDesc": "날씨를 옷차림으로 번역 — ‘가벼운 재킷,’ ‘우산 챙기기’ — 시간대별 색상 아이콘까지.",
     "smartShareTitle": "스마트 공유",
     "smartShareDesc": "프리미엄 ‘오늘의 추천’ 스트립이 공유 전에 오늘 날씨에 어울리는 아이템을 먼저 보여 줍니다.",
-    "todayChipTitle": "오늘 칩",
-    "todayChipDesc": "휴일, 보름달, 계절 변화, 악천후 경보가 오늘 칩으로 표시되어 모든 AI Stylist 제안에 풍미를 더합니다."
+    "todayChipTitle": "새로워진 Today",
+    "todayChipDesc": "완전히 새롭게 디자인된 Today 탭 — 날씨 히어로 카드, AI 스타일리스트 제안, 그리고 명절·보름달·계절 변화·악천후 경보를 알려주는 Today 칩까지.",
+    "freshLookTitle": "새롭게 다듬은 인터페이스",
+    "freshLookDesc": "SF Pro Display 타이포그래피, 더욱 선명해진 Liquid Glass, 다크 모드에 맞춰 다듬은 배경화면, 그리고 새로운 시작 안내 투어."
   },
   "features": {
     "aiStylist": "AI 스타일리스트",

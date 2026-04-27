@@ -16,8 +16,10 @@
     "dressAdviceDesc": "Hava durumu giyim önerisine çevrilir — “Hafif ceket”, “Şemsiyeni al” — ve günün saatine göre renklenen simgelerle gelir.",
     "smartShareTitle": "Akıllı Paylaşım",
     "smartShareDesc": "Premium “Bugün” şeridi, paylaşmadan önce günün havasına uyan parçaları öne çıkarır.",
-    "todayChipTitle": "Bugün Çipi",
-    "todayChipDesc": "Resmi tatiller, dolunaylar, mevsim geçişleri ve şiddetli hava uyarıları, AI Stylist'in her önerisine tat katan bir Bugün çipi olarak görünür."
+    "todayChipTitle": "Yepyeni Today",
+    "todayChipDesc": "Tamamen yeniden tasarlanan Today sekmesi — hava durumu kahramanı, AI Stylist önerileri ve tatilleri, dolunay zamanlarını, mevsim değişimlerini ve şiddetli hava uyarılarını gösteren Today çipi.",
+    "freshLookTitle": "Tazelenmiş arayüz",
+    "freshLookDesc": "Tipografide SF Pro Display, her yerde daha keskin Liquid Glass, Karanlık Mod'a göre yenilenmiş duvar kâğıtları ve yeni bir tanıtım turu."
   },
   "features": {
     "aiStylist": "AI Stilist",

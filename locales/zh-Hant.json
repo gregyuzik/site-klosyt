@@ -16,8 +16,10 @@
     "dressAdviceDesc": "把天氣翻譯成穿搭建議——「薄夾克」「帶把傘」——搭配隨時段變色的圖示。",
     "smartShareTitle": "智慧分享",
     "smartShareDesc": "高級版「今日推薦」橫欄會在你分享前先挑出與當日天氣相配的單品。",
-    "todayChipTitle": "今日標籤",
-    "todayChipDesc": "節假日、滿月、季節更替和惡劣天氣警報會以今日標籤形式顯示，為每個 AI Stylist 建議增添風味。"
+    "todayChipTitle": "全新 Today",
+    "todayChipDesc": "完全重新設計的 Today 分頁——天氣頭圖、AI 造型師建議，以及呈現節日、滿月、換季和惡劣天氣提醒的 Today 標記。",
+    "freshLookTitle": "煥新介面",
+    "freshLookDesc": "SF Pro Display 字體、更銳利的 Liquid Glass、為深色模式精調的桌布，以及全新的入門導覽。"
   },
   "features": {
     "aiStylist": "AI造型師",

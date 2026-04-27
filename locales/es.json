@@ -16,8 +16,10 @@
     "dressAdviceDesc": "El clima traducido a consejos — «Chaqueta ligera», «Llévate paraguas» — con iconos teñidos según la hora del día.",
     "smartShareTitle": "Compartir inteligente",
     "smartShareDesc": "Una tira premium «Para hoy» destaca prendas acordes al clima del día antes de que compartas.",
-    "todayChipTitle": "Chip Hoy",
-    "todayChipDesc": "Festivos, lunas llenas, cambios de estación y alertas meteorológicas aparecen como un chip Hoy que da estilo a cada sugerencia del AI Stylist."
+    "todayChipTitle": "Today renovado",
+    "todayChipDesc": "Una pestaña Today completamente rediseñada: encabezado del clima, sugerencias del AI Stylist y un chip Today con festividades, lunas llenas, cambios de estación y alertas meteorológicas severas.",
+    "freshLookTitle": "Interfaz renovada",
+    "freshLookDesc": "Tipografía SF Pro Display, Liquid Glass más nítido en todas partes, fondos de pantalla revisados para el Modo oscuro y un nuevo recorrido de bienvenida."
   },
   "features": {
     "aiStylist": "Estilista IA",
