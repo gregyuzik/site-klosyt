@@ -12,7 +12,7 @@ By downloading, installing, or using Klosyt, you agree to be bound by these Term
 
 Klosyt is a digital closet application available on iOS, macOS, tvOS, and visionOS. It allows you to catalog clothing items, create outfits, receive weather-based suggestions, and plan what to wear.
 
-Klosyt's AI Stylist uses real-time weather data provided by Apple WeatherKit to generate personalized outfit suggestions. When you request an outfit suggestion, the AI analyzes current and forecasted weather conditions for your location — such as temperature, precipitation, and wind — alongside your Klosyt to recommend appropriate clothing. All AI processing is performed on-device; weather data is fetched from Apple's servers and is not sent to us or any third party.
+Klosyt's AI Stylist uses real-time weather data provided by Apple WeatherKit to generate personalized outfit suggestions. When you request an outfit suggestion, the AI analyzes current and forecasted weather conditions for your location, such as temperature, precipitation, and wind, alongside your Klosyt to recommend appropriate clothing. All AI processing is performed on-device; weather data is fetched from Apple's servers and is not sent to us or any third party.
 
 ## Your Privacy Comes First
 
@@ -20,13 +20,13 @@ We believe your personal data belongs to you and only you. Klosyt is architected
 
 ## Your Content, Your Ownership
 
-Everything you create in Klosyt — photos, clothing items, outfits, preferences, and all other content — **belongs entirely to you.** Your data is stored on your device and in your personal iCloud account. We do not access, collect, or claim any rights to your content. If you delete the App, your local data is removed with it; your iCloud data is managed through your Apple ID settings.
+Everything you create in Klosyt, photos, clothing items, outfits, preferences, and all other content, **belongs entirely to you.** Your data is stored on your device and in your personal iCloud account. We do not access, collect, or claim any rights to your content. If you delete the App, your local data is removed with it; your iCloud data is managed through your Apple ID settings.
 
 ## Subscriptions
 
 ### Klosyt+
 
-Klosyt offers an optional auto-renewable subscription ("Klosyt+") that unlocks premium features including AI outfit suggestions, outfit planning, and calendar tracking. Themes and wallpapers are available to all users for free. **The free tier provides unlimited Klosyt storage and core functionality forever** — you will never lose access to your clothing library.
+Klosyt offers an optional auto-renewable subscription ("Klosyt+") that unlocks premium features including AI outfit suggestions, outfit planning, and calendar tracking. Themes and wallpapers are available to all users for free. **The free tier provides unlimited Klosyt storage and core functionality forever**, you will never lose access to your clothing library.
 
 ### Billing
 

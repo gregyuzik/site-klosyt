@@ -92,7 +92,7 @@ function stripHTML(str) {
         .replace(/<br\s*\/?>/gi, ' ')
         .replace(/<[^>]*>/g, '')
         .replace(/&nbsp;/g, ' ')
-        .replace(/&mdash;/g, '\u2014')
+        .replace(/&mdash;/g, '\u00B7')
         .replace(/&middot;/g, '\u00B7')
         .replace(/&amp;/g, '&')
         .replace(/&quot;/g, '"')
@@ -268,7 +268,7 @@ function buildStructuredData(page, locale, translations, fallback) {
     return {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: `${stripHTML(getTranslation(translations, fallback, 'privacy.title'))} — Klosyt`,
+        name: `${stripHTML(getTranslation(translations, fallback, 'privacy.title'))} · Klosyt`,
         url: canonicalUrl,
         description: stripHTML(
             `${getTranslation(translations, fallback, 'privacy.promiseText')} ${getTranslation(translations, fallback, 'privacy.promiseDetail')}`
@@ -311,8 +311,8 @@ function updateMeta(html, locale, page, translations, fallback) {
 
     // Build page title
     const pageTitle = page === 'index.html'
-        ? `Klosyt \u2014 ${titleText}`
-        : `${titleText} \u2014 Klosyt`;
+        ? `Klosyt \u00B7 ${titleText}`
+        : `${titleText} \u00B7 Klosyt`;
 
     const canonicalUrl = buildCanonicalUrl(locale, page);
 
