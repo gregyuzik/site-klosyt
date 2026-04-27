@@ -14,7 +14,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname);
 const SITE_URL = 'https://klosyt.com';
-const LASTMOD = '2026-04-25';
+const LASTMOD = '2026-04-27';
 
 const LOCALES = [
     'zh-Hans', 'zh-Hant', 'da', 'nl', 'fr', 'de',
@@ -238,8 +238,8 @@ function buildStructuredData(page, locale, translations, fallback) {
             url: canonicalUrl,
             downloadUrl: 'https://apps.apple.com/app/klosyt/id6758277603',
             image: `${SITE_URL}/assets/AppIcon.png`,
-            softwareVersion: '2.0',
-            datePublished: '2025-03-13',
+            softwareVersion: '3.0',
+            datePublished: '2026-04-14',
             author: {
                 '@type': 'Person',
                 name: 'Gregory Yuzik'
