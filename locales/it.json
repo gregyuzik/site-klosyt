@@ -16,8 +16,10 @@
     "dressAdviceDesc": "Il meteo tradotto in suggerimenti — «Giacca leggera», «Porta l’ombrello» — con icone tinte in base all’ora.",
     "smartShareTitle": "Condivisione intelligente",
     "smartShareDesc": "Una striscia premium «Per Oggi» mette in evidenza i capi adatti al meteo della giornata prima di condividere.",
-    "todayChipTitle": "Chip Oggi",
-    "todayChipDesc": "Festività, lune piene, cambi di stagione e allerte meteo appaiono come un chip Oggi che dà sapore a ogni suggerimento dell'AI Stylist."
+    "todayChipTitle": "Today rinnovato",
+    "todayChipDesc": "Una scheda Today completamente ridisegnata — intestazione meteo, suggerimenti dell’AI Stylist e un chip Today con festività, lune piene, cambi di stagione e allerte meteo severe.",
+    "freshLookTitle": "Interfaccia rinnovata",
+    "freshLookDesc": "Tipografia SF Pro Display, Liquid Glass più nitido ovunque, sfondi rivisti per la Modalità scura e un nuovo tour di benvenuto."
   },
   "features": {
     "aiStylist": "Stilista IA",

@@ -16,8 +16,10 @@
     "dressAdviceDesc": "Weather translated into what to wear — “Light jacket,” “Bring an umbrella” — with time-of-day-tinted icons.",
     "smartShareTitle": "Smart Share",
     "smartShareDesc": "A premium For-Today strip surfaces items matched to today's weather before you share.",
-    "todayChipTitle": "Today Chip",
-    "todayChipDesc": "Holidays, full moons, season changes, and severe-weather alerts surface as a Today chip that flavors every AI Stylist suggestion."
+    "todayChipTitle": "All-New Today",
+    "todayChipDesc": "An entirely redesigned Today tab — weather hero, AI Stylist suggestions, and a Today chip surfacing holidays, full moons, season changes, and severe-weather alerts.",
+    "freshLookTitle": "Refreshed Interface",
+    "freshLookDesc": "SF Pro Display typography, sharper Liquid Glass everywhere, refreshed Dark Mode wallpapers, and a new onboarding tour."
   },
   "features": {
     "aiStylist": "AI Stylist",

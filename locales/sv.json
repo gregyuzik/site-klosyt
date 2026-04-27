@@ -16,8 +16,10 @@
     "dressAdviceDesc": "Vädret översatt till klädråd — ”Lätt jacka”, ”Ta med paraply” — med tidsfärgade ikoner.",
     "smartShareTitle": "Smart delning",
     "smartShareDesc": "En premium ”Idag”-rad lyfter fram plagg som matchar dagens väder innan du delar.",
-    "todayChipTitle": "Idag-chip",
-    "todayChipDesc": "Helgdagar, fullmånar, säsongsskiften och oväderalarm visas som en Idag-chip som kryddar varje förslag från AI Stylist."
+    "todayChipTitle": "Helt nya Today",
+    "todayChipDesc": "En helt omdesignad Today-flik — väder-hero, AI Stylist-förslag och en Today-chip med helgdagar, fullmånar, säsongsskiften och väderlarm.",
+    "freshLookTitle": "Förnyat gränssnitt",
+    "freshLookDesc": "SF Pro Display-typografi, skarpare Liquid Glass överallt, omarbetade bakgrunder för mörkt läge och en ny introduktionsrundtur."
   },
   "features": {
     "aiStylist": "AI-stylist",
